@@ -6,6 +6,7 @@ Add user
 Add Reports
 Delete work item. (Mark as deleted - do not remove from DB)
 Edit customer
+Secure data and API keys
 ===========================================================
 Add to customer attributes: isActive, Currency.
 Add to user account type (Free, paid)
