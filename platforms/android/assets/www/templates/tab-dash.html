@@ -1,0 +1,33 @@
+<ion-view title="Dashboard">
+    <ion-content class="has-header padding">
+
+        <div class="list card">
+            <div class="item item-divider">
+                Logged in as : {{currentUser.get('username')}}
+            </div>
+        </div>
+
+        <div class="list card" ng-show="currentWorkItem">
+            <div class="item">
+                <h2>Currently working at : {{currentWorkItem.customer.name}}</h2>
+
+            </div>
+
+            <div class="item item-body">
+                <h2>Elapsed work time is {{currentWorkItem.formattedElapsedTime()}}</h2>
+                <h2>Finish current work item</h2>
+            </div>
+        </div>
+
+        <div class="list card" ng-hide="currentWorkItem">
+            <div class="item">
+                <h2>No work is in progress</h2>
+            </div>
+
+            <div class="item item-body">
+                <a class="button icon-right ion-chevron-right button-calm">Start a new work item</a>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

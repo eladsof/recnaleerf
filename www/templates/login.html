@@ -1,0 +1,17 @@
+<ion-view title="login">
+    <ion-content class="has-header padding">
+        <form>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Username" ng-model="signinuser.username" autocapitalize="off" autocorrect="off" />
+
+                </label>
+                <label class="item item-input">
+                    <input placeholder="Username" type="password" ng-model="signinuser.password"/>
+                </label>
+            </div>
+
+            <button ng-click="signin(signinuser)" class="button button-block button-dark">Sign in</button>
+        </form>
+    </ion-content>
+</ion-view>

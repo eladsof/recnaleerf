@@ -1,0 +1,49 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view title="{{customer.name}}">
+    <ion-content has-header="true" padding="true">
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img src="mcfly.jpg">
+                <h2>{{customer.name}}</h2>
+                <p>created on: {{customer.createdAt | date:'medium'}}</p>
+            </div>
+
+            <div class="item item-body">
+                <p>
+                    Customer address: {{customer.address.formatted_address}}
+                </p>
+                <p>
+                <h2>Hourly rate : {{customer.ratePerHour}}</h2>
+                </p>
+            </div>
+
+            <div class="item item-body">
+                <a  href="#/tab/customer/report/monthly/{{customer.id}}/{{year}}/{{month}}">
+                    Current month work time: {{monthlyWorkHours }}
+                </a>
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="#/tab/customer/edit/{{customer.id}}">
+                    <i class="icon ion-thumbsup"></i>
+                    Edit
+                </a>
+                <a class="tab-item" href="#/tab/customer/report/{{customer.id}}">
+                    <i class="icon ion-chatbox"></i>
+                    Reports
+                </a>
+                <a class="tab-item" href="#/tab/customer/export/{{customer.id}}">
+                    <i class="icon ion-share"></i>
+                    Export
+                </a>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
