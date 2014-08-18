@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule'])
 
-    .run(function($state,$ionicPlatform,$rootScope,MyUser,WorkItem) {
+    .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
         // register listener to watch route changes
 
@@ -40,7 +40,7 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
             Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
             MyUser.logOut();
             $rootScope.currentUser = MyUser.current;
-            $rootScope.currentWorkItem = null;
+            GlobalSrv.initialize();
         }
     })
 

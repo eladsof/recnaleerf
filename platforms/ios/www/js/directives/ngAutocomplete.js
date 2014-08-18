@@ -41,7 +41,7 @@ angular.module( "ngAutocomplete", [])
 
                 //options for autocomplete
                 var opts
-                var watchEnter = false
+                var watchEnter = true;
                 //convert options provided to opts
                 var initOpts = function() {
 
@@ -83,15 +83,17 @@ angular.module( "ngAutocomplete", [])
                 if (scope.gPlace == undefined) {
                     scope.gPlace = new google.maps.places.Autocomplete(element[0], {});
                 }
+
                 google.maps.event.addListener(scope.gPlace, 'place_changed', function() {
                     var result = scope.gPlace.getPlace();
+                    confirm('place changed');
                     if (result !== undefined) {
                         if (result.address_components !== undefined) {
 
                             scope.$apply(function() {
 
                                 scope.details = result;
-
+                                alert('setting value to '+element);
                                 controller.$setViewValue(element.val());
                             });
                         }

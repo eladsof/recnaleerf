@@ -9,8 +9,11 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
-        // register listener to watch route changes
+        Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
+        $rootScope.currentUser = MyUser.current();
+        GlobalSrv.initialize();
 
+        // register listener to watch route changes
         $rootScope.$on('$stateChangeStart',
             function(event, toState, toParams, fromState, fromParams){
                 if (toState.name != 'login') {
@@ -32,16 +35,8 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                 // org.apache.cordova.statusbar required
                 StatusBar.styleDefault();
             }
-
-            initGlobalVars();
         });
 
-        initGlobalVars = function () {
-            Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
-            MyUser.logOut();
-            $rootScope.currentUser = MyUser.current;
-            GlobalSrv.initialize();
-        }
     })
 
     .config(function($stateProvider, $urlRouterProvider) {
@@ -86,7 +81,7 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                     }
                 }
             })
-            .state('tab.customers.report.monthly', {
+            .state('tab.customers-report.monthly', {
                 url: '/customer/report/monthly/:custoemrid/:year/:month',
                 views: {
                     'tab-customers': {
@@ -104,7 +99,15 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                     }
                 }
             })
-
+            .state('tab.customer-new', {
+                url: '/customer/new/:customerid',
+                views: {
+                    'tab-customers': {
+                        templateUrl: 'templates/customer-new.html',
+                        controller: 'customerCtrl'
+                    }
+                }
+            })
             .state('tab.account', {
                 url: '/account',
                 views: {

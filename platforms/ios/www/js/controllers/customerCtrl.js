@@ -11,10 +11,26 @@
 console.log("init customerCtrl");
 
 angular.module('recnaleerfClientApp')
-    .controller('customerCtrl', ['$scope','$location', 'CustomerSrv', 'Customer', 'Geolocation', function ($scope,$location,customerSrv,Customer,Geolocation) {
+    .controller('customerCtrl', ['$scope','$location', 'CustomerSrv', 'Customer', 'Geolocation','$state', function ($scope,$location,customerSrv,Customer,Geolocation,$state) {
+
+        angular.element(window.document).bind('DOMNodeInserted', function(e) {
+            var element = angular.element(e.target);
+
+            console.log(document.querySelectorAll('.pac-container'));
+            console.log('-----------------' );
+            if(document.querySelectorAll('.pac-container'))
+                for(var i=0; i < document.querySelectorAll('.pac-container').length; i++)
+                    document.querySelectorAll('.pac-container')[i].setAttribute('data-tap-disabled', 'true');
+
+            if(element.hasClass('pac-item')){
+                element.addClass('needsclick');
+                console.log('found item');
+            }
+        });
 
         console.log("init customerCtrl");
-        $scope.dist = 'not calced'
+        $scope.dist = 'not calced';
+        $scope.editedCustomer;
 
         var refreshCustomers  = function() {
             Customer.listByUser($scope.currentUser).then(function(aCustomers) {
@@ -25,6 +41,11 @@ angular.module('recnaleerfClientApp')
             });
             $scope.customer = {};
         };
+
+        $scope.CreateCustomer = function () {
+            $scope.editedCustomer = new Customer();
+            $state.go('tab.customer-new');
+        }
 
         $scope.createNew = function(customer) {
             console.log("Creating a new customer");

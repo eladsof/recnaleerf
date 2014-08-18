@@ -40,6 +40,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/README.md \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/todo.txt \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/css/style.css \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/img/ionic.png \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/app.js \
@@ -62,6 +63,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models/WorkItem.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/customerSrv.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/geoLocation.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/GlobalSrv.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/imports.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/userSrv.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/WorkItemSrv.js \

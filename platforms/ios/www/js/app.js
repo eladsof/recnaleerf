@@ -7,10 +7,9 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule'])
 
-    .run(function($state,$ionicPlatform,$rootScope,MyUser,WorkItem) {
+    .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
         // register listener to watch route changes
-
         $rootScope.$on('$stateChangeStart',
             function(event, toState, toParams, fromState, fromParams){
                 if (toState.name != 'login') {
@@ -38,9 +37,9 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
 
         initGlobalVars = function () {
             Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
-            MyUser.logOut();
+            //MyUser.logOut();
             $rootScope.currentUser = MyUser.current;
-            $rootScope.currentWorkItem = null;
+            GlobalSrv.initialize();
         }
     })
 
@@ -86,7 +85,7 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                     }
                 }
             })
-            .state('tab.customers.report.monthly', {
+            .state('tab.customers-report.monthly', {
                 url: '/customer/report/monthly/:custoemrid/:year/:month',
                 views: {
                     'tab-customers': {
@@ -104,7 +103,15 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                     }
                 }
             })
-
+            .state('tab.customer-new', {
+                url: '/customer/new/:customerid',
+                views: {
+                    'tab-customers': {
+                        templateUrl: 'templates/customer-new.html',
+                        controller: 'customerCtrl'
+                    }
+                }
+            })
             .state('tab.account', {
                 url: '/account',
                 views: {

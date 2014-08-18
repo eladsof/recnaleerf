@@ -1,0 +1,19 @@
+<ion-view title="New customer - {{editedCustomer.name}}">
+    <ion-content has-header="true" padding="true">
+        <form>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" placeholder="Customer name" ng-model="editedCustomer.name" autocapitalize="off" autocorrect="off" />
+                </label>
+                <label class="item item-input">
+                    <input placeholder="address" type="text" ng-model="tempres" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" />
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Default hourly rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" />
+                </label>
+            </div>
+
+            <button type="button" class="button button-block button-dark" ng-click="editedCustomer(customer)">Create this customer</button>
+        </form>
+    </ion-content>
+</ion-view>

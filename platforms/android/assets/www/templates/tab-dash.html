@@ -14,8 +14,9 @@
             </div>
 
             <div class="item item-body">
-                <h2>Elapsed work time is {{currentWorkItem.formattedElapsedTime()}}</h2>
-                <h2>Finish current work item</h2>
+
+                <h2><i class="icon ion-loading-c"></i> Elapsed work time is {{currentWorkItem.formattedElapsedTime()}}</h2>
+                <a class="button icon-right ion-chevron-right button-calm" ng-click="finishCurrentWorkItem()">Finish current work item</a>
             </div>
         </div>
 
@@ -24,10 +25,13 @@
                 <h2>No work is in progress</h2>
             </div>
 
-            <div class="item item-body">
-                <a class="button icon-right ion-chevron-right button-calm">Start a new work item</a>
+            <div class="item item-select padding">
+                <a ng-disabled="selectedCustomer == null" class="button icon-right ion-chevron-right button-calm" ng-click="startNewWorkItem(selectedCustomer)">Start work item</a>
+                <select data-ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="float:right;font-size: 28px;  "></select>
             </div>
+
         </div>
+
 
     </ion-content>
 </ion-view>

@@ -1,6 +1,11 @@
 <ion-view title="Customers">
+    <ion-nav-buttons side="right">
+        <button class="button" ng-click="CreateCustomer()">
+            New
+        </button>
+    </ion-nav-buttons>
+
   <ion-content class="has-header padding">
-      <H1>Customers list</H1>
     <ion-list>
       <ion-item ng-repeat="customer in customers" type="item-text-wrap" href="#/tab/customer/{{customer.id}}">
         {{customer.name}}

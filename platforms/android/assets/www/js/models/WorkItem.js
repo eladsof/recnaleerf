@@ -9,9 +9,25 @@ angular.module('recnaleerfClientApp').
 
                 formattedElapsedTime : function() {
                     var elapsed = new Date(this.finish-this.start);
-                    var hours = elapsed.getUTCHours(); if(hours < 10) hours =  '0' + hours;
-                    var mins = elapsed.getUTCMinutes(); if(mins < 10) mins =  '0' + mins;
-                    var secs = elapsed.getUTCSeconds(); if(secs < 10) secs =  '0' + secs;
+
+                    var hours = elapsed.getUTCHours();
+                    if(isNaN(hours))
+                        hours = '00';
+                    else if(hours < 10)
+                        hours =  '0' + hours;
+
+                    var mins = elapsed.getUTCMinutes();
+                    if(isNaN(mins))
+                        mins = '00';
+                    if(mins < 10)
+                        mins =  '0' + mins;
+
+                    var secs = elapsed.getUTCSeconds();
+                    if(isNaN(secs))
+                        secs = '00'
+                    else if(secs < 10)
+                        secs =  '0' + secs;
+
                     return hours + ':' + mins + ':' + secs;
                 }
             }
@@ -46,7 +62,6 @@ angular.module('recnaleerfClientApp').
                 this.set("owner", aValue);
             }
         });
-
         Object.defineProperty(WorkItem.prototype, "customer", {
             get: function() {
                 return this.get("customer");
@@ -55,37 +70,30 @@ angular.module('recnaleerfClientApp').
                 this.set("customer", aValue);
             }
         });
-
         Object.defineProperty(WorkItem.prototype, "start", {
             get: function() {
-                console.log(this.get("start"));
                 return this.get("start");
             },
             set: function(aValue) {
                 this.set("start", aValue);
             }
         });
-
         Object.defineProperty(WorkItem.prototype, "finish", {
             get: function() {
-                console.log(this.get("finish"));
                 return this.get("finish");
             },
             set: function(aValue) {
                 this.set("finish", aValue);
             }
         });
-
         Object.defineProperty(WorkItem.prototype, "isComplete", {
             get: function() {
-                console.log(this.get("isComplete"));
                 return this.get("isComplete");
             },
             set: function(aValue) {
                 this.set("isComplete", aValue);
             }
         });
-
         Object.defineProperty(WorkItem.prototype, "rate", {
             get: function() {
                 return this.get("rate");
@@ -94,7 +102,6 @@ angular.module('recnaleerfClientApp').
                 this.set("rate", aValue);
             }
         });
-
         Object.defineProperty(WorkItem.prototype, "comment", {
             get: function() {
                 return this.get("comment");
