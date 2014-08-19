@@ -13,22 +13,18 @@ console.log("init customerCtrl");
 angular.module('recnaleerfClientApp')
     .controller('customerCtrl', ['$scope','$location', 'CustomerSrv', 'Customer', 'Geolocation','$state', function ($scope,$location,customerSrv,Customer,Geolocation,$state) {
 
+        // This methods overcomes a UI problem with google and autocomplete
         angular.element(window.document).bind('DOMNodeInserted', function(e) {
             var element = angular.element(e.target);
-
-            console.log(document.querySelectorAll('.pac-container'));
-            console.log('-----------------' );
             if(document.querySelectorAll('.pac-container'))
                 for(var i=0; i < document.querySelectorAll('.pac-container').length; i++)
                     document.querySelectorAll('.pac-container')[i].setAttribute('data-tap-disabled', 'true');
 
             if(element.hasClass('pac-item')){
                 element.addClass('needsclick');
-                console.log('found item');
             }
         });
 
-        console.log("init customerCtrl");
         $scope.dist = 'not calced';
         $scope.editedCustomer;
 
@@ -48,16 +44,28 @@ angular.module('recnaleerfClientApp')
         }
 
         $scope.createNew = function(customer) {
-            console.log("Creating a new customer");
             var ret =  customerSrv.createNew(customer);
             refreshCustomers();
             return ret;
         };
 
+        $scope.deleteCustomer = function(customer) {
+            alert('I will never delete '+customer.name);
+        }
+
         $scope.calc = function(){
              Geolocation.calcuateDistance($scope.customer.address).then(function (distance) { $scope.dist = distance});
         };
 
+        $scope.onSwipeLeft = function (customer) {
+            customer.shouldShowDelete = true;
+            console.log('swipt');
+        };
+        $scope.onSwipeRight = function (customer) {
+            customer.shouldShowDelete = false;
+        };
+
         refreshCustomers();
+
 
     }]);

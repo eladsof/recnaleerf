@@ -25,7 +25,6 @@ angular.module('recnaleerfClientApp')
             }
         });
 
-        console.log("init customerCtrl");
         $scope.dist = 'not calced';
         $scope.editedCustomer;
 
@@ -50,10 +49,26 @@ angular.module('recnaleerfClientApp')
             return ret;
         };
 
+        $scope.deleteCustomer = function(customer) {
+//            var ret =  customerSrv.deleteCustomer(customer);
+//            refreshCustomers();
+//            return ret;
+            alert('I will never delete '+customer.name);
+        }
+
         $scope.calc = function(){
              Geolocation.calcuateDistance($scope.customer.address).then(function (distance) { $scope.dist = distance});
         };
 
+        $scope.onSwipeLeft = function (customer) {
+            customer.shouldShowDelete = true;
+            console.log('swipt');
+        };
+        $scope.onSwipeRight = function (customer) {
+            customer.shouldShowDelete = false;
+        };
+
         refreshCustomers();
+
 
     }]);

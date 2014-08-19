@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule'])
+angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate'])
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
@@ -51,6 +51,11 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
             .state('login', {
                 url: '/login',
                 templateUrl: 'templates/login.html',
+                controller: 'menuCtrl'
+            })
+            .state('signup', {
+                url: '/signup',
+                templateUrl: 'templates/user-new.html',
                 controller: 'menuCtrl'
             })
             // setup an abstract state for the tabs directive

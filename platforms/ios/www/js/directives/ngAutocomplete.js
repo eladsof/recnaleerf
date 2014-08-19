@@ -86,14 +86,12 @@ angular.module( "ngAutocomplete", [])
 
                 google.maps.event.addListener(scope.gPlace, 'place_changed', function() {
                     var result = scope.gPlace.getPlace();
-                    confirm('place changed');
                     if (result !== undefined) {
                         if (result.address_components !== undefined) {
 
                             scope.$apply(function() {
 
                                 scope.details = result;
-                                alert('setting value to '+element);
                                 controller.$setViewValue(element.val());
                             });
                         }

@@ -4,9 +4,9 @@ Add new customer.
 ===========================================================
 ========================= DONE ============================
 ===========================================================
+Add user
 Data validation for customer/user creattion
 Add "offline" workitem
-Add user
 Add Reports
 Delete work item. (Mark as deleted - do not remove from DB)
 Delete customer. (Mark as deleted - do not remove from DB)

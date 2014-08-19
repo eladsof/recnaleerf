@@ -143,6 +143,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/customer-detail.html \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/customer-new.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/login.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-account.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-customers.html \

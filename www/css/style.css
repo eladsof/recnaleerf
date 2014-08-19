@@ -3,3 +3,21 @@
     background-color: #76A5DF;
 }
 
+.error {
+    color: #F00;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+.error.ng-show {
+    -webkit-animation: bounceIn 1s;
+    -moz-animation: bounceIn 1s;
+    -ms-animation: bounceIn 1s;
+    animation: bounceIn 1s;
+}
+.error.ng-hide {
+    -webkit-animation: bounceOut 1s;
+    -moz-animation: bounceOut 1s;
+    -ms-animation: bounceOut 1s;
+    animation: bounceOut 1s;
+}

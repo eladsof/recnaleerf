@@ -8,7 +8,7 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-   .service('UserSrv', ['$rootScope', '$location', 'MyUser' ,function ($scope,$location,MyUser) {
+   .service('UserSrv', ['$rootScope', '$location', 'MyUser' ,'$q',function ($scope,$location,MyUser,$q) {
 
     this.isLoggedIn = function() {
         console.log('is logged in called : '+ ($scope.currentUser != null));
@@ -37,16 +37,21 @@ angular.module('recnaleerfClientApp')
         console.log('logged out');
     };
 
-    this.signup = function (usr) {
+    this.signup = function (usr,message) {
+        var deferred;
+        deferred = $q.defer();
+
         var newUser = new MyUser();
         newUser.set('username',usr.username);
         newUser.set('password',usr.password);
         newUser.set('email',usr.email);
 
         newUser.signUp(null, {
-            success: function(newUser) { console.log('User '+newUser.get('username')+' succesfully signed up');} ,
-            error:   function(newUser,error) {console.log('User failed to  signed up: '+error.code+':'+error.message);}
+            success: function(newUser) { return deferred.resolve(newUser); },
+            error:   function(newUser,error) {return deferred.reject({newUser: newUser,error: error});}
         });
+
+        return deferred.promise;
     };
 
   }]);

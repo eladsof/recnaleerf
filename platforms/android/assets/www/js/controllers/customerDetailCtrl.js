@@ -31,6 +31,4 @@ angular.module('recnaleerfClientApp')
         }, function(aError) {
             console.log(aError);
         });
-
-
     });

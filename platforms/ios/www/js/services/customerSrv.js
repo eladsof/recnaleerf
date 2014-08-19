@@ -8,7 +8,7 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-    .service('CustomerSrv', ['$rootScope', '$location', 'Customer' ,function ($scope,$location,Customer) {
+    .service('CustomerSrv', ['$rootScope', '$location', 'Customer','$state',function ($scope,$location,Customer,$state) {
 
         console.log('init customerSrv');
 
@@ -22,12 +22,14 @@ angular.module('recnaleerfClientApp')
             newCustomer.save(null, {
                 success: function(customer) {
                     // Execute any logic that should take place after the object is saved.
-                    alert('New customer '+customer.name+' created objectId: ' + customer.id);
+                    alert('Customer '+customer.name+' created succesfully');
+                    $state.go('tab.customers');
+
                 },
                 error: function(customer, error) {
                     // Execute any logic that should take place if the save fails.
                     // error is a Parse.Error with an error code and description.
-                    alert('Failed to create new object, with error code: ' + error.message);
+                    alert('Failed to create new customer, : ' + error.message);
                 }
             });
         };

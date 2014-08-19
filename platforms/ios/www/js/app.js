@@ -9,6 +9,10 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
+        Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
+        $rootScope.currentUser = MyUser.current();
+        GlobalSrv.initialize();
+
         // register listener to watch route changes
         $rootScope.$on('$stateChangeStart',
             function(event, toState, toParams, fromState, fromParams){
@@ -31,16 +35,8 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                 // org.apache.cordova.statusbar required
                 StatusBar.styleDefault();
             }
-
-            initGlobalVars();
         });
 
-        initGlobalVars = function () {
-            Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
-            //MyUser.logOut();
-            $rootScope.currentUser = MyUser.current;
-            GlobalSrv.initialize();
-        }
     })
 
     .config(function($stateProvider, $urlRouterProvider) {

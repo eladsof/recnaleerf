@@ -3,17 +3,25 @@
         <form>
             <div class="list list-inset">
                 <label class="item item-input">
-                    <input type="text" placeholder="Customer name" ng-model="editedCustomer.name" autocapitalize="off" autocorrect="off" />
+                    <input type="text" placeholder="Username" ng-model="newUser.username" autocapitalize="off" autocorrect="off" required/>
                 </label>
                 <label class="item item-input">
-                    <input placeholder="address" type="text" ng-model="tempres" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" />
+                    <input placeholder="Password" type="email" ng-model="newUser.email" required/>
                 </label>
                 <label class="item item-input">
-                    <input type="text" placeholder="Default hourly rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" />
+                    <input placeholder="Password" type="password" ng-model="newUser.password" required/>
+                </label>
+                <label class="item item-input">
+                    <input placeholder="Retype Password" type="password" ng-model="newUser.passwordCopy" required/>
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Full name" ng-model="newUser.fullname" autocapitalize="off" autocorrect="off" required/>
+                </label>
+                <label class="item item-input">
+                    <input placeholder="Home \ Office address" type="text" ng-model="tempres" ng-autocomplete details="newUser.address" autocapitalize="off" autocorrect="off" />
                 </label>
             </div>
-
-            <button type="button" class="button button-block button-dark" ng-click="createNew(editedCustomer)">Create this customer</button>
+            <button type="button" class="button button-block button-dark" ng-click="createNew(newUser)">Create new user</button>
         </form>
     </ion-content>
 </ion-view>

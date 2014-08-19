@@ -1,0 +1,56 @@
+<ion-view title="Signup to Recnaleerf {{editedCustomer.name}}" ngCloak>
+    <ion-content has-header="true" padding="true">
+        <form name="signup_form" novalidate>
+
+                <!-- USERNAME -->
+                <label class="item item-input ">
+                    <input type="text" placeholder="Username" name="username" ng-model="newUser.username" autocapitalize="off" autocorrect="off" ng-minlength=4 ng-maxlength=20  required/>
+                </label>
+                <div  class="error" ng-show="signup_form.username.$dirty && signup_form.username.$invalid">
+                    <small class="error" ng-show="signup_form.username.$error.required">Username is required.</small>
+                    <small class="error" ng-show="signup_form.username.$error.minlength">Your name is required to be at least 4 characters</small>
+                    <small class="error" ng-show="signup_form.username.$error.maxlength">Your name cannot be longer than 20 characters</small>
+                </div>
+
+                <!-- Email -->
+                <label class="item item-input">
+                    <input placeholder="Email address" name="email" type="email" ng-model="newUser.email" required/>
+                </label>
+                <div class="error" ng-show="signup_form.email.$dirty && signup_form.email.$invalid">
+                    <small class="error" ng-show="signup_form.email.$error.required">Email is required.</small>
+                    <small class="error" ng-show="signup_form.email.$error.email">That is not a valid email. Please input a valid email.</small>
+                </div>
+
+                <!-- PASSWORD -->
+                <label class="item item-input">
+                    <input placeholder="Password" type="password" name="password" ng-minlength=8 ng-maxlength=20 ng-model="newUser.password" required/>
+                </label>
+                <div class="error" ng-show="signup_form.password.$dirty && signup_form.password.$invalid">
+                    <small class="error" ng-show="signup_form.password.$error.required">Password is required.</small>
+                    <small class="error" ng-show="signup_form.password.$error.minlength">Password is required to be at least 8 characters</small>
+                </div>
+
+                <!-- VERIFY PASSWORD -->
+                <label class="item item-input">
+                    <input placeholder="Retype Password" name="passwordCopy" type="password" ng-minlength=4 ng-maxlength=20 ng-model="newUser.passwordCopy" required match="newUser.password"/>
+                </label>
+                <div class="error" ng-show="signup_form.passwordCopy.$dirty && signup_form.passwordCopy.$invalid">
+                    <small class="error"ng-show="signup_form.passwordCopy.$error.match" >Passwords do not match</small>
+                </div>
+
+                <label class="item item-input">
+                    <input type="text" placeholder="Full name" ng-model="newUser.fullname" autocapitalize="off" autocorrect="off"/>
+                </label>
+                <label class="item item-input">
+                    <input placeholder="Home \ Office address" type="text" ng-model="tempres" ng-autocomplete details="newUser.address" autocapitalize="off" autocorrect="off" />
+                </label>
+            <button type="button" ng-disabled="signup_form.$invalid" class="button button-block button-dark" ng-click="signup(newUser)">Create new user</button>
+        </form>
+        <div class="error" ng-show="signUpMessage">
+            <div ng-show="signUpSuccess">User succesfully signed up. Check you inbox to continue:</div>
+            <div ng-hide="signUpSuccess">User could not signup : {{signUpMessage}}</div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

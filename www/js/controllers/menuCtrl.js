@@ -25,7 +25,12 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.signup = function (usr) {
-            return userService.signup(usr);
+            $scope.signUpMessage = "Signing up";
+            userService.signup(usr,$scope.signUpMessage,$scope.signUpSuccess)
+            .then(
+                function(newUser) { $scope.signUpSuccess = true; $scope.signUpMessage = 'User '+newUser.get('username')+' succesfully signed up';console.log($scope.signUpMessage)},
+                function(value) {$scope.signUpSuccess = false; $scope.signUpMessage = 'User failed to  signed up: '+value.error.code+':'+value.error.message;;console.log($scope.signUpMessage)}
+            );
         };
 
         $scope.navClass = function (page) {
@@ -35,6 +40,4 @@ angular.module('recnaleerfClientApp')
         };
 
     }]);
-/**
- * Created by eladsof on 8/7/14.
- */
+
