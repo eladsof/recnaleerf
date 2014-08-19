@@ -14,7 +14,9 @@ angular.module('geoLocationModule',[])
         };
 
         this.isCloseToCustomer = function(myLocation,customerLocation){
-            if(this.distanceFromCustomer(myLocation, customerLocation) < 100)
+            var distancee = this.distanceFromCustomer(myLocation, customerLocation)
+            console.log(distancee);
+            if(distancee < 100)
                 return true;
             else
                 return false;

@@ -23,4 +23,20 @@
     display:none!important;
 }
 
+.reportItemBox {
+    margin-top: 0;
+    position:absolute;
+    width: 100%;
+    //top:0;
+    //left:0;
+    //right:0;
+    //bottom:0;
+}
+.reportItemBox.ng-hide {
+    -webkit-animation: zoomOutUp 1s;
+    -moz-animation: zoomOutUp 1s;
+    -ms-animation: zoomOutUp 1s;
+    animation: zoomOutUp 1s;
+}
+
 

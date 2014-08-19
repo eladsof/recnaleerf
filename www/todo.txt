@@ -4,10 +4,11 @@ Add new customer.
 Add user
 Data validation for user creattion
 Data validation for customer
+Add "offline" workitem
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Add "offline" workitem
+
 Add Reports
 Delete work item. (Mark as deleted - do not remove from DB)
 Delete customer. (Mark as deleted - do not remove from DB)
@@ -21,3 +22,4 @@ Add to customer attributes: isActive, Currency.
 Add to user account type (Free, paid)
 Add teams
 check out ngMessage
+decouple geo location api from app

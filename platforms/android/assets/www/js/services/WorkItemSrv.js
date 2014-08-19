@@ -10,10 +10,11 @@
 angular.module('recnaleerfClientApp')
     .service('WorkItemSrv', ['$rootScope', '$location', 'WorkItem' ,function ($scope,$location,WorkItem) {
 
-
-
         this.createNew = function (aItem){
-            console.log('This is the comment '+aItem.comment);
+
+            var deferred;
+            deferred = $q.defer();
+
             var item = new WorkItem();
             item.start = aItem.start;
             item.finish= aItem.finish;
@@ -24,16 +25,15 @@ angular.module('recnaleerfClientApp')
             item.isComplete = true;
 
             item.save(null, {
-                success: function(item) {
-                    // Execute any logic that should take place after the object is saved.
-                    alert('New item created objectId: ' + item.id);
+                success: function (item) {
+                    return deferred.resolve(item);
                 },
-                error: function(customer, error) {
-                    // Execute any logic that should take place if the save fails.
-                    // error is a Parse.Error with an error code and description.
-                    alert('Failed to create new object, with error code: ' + error.message);
+                error: function (item, error) {
+                    return deferred.reject({item: item, error: error});
                 }
             });
+
+            return deferred.promise;
         };
 
         this.remove = function (aItem) {
