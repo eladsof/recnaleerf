@@ -1,16 +1,18 @@
 Add git repository - check
 Add customer list for start new work item button
 Add new customer.
+Add user
+Data validation for user creattion
+Data validation for customer
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Add user
-Data validation for customer/user creattion
 Add "offline" workitem
 Add Reports
 Delete work item. (Mark as deleted - do not remove from DB)
 Delete customer. (Mark as deleted - do not remove from DB)
 Edit customer
+Add user email validation
 Secure data and API keys
 ===========================================================
 ========================= MVP  ============================
@@ -18,3 +20,4 @@ Secure data and API keys
 Add to customer attributes: isActive, Currency.
 Add to user account type (Free, paid)
 Add teams
+check out ngMessage

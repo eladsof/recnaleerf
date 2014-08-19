@@ -39,10 +39,13 @@ angular.module('geoLocationModule',[])
             deferred = $q.defer();
             if ($window.navigator && $window.navigator.geolocation) {
                 $window.navigator.geolocation.getCurrentPosition(function(position) {
+                        console.log('got location ');
                     return deferred.resolve(position.coords);
                 }, function(error) {
+                        console.log('no location '+error);
                     return deferred.reject("Unable to get your location");
-                });
+                },
+                { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
             } else {
                 deferred.reject("Your browser cannot access to your position");
             }

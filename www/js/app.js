@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate'])
+angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat'])
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
@@ -86,15 +86,6 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                     }
                 }
             })
-            .state('tab.customers-report.monthly', {
-                url: '/customer/report/monthly/:custoemrid/:year/:month',
-                views: {
-                    'tab-customers': {
-                        templateUrl: 'templates/tab-customers.html',
-                        controller: 'customerCtrl'
-                    }
-                }
-            })
             .state('tab.customer-detail', {
                 url: '/customer/:customerid',
                 views: {
@@ -109,6 +100,15 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                 views: {
                     'tab-customers': {
                         templateUrl: 'templates/customer-new.html',
+                        controller: 'customerCtrl'
+                    }
+                }
+            })
+            .state('tab.customers-report.monthly', {
+                url: '/customer/report/monthly/:custoemrid/:year/:month',
+                views: {
+                    'tab-customers': {
+                        templateUrl: 'templates/tab-customers.html',
                         controller: 'customerCtrl'
                     }
                 }
