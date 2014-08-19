@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="recnaleerfClientApp" >
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -15,14 +15,20 @@
     -->
 
     <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/ionic.min.js"></script>
+    <script src="lib/ionic/js/angular_13/angular.min.js"></script>
+    <script src="lib/ionic/js/angular_13/angular-animate.min.js"></script>
+    <script src="lib/ionic/js/angular_13/angular-sanitize.min.js"></script>
+    <script src="lib/ionic/js/angular-ui/angular-ui-router.min.js"></script>
+    <script src="lib/ionic/js/ionic-angular.min.js"></script>
+    <script src="lib/ionic/js/angular_13/angular-route.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
 
     <!-- your app's js -->
-    <!-- <link rel="import" href="imports.html"> -->
+
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry,places"></script>
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
     <script src="js/directives/ngAutocomplete.js"></script>
@@ -49,13 +55,12 @@
 
     </script>
 
-
 </head>
-<body ng-app="recnaleerfClientApp" animation="slide-left-right-ios7">
+<body animation="slide-left-right-ios7" ng-cloak>
 <!--
   The nav bar that will be updated as we navigate between views.
 -->
-<ion-nav-bar class="bar-stable nav-title-slide-ios7">
+<ion-nav-bar class="bar-stable nav-title-slide-ios7" ngCloak>
     <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
         Back
     </ion-nav-back-button>
@@ -67,8 +72,7 @@
   have templates inline in this html file if you'd like).
 -->
 
-
-<ion-nav-view></ion-nav-view>
+<ion-nav-view ngCloak></ion-nav-view>
 
 </body>
 </html>
