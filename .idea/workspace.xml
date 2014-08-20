@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60defe00-4d70-4d85-af96-bf5275c68018" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/WorkItemSrv.js" afterPath="$PROJECT_DIR$/www/js/services/WorkItemSrv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/customer-detail.html" afterPath="$PROJECT_DIR$/www/templates/customer-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/customerDetailCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/customerDetailCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/geoLocation.js" afterPath="$PROJECT_DIR$/www/js/services/geoLocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/models/Customer.js" afterPath="$PROJECT_DIR$/www/js/models/Customer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/customerCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/customerCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/customerSrv.js" afterPath="$PROJECT_DIR$/www/js/services/customerSrv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/todo.txt" afterPath="$PROJECT_DIR$/www/todo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/tstionic.iml" afterPath="$PROJECT_DIR$/.idea/tstionic.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tstionic.iws" />
@@ -35,18 +35,28 @@
       <file leaf-file-name="todo.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20408164" vertical-offset="0" max-vertical-offset="450">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.15404364" vertical-offset="0" max-vertical-offset="779">
+              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkItemSrv.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/services/WorkItemSrv.js">
+      <file leaf-file-name="GlobalSrv.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="975">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state vertical-scroll-proportion="-14.423077" vertical-offset="135" max-vertical-offset="1830">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/models/Customer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -55,18 +65,40 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2040">
-              <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+            <state vertical-scroll-proportion="-5.769231" vertical-offset="30" max-vertical-offset="2055">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customerDetailCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/controllers/customerDetailCtrl.js">
+      <file leaf-file-name="customerCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/controllers/customerCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.615385" vertical-offset="635" max-vertical-offset="1095">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="990">
+              <caret line="45" column="117" selection-start-line="45" selection-start-column="117" selection-end-line="45" selection-end-column="117" />
+              <folding>
+                <element signature="e#566#999#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tab-customers.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/tab-customers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="375">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customerSrv.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/services/customerSrv.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="117" max-vertical-offset="945">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -75,39 +107,12 @@
       <file leaf-file-name="GlobalSrv.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/js/services/GlobalSrv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="1740">
-              <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="1830">
+              <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
               <folding>
-                <marker date="1408374293000" expanded="true" signature="64:4965" placeholder="[...]" />
-                <marker date="1408374293000" expanded="true" signature="191:4964" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="268:691" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="429:608" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="627:679" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="744:1406" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="804:1396" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="876:1160" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="1198:1382" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="1460:2064" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="1627:1697" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="1703:2054" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="1847:2007" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2114:2344" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2252:2334" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2386:2895" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2427:2885" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2494:2869" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2703:2775" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2781:2851" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="2943:2995" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="3045:3154" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="3192:3334" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="3235:3324" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="3378:3473" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="3531:3853" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="3910:4747" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="4068:4690" placeholder="//..." />
-                <marker date="1408374293000" expanded="true" signature="4788:4956" placeholder="{...}" />
-                <marker date="1408374293000" expanded="true" signature="4864:4915" placeholder="{...}" />
+                <marker date="1408533867000" expanded="true" signature="64:5258" placeholder="[...]" />
+                <marker date="1408533867000" expanded="true" signature="191:5257" placeholder="{...}" />
+                <marker date="1408533867000" expanded="true" signature="5237:5249" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -119,18 +124,6 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1815">
               <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer-detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/customer-detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25" vertical-offset="375" max-vertical-offset="1020">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="tag#div#0;tag#div#0;tag#ion-content#0;tag#ion-view#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -155,38 +148,37 @@
         <option value="$PROJECT_DIR$/www/js/imports.html" />
         <option value="$PROJECT_DIR$/www/imports.html" />
         <option value="$PROJECT_DIR$/www/templates/tabs.html" />
-        <option value="$PROJECT_DIR$/www/js/models/Customer.js" />
         <option value="$PROJECT_DIR$/www/js/models/WorkItem.js" />
-        <option value="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/www/js/services/customerSrv.js" />
         <option value="$PROJECT_DIR$/www/js/directives/ngAutocomplete.js" />
         <option value="$PROJECT_DIR$/www/templates/tab-customers.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/customerCtrl.js" />
         <option value="$PROJECT_DIR$/www/templates/login.html" />
         <option value="$PROJECT_DIR$/www/js/services/userSrv.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/menuCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/directives/inputmatch.js" />
         <option value="$PROJECT_DIR$/www/templates/user-new.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/directives/numberInput.js" />
         <option value="$PROJECT_DIR$/www/templates/customer-new.html" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/templates/tab-dash.html" />
-        <option value="$PROJECT_DIR$/www/js/services/geoLocation.js" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/platforms/android/assets/www/js/services/WorkItemSrv.js" />
         <option value="$PROJECT_DIR$/www/templates/customer-detail.html" />
         <option value="$PROJECT_DIR$/www/js/services/WorkItemSrv.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/customerDetailCtrl.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
+        <option value="$PROJECT_DIR$/www/js/services/geoLocation.js" />
+        <option value="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
+        <option value="$PROJECT_DIR$/www/js/models/Customer.js" />
+        <option value="$PROJECT_DIR$/www/js/services/customerSrv.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/customerCtrl.js" />
         <option value="$PROJECT_DIR$/www/todo.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="792" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -265,6 +257,112 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -273,7 +371,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../recnaleerf_client" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -345,13 +443,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="792" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -441,14 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/models/Customer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13392857" vertical-offset="0" max-vertical-offset="1320">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1410">
@@ -487,14 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-customers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="375">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/directives/imports.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
@@ -503,28 +585,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/directives/ngAutocomplete.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0631741" vertical-offset="90" max-vertical-offset="2040">
-          <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
-          <folding>
-            <element signature="e#1627#3021#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/animate.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="636">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/models/MyUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24553572" vertical-offset="0" max-vertical-offset="672">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -636,14 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/geoLocation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="1710">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/user-new.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59158415" vertical-offset="421" max-vertical-offset="930">
@@ -651,14 +707,6 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.25179857" vertical-offset="780" max-vertical-offset="1275">
-          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,16 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/customerSrv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22023809" vertical-offset="2" max-vertical-offset="750">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#1375#1746#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/userSrv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="975">
@@ -738,39 +776,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/js/services/GlobalSrv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="1740">
-          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1290" max-vertical-offset="1830">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
           <folding>
-            <marker date="1408374293000" expanded="true" signature="64:4965" placeholder="[...]" />
-            <marker date="1408374293000" expanded="true" signature="191:4964" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="268:691" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="429:608" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="627:679" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="744:1406" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="804:1396" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="876:1160" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="1198:1382" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="1460:2064" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="1627:1697" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="1703:2054" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="1847:2007" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2114:2344" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2252:2334" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2386:2895" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2427:2885" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2494:2869" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2703:2775" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2781:2851" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="2943:2995" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="3045:3154" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="3192:3334" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="3235:3324" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="3378:3473" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="3531:3853" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="3910:4747" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="4068:4690" placeholder="//..." />
-            <marker date="1408374293000" expanded="true" signature="4788:4956" placeholder="{...}" />
-            <marker date="1408374293000" expanded="true" signature="4864:4915" placeholder="{...}" />
+            <marker date="1408533867000" expanded="true" signature="64:5258" placeholder="[...]" />
+            <marker date="1408533867000" expanded="true" signature="191:5257" placeholder="{...}" />
+            <marker date="1408533867000" expanded="true" signature="5237:5249" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -783,38 +794,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2040">
-          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31542057" vertical-offset="1245" max-vertical-offset="1740">
-          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/customerCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3504673" vertical-offset="180" max-vertical-offset="1065">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="e#566#999#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/customer-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25" vertical-offset="375" max-vertical-offset="1020">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#ion-content#0;tag#ion-view#0" expanded="false" />
+            <marker date="1408483788000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1408483788000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1408483788000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -835,18 +823,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/models/MyUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/directives/ngAutocomplete.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+          <folding>
+            <element signature="e#1627#3021#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services/geoLocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/customerDetailCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.615385" vertical-offset="635" max-vertical-offset="1095">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        <state vertical-scroll-proportion="-5.1923075" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.769231" vertical-offset="30" max-vertical-offset="2055">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tab-customers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="375">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.423077" vertical-offset="135" max-vertical-offset="1830">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/models/Customer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services/customerSrv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="117" max-vertical-offset="945">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/customerCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="990">
+          <caret line="45" column="117" selection-start-line="45" selection-start-column="117" selection-end-line="45" selection-end-column="117" />
+          <folding>
+            <element signature="e#566#999#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20408164" vertical-offset="0" max-vertical-offset="450">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.15404364" vertical-offset="0" max-vertical-offset="779">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
           <folding />
         </state>
       </provider>

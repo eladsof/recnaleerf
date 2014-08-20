@@ -5,9 +5,10 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule'])
+angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat'])
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
+
 
         Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
         $rootScope.currentUser = MyUser.current();
@@ -53,6 +54,11 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                 templateUrl: 'templates/login.html',
                 controller: 'menuCtrl'
             })
+            .state('signup', {
+                url: '/signup',
+                templateUrl: 'templates/user-new.html',
+                controller: 'menuCtrl'
+            })
             // setup an abstract state for the tabs directive
             .state('tab', {
                 url: "/tab",
@@ -81,15 +87,6 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                     }
                 }
             })
-            .state('tab.customers-report.monthly', {
-                url: '/customer/report/monthly/:custoemrid/:year/:month',
-                views: {
-                    'tab-customers': {
-                        templateUrl: 'templates/tab-customers.html',
-                        controller: 'customerCtrl'
-                    }
-                }
-            })
             .state('tab.customer-detail', {
                 url: '/customer/:customerid',
                 views: {
@@ -104,6 +101,15 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                 views: {
                     'tab-customers': {
                         templateUrl: 'templates/customer-new.html',
+                        controller: 'customerCtrl'
+                    }
+                }
+            })
+            .state('tab.customers-report.monthly', {
+                url: '/customer/report/monthly/:custoemrid/:year/:month',
+                views: {
+                    'tab-customers': {
+                        templateUrl: 'templates/tab-customers.html',
                         controller: 'customerCtrl'
                     }
                 }

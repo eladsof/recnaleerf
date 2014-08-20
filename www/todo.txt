@@ -5,13 +5,15 @@ Add user
 Data validation for user creattion
 Data validation for customer
 Add "offline" workitem
+Check work place detection
+Delete customer. (Mark as deleted - do not remove from DB)
+
 ===========================================================
 ========================= DONE ============================
 ===========================================================
 
 Add Reports
 Delete work item. (Mark as deleted - do not remove from DB)
-Delete customer. (Mark as deleted - do not remove from DB)
 Edit customer
 Add user email validation
 Secure data and API keys
@@ -23,3 +25,4 @@ Add to user account type (Free, paid)
 Add teams
 check out ngMessage
 decouple geo location api from app
+Check moment.js

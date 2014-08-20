@@ -14,7 +14,9 @@ angular.module('geoLocationModule',[])
         };
 
         this.isCloseToCustomer = function(myLocation,customerLocation){
-            if(this.distanceFromCustomer(myLocation, customerLocation) < 100)
+            var distancee = this.distanceFromCustomer(myLocation, customerLocation)
+            console.log(distancee);
+            if(distancee < 100)
                 return true;
             else
                 return false;
@@ -39,10 +41,13 @@ angular.module('geoLocationModule',[])
             deferred = $q.defer();
             if ($window.navigator && $window.navigator.geolocation) {
                 $window.navigator.geolocation.getCurrentPosition(function(position) {
+                        console.log('got location ');
                     return deferred.resolve(position.coords);
                 }, function(error) {
+                        console.log('no location '+error);
                     return deferred.reject("Unable to get your location");
-                });
+                },
+                { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
             } else {
                 deferred.reject("Your browser cannot access to your position");
             }

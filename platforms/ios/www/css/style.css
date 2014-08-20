@@ -3,3 +3,40 @@
     background-color: #76A5DF;
 }
 
+
+
+.error{
+    color: #F00;
+    background: #F5F5F5;
+    text-align: center;
+    -webkit-animation: bounceIn 1s;
+    -moz-animation: bounceIn 1s;
+    -ms-animation: bounceIn 1s;
+    animation: bounceIn 1s;
+    display:block!important;
+}
+.error.ng-hide {
+    -webkit-animation: bounceOut 1s;
+    -moz-animation: bounceOut 1s;
+    -ms-animation: bounceOut 1s;
+    animation: bounceOut 1s;
+    display:none!important;
+}
+
+.reportItemBox {
+    margin-top: 0;
+    position:absolute;
+    width: 100%;
+    //top:0;
+    //left:0;
+    //right:0;
+    //bottom:0;
+}
+.reportItemBox.ng-hide {
+    -webkit-animation: zoomOutUp 1s;
+    -moz-animation: zoomOutUp 1s;
+    -ms-animation: zoomOutUp 1s;
+    animation: zoomOutUp 1s;
+}
+
+

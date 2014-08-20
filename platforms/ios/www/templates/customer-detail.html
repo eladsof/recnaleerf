@@ -25,25 +25,42 @@
 
             <div class="item item-body">
                 <a  href="#/tab/customer/report/monthly/{{customer.id}}/{{year}}/{{month}}">
-                    Current month work time: {{monthlyWorkHours }}
+                    Current month work time: {{monthlyWorkHours}}
                 </a>
             </div>
+        </div>
 
-            <div class="item tabs tabs-secondary tabs-icon-left">
-                <a class="tab-item" href="#/tab/customer/edit/{{customer.id}}">
-                    <i class="icon ion-thumbsup"></i>
-                    Edit
-                </a>
-                <a class="tab-item" href="#/tab/customer/report/{{customer.id}}">
-                    <i class="icon ion-chatbox"></i>
-                    Reports
-                </a>
-                <a class="tab-item" href="#/tab/customer/export/{{customer.id}}">
-                    <i class="icon ion-share"></i>
-                    Export
-                </a>
+        <div>
+            <div class="card padding reportItemBox" ng-show="newWorkitem == null">
+                <button class="button button-block button-dark" ng-click="prepareNewWorkItem()">Report work item</button>
             </div>
+        </div>
 
+        <div class="card padding zoomInUp animated" ng-show="newWorkitem" >
+            <h2>Report work item for {{customer.name}}</h2>
+            <form>
+                <label class="item item-input ">
+                    <span class="input-label">Start:</span>
+                    <input type="datetime-local"  ng-model="newWorkitem.start">
+                </label>
+
+                <label class="item item-input ">
+                    <span class="input-label">Finish:</span>
+                    <input type="datetime-local"  ng-model="newWorkitem.finish">
+                </label>
+
+                <label class="item item-input ">
+                    <span class="input-label">Rate:</span>
+                    <input type="text"             ng-model="newWorkitem.rate">
+                </label>
+
+                <label class="item item-input ">
+                    <span class="input-label">Comment:</span>
+                    <input type="text"           ng-model="newWorkitem.comment"><br/>
+                </label>
+
+                <button class="button button-block button-dark" ng-click="createWorkItem(newWorkitem)">Create this work item</button>
+            </form>
         </div>
     </ion-content>
 </ion-view>

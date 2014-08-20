@@ -9,6 +9,7 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
+
         Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
         $rootScope.currentUser = MyUser.current();
         GlobalSrv.initialize();

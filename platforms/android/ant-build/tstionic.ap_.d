@@ -41,6 +41,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/README.md \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/todo.txt \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/css/animate.min.css \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/css/style.css \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/img/ionic.png \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/app.js \
@@ -56,7 +57,9 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/menuCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/workItemsCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/imports.html \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/inputmatch.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/ngAutocomplete.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/numberInput.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models/Customer.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models/imports.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models/MyUser.js \
@@ -81,6 +84,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/fonts/ionicons.woff \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular-ui \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13 \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/ionic-angular.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/ionic-angular.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/ionic.bundle.js \
@@ -97,6 +101,10 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular/angular.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular-animate.min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular-route.min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular-sanitize.min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/scss/_action-sheet.scss \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/scss/_animations.scss \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/scss/_backdrop.scss \
@@ -149,4 +157,5 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-customers.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-dash.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tabs.html \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/user-new.html \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/AndroidManifest.xml \

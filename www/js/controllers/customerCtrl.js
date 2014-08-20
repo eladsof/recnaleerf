@@ -25,17 +25,10 @@ angular.module('recnaleerfClientApp')
             }
         });
 
-        $scope.dist = 'not calced';
         $scope.editedCustomer;
 
         var refreshCustomers  = function() {
-            Customer.listByUser($scope.currentUser).then(function(aCustomers) {
-                $scope.customers = aCustomers;
-                console.log($scope.customers);
-            }, function(aError) {
-                console.log(aError);
-            });
-            $scope.customer = {};
+            $scope.loadCustomerList();
         };
 
         $scope.CreateCustomer = function () {
@@ -45,15 +38,14 @@ angular.module('recnaleerfClientApp')
 
         $scope.createNew = function(customer) {
             var ret =  customerSrv.createNew(customer);
-            refreshCustomers();
             return ret;
         };
 
         $scope.deleteCustomer = function(customer) {
-//            var ret =  customerSrv.deleteCustomer(customer);
-//            refreshCustomers();
-//            return ret;
-            alert('I will never delete '+customer.name);
+
+            var ret = confirm(' Are you sure you want to delete '+customer.name+' \r\n This action is irriversible');
+            if(ret)
+                customerSrv.delete(customer);
         }
 
         $scope.calc = function(){
@@ -62,11 +54,14 @@ angular.module('recnaleerfClientApp')
 
         $scope.onSwipeLeft = function (customer) {
             customer.shouldShowDelete = true;
-            console.log('swipt');
         };
         $scope.onSwipeRight = function (customer) {
             customer.shouldShowDelete = false;
         };
+
+        $scope.getCustomers =function(){
+            return $rootScope.customers;
+        }
 
         refreshCustomers();
 

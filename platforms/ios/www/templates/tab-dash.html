@@ -27,7 +27,9 @@
 
             <div class="item item-select padding">
                 <a ng-disabled="selectedCustomer == null" class="button icon-right  button-calm" ng-click="startNewWorkItem(selectedCustomer)">Start work item</a>
-                <select data-ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="float:right;font-size: 28px;  "></select>
+                <select ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="float:right;font-size: 28px;  ">
+                    <option value="">Select to start</option>
+                </select>
             </div>
 
         </div>

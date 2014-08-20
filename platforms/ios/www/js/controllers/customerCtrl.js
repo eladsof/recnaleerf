@@ -50,6 +50,9 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.deleteCustomer = function(customer) {
+//            var ret =  customerSrv.deleteCustomer(customer);
+//            refreshCustomers();
+//            return ret;
             alert('I will never delete '+customer.name);
         }
 

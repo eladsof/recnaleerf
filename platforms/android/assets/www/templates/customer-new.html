@@ -1,19 +1,33 @@
-<ion-view title="New customer - {{editedCustomer.name}}">
+<ion-view title="Create a new customer">
     <ion-content has-header="true" padding="true">
-        <form>
+        <form name="custoemr_details_form" novalidate>
             <div class="list list-inset">
                 <label class="item item-input">
-                    <input type="text" placeholder="Customer name" ng-model="editedCustomer.name" autocapitalize="off" autocorrect="off" />
+                    <input type="text" placeholder="Customer name" name="name" ng-model="editedCustomer.name" autocapitalize="off" autocorrect="off" required="" />
                 </label>
+                <div  class="error" ng-show="custoemr_details_form.name.$dirty && custoemr_details_form.name.$invalid">
+                    <small class="error" ng-show="custoemr_details_form.name.$error.required">Customer name is required.</small>
+                </div>
+
                 <label class="item item-input">
-                    <input placeholder="address" type="text" ng-model="tempres" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" />
+                    <input placeholder="Home \ Office address" type="text" name="address" ng-model="tempres" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required />
                 </label>
+                <div  class="error" ng-show="custoemr_details_form.address.$dirty && !editedCustomer.address">
+                    <small class="error" ng-show="custoemr_details_form.address.$error.required">Address is required.</small>
+                    <small class="error" ng-show="!editedCustomer.address">Address should be selected - not manually typed</small>
+                </div>
+
                 <label class="item item-input">
-                    <input type="text" placeholder="Default hourly rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" />
+                    <input type="text" positive-float placeholder="Default hourly rate" name="rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" required/>
                 </label>
+                <div  class="error" ng-show="custoemr_details_form.rate.$dirty && custoemr_details_form.rate.$invalid">
+                    <small class="error" ng-show="custoemr_details_form.rate.$error.float">Default rate should be a number bigger than 0</small>
+                </div>
+                {{custoemr_details_form.rate.$error}}
             </div>
 
-            <button type="button" class="button button-block button-dark" ng-click="createNew(editedCustomer)">Create this customer</button>
+
+            <button type="button" ng-disabled="custoemr_details_form.$invalid" class="button button-block button-dark" ng-click="createNew(editedCustomer)">Create this customer</button>
         </form>
     </ion-content>
 </ion-view>

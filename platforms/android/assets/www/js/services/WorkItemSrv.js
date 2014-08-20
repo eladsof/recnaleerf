@@ -8,7 +8,9 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-    .service('WorkItemSrv', ['$rootScope', '$location', 'WorkItem' ,function ($scope,$location,WorkItem) {
+    .service('WorkItemSrv', ['$rootScope', '$location', 'WorkItem', '$q' ,function ($scope,$location,WorkItem,$q) {
+
+
 
         this.createNew = function (aItem){
 
@@ -48,6 +50,7 @@ angular.module('recnaleerfClientApp')
         };
 
         this.update = function (aItem) {
+            console.log('updated')
             this.create(aItem);
         };
 

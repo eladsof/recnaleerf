@@ -8,7 +8,7 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-    .service('CustomerSrv', ['$rootScope', '$location', 'Customer','$state',function ($scope,$location,Customer,$state) {
+    .service('CustomerSrv', ['$rootScope', '$location', 'Customer','$state',function ($rootScope,$location,Customer,$state) {
 
         console.log('init customerSrv');
 
@@ -16,14 +16,17 @@ angular.module('recnaleerfClientApp')
             var newCustomer = new Customer();
             newCustomer.name = aCustomer.name;
             newCustomer.ratePerHour = aCustomer.ratePerHour;
-            newCustomer.owner = $scope.currentUser;
+            newCustomer.owner = $rootScope.currentUser;
             newCustomer.address = aCustomer.address;
+            newCustomer.deleted = false;
 
             newCustomer.save(null, {
                 success: function(customer) {
                     // Execute any logic that should take place after the object is saved.
                     alert('Customer '+customer.name+' created succesfully');
+                    $rootScope.loadCustomerList();
                     $state.go('tab.customers');
+
 
                 },
                 error: function(customer, error) {
@@ -34,10 +37,11 @@ angular.module('recnaleerfClientApp')
             });
         };
 
-        this.remove = function (customer) {
-            customer.destroy({
+        this.delete = function (customer) {
+            customer.deleted = true;
+            customer.save(null,{
                 success: function(customer) {
-                    // The object was deleted from the Parse Cloud.
+                    $rootScope.loadCustomerList();
                 },
                 error: function(customer, error) {
                     // The delete failed.

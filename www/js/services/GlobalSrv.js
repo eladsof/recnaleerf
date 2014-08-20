@@ -2,8 +2,9 @@ angular.module('recnaleerfClientApp')
     .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','$interval','WorkItem' ,function ($rootScope,Geolocation,Customer,$interval,WorkItem) {
 
         var stop = undefined;
+        var idleTimerInterval = 5;
 
-        var loadCustomerList = function () {
+        $rootScope.loadCustomerList = function () {
             console.log('Loading new custoemr list');
             $rootScope.customers = Customer.listByUser($rootScope.currentUser).then(function(aCustomers) {
                 $rootScope.customers = aCustomers;
@@ -13,11 +14,14 @@ angular.module('recnaleerfClientApp')
             });
         };
         var checkForCustomerProximity = function() {
+
             for(var i=0;i<$rootScope.customers.length;i++){
                 if(new Date() >= $rootScope.customers[i].ignoreUntil) {
                     if($rootScope.customers[i].address)
                         if(Geolocation.isCloseToCustomer($rootScope.currentLocation,$rootScope.customers[i].address.geometry.location))
                             arrivingAtCustomer($rootScope.customers[i]);
+                        else
+                            console.log('not close enough to : ' + $rootScope.customers[i].name);
                 }
                 else
                 {
@@ -46,7 +50,9 @@ angular.module('recnaleerfClientApp')
             }
         };
         var periodicUpdate = function() {
+            console.log('periodicUpdate...')
             if($rootScope.currentUser) {
+                console.log('periodicUpdate - yes...')
                 Geolocation.getLocation().then(function (coords) {
                     console.log('checking...')
                     $rootScope.currentLocation = new google.maps.LatLng(coords.latitude, coords.longitude);
@@ -84,7 +90,7 @@ angular.module('recnaleerfClientApp')
             //$rootScope.currentWorkItem.save();
         };
         $rootScope.finishCurrentWorkItem = function () {
-            updateTimer(30);
+            updateTimer(idleTimerInterval);
             $rootScope.currentWorkItem.end = new Date();
             $rootScope.currentWorkItem.isComplete = true;
             //    $rootScope.currentWorkItem.save(null, {
@@ -103,9 +109,9 @@ angular.module('recnaleerfClientApp')
 
         this.initialize = function () {
             $rootScope.$watch('currentUser', function(newValue, oldValue) {
-                loadCustomerList();
+                $rootScope.loadCustomerList();
             });
-            updateTimer(30);
+            updateTimer(idleTimerInterval);
         };
 
     }]);
