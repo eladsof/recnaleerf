@@ -4,31 +4,47 @@ angular.module('recnaleerfClientApp').
         var WorkItem = Parse.Object.extend("WorkItem",
             {
                 elapsedTime : function() {
-                    return this.finish-this.start;
-                },
+                    console.log(new Date(this.finish-this.start));
+                    return new Date(this.finish-this.start);
 
-                formattedElapsedTime : function() {
-                    var elapsed = new Date(this.finish-this.start);
+                },
+                formattedElapsedTime : function(includeSeconds) {
+                    var elapsed = this.elapsedTime();
+                    var result = "";
 
                     var hours = elapsed.getUTCHours();
                     if(isNaN(hours))
                         hours = '00';
                     else if(hours < 10)
                         hours =  '0' + hours;
+                    result+=hours;
 
                     var mins = elapsed.getUTCMinutes();
                     if(isNaN(mins))
                         mins = '00';
                     if(mins < 10)
                         mins =  '0' + mins;
+                    result+=':'+mins;
 
-                    var secs = elapsed.getUTCSeconds();
-                    if(isNaN(secs))
-                        secs = '00'
-                    else if(secs < 10)
-                        secs =  '0' + secs;
-
-                    return hours + ':' + mins + ':' + secs;
+                    if(includeSeconds) {
+                        var secs = elapsed.getUTCSeconds();
+                        if(isNaN(secs))
+                            secs = '00'
+                        else if(secs < 10)
+                            secs =  '0' + secs;
+                        result+=':'+secs;
+                    }
+                    return result;
+                },
+                totalCharge : function(){
+                    var time = new Date(this.elapsedTime());
+                    var amount = time.getUTCHours()*this.rate;
+                    var partOfHour = Math.ceil(time.getUTCMinutes() / 15) / 4;
+                    amount += partOfHour * this.rate;
+                    return amount;
+                },
+                roundedTotalCharge: function () {
+                    return Math.floor(this.totalCharge());
                 }
             }
             ,
@@ -42,6 +58,82 @@ angular.module('recnaleerfClientApp').
                     query.find({
                         success : function(aWorkItems) {
                             defer.resolve(aWorkItems);
+                        },
+                        error : function(aError) {
+                            defer.reject(aError);
+                        }
+                    });
+
+                    return defer.promise;
+                },
+                getFirstItemDate : function(aUser,aCustomer) {
+                    var defer = $q.defer();
+
+                    var query = new Parse.Query(this);
+                    query.equalTo("owner", aUser);
+                    query.equalTo("customer", aCustomer);
+                    query.ascending('finish');
+                    query.first({
+                        success : function(aDate) {
+                            defer.resolve(aDate.finish);
+                        },
+                        error : function(aError) {
+                            defer.reject(aError);
+                        }
+                    });
+
+                    return defer.promise;
+                },
+                getLastItemDate : function(aUser,aCustomer) {
+                    var defer = $q.defer();
+
+                    var query = new Parse.Query(this);
+                    query.equalTo("owner", aUser);
+                    query.equalTo("customer", aCustomer);
+                    query.descending('finish');
+                    query.first({
+                        success : function(aDate) {
+                            console.log('getLastItemDate '+aDate);
+                            defer.resolve(aDate.finish);
+                        },
+                        error : function(aError) {
+                            defer.reject(aError);
+                        }
+                    });
+
+                    return defer.promise;
+                },
+                getAllItemDates : function(aUser,aCustomer) {
+                    var defer = $q.defer();
+                    var query = new Parse.Query(this);
+                    query.equalTo("owner", aUser);
+                    query.equalTo("customer", aCustomer);
+                    query.select('finish');
+                    query.ascending('finish');
+                    query.limit(1000);
+                    query.find({
+                        success : function(aItemDates) {
+                            defer.resolve(aItemDates);
+                        },
+                        error : function(aError) {
+                            defer.reject(aError);
+                        }
+                    });
+
+                    return defer.promise;
+                },
+                getByDateAndCustomer: function(aCustomer,aStart,aFinish) {
+                    var defer = $q.defer();
+                    var query = new Parse.Query(this);
+                    query.equalTo("customer", aCustomer);
+                    //query.greaterThanOrEqualTo('start',aStart);
+                    //query.lessThanOrEqualTo('finish',aFinish);
+                    //query.ascending('finish');
+                    //query.limit(1000);
+
+                    query.find({
+                        success : function(aItems) {
+                            defer.resolve(aItems);
                         },
                         error : function(aError) {
                             defer.reject(aError);

@@ -1,0 +1,40 @@
+<ion-view title="Reports by date">
+    <ion-content class="has-header padding">
+
+        <div class="list card">
+            <div class="item item-divider">
+                <h3>Work report for {{customer.name}} from {{firstItemDate | date:'shortDate' }} to {{lastItemDate| date:'shortDate'}} </h3>
+            </div>
+        </div>
+
+        <div class="row table-head">
+            <div class="col">Date</div>
+            <div class="col">Start</div>
+            <div class="col">End</div>
+            <div class="col">Total time</div>
+            <div class="col">Rate per hour</div>
+            <div class="col">total</div>
+        </div>
+
+        <div class="row table-head" ng-repeat="item in workItems">
+            <div class="col">{{item.start | date:'shortDate'}}</div>
+            <div class="col">{{item.start | date:'shortTime'}}</div>
+            <div class="col">{{item.finish| date:'shortTime'}}</div>
+            <div class="col">{{item.formattedElapsedTime() }}</div>
+            <div class="col">{{item.rate }}</div>
+            <div class="col">{{item.totalCharge() | number:1}}</div>
+        </div>
+
+        <div class="row table-footer">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">Total</div>
+            <div class="col">{{totalItemsSum | number:2}}</div>
+        </div>
+
+
+
+    </ion-content>
+</ion-view>
