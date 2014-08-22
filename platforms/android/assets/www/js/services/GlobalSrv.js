@@ -4,7 +4,7 @@ angular.module('recnaleerfClientApp')
         var stop = undefined;
         var idleTimerInterval = 5;
 
-        var loadCustomerList = function () {
+        $rootScope.loadCustomerList = function () {
             console.log('Loading new custoemr list');
             $rootScope.customers = Customer.listByUser($rootScope.currentUser).then(function(aCustomers) {
                 $rootScope.customers = aCustomers;
@@ -109,7 +109,7 @@ angular.module('recnaleerfClientApp')
 
         this.initialize = function () {
             $rootScope.$watch('currentUser', function(newValue, oldValue) {
-                loadCustomerList();
+                $rootScope.loadCustomerList();
             });
             updateTimer(idleTimerInterval);
         };

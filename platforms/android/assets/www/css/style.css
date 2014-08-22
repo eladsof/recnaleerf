@@ -39,4 +39,27 @@
     animation: zoomOutUp 1s;
 }
 
+.table-head {
+    background: #A5F0A5;
+    border: 1px solid;
+    margin:0px;
+}
+
+.table-content {
+    background: #C6E9CA;
+    border: 1px solid;
+    margin:0px;
+}
+
+.table-footer {
+    padding: 0px;
+}
+
+.table-footer-cell {
+    background: #050;
+    color: #FFF;
+    border: 2px solid #FFF;
+    margin:0px;
+}
+
 

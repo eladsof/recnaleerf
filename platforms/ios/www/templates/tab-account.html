@@ -1,5 +1,16 @@
 <ion-view title="Account">
   <ion-content class="has-header padding">
     <h1>Account</h1>
+      <div class="list card">
+
+          <div class="item">
+              <h2>Currently logged in as : {{currentUser.username}}</h2>
+          </div>
+
+          <div class="item item-body">
+              <button class="button button-block button-dark" ng-click="logout()">Log out</button>
+          </div>
+      </div>
+
   </ion-content>
 </ion-view>

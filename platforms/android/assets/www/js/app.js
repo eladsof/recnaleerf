@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat'])
+app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat'])
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
@@ -105,12 +105,21 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                     }
                 }
             })
-            .state('tab.customers-report.monthly', {
-                url: '/customer/report/monthly/:custoemrid/:year/:month',
+            .state('tab.reports', {
+                url: '/reports',
                 views: {
-                    'tab-customers': {
-                        templateUrl: 'templates/tab-customers.html',
-                        controller: 'customerCtrl'
+                    'tab-reports': {
+                        templateUrl: 'templates/tab-reports.html',
+                        controller: 'reportParamsCtrl'
+                    }
+                }
+            })
+            .state('tab.reports-bydate', {
+                url: '/reports/bydate/:customerid/:start/:finish',
+                views: {
+                    'tab-reports': {
+                        templateUrl: 'templates/reports-bydate.html',
+                        controller: 'reportByDateCtrl'
                     }
                 }
             })
@@ -119,7 +128,7 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
                 views: {
                     'tab-account': {
                         templateUrl: 'templates/tab-account.html',
-                        controller: ''
+                        controller: 'AccountCtrl'
                     }
                 }
             });
@@ -129,3 +138,12 @@ angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModu
 
     });
 
+app.filter('range', function() {
+    return function(input, min, max) {
+        min = parseInt(min);
+        max = parseInt(max);
+        for (var i=min; i<=max; i++)
+            input.push(i);
+        return input;
+    };
+});

@@ -51,10 +51,13 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/AccountCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/customerCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/customerDetailCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/imports.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/menuCtrl.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/reportByDateCtrl.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/reportParamsCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/workItemsCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/imports.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/inputmatch.js \
@@ -71,6 +74,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/userSrv.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services/WorkItemSrv.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/underscore-min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/css \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/fonts \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js \
@@ -153,9 +157,11 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/customer-detail.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/customer-new.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/login.html \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/reports-bydate.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-account.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-customers.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-dash.html \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tab-reports.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/tabs.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/user-new.html \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/AndroidManifest.xml \
