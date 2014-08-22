@@ -1,0 +1,62 @@
+<script>
+    $scope.years =  Array.apply(null, { length: 5 }); // create an array of 5 `undefined` values
+    $scope.years.map(Number.call, Number+2000);
+</script>
+
+<ion-view title="Reports">
+    <ion-content class="has-header padding">
+
+        <div class="list card">
+            <div class="item item-select padding">
+                <label>select customer:</label>
+                <select ng-model="bbb" data-ng-options="item.name for item in customers" ng-change="customerSelected(bbb)" style="float:right;">
+
+                </select>
+            </div>
+            <div class="item item-select padding">
+                <label>Select report data:</label>
+                <select ng-model="reportType" style="float:right; ">
+                    <option value=""></option>
+                    <option value="">Work report</option>
+                    <option value="">Earnings report</option>
+                </select>
+            </div>
+            <div class="item item-select padding">
+                <label>Select report type:</label>
+                <select ng-model="reportType" style="float:right; ">
+                    <option value=""></option>
+                    <option value="monthly">Monthly report</option>
+                    <option value="dateRange">Date range report</option>
+                </select>
+            </div>
+            <div id="Monthly report input" ng-show="reportType == 'monthly'">
+                <div class="item item-select padding">
+                    <label>Select year:</label>
+                    <select ng-model="year" ng-options="y for y in []| range:2000:2015" style="float:right; "></select>
+                </div>
+                <div class="item item-select padding">
+                    <label>Select month:</label>
+                    <select ng-model="month" ng-options="m for m in []| range:1:12" style="float:right; "></select>
+                </div>
+            </div>
+            <div id="Range report input" ng-show="reportType == 'dateRange'">
+                <label class="item item-input ">
+                    <span class="input-label">From:</span>
+                    <input type="date"  ng-model="firstItemDate" style="float:right; ">
+                </label>
+
+                <label class="item item-input ">
+                    <span class="input-label">Until:</span>
+                    <input type="date"  ng-model="lastItemDate" style="float:right; ">
+                </label>
+            </div>
+        </div>
+
+        <button class="button button-block button-dark" ng-click="prepareAndShowReport()">Generate report</button>
+
+
+
+        </div>
+
+    </ion-content>
+</ion-view>

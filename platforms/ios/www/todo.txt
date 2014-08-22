@@ -5,13 +5,16 @@ Add user
 Data validation for user creattion
 Data validation for customer
 Add "offline" workitem
+Check work place detection
+Delete customer. (Mark as deleted - do not remove from DB)
+Add Reports
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Check work place detection
-Add Reports
+Check what's up with tha back button on reports.
+Fix report form + validations
+Add css to reports
 Delete work item. (Mark as deleted - do not remove from DB)
-Delete customer. (Mark as deleted - do not remove from DB)
 Edit customer
 Add user email validation
 Secure data and API keys
@@ -24,3 +27,5 @@ Add teams
 check out ngMessage
 decouple geo location api from app
 Check moment.js
+Consider replacing date pickers with - http://angular-ui.github.io/bootstrap/ (look for date in page)
+Check out cool http://underscorejs.org/# lib for grouping

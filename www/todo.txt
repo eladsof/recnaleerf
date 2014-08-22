@@ -12,6 +12,7 @@ Add Reports
 ========================= DONE ============================
 ===========================================================
 Check what's up with tha back button on reports.
+Fix report form + validations
 Add css to reports
 Delete work item. (Mark as deleted - do not remove from DB)
 Edit customer
