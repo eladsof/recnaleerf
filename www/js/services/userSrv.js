@@ -42,9 +42,11 @@ angular.module('recnaleerfClientApp')
         deferred = $q.defer();
 
         var newUser = new MyUser();
-        newUser.set('username',usr.username);
-        newUser.set('password',usr.password);
-        newUser.set('email',usr.email);
+        newUser.username = usr.username;
+        newUser.password = usr.password;
+        newUser.email = usr.email;
+        newUser.fullname = usr.fullname;
+        newUser.address = usr.address;
 
         newUser.signUp(null, {
             success: function(newUser) { return deferred.resolve(newUser); },

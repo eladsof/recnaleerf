@@ -128,7 +128,7 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
                 views: {
                     'tab-account': {
                         templateUrl: 'templates/tab-account.html',
-                        controller: ''
+                        controller: 'AccountCtrl'
                     }
                 }
             });
