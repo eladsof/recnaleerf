@@ -1,17 +1,22 @@
 angular.module('recnaleerfClientApp')
-    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','$interval','WorkItem' ,function ($rootScope,Geolocation,Customer,$interval,WorkItem) {
+    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','$interval','WorkItem','$ionicLoading' ,function ($rootScope,Geolocation,Customer,$interval,WorkItem,$ionicLoading) {
 
         var stop = undefined;
         var idleTimerInterval = 5;
 
         $rootScope.loadCustomerList = function () {
-            console.log('Loading new custoemr list');
-            $rootScope.customers = Customer.listByUser($rootScope.currentUser).then(function(aCustomers) {
-                $rootScope.customers = aCustomers;
-                for(var i=0;i<$rootScope.customers.length;i++) $rootScope.customers[i].ignoreUntil = new Date();
-            }, function(aError) {
-                console.log(aError);
-            });
+            if($rootScope.currentUser){
+                $ionicLoading.show();
+                console.log('Loading new custoemr list');
+                $rootScope.customers = Customer.listByUser($rootScope.currentUser).then(function(aCustomers) {
+                    $rootScope.customers = aCustomers;
+                    for(var i=0;i<$rootScope.customers.length;i++)
+                        $rootScope.customers[i].ignoreUntil = new Date();
+                    $ionicLoading.hide();
+                }, function(aError) {
+                    console.log(aError);
+                });
+            }
         };
         var checkForCustomerProximity = function() {
 

@@ -17,7 +17,7 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
         // register listener to watch route changes
         $rootScope.$on('$stateChangeStart',
             function(event, toState, toParams, fromState, fromParams){
-                if (toState.name != 'login') {
+                if (toState.name != 'login' && toState.name != 'signup') {
                     if ( $rootScope.currentUser == null ) {
                         event.preventDefault();
                         $state.go('login');

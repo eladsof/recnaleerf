@@ -35,19 +35,25 @@ angular.module('recnaleerfClientApp')
 
 
         var refreshCustomers  = function() {
+            $ionicLoading.show();
             Customer.listByUser($scope.currentUser).then(function(aCustomers) {
                 $scope.customers = aCustomers;
+                $ionicLoading.hide();
             }, function(aError) {
                 console.log(aError);
+                $ionicLoading.hide();
             });
         };
 
         var refreshWorkItems = function(){
+            $ionicLoading.show();
             console.log('trying to list all work items for '+ $scope.currentCustomer);
             WorkItem.listByCustomer($scope.currentUser,$scope.currentCustomer).then(function(aworkItems) {
                 $scope.workItems = aworkItems;
+                $ionicLoading.hide();
             }, function(aError) {
                 console.log(aError);
+                $ionicLoading.hide();
             });
 
             $scope.newWorkitem = new WorkItem();

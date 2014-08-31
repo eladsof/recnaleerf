@@ -1,40 +1,41 @@
 <ion-view title="Reports by date">
     <ion-content class="has-header padding">
+        <!-- <ion-scroll> -->
 
-        <div class="list card">
-            <div class="item item-divider">
-                <h3>Work report for {{customer.name}} from {{firstItemDate | date:'shortDate' }} to {{lastItemDate| date:'shortDate'}} </h3>
+            <div class="list card">
+                <div class="item item-divider">
+                    <h3>Work report for {{customer.name}} from {{firstItemDate | date:'shortDate' }} to {{lastItemDate| date:'shortDate'}} </h3>
+                </div>
             </div>
-        </div>
 
-        <div class="row table-head">
-            <div class="col">Date</div>
-            <div class="col">Start</div>
-            <div class="col">End</div>
-            <div class="col">Total time</div>
-            <div class="col">Rate per hour</div>
-            <div class="col">total</div>
-        </div>
+            <div class="row table-head">
+                <div class="col">Date</div>
+                <div class="col">Start</div>
+                <div class="col">End</div>
+                <div class="col">Total time</div>
+                <div class="col">Rate per hour</div>
+                <div class="col">total</div>
+            </div>
 
-        <div class="row table-content" ng-repeat="item in workItems">
-            <div class="col">{{item.start | date:'shortDate'}}</div>
-            <div class="col">{{item.start | date:'shortTime'}}</div>
-            <div class="col">{{item.finish| date:'shortTime'}}</div>
-            <div class="col">{{item.formattedElapsedTime() }}</div>
-            <div class="col">{{item.rate }}</div>
-            <div class="col">{{item.totalCharge() | number:1}}</div>
-        </div>
+            <div class="row table-content" ng-repeat="item in workItems">
+                <div class="col">{{item.start | date:'shortDate'}}</div>
+                <div class="col">{{item.start | date:'shortTime'}}</div>
+                <div class="col">{{item.finish| date:'shortTime'}}</div>
+                <div class="col">{{item.formattedElapsedTime() }}</div>
+                <div class="col">{{item.rate }}</div>
+                <div class="col">{{item.totalCharge() | number:1}}</div>
+            </div>
 
-        <div class="row table-footer" style="margin: 0px;">
-            <div class="col"> </div>
-            <div class="col"> </div>
-            <div class="col"> </div>
-            <div class="col"> </div>
-            <div class="col table-footer-cell" style="border-right: 0px;">Total</div>
-            <div class="col table-footer-cell" style="border-left: 0px;">{{totalItemsSum | number:2}}</div>
-        </div>
-
+            <div class="row table-footer" style="margin: 0px;">
+                <div class="col"> </div>
+                <div class="col"> </div>
+                <div class="col"> </div>
+                <div class="col"> </div>
+                <div class="col table-footer-cell" style="border-right: 0px;">Total</div>
+                <div class="col table-footer-cell" style="border-left: 0px;">{{totalItemsSum | number:2}}</div>
+            </div>
 
 
+        <!-- </ion-scroll> -->
     </ion-content>
 </ion-view>
