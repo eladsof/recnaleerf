@@ -1,33 +1,32 @@
-<ion-view title="Create a new customer">
+<ion-view title="{{'CREATE_CUSTOMER_TITLE' | translate}}">
     <ion-content has-header="true" padding="true">
         <form name="custoemr_details_form" novalidate>
             <div class="list list-inset">
                 <label class="item item-input">
-                    <input type="text" placeholder="Customer name" name="name" ng-model="editedCustomer.name" autocapitalize="off" autocorrect="off" required="" />
+                    <input type="text" placeholder="{{'CUSTOMER_NAME' | translate}}" name="name" ng-model="editedCustomer.name" autocapitalize="off" autocorrect="off" required="" />
                 </label>
                 <div  class="error" ng-show="custoemr_details_form.name.$dirty && custoemr_details_form.name.$invalid">
-                    <small class="error" ng-show="custoemr_details_form.name.$error.required">Customer name is required.</small>
+                    <small class="error" ng-show="custoemr_details_form.name.$error.required">{{'CUSTOMER_NAME' | translate}} {{'IS_REQUIRED' |  translate}}</small>
                 </div>
 
                 <label class="item item-input">
-                    <input placeholder="Home \ Office address" type="text" name="address" ng-model="tempres" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required />
+                    <input placeholder="{{'START_TYPING_ADDRESS'| translate}}" type="text" name="address" ng-model="tempres" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required />
                 </label>
                 <div  class="error" ng-show="custoemr_details_form.address.$dirty && !editedCustomer.address">
-                    <small class="error" ng-show="custoemr_details_form.address.$error.required">Address is required.</small>
-                    <small class="error" ng-show="!editedCustomer.address">Address should be selected - not manually typed</small>
+                    <small class="error" ng-show="custoemr_details_form.address.$error.required">{{'CUSTOMER_ADDRESS' | translate}} {{'IS_REQUIRED' |  translate}}</small>
+                    <small class="error" ng-show="!editedCustomer.address">{{'CUSTOMER_NAME' | translate}} {{'NEEDS_TO_BE_SELECTED_NOT_TYPED' | translate}}</small>
                 </div>
 
                 <label class="item item-input">
-                    <input type="text" positive-float placeholder="Default hourly rate" name="rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" required/>
+                    <input type="text" positive-float placeholder="{{'DEFAULT_HOURLY_RATE' | translate}}" name="rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" required/>
                 </label>
                 <div  class="error" ng-show="custoemr_details_form.rate.$dirty && custoemr_details_form.rate.$invalid">
-                    <small class="error" ng-show="custoemr_details_form.rate.$error.float">Default rate should be a number bigger than 0</small>
+                    <small class="error" ng-show="custoemr_details_form.rate.$error.float">{{'DEFAULT_HOURLY_RATE_NEEDS_TO_BE_NUM_BIGGER_THAN_ZERO' | translate}}</small>
                 </div>
-                {{custoemr_details_form.rate.$error}}
             </div>
 
 
-            <button type="button" ng-disabled="custoemr_details_form.$invalid" class="button button-block button-dark" ng-click="createNew(editedCustomer)">Create this customer</button>
+            <button type="button" ng-disabled="custoemr_details_form.$invalid" class="button button-block button-dark" ng-click="createNew(editedCustomer)">{{'CREATE_CUSTOMER' | translate}}</button>
         </form>
     </ion-content>
 </ion-view>

@@ -1,20 +1,22 @@
-<ion-view title="Reports by date">
+<ion-view title="{{'DATE_RANGE_REPORT' | translate}}">
     <ion-content class="has-header padding">
         <!-- <ion-scroll> -->
 
             <div class="list card">
                 <div class="item item-divider">
-                    <h3>Work report for {{customer.name}} from {{firstItemDate | date:'shortDate' }} to {{lastItemDate| date:'shortDate'}} </h3>
+                    <h3>{{'WORK_REPORT_FOR' | translate}} {{customer.name}}
+                        {{'FROM' | translate}} {{firstItemDate | date:'shortDate' }}
+                        {{'UNTIL'| translate}} {{lastItemDate| date:'shortDate'}} </h3>
                 </div>
             </div>
 
             <div class="row table-head">
-                <div class="col">Date</div>
-                <div class="col">Start</div>
-                <div class="col">End</div>
-                <div class="col">Total time</div>
-                <div class="col">Rate per hour</div>
-                <div class="col">total</div>
+                <div class="col">{{'DATE' | translate}}</div>
+                <div class="col">{{'START_HOUR' | translate}}</div>
+                <div class="col">{{'FINISH_HOUR' | translate}}</div>
+                <div class="col">{{'TOTAL_TIME' | translate}}</div>
+                <div class="col">{{'HOURLY_RATE' | translate}}</div>
+                <div class="col">{{'TOTAL' | translate }}</div>
             </div>
 
             <div class="row table-content" ng-repeat="item in workItems">
@@ -31,7 +33,7 @@
                 <div class="col"> </div>
                 <div class="col"> </div>
                 <div class="col"> </div>
-                <div class="col table-footer-cell" style="border-right: 0px;">Total</div>
+                <div class="col table-footer-cell" style="border-right: 0px;">{{'TOTAL' | translate }}</div>
                 <div class="col table-footer-cell" style="border-left: 0px;">{{totalItemsSum | number:2}}</div>
             </div>
 

@@ -1,7 +1,7 @@
-<ion-view title="Customers">
+<ion-view title="{{'CUSTOMERS' | translate}}">
     <ion-nav-buttons side="right">
         <button class="button" ng-click="CreateCustomer()">
-            New
+            {{'NEW' | translate}}
         </button>
     </ion-nav-buttons>
 
@@ -10,7 +10,7 @@
       <ion-item ng-repeat="customer in customers" type="item-text-wrap" href="#/tab/customer/{{customer.id}}">
         {{customer.name}}
           <!-- <ion-delete-button ></ion-delete-button> -->
-        <ion-option-button class="button button-assertive" ng-click="deleteCustomer(customer)">Delete</ion-option-button>
+        <ion-option-button class="button button-assertive" ng-click="deleteCustomer(customer)">{{'DELETE' | translate}}</ion-option-button>
       </ion-item>
     </ion-list>
 

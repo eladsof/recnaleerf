@@ -29,8 +29,9 @@ angular.module('recnaleerfClientApp')
                     var x = aworkItems[i].elapsedTime();
                     console.log(i+':'+x);
                     console.log(aworkItems[i].formattedElapsedTime());
-                    sum += aworkItems[i].elapsedTime();
+                    sum += aworkItems[i].elapsedTime().getTime();
                 }
+                console.log('SUM --------- '+sum+ '--------------');
                 var hours = Math.floor(sum/(1000 * 60 * 60));
                 if(hours < 10) hours = '0' + hours;
                 var minutes = Math.floor((sum - (hours * 60 * 60 * 1000)) / (1000 * 60));
@@ -54,15 +55,18 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.createWorkItem = function (workItem) {
+            $ionicLoading.show();
             WorkItemSrv.createNew(workItem).then(
                 function(newItem) {
                     $scope.newWorkitem = null;
                     updateTotalWorkHours();
                     alert('Work item logged');
+                    $ionicLoading.hide();
             },
                 function(value) {
                     alert('Failed to add work item');
                     console.log(value.Error);
+                    $ionicLoading.hide();
             });
         }
     });

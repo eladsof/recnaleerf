@@ -3829,3 +3829,353 @@ Terminating in response to SpringBoard's termination.
 2014-08-26 16:39:11.974 tstionic[81828:70b] not close enough to : Ido
 2014-08-26 16:39:11.975 tstionic[81828:70b] not close enough to : חומ
 2014-08-26 16:39:11.975 tstionic[81828:70b] not close enough to : Asaf
+2014-09-01 21:39:16.453 tstionic[6232:70b] Multi-tasking -> Device: YES, App: YES
+2014-09-01 21:39:16.481 tstionic[6232:70b] Unlimited access to network resources
+2014-09-01 21:39:16.633 tstionic[6232:70b] [CDVTimer][keyboard] 0.174999ms
+2014-09-01 21:39:16.634 tstionic[6232:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-09-01 21:39:16.635 tstionic[6232:70b] [CDVTimer][statusbar] 0.768006ms
+2014-09-01 21:39:16.635 tstionic[6232:70b] [CDVTimer][TotalPluginStartup] 2.207994ms
+2014-09-01 21:39:16.885 tstionic[6232:70b] Resetting plugins due to page load.
+2014-09-01 21:39:17.571 tstionic[6232:70b] Finished load of: file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/index.html#/tab/dash
+2014-09-01 21:39:17.611 tstionic[6232:70b] init customerCtrl
+2014-09-01 21:39:17.612 tstionic[6232:70b] init memememem
+2014-09-01 21:39:17.612 tstionic[6232:70b] init gggggggg
+2014-09-01 21:39:17.612 tstionic[6232:70b] init customerCtrl
+2014-09-01 21:39:17.612 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:39:22.509 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:22.510 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:27.505 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:27.506 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:30.813 tstionic[6232:70b] checking...
+2014-09-01 21:39:30.814 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:30.814 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:30.814 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:30.815 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:39:30.815 tstionic[6232:70b] checking...
+2014-09-01 21:39:30.816 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:30.816 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:30.816 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:30.817 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:39:32.505 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:32.505 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:32.513 tstionic[6232:70b] checking...
+2014-09-01 21:39:32.513 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:32.514 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:32.514 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:32.514 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:39:34.270 tstionic[6232:70b] init customerSrv
+2014-09-01 21:39:34.271 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:39:35.469 tstionic[6232:70b] memememem
+2014-09-01 21:39:37.505 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:37.506 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:37.508 tstionic[6232:70b] checking...
+2014-09-01 21:39:37.508 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:37.509 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:37.509 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:37.509 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:39:41.633 tstionic[6232:70b] ERROR: Error: 'null' is not an object (evaluating '$scope.reportCustomer.id')
+prepareAndShowReport@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/js/controllers/reportParamsCtrl.js:56:51
+file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/angular_13/angular.min.js:181:291
+file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/ionic-angular.min.js:16:28718
+$eval@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/angular_13/angular.min.js:115:138
+$apply@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/angular_13/angular.min.js:115:421
+file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/ionic-angular.min.js:16:28705
+file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/angular_13/angular.min.js:31:329
+q@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/angular_13/angular.min.js:7:300
+c@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/angular_13/angular.min.js:31:308
+dispatchEvent@[native code]
+n@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/ionic.min.js:15:387
+e@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/ionic.min.js:15:207
+l@file:///Users/eladsof/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/84AF8EBD-F696-4F12-9ECB-18B2AECF9299/tstionic.app/www/lib/ionic/js/ionic.min.js:15:1396
+2014-09-01 21:39:41.881 tstionic[6232:70b] "2014-08-19T22:15:00.000Z"
+2014-09-01 21:39:42.373 tstionic[6232:70b] getLastItemDate [object Object]
+2014-09-01 21:39:42.376 tstionic[6232:70b] "2014-08-20T08:12:00.000Z"
+2014-09-01 21:39:42.510 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:42.510 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:42.902 tstionic[6232:70b] checking...
+2014-09-01 21:39:42.902 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:42.903 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:42.903 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:42.903 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:39:47.526 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:47.526 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:47.529 tstionic[6232:70b] checking...
+2014-09-01 21:39:47.529 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:47.529 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:47.530 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:47.530 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:39:47.900 tstionic[6232:70b] {"customerid":"JMHd9MePMQ","start":"2014-08-19T22:15:00.000Z","finish":"2014-08-20T08:12:00.000Z"}
+2014-09-01 21:39:47.900 tstionic[6232:70b] state - go us die
+2014-09-01 21:39:48.547 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:48.548 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:48.548 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:48.548 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:48.549 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:48.549 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:48.549 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:48.550 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:48.550 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:48.550 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:48.550 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:48.550 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:48.550 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:48.551 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:48.551 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:48.551 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:48.551 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:48.551 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:48.552 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:48.552 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:48.552 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:48.552 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:48.552 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:48.553 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:48.553 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:48.553 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:48.553 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:48.553 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:48.553 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:48.554 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:52.531 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:52.532 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:52.532 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:52.532 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:52.533 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:52.533 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:52.533 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:52.533 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:52.534 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:52.534 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:52.534 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:52.534 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:52.535 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:52.535 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:52.919 tstionic[6232:70b] checking...
+2014-09-01 21:39:52.920 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:52.920 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:52.920 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:52.920 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:39:52.921 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:52.921 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:52.921 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:52.921 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:52.922 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:52.922 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:52.922 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:52.922 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:52.922 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:52.923 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:52.923 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:52.923 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:54.725 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:39:56.427 tstionic[6232:70b] listing hours 6
+2014-09-01 21:39:56.427 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:56.427 tstionic[6232:70b] 0:Thu Jan 01 1970 02:03:20 GMT+0200 (IST)
+2014-09-01 21:39:56.428 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:56.428 tstionic[6232:70b] 00:03
+2014-09-01 21:39:56.428 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:39:56.429 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:56.429 tstionic[6232:70b] 1:Thu Jan 01 1970 02:59:32 GMT+0200 (IST)
+2014-09-01 21:39:56.429 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:56.429 tstionic[6232:70b] 00:59
+2014-09-01 21:39:56.430 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:39:56.430 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:56.430 tstionic[6232:70b] 2:Thu Jan 01 1970 03:59:44 GMT+0200 (IST)
+2014-09-01 21:39:56.431 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:56.431 tstionic[6232:70b] 01:59
+2014-09-01 21:39:56.431 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:39:56.432 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:56.432 tstionic[6232:70b] 3:Thu Jan 01 1970 02:02:49 GMT+0200 (IST)
+2014-09-01 21:39:56.432 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:56.432 tstionic[6232:70b] 00:02
+2014-09-01 21:39:56.432 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:39:56.433 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:56.433 tstionic[6232:70b] 4:Thu Jan 01 1970 03:59:00 GMT+0200 (IST)
+2014-09-01 21:39:56.433 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:56.433 tstionic[6232:70b] 01:59
+2014-09-01 21:39:56.434 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:39:56.434 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:56.434 tstionic[6232:70b] 5:Thu Jan 01 1970 02:59:11 GMT+0200 (IST)
+2014-09-01 21:39:56.434 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:56.435 tstionic[6232:70b] 00:59
+2014-09-01 21:39:56.435 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:39:56.435 tstionic[6232:70b] SUM --------- 21818349--------------
+2014-09-01 21:39:56.435 tstionic[6232:70b] hours 06 minutes 03
+2014-09-01 21:39:57.528 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:39:57.528 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:39:57.531 tstionic[6232:70b] checking...
+2014-09-01 21:39:57.532 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:39:57.532 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:39:57.532 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:39:57.532 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:02.531 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:02.531 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:02.923 tstionic[6232:70b] checking...
+2014-09-01 21:40:02.923 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:02.923 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:02.923 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:02.924 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:06.736 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:40:07.529 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:07.529 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:07.533 tstionic[6232:70b] checking...
+2014-09-01 21:40:07.533 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:07.533 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:07.534 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:07.534 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:08.363 tstionic[6232:70b] listing hours 6
+2014-09-01 21:40:08.364 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:40:08.364 tstionic[6232:70b] 0:Thu Jan 01 1970 02:03:20 GMT+0200 (IST)
+2014-09-01 21:40:08.364 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:40:08.364 tstionic[6232:70b] 00:03
+2014-09-01 21:40:08.364 tstionic[6232:70b] "1970-01-01T00:03:20.381Z"
+2014-09-01 21:40:08.365 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:40:08.365 tstionic[6232:70b] 1:Thu Jan 01 1970 02:59:32 GMT+0200 (IST)
+2014-09-01 21:40:08.365 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:40:08.365 tstionic[6232:70b] 00:59
+2014-09-01 21:40:08.365 tstionic[6232:70b] "1970-01-01T00:59:32.542Z"
+2014-09-01 21:40:08.366 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:40:08.366 tstionic[6232:70b] 2:Thu Jan 01 1970 03:59:44 GMT+0200 (IST)
+2014-09-01 21:40:08.366 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:40:08.366 tstionic[6232:70b] 01:59
+2014-09-01 21:40:08.366 tstionic[6232:70b] "1970-01-01T01:59:44.118Z"
+2014-09-01 21:40:08.366 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:40:08.367 tstionic[6232:70b] 3:Thu Jan 01 1970 02:02:49 GMT+0200 (IST)
+2014-09-01 21:40:08.367 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:40:08.367 tstionic[6232:70b] 00:02
+2014-09-01 21:40:08.367 tstionic[6232:70b] "1970-01-01T00:02:49.982Z"
+2014-09-01 21:40:08.367 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:40:08.368 tstionic[6232:70b] 4:Thu Jan 01 1970 03:59:00 GMT+0200 (IST)
+2014-09-01 21:40:08.368 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:40:08.368 tstionic[6232:70b] 01:59
+2014-09-01 21:40:08.368 tstionic[6232:70b] "1970-01-01T01:59:00.261Z"
+2014-09-01 21:40:08.368 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:40:08.369 tstionic[6232:70b] 5:Thu Jan 01 1970 02:59:11 GMT+0200 (IST)
+2014-09-01 21:40:08.369 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:40:08.369 tstionic[6232:70b] 00:59
+2014-09-01 21:40:08.369 tstionic[6232:70b] "1970-01-01T00:59:11.065Z"
+2014-09-01 21:40:08.369 tstionic[6232:70b] SUM --------- 21818349--------------
+2014-09-01 21:40:08.369 tstionic[6232:70b] hours 06 minutes 03
+2014-09-01 21:40:09.902 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:40:12.531 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:12.531 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:12.925 tstionic[6232:70b] checking...
+2014-09-01 21:40:12.925 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:12.925 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:12.925 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:12.926 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:14.812 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:40:14.812 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:40:17.532 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:17.532 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:17.534 tstionic[6232:70b] checking...
+2014-09-01 21:40:17.534 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:17.535 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:17.535 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:17.535 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:22.532 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:22.532 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:22.934 tstionic[6232:70b] checking...
+2014-09-01 21:40:22.934 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:22.935 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:22.935 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:22.935 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:27.782 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:27.782 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:27.784 tstionic[6232:70b] checking...
+2014-09-01 21:40:27.785 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:27.785 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:27.785 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:27.785 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:32.783 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:32.784 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:32.940 tstionic[6232:70b] checking...
+2014-09-01 21:40:32.940 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:32.941 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:32.941 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:32.941 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:37.785 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:37.785 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:37.788 tstionic[6232:70b] checking...
+2014-09-01 21:40:37.788 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:37.788 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:37.789 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:37.789 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:42.855 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:42.855 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:42.985 tstionic[6232:70b] checking...
+2014-09-01 21:40:42.985 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:42.986 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:42.986 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:42.987 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:47.876 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:47.877 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:47.881 tstionic[6232:70b] checking...
+2014-09-01 21:40:47.882 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:47.882 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:47.883 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:47.883 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:52.876 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:52.877 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:52.957 tstionic[6232:70b] checking...
+2014-09-01 21:40:52.957 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:52.958 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:52.958 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:52.958 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:40:57.878 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:40:57.878 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:40:57.881 tstionic[6232:70b] checking...
+2014-09-01 21:40:57.881 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:40:57.882 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:40:57.882 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:40:57.882 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:41:03.013 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:41:03.065 tstionic[6232:70b] Loading new custoemr list
+2014-09-01 21:41:07.387 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:41:07.388 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:41:07.971 tstionic[6232:70b] checking...
+2014-09-01 21:41:07.972 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:41:07.972 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:41:07.972 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:41:07.973 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:41:07.973 tstionic[6232:70b] not close enough to : Lola and Kuba
+2014-09-01 21:41:12.389 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:41:12.389 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:41:12.392 tstionic[6232:70b] checking...
+2014-09-01 21:41:12.393 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:41:12.393 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:41:12.393 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:41:12.393 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:41:12.393 tstionic[6232:70b] not close enough to : Lola and Kuba
+2014-09-01 21:41:17.389 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:41:17.389 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:41:17.976 tstionic[6232:70b] checking...
+2014-09-01 21:41:17.976 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:41:17.977 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:41:17.977 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:41:17.977 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:41:17.978 tstionic[6232:70b] not close enough to : Lola and Kuba
+2014-09-01 21:41:22.395 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:41:22.396 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:41:22.396 tstionic[6232:70b] checking...
+2014-09-01 21:41:22.396 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:41:22.397 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:41:22.397 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:41:22.397 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:41:22.397 tstionic[6232:70b] not close enough to : Lola and Kuba
+2014-09-01 21:41:27.390 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:41:27.390 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:41:27.982 tstionic[6232:70b] checking...
+2014-09-01 21:41:27.982 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:41:27.983 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:41:27.983 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:41:27.983 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:41:27.983 tstionic[6232:70b] not close enough to : Lola and Kuba
+2014-09-01 21:41:32.392 tstionic[6232:70b] periodicUpdate...
+2014-09-01 21:41:32.392 tstionic[6232:70b] periodicUpdate - yes...
+2014-09-01 21:41:32.394 tstionic[6232:70b] checking...
+2014-09-01 21:41:32.394 tstionic[6232:70b] not close enough to : Omer incorperated
+2014-09-01 21:41:32.395 tstionic[6232:70b] not close enough to : Ido
+2014-09-01 21:41:32.395 tstionic[6232:70b] not close enough to : חומ
+2014-09-01 21:41:32.395 tstionic[6232:70b] not close enough to : Asaf
+2014-09-01 21:41:32.395 tstionic[6232:70b] not close enough to : Lola and Kuba

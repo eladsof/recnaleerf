@@ -48,6 +48,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/languages \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services.js \
@@ -63,6 +64,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/inputmatch.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/ngAutocomplete.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/numberInput.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/languages/enUS.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/languages/he.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models/Customer.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models/imports.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models/MyUser.js \
@@ -108,6 +111,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular-animate.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular-route.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular-sanitize.min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular-translate.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/js/angular_13/angular.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/scss/_action-sheet.scss \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic/scss/_animations.scss \

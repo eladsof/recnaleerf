@@ -8,7 +8,7 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-    .controller('menuCtrl', ['$scope','$location', 'UserSrv' ,function ($scope,$location,UserSrv) {
+    .controller('menuCtrl', ['$scope','$location', 'UserSrv', '$ionicLoading','$state',function ($scope,$location,UserSrv,$ionicLoading,$state) {
 
         var userService = UserSrv;
 
@@ -25,11 +25,23 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.signup = function (usr) {
-            $scope.signUpMessage = "Signing up";
+            $ionicLoading.show();
+            $scope.signUpMessage = null;
             userService.signup(usr,$scope.signUpMessage,$scope.signUpSuccess)
             .then(
-                function(newUser) { $scope.signUpSuccess = true; $scope.signUpMessage = 'User '+newUser.get('username')+' succesfully signed up';console.log($scope.signUpMessage)},
-                function(value) {$scope.signUpSuccess = false; $scope.signUpMessage = 'User failed to  signed up: '+value.error.code+':'+value.error.message;;console.log($scope.signUpMessage)}
+                function(newUser) {
+                    $scope.signUpSuccess = true;
+                    $scope.signUpMessage = 'User '+newUser.get('username')+' succesfully signed up';
+                    console.log($scope.signUpMessage);
+                    $ionicLoading.hide();
+                    $state.go('login');
+                },
+                function(value) {
+                    $scope.signUpSuccess = false;
+                    $scope.signUpMessage = 'User failed to  signed up: '+value.error.code+':'+value.error.message;;
+                    console.log($scope.signUpMessage);
+                    $ionicLoading.hide();
+                }
             );
         };
 

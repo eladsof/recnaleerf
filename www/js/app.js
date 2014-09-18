@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat'])
+app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat','pascalprecht.translate'])
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
@@ -40,7 +40,10 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
 
     })
 
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider,$translateProvider) {
+
+        $translateProvider.translations('he',translationsHE);
+        $translateProvider.preferredLanguage('he');
 
         // Ionic uses AngularUI Router which uses the concept of states
         // Learn more here: https://github.com/angular-ui/ui-router

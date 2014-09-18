@@ -23,7 +23,6 @@ angular.module('recnaleerfClientApp')
             Customer.getById($stateParams.customerid).then(
                 function(aCustomer) {
                     $scope.customer = aCustomer;
-                    console.log('here i am 1'+$scope.customer);
                     getReportData();
                 });
         };

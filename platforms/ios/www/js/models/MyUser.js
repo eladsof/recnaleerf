@@ -49,6 +49,14 @@ angular.module('recnaleerfClientApp').
                 this.set("address", aValue);
             }
         });
+        Object.defineProperty(User.prototype, "emailVerified", {
+            get: function() {
+                return this.get("emailVerified");
+            },
+            set: function(aValue) {
+            }
+        });
+
 
 
 

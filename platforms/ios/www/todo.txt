@@ -10,15 +10,18 @@ Delete customer. (Mark as deleted - do not remove from DB)
 Add Reports
 Add css to reports
 Check what's up with tha back button on reports.
+Add user email validation
 ===========================================================
 ========================= DONE ============================
 ===========================================================
+Support multilanguage  - https://github.com/angular-translate/angular-translate
+Support RTL \ LTR switch based on device and user.
 Fix report form + validations
+Add report types
 Delete work item. (Mark as deleted - do not remove from DB)
 Edit customer
-Add user email validation
 Secure data and API keys
-Support multilanguage and RTL languages - https://github.com/angular-translate/angular-translate
+return email verification condition
 ===========================================================
 ========================= MVP  ============================
 ===========================================================

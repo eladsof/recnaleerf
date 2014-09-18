@@ -11,55 +11,55 @@
             <div class="item item-avatar">
                 <img src="mcfly.jpg">
                 <h2>{{customer.name}}</h2>
-                <p>created on: {{customer.createdAt | date:'medium'}}</p>
+                <p>{{'CREATED_ON' | translate}} : {{customer.createdAt | date:'medium'}}</p>
             </div>
 
             <div class="item item-body">
                 <p>
-                    Customer address: {{customer.address.formatted_address}}
+                    {{'CUSTOMER_ADDRESS' | translate}} : {{customer.address.formatted_address}}
                 </p>
                 <p>
-                <h2>Hourly rate : {{customer.ratePerHour}}</h2>
+                <h2>{{'HOURLY_RATE' | translate}} : {{customer.ratePerHour}}</h2>
                 </p>
             </div>
 
             <div class="item item-body">
                 <a  href="#/tab/customer/report/monthly/{{customer.id}}/{{year}}/{{month}}">
-                    Current month work time: {{monthlyWorkHours}}
+                    {{'CURRENT_MONTH_WORK' | translate}}: {{monthlyWorkHours}}
                 </a>
             </div>
         </div>
 
         <div>
             <div class="card padding reportItemBox" ng-show="newWorkitem == null">
-                <button class="button button-block button-dark" ng-click="prepareNewWorkItem()">Report work item</button>
+                <button class="button button-block button-dark" ng-click="prepareNewWorkItem()">{{'REPORT_WORK_ITEM' | translate}}</button>
             </div>
         </div>
 
         <div class="card padding zoomInUp animated" ng-show="newWorkitem" >
-            <h2>Report work item for {{customer.name}}</h2>
+            <h2>{{'REPORT_WORK_ITEM_FOR' | translate}} : {{customer.name}}</h2>
             <form>
                 <label class="item item-input ">
-                    <span class="input-label">Start:</span>
+                    <span class="input-label">{{'START_TIME' | translate}}:</span>
                     <input type="datetime-local"  ng-model="newWorkitem.start">
                 </label>
 
                 <label class="item item-input ">
-                    <span class="input-label">Finish:</span>
+                    <span class="input-label">{{'FINISH_TIME' | translate}}</span>
                     <input type="datetime-local"  ng-model="newWorkitem.finish">
                 </label>
 
                 <label class="item item-input ">
-                    <span class="input-label">Rate:</span>
+                    <span class="input-label">{{'HOURLY_RATE' | translate}}</span>
                     <input type="text"             ng-model="newWorkitem.rate">
                 </label>
 
                 <label class="item item-input ">
-                    <span class="input-label">Comment:</span>
+                    <span class="input-label">{{'COMMENT' | translate}}:</span>
                     <input type="text"           ng-model="newWorkitem.comment"><br/>
                 </label>
 
-                <button class="button button-block button-dark" ng-click="createWorkItem(newWorkitem)">Create this work item</button>
+                <button class="button button-block button-dark" ng-click="createWorkItem(newWorkitem)">{{'CREATE_WORK_ITEM' | translate}}</button>
             </form>
         </div>
     </ion-content>

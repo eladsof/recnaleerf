@@ -11,7 +11,7 @@
 console.log("init memememem");
 
 angular.module('recnaleerfClientApp')
-    .controller('reportParamsCtrl', ['$scope','$location', 'WorkItem', 'Customer','$state', function ($scope,$location,WorkItem,Customer,$state) {
+    .controller('reportParamsCtrl', ['$scope','$location', 'WorkItem', 'Customer','$state','$ionicLoading', function ($scope,$location,WorkItem,Customer,$state,$ionicLoading) {
 
         console.log('memememem');
 
@@ -26,6 +26,7 @@ angular.module('recnaleerfClientApp')
         };
 
         var populateDateRanges = function () {
+            $ionicLoading.show();
             WorkItem.getFirstItemDate($scope.currentUser,$scope.reportCustomer).then(function(date) {
                 $scope.firstItemDate = date;
                 console.log(date);
@@ -36,8 +37,10 @@ angular.module('recnaleerfClientApp')
             WorkItem.getLastItemDate($scope.currentUser,$scope.reportCustomer).then(function(date) {
                 $scope.lastItemDate = date;
                 console.log(date);
+                $ionicLoading.hide();
             }, function(aError) {
                 console.log(aError);
+                $ionicLoading.hide();
             });
 
             /*

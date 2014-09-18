@@ -11,7 +11,7 @@
 console.log("init gggggggg");
 
 angular.module('recnaleerfClientApp')
-    .controller('reportByDateCtrl', ['$scope','$stateParams','WorkItem', 'Customer', function ($scope,$stateParams,WorkItem,Customer) {
+    .controller('reportByDateCtrl', ['$scope','$stateParams','WorkItem', 'Customer','$ionicLoading', function ($scope,$stateParams,WorkItem,Customer,$ionicLoading) {
 
         $scope.customer = null;
         $scope.firstItemDate = new Date($stateParams.start);
@@ -23,17 +23,18 @@ angular.module('recnaleerfClientApp')
             Customer.getById($stateParams.customerid).then(
                 function(aCustomer) {
                     $scope.customer = aCustomer;
-                    console.log('here i am 1'+$scope.customer);
                     getReportData();
                 });
         };
 
         var getReportData = function () {
+            $ionicLoading.show();
             WorkItem.getByDateAndCustomer($scope.customer,$scope.firstItemDate,$scope.lastItemDate).then(
                 function (aItems) {
                     $scope.workItems = aItems;
                     $scope.totalItemsSum = 0;
                     calculateSum();
+                    $ionicLoading.hide();
                 });
         };
 
