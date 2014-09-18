@@ -8,60 +8,62 @@
  * Controller of the recnaleerfClientApp
  */
 
-console.log("init memememem");
-
 angular.module('recnaleerfClientApp')
     .controller('reportParamsCtrl', ['$scope','$location', 'WorkItem', 'Customer','$state','$ionicLoading', function ($scope,$location,WorkItem,Customer,$state,$ionicLoading) {
 
-        console.log('memememem');
+        $scope.years = [2010,2011,2012,2013,2014,2015];
 
+        $scope.formData = {};
+        $scope.formData.repYear = $scope.years[new Date().getYear() - 110]; // The years start counting at 1900, our array starts at 2010, so... -110
+        $scope.formData.repMonth = new Date().getMonth() + 1;
+        $scope.currentYear = new Date().getYear();
+        
+        var updateDatesForMonthReport = function () {
+            var startDate = new Date();
+            startDate.setHours(0);
+            startDate.setMinutes(0);
+            startDate.setSeconds(1)
+            startDate.setYear($scope.formData.repYear);
+            startDate.setMonth($scope.formData.repMonth-1); // The -1 is the only way i got it to work....
+            startDate.setDate(1);
+            $scope.formData.firstItemDate = startDate;
 
-        $scope.reportCustomer = null;
-        $scope.firstItemDate = null;
-        $scope.lastItemDate = null;
-
-        $scope.customerSelected = function(customer){
-            $scope.reportCustomer = customer;
-            populateDateRanges();
-        };
-
-        var populateDateRanges = function () {
-            $ionicLoading.show();
-            WorkItem.getFirstItemDate($scope.currentUser,$scope.reportCustomer).then(function(date) {
-                $scope.firstItemDate = date;
-                console.log(date);
-            }, function(aError) {
-                console.log(aError);
-            });
-
-            WorkItem.getLastItemDate($scope.currentUser,$scope.reportCustomer).then(function(date) {
-                $scope.lastItemDate = date;
-                console.log(date);
-                $ionicLoading.hide();
-            }, function(aError) {
-                console.log(aError);
-                $ionicLoading.hide();
-            });
-
-            /*
-            WorkItem.getAllItemDates().then(function(dates) {
-
-            }, function(aError) {
-                console.log(aError);
-            });*/
+            var endDate = new Date();
+            endDate.setHours(23);
+            endDate.setMinutes(59);
+            endDate.setSeconds(59)
+            endDate.setYear($scope.formData.repYear);
+            endDate.setMonth($scope.formData.repMonth); // The -1 is the only way i got it to work....
+            endDate.setDate(0); // subtract 1 day from the 1st to get last day of previous month.
+            $scope.formData.lastItemDate = endDate;
         };
 
         $scope.prepareAndShowReport = function() {
+
+            if($scope.formData.reportType == 'monthly')
+                updateDatesForMonthReport();
+
+
             var params = {
-                customerid : $scope.reportCustomer.id,
-                start: $scope.firstItemDate,
-                finish: $scope.lastItemDate};
+                customerid : $scope.formData.customerId,
+                start: $scope.formData.firstItemDate,
+                finish: $scope.formData.lastItemDate,
+            };
 
-            console.log(params);
             $state.go('tab.reports-bydate',params);
-            console.log('state - go us die');
+        };
 
+        $scope.shouldShowCustomerList = function () {
 
+            if($scope.formData.reportType == 'none')
+                return false;
+
+            if($scope.formData.firstItemDate && $scope.formData.lastItemDate)
+                return true;
+            else if ($scope.formData.repYear && $scope.formData.repMonth)
+                return true;
+
+            return false;
         };
 
     }]);

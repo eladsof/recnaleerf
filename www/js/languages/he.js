@@ -8,7 +8,7 @@ var translationsHE = {
     NEW: 'חדש',
     DELETE: 'מחק',
     COMMENT: 'הערה',
-    CHARACTERS: 'תווים'
+    CHARACTERS: 'תווים',
 
     // ERRORS:
     SHOULD_HAVE_MIN: 'צריך להכיל לפחות',
@@ -53,13 +53,20 @@ var translationsHE = {
 
     //REPORTS_FORM
     SELECT_CUSTOMER: 'בחר לקוח',
+    ALL_CUSTOMERS: 'כל הלקוחות',
     SELECT_REPORT_TYPE: 'בחר סוג דו"ח',
     MONTHLY_REPORT : 'דו"ח חודשי',
     DATE_RANGE_REPORT: 'דו"ח לפי טווח תאריכים',
     SELECT_DATE_RANGE: 'בחר טווח תאריכים',
+    ALL_TIME_REPORT: 'כל הזמנים',
     START_DATE: 'תאריך התחלה',
     FINISH_DATE: 'תאריך סיום',
     PREPARE_REPORT_BTN: 'צור את הדו"ח',
+    SELECT_YEAR: 'בחר שנה',
+    SELECT_MONTH: 'בחר חודש',
+
+
+    // REPORT
     WORK_REPORT_FOR: 'דו"ח עבודה עבור',
     FROM: 'מ-',
     UNTIL: 'עד',

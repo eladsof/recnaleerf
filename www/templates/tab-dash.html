@@ -14,9 +14,8 @@
             </div>
 
             <div class="item item-body">
-
                 <h2><i class="icon ion-loading-c"></i> {{'ELAPSED_WORK_TIME_IS' | translate}} : {{currentWorkItem.formattedElapsedTime()}}</h2>
-                <a class="button icon-right ion-chevron-right button-calm" ng-click="finishCurrentWorkItem()">{{'FINISH_WORK_BTN' | translate}}</a>
+                <a class="button icon-right ion-chevron-right button-calm" style="float: left;" ng-click="finishCurrentWorkItem()">{{'FINISH_WORK_BTN' | translate}}</a>
             </div>
         </div>
 
@@ -26,7 +25,7 @@
             </div>
 
             <div class="item item-select padding">
-                <a ng-disabled="selectedCustomer == null" class="button icon-right  button-calm" ng-click="startNewWorkItem(selectedCustomer)">{{'START_WORK_BTN' | translate}}</a>
+                <a ng-disabled="selectedCustomer == null" class="button icon-right  button-calm" style="float: left;"  ng-click="startNewWorkItem(selectedCustomer)">{{'START_WORK_BTN' | translate}}</a>
                 <select ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="float:right;font-size: 28px;  ">
                     <option value="">{{'SELECT_CUSTOMER_TO_START' | translate}}</option>
                 </select>

@@ -12,11 +12,11 @@ Add css to reports
 Check what's up with tha back button on reports.
 Add user email validation
 Support multilanguage  - https://github.com/angular-translate/angular-translate
+Fix report form + validations
+Add report types (date range, customer)
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Fix report form + validations
-Add report types (date range, customer)
 Delete work item. (Mark as deleted - do not remove from DB)
 Edit customer
 Secure data and API keys

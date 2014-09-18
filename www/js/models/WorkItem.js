@@ -4,7 +4,6 @@ angular.module('recnaleerfClientApp').
         var WorkItem = Parse.Object.extend("WorkItem",
             {
                 elapsedTime : function() {
-                    console.log(new Date(this.finish-this.start));
                     return new Date(this.finish-this.start);
 
                 },
@@ -122,14 +121,20 @@ angular.module('recnaleerfClientApp').
 
                     return defer.promise;
                 },
-                getByDateAndCustomer: function(aCustomer,aStart,aFinish) {
+                getByDateAndCustomer: function(aUser,aCustomer,aStart,aFinish) {
                     var defer = $q.defer();
                     var query = new Parse.Query(this);
-                    query.equalTo("customer", aCustomer);
-                    //query.greaterThanOrEqualTo('start',aStart);
-                    //query.lessThanOrEqualTo('finish',aFinish);
-                    //query.ascending('finish');
-                    //query.limit(1000);
+                    query.equalTo("owner", aUser);
+
+                    if(aCustomer)
+                        query.equalTo("customer", aCustomer);
+                    if(aStart)
+                        query.greaterThanOrEqualTo('start',aStart);
+                    if(aFinish)
+                        query.lessThanOrEqualTo('finish',aFinish);
+
+                    query.ascending('finish');
+                    query.limit(1000);
 
                     query.find({
                         success : function(aItems) {

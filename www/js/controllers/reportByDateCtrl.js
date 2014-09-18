@@ -8,8 +8,6 @@
  * Controller of the recnaleerfClientApp
  */
 
-console.log("init gggggggg");
-
 angular.module('recnaleerfClientApp')
     .controller('reportByDateCtrl', ['$scope','$stateParams','WorkItem', 'Customer','$ionicLoading', function ($scope,$stateParams,WorkItem,Customer,$ionicLoading) {
 
@@ -19,7 +17,15 @@ angular.module('recnaleerfClientApp')
         $scope.workItems = null;
         $scope.totalItemsSum = 0;
 
-        var getCustomer = function () {
+        var createReport = function () {
+            if($stateParams.customerid)
+                createReportForCsutoemr();
+            else
+                getReportData();
+
+        };
+
+        var createReportForCsutoemr = function () {
             Customer.getById($stateParams.customerid).then(
                 function(aCustomer) {
                     $scope.customer = aCustomer;
@@ -29,7 +35,7 @@ angular.module('recnaleerfClientApp')
 
         var getReportData = function () {
             $ionicLoading.show();
-            WorkItem.getByDateAndCustomer($scope.customer,$scope.firstItemDate,$scope.lastItemDate).then(
+            WorkItem.getByDateAndCustomer($scope.currentUser,$scope.customer,$scope.firstItemDate,$scope.lastItemDate).then(
                 function (aItems) {
                     $scope.workItems = aItems;
                     $scope.totalItemsSum = 0;
@@ -44,8 +50,7 @@ angular.module('recnaleerfClientApp')
             });
         };
 
-//
 
-        getCustomer();
+        createReport();
 
     }]);
