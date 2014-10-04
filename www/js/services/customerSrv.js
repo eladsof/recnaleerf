@@ -50,7 +50,7 @@ angular.module('recnaleerfClientApp')
         };
 
         this.update = function (customer) {
-            this.create(customer);
+            customer.save();
         };
 
     }]);

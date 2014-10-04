@@ -108,6 +108,15 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
                     }
                 }
             })
+            .state('tab.customer-edit', {
+                url: '/customer/edit/:customerid',
+                views: {
+                    'tab-customers': {
+                        templateUrl: 'templates/customer-new.html',
+                        controller: 'customerEditCtrl'
+                    }
+                }
+            })
             .state('tab.reports', {
                 url: '/reports',
                 views: {

@@ -14,16 +14,18 @@ Add user email validation
 Support multilanguage  - https://github.com/angular-translate/angular-translate
 Fix report form + validations
 Add report types (date range, customer)
+Edit customer
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Delete work item. (Mark as deleted - do not remove from DB)
-Edit customer
 Secure data and API keys
 return email verification condition
+General QA \ CSS fixes.
 ===========================================================
 ========================= MVP  ============================
 ===========================================================
+Add icon \ image to customer
+Delete work item. (Mark as deleted - do not remove from DB)
 Support RTL \ LTR switch based on device and user.
 Add second language (English)
 Either rewrite app or add test coverage

@@ -87,6 +87,9 @@ angular.module('recnaleerfClientApp')
             stop = $interval(periodicUpdate, secs * 1000);
         };
         $rootScope.startNewWorkItem = function(customer){
+            if(customer == null)
+                return;
+
             updateTimer(1);
             $rootScope.currentWorkItem = new WorkItem();
             $rootScope.currentWorkItem.customer =customer;

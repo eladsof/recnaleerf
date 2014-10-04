@@ -9,7 +9,7 @@
  */
 
 angular.module('recnaleerfClientApp')
-    .controller('customerDetailCtrl', function($scope, $stateParams, Customer, WorkItem, WorkItemSrv) {
+    .controller('customerDetailCtrl', function($scope, $stateParams, Customer, WorkItem, WorkItemSrv,$state) {
 
         Customer.getById($stateParams.customerid).then(function(customer) {
             $scope.customer = customer;
@@ -20,29 +20,47 @@ angular.module('recnaleerfClientApp')
             console.log(aError);
         });
 
+        var updateDatesForMonthReport = function () {
+            var startDate = new Date();
+            startDate.setHours(0);
+            startDate.setMinutes(0);
+            startDate.setSeconds(1)
+            startDate.setDate(1);
+            $scope.firstItemDate = startDate;
+
+            var endDate = new Date();
+            endDate.setHours(23);
+            endDate.setMinutes(59);
+            endDate.setSeconds(59)
+            endDate.setMonth(endDate.getMonth()+1); // The -1 is the only way i got it to work....
+            endDate.setDate(0); // subtract 1 day from the 1st to get last day of previous month.
+            $scope.lastItemDate = endDate;
+        };
+
         var updateTotalWorkHours = function () {
-            WorkItem.listByCustomer($scope.currentUser,$scope.customer).then(function(aworkItems) {
-                $scope.monthlyWorkHours = 0;
-                console.log('listing hours '+aworkItems.length);
-                var sum = 0;
-                for(var i=0;i<aworkItems.length;i++){
-                    var x = aworkItems[i].elapsedTime();
-                    console.log(i+':'+x);
-                    console.log(aworkItems[i].formattedElapsedTime());
-                    sum += aworkItems[i].elapsedTime().getTime();
+            updateDatesForMonthReport();
+            WorkItem.getByDateAndCustomer($scope.currentUser,$scope.customer,$scope.firstItemDate,$scope.lastItemDate).then(
+                function(aworkItems) {
+                    $scope.monthlyWorkHours = 0;
+                    console.log('listing hours '+aworkItems.length);
+                    var sum = 0;
+                    for(var i=0;i<aworkItems.length;i++){
+                        var x = aworkItems[i].elapsedTime();
+                        sum += aworkItems[i].elapsedTime().getTime();
+                    }
+
+                    var hours = Math.floor(sum/(1000 * 60 * 60));
+                    if(hours < 10) hours = '0' + hours;
+                    var minutes = Math.floor((sum - (hours * 60 * 60 * 1000)) / (1000 * 60));
+                    if(minutes < 10) minutes = '0' + minutes;
+                    console.log('hours '+hours+' minutes '+minutes);
+                    $scope.monthlyWorkHours = hours + ':' + minutes;
+
+
+                }, function(aError) {
+                    console.log(aError);
                 }
-                console.log('SUM --------- '+sum+ '--------------');
-                var hours = Math.floor(sum/(1000 * 60 * 60));
-                if(hours < 10) hours = '0' + hours;
-                var minutes = Math.floor((sum - (hours * 60 * 60 * 1000)) / (1000 * 60));
-                if(minutes < 10) minutes = '0' + minutes;
-                console.log('hours '+hours+' minutes '+minutes);
-                $scope.monthlyWorkHours = hours + ':' + minutes;
-
-
-            }, function(aError) {
-                console.log(aError);
-            });
+            );
         };
 
         $scope.prepareNewWorkItem = function() {
@@ -68,5 +86,13 @@ angular.module('recnaleerfClientApp')
                     console.log(value.Error);
                     $ionicLoading.hide();
             });
+        }
+
+        $scope.editCustomer = function () {
+            var params = {
+                customerid : $scope.customer.id
+            };
+
+            $state.go('tab.customer-edit',params);
         }
     });

@@ -34,11 +34,23 @@ angular.module('recnaleerfClientApp')
         $scope.CreateCustomer = function () {
             $scope.editedCustomer = new Customer();
             $state.go('tab.customer-new');
-        }
+        };
 
-        $scope.createNew = function(customer) {
+        $scope.cancelCreateAction = function () {
+            $state.go('tab.customers');
+        };
+
+        $scope.saveCustomer = function(customer) {
             var ret =  customerSrv.createNew(customer);
             return ret;
+        };
+
+        $scope.getPageTitle = function () {
+            return 'CREATE_CUSTOMER_TITLE';
+        };
+
+        $scope.getButtonTxt = function () {
+            return 'CREATE_CUSTOMER_BTN';
         };
 
         $scope.deleteCustomer = function(customer) {

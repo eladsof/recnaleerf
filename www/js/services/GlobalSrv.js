@@ -87,28 +87,34 @@ angular.module('recnaleerfClientApp')
             stop = $interval(periodicUpdate, secs * 1000);
         };
         $rootScope.startNewWorkItem = function(customer){
+            if(customer == null)
+                return;
+
             updateTimer(1);
             $rootScope.currentWorkItem = new WorkItem();
-            $rootScope.currentWorkItem.customer =customer;
+            $rootScope.currentWorkItem.customer = customer;
             $rootScope.currentWorkItem.start = new Date();
             $rootScope.currentWorkItem.isComplete = false;
+            $rootScope.currentWorkItem.owner = $rootScope.currentUser;
+            $rootScope.currentWorkItem.rate = customer.ratePerHour;
             //$rootScope.currentWorkItem.save();
         };
+
         $rootScope.finishCurrentWorkItem = function () {
             updateTimer(idleTimerInterval);
             $rootScope.currentWorkItem.end = new Date();
             $rootScope.currentWorkItem.isComplete = true;
-            //    $rootScope.currentWorkItem.save(null, {
-            //     success: function(item) {
-            //     // Execute any logic that should take place after the object is saved.
-            //     alert('New item created objectId: ' + item.id);
-            //     },
-            //     error: function(customer, error) {
-            //     // Execute any logic that should take place if the save fails.
-            //     // error is a Parse.Error with an error code and description.
-            //     alert('Failed to create new object, with error code: ' + error.message);
-            //     }
-            //     });
+                $rootScope.currentWorkItem.save(null, {
+                 success: function(item) {
+                 // Execute any logic that should take place after the object is saved.
+                 alert('New item created objectId: ' + item.id);
+                 },
+                 error: function(customer, error) {
+                 // Execute any logic that should take place if the save fails.
+                 // error is a Parse.Error with an error code and description.
+                 alert('Failed to create new object, with error code: ' + error.message);
+                 }
+                 });
             $rootScope.currentWorkItem = null;
         };
 

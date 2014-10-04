@@ -7,9 +7,9 @@
                     <input type="text" placeholder="{{'USERNAME' | translate}}" name="username" ng-model="newUser.username" autocapitalize="off" autocorrect="off" ng-minlength=4 ng-maxlength=20  required/>
                 </label>
                 <div  class="error" ng-show="user_details_form.username.$dirty && user_details_form.username.$invalid">
-                    <small class="error" ng-show="user_details_form.username.$error.required">Username is required.</small>
-                    <small class="error" ng-show="user_details_form.username.$error.minlength">Your name is required to be at least 4 characters</small>
-                    <small class="error" ng-show="user_details_form.username.$error.maxlength">Your name cannot be longer than 20 characters</small>
+                    <small class="error" ng-show="user_details_form.username.$error.required">{{'USERNAME' | translate}} {{'IS_REQUIRED' | translate}}</small>
+                    <small class="error" ng-show="user_details_form.username.$error.minlength">{{'USERNAME' | translate}} {{'SHOULD_HAVE_MIN' | translate}} 4 {{'CHARACTERS' | translate}}</small>
+                    <small class="error" ng-show="user_details_form.username.$error.maxlength">{{'USERNAME' | translate}} {{'SHOULD_HAVE_MAX' | translate}} 20 {{'CHARACTERS' | translate}}</small>
                 </div>
 
                 <!-- Email -->
@@ -17,8 +17,8 @@
                     <input placeholder="{{'EMAIL' | translate}}" name="email" type="email" ng-model="newUser.email" required/>
                 </label>
                 <div class="error" ng-show="user_details_form.email.$dirty && user_details_form.email.$invalid">
-                    <small class="error" ng-show="user_details_form.email.$error.required">Email is required.</small>
-                    <small class="error" ng-show="user_details_form.email.$error.email">That is not a valid email. Please input a valid email.</small>
+                    <small class="error" ng-show="user_details_form.email.$error.required">{{'EMAIL' | translate}} {{'IS_REQUIRED' | translate}}</small>
+                    <small class="error" ng-show="user_details_form.email.$error.email">{{'EMAIL' | translate}} {{IS_NOT_VALID_F | translate}}</small>
                 </div>
 
                 <!-- PASSWORD -->
@@ -26,8 +26,8 @@
                     <input placeholder="{{'PASSWORD' | translate}}" type="password" name="password" ng-minlength=8 ng-maxlength=20 ng-model="newUser.password" required/>
                 </label>
                 <div class="error" ng-show="user_details_form.password.$dirty && user_details_form.password.$invalid">
-                    <small class="error" ng-show="user_details_form.password.$error.required">Password is required.</small>
-                    <small class="error" ng-show="user_details_form.password.$error.minlength">Password is required to be at least 8 characters</small>
+                    <small class="error" ng-show="user_details_form.password.$error.required">{{'PASSWORD' | translate}} {{'IS_REQUIRED' | translate}}</small>
+                    <small class="error" ng-show="user_details_form.password.$error.minlength">{{'PASSWORD' | translate}} {{'SHOULD_HAVE_MIN' | translate}} 4 {{'CHARACTERS' | translate}}</small>
                 </div>
 
                 <!-- VERIFY PASSWORD -->
@@ -35,7 +35,7 @@
                     <input placeholder="{{'RETYPE_PASSWORD' | translate}}" name="passwordCopy" type="password" ng-model="newUser.passwordCopy" required match="newUser.password"/>
                 </label>
                 <div class="error" ng-show="user_details_form.passwordCopy.$dirty && user_details_form.passwordCopy.$invalid">
-                    <small class="error"ng-show="user_details_form.passwordCopy.$error.match" >Passwords do not match</small>
+                    <small class="error"ng-show="user_details_form.passwordCopy.$error.match" >{{PASSWORDS_DO_NOT_MATCH | translate}}</small>
                 </div>
 
                 <label class="item item-input">
@@ -47,8 +47,8 @@
             <button type="button" ng-disabled="user_details_form.$invalid" class="button button-block button-dark" ng-click="signup(newUser)">{{'NEW_USER_BTN' | translate}}</button>
         </form>
         <div class="error" ng-show="signUpMessage">
-            <div style="color: green" ng-show="signUpSuccess">User succesfully signed up. Check you inbox to continue:</div>
-            <div ng-hide="signUpSuccess">User could not signup : {{signUpMessage}}</div>
+            <div style="color: green" ng-show="signUpSuccess">{{SIGN_IN_SUCCESS | translate}}</div>
+            <div ng-hide="signUpSuccess">{{SIGN_IN_FAILED | translate}} {{signUpMessage}}</div>
 
         </div>
 

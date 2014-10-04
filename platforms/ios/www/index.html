@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="recnaleerfClientApp" >
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
@@ -9,6 +10,27 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Meanwhile until we support RTL & LTR, these are the needed changes for RTL -->
+    <style type="text/css">
+        html {direction: rtl;}
+        label {float: right;}
+        .item-select {height: 50px;}
+        .item-select select{left: 20px;right: initial;}
+        .item-select:after {
+            left: 16px;
+            right: initial;
+        }
+        .tabs{
+            background-color: #F7F1CD;
+        }
+        .bar.bar-stable {
+            background-color: #F7F1CD;
+        }
+
+        .bar.bar-stable .title {
+            background-color: #F7F1CD;
+        }
+    </style>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -51,6 +73,7 @@
     <script src="js/models/Customer.js"></script>
     <script src="js/services/customerSrv.js"></script>
     <script src="js/controllers/customerCtrl.js"></script>
+    <script src="js/controllers/customerEditCtrl.js"></script>
     <script src="js/controllers/customerDetailCtrl.js"></script>
 
     <script src="js/models/WorkItem.js"></script>

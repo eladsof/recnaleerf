@@ -20,6 +20,13 @@
             left: 16px;
             right: initial;
         }
+        .bar .title + .button:last-child, .bar > .button + .button:last-child, .bar > .button.pull-right, .bar .buttons.pull-right, .bar .title + .buttons {
+            right: initial;
+            left: 5px;
+        }
+        .ion-ios7-arrow-back:before {
+            content: "\f152";
+        }
     </style>
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -63,6 +70,7 @@
     <script src="js/models/Customer.js"></script>
     <script src="js/services/customerSrv.js"></script>
     <script src="js/controllers/customerCtrl.js"></script>
+    <script src="js/controllers/customerEditCtrl.js"></script>
     <script src="js/controllers/customerDetailCtrl.js"></script>
 
     <script src="js/models/WorkItem.js"></script>
@@ -81,7 +89,7 @@
 -->
 <ion-nav-bar class="bar-stable nav-title-slide-ios7" ngCloak>
     <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
-        Back
+        {{'BACK' | translate}}
     </ion-nav-back-button>
 </ion-nav-bar>
 

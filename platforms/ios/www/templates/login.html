@@ -1,21 +1,23 @@
-<ion-view title="login">
+<ion-view title="{{'LOGIN_TITLE' | translate}}">
     <ion-content class="has-header padding">
         <form>
             <div class="list list-inset">
-                <label class="item item-input">
-                    <input type="text" placeholder="Username" ng-model="signinuser.username" autocapitalize="off" autocorrect="off" />
+                <div class="item  padding">
+                    <input type="text" placeholder="{{'USERNAME' | translate}}" ng-model="signinuser.username" autocapitalize="off" autocorrect="off" />
+                </div>
 
-                </label>
-                <label class="item item-input">
-                    <input placeholder="Password" type="password" ng-model="signinuser.password"/>
-                </label>
+                <div class="item  padding">
+
+                    <input placeholder="{{'PASSWORD' | translate}}" type="password" ng-model="signinuser.password"/>
+
+                </div>
             </div>
 
-            <button ng-click="signin(signinuser)" class="button button-block button-dark">Sign in</button>
+            <button ng-click="signin(signinuser)" class="button button-block button-dark">{{'SIGN_IN' | translate}}</button>
         </form>
         <div style="text-align: center">
-            don't have an account?<br>
-            <a href="/#/signup">register now</a>
+            {{'DONT_HAVE_ACCOUNT' | translate}}<br>
+            <a href="/#/signup">{{'REGISTER_NOW' | translate}}</a>
         </div>
     </ion-content>
 </ion-view>

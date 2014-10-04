@@ -2,57 +2,54 @@
     <ion-content class="has-header padding">
 
         <div class="list card">
-            <div class="item item-select padding">
-                <label>{{'SELECT_CUSTOMER' | translate}}:</label>
-                <select ng-model="bbb" data-ng-options="item.name for item in customers" ng-change="customerSelected(bbb)" style="float:right;">
 
-                </select>
-            </div>
-            <!--
             <div class="item item-select padding">
-                <label>Select report data:</label>
-                <select ng-model="reportType" style="float:right; ">
-                    <option value=""></option>
-                    <option value="">Work report</option>
-                    <option value="">Earnings report</option>
-                </select>
-            </div>
-            -->
-            <div class="item item-select padding">
-                <label>{{'SELECT_REPORT_TYPE' | translate}}:</label>
-                <select ng-model="reportType" style="float:right; ">
-                    <option value=""></option>
+                <!-- <label>{{'SELECT_REPORT_TYPE' | translate}}</label> -->
+                <select ng-model="formData.reportType" ng-init="formData.reportType = 'none'">
+                    <option ng-selected="true" value="none">{{'SELECT_REPORT_TYPE' | translate}}</option>
                     <option value="monthly">{{'MONTHLY_REPORT' | translate}}</option>
                     <option value="dateRange">{{'DATE_RANGE_REPORT' | translate}}</option>
+                    <option value="allTime">{{'ALL_TIME_REPORT' | translate}}</option>
                 </select>
             </div>
-            <!--
-            <div id="Monthly report input" ng-show="reportType == 'monthly'">
-                <div class="item item-select padding">
-                    <label>Select year:</label>
-                    <select ng-model="year" ng-options="y for y in []| range:2000:2015" style="float:right; "></select>
-                </div>
-                <div class="item item-select padding">
-                    <label>Select month:</label>
-                    <select ng-model="month" ng-options="m for m in []| range:1:12" style="float:right; "></select>
-                </div>
-            </div>
-            -->
-            <div id="Range report input" ng-show="reportType == 'dateRange'">
+
+            <div ng-show="formData.reportType == 'dateRange'">
                 <label class="item item-input ">
                     <span class="input-label">{{'START_DATE' | translate}}:</span>
-                    <input type="date"  ng-model="firstItemDate" style="float:right; ">
+                    <input type="date"  ng-model="formData.firstItemDate" style="float:right; ">
                 </label>
 
                 <label class="item item-input ">
                     <span class="input-label">{{'FINISH_DATE' | translate}}:</span>
-                    <input type="date"  ng-model="lastItemDate" style="float:right; ">
+                    <input type="date"  ng-model="formData.lastItemDate" style="float:right; ">
                 </label>
+            </div>
+
+            <div id="Monthly report input" ng-show="formData.reportType == 'monthly'">
+                <div class="item item-select padding">
+                    <label >{{'SELECT_YEAR' | translate}}:</label>
+                    <select ng-model="formData.repYear" ng-options="y for y in years" ></select>
+
+                </div>
+                <div class="item item-select padding">
+                    <label>{{'SELECT_MONTH' | translate}}:</label>
+                    <select ng-model="formData.repMonth" ng-options="m for m in []| range:1:12"></select>
+                </div>
+            </div>
+
+            <div class="item item-select padding" ng-show="shouldShowCustomerList()">
+                <label>{{'SELECT_CUSTOMER' | translate}}:</label>
+                <select ng-disabled="formData.reportType == 'none'" ng-model="formData.customerId" data-ng-options="item.id as item.name for item in customers" style="float:right;">
+                    <option value="">{{'ALL_CUSTOMERS' | translate}}</option>
+                </select>
             </div>
         </div>
 
         <button class="button button-block button-dark" ng-click="prepareAndShowReport()">{{'PREPARE_REPORT_BTN' | translate}}</button>
 
+        <h1>
+            {{formData.customerId}}
+        </h1>
 
 
         </div>

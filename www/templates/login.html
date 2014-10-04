@@ -2,13 +2,15 @@
     <ion-content class="has-header padding">
         <form>
             <div class="list list-inset">
-                <label class="item item-input">
+                <div class="item  padding">
                     <input type="text" placeholder="{{'USERNAME' | translate}}" ng-model="signinuser.username" autocapitalize="off" autocorrect="off" />
+                </div>
 
-                </label>
-                <label class="item item-input">
+                <div class="item  padding">
+
                     <input placeholder="{{'PASSWORD' | translate}}" type="password" ng-model="signinuser.password"/>
-                </label>
+
+                </div>
             </div>
 
             <button ng-click="signin(signinuser)" class="button button-block button-dark">{{'SIGN_IN' | translate}}</button>
