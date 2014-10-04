@@ -12,6 +12,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-port-mdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-port-xhdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-xxhdpi/icon.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-xxxhdpi/icon.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/values/strings.xml \
 /Users/eladsof/projects/tstionic/platforms/android/res/xml/config.xml \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable/icon.png \
@@ -27,4 +29,6 @@
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xxhdpi/icon.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xxxhdpi/icon.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/AndroidManifest.xml \

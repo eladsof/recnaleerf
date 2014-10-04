@@ -9,6 +9,9 @@ var translationsHE = {
     DELETE: 'מחק',
     COMMENT: 'הערה',
     CHARACTERS: 'תווים',
+    CANCEL:'ביטול',
+    EDIT: 'עריכה',
+    BACK: 'הקודם',
 
     // ERRORS:
     SHOULD_HAVE_MIN: 'צריך להכיל לפחות',
@@ -86,7 +89,9 @@ var translationsHE = {
     NEEDS_TO_BE_SELECTED_NOT_TYPED: 'יש לבחור את הכתובת מהרשימה',
     DEFAULT_HOURLY_RATE: 'שכר שעתי התחלתי',
     DEFAULT_HOURLY_RATE_NEEDS_TO_BE_NUM_BIGGER_THAN_ZERO: 'שכר שעתי צריך להיות מספר גדול מ-0',
-    CREATE_CUSTOMER: 'צור לקוח',
+    CREATE_CUSTOMER_BTN: 'צור לקוח',
+    EDIT_CUSTOMER_BTN: 'עדכן פרטי לקוח',
+    EDIT_CUSTOMER_TITLE: 'עריכת פרטים של לקוח',
 
     // Languages
     LANG_EN: 'אנגלית',

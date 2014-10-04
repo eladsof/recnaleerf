@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://10.0.0.3:8100/#/tab/dash -->
+<html ng-app="recnaleerfClientApp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-animate){display:none !important;}ng\:form{display:block;}</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="http://10.0.0.3:8100/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://10.0.0.3:8100/css/animate.min.css">
+    <link href="http://10.0.0.3:8100/css/style.css" rel="stylesheet">
+
+    <!-- Meanwhile until we support RTL & LTR, these are the needed changes for RTL -->
+    <style type="text/css">
+        html {direction: rtl;}
+        label {float: right;}
+        .item-select {height: 50px;}
+        .item-select select{left: 20px;right: initial;}
+        .item-select:after {
+            left: 16px;
+            right: initial;
+        }
+    </style>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="./10.0.0.3_files/ionic.min.js"></script>
+    <script src="./10.0.0.3_files/angular.min.js"></script>
+    <script src="./10.0.0.3_files/angular-animate.min.js"></script>
+    <script src="./10.0.0.3_files/angular-sanitize.min.js"></script>
+    <script src="./10.0.0.3_files/angular-ui-router.min.js"></script>
+    <script src="./10.0.0.3_files/ionic-angular.min.js"></script>
+    <script src="./10.0.0.3_files/angular-route.min.js"></script>
+    <script src="./10.0.0.3_files/underscore-min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="./10.0.0.3_files/cordova.js"></script>
+
+
+    <!-- your app's js -->
+    <script src="./10.0.0.3_files/angular-translate.min.js"></script>
+    <script type="text/javascript" src="./10.0.0.3_files/js"></script><script src="./10.0.0.3_files/{main,geometry,places}.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./10.0.0.3_files/parse-1.2.19.min.js"></script>
+    <script src="./10.0.0.3_files/ngAutocomplete.js"></script>
+    <script src="./10.0.0.3_files/geoLocation.js"></script>
+    <script src="./10.0.0.3_files/inputmatch.js"></script>
+    <script src="./10.0.0.3_files/numberInput.js"></script>
+
+    <!-- langulage files -->
+    <script src="./10.0.0.3_files/he.js"></script>
+
+
+    <script src="./10.0.0.3_files/app.js"></script>
+
+    <script src="./10.0.0.3_files/GlobalSrv.js"></script>
+    <script src="./10.0.0.3_files/MyUser.js"></script>
+    <script src="./10.0.0.3_files/userSrv.js"></script>
+    <script src="./10.0.0.3_files/menuCtrl.js"></script>
+
+    <script src="./10.0.0.3_files/Customer.js"></script>
+    <script src="./10.0.0.3_files/customerSrv.js"></script>
+    <script src="./10.0.0.3_files/customerCtrl.js"></script>
+    <script src="./10.0.0.3_files/customerEditCtrl.js"></script>
+    <script src="./10.0.0.3_files/customerDetailCtrl.js"></script>
+
+    <script src="./10.0.0.3_files/WorkItem.js"></script>
+    <script src="./10.0.0.3_files/WorkItemSrv.js"></script>
+    <script src="./10.0.0.3_files/workItemsCtrl.js"></script>
+
+    <script src="./10.0.0.3_files/reportParamsCtrl.js"></script>
+    <script src="./10.0.0.3_files/reportByDateCtrl.js"></script>
+    <script src="./10.0.0.3_files/AccountCtrl.js"></script>
+
+
+</head>
+<body animation="slide-left-right-ios7" class="grade-a platform-browser platform-macintel platform-ready">
+<!--
+  The nav bar that will be updated as we navigate between views.
+-->
+<ion-nav-bar class="bar-stable nav-title-slide-ios7 bar bar-header nav-bar disable-user-behavior  no-animation" ngcloak="">
+    <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back button back-button ng-hide">
+        Back
+    </ion-nav-back-button>
+<div class="buttons left-buttons"> </div><h1 ng-bind-html="title" class="title ng-binding">ראשי ( כרגע מחובר בתור : testuser )</h1><div class="buttons right-buttons"> </div></ion-nav-bar>
+
+<div class="ng-binding">
+
+</div>
+<!--
+  The views will be rendered in the <ion-nav-view> directive below
+  Templates are in the /templates folder (but you could also
+  have templates inline in this html file if you'd like).
+-->
+
+<ion-nav-view ngcloak=""><!-- 
+  Create tabs with an icon and label, using the tabs-positive style. 
+  Each tab's child <ion-nav-view> directive will have its own 
+  navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top view"><div class="pane">
+        <ion-nav-view name="tab-dash"><ion-view class="pane" title="ראשי ( כרגע מחובר בתור : testuser )">
+    <ion-content class="padding scroll-content ionic-scroll  has-header has-tabs"><div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px) scale(1);">
+
+        <div class="list card ng-hide" ng-show="currentWorkItem">
+            <div class="item">
+                <h2 class="ng-binding">כרגע עובד עבור : </h2>
+
+            </div>
+
+            <div class="item item-body">
+                <h2 class="ng-binding"><i class="icon ion-loading-c"></i> זמן עבודה נכחי הוא : </h2>
+                <a class="button icon-right ion-chevron-right button-calm ng-binding" style="float: right;" ng-click="finishCurrentWorkItem()">סיים עבודה נכחית</a>
+            </div>
+        </div>
+
+        <div class="list card" ng-hide="currentWorkItem">
+            <div class="item item-divider">
+                <h2 class="ng-binding">לא מתבצעת עבודה כרגע</h2>
+            </div>
+
+            <div class="item item-select padding" style="height: 80px">
+                <a ng-disabled="selectedCustomer == null" class="button icon-right  button-calm ng-binding" style="float: right;" ng-click="startNewWorkItem(selectedCustomer)" disabled="disabled">התחל עבודה</a>
+                <select ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="font-size: 28px;  " class="ng-pristine ng-untouched ng-valid"><option value="" class="ng-binding">בחר לקוח ע"מ להתחיל</option><option value="0">Omer incorperated</option><option value="1">Ido</option><option value="2">חומ</option><option value="3">Asaf</option><option value="4">Lola and Kuba</option></select>
+            </div>
+
+        </div>
+
+
+    </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="height: 0px; -webkit-transform: translate3d(0px, 0px, 0px) scaleY(1);"></div></div></ion-content>
+</ion-view>
+</ion-nav-view>
+    </div><div class="tabs">
+
+    <ion-tab icon="icon ion-home" href="#/tab/dash" title="ראשי"></ion-tab>
+
+
+    <ion-tab icon="icon ion-person-stalker" href="#/tab/customers" title="לקוחות"></ion-tab>
+
+    <ion-tab icon="icon ion-ios7-paper-outline" href="#/tab/reports" title="דוחות"></ion-tab>
+
+    <ion-tab icon="icon ion-gear-b" href="#/tab/account" title="חשבון"></ion-tab>
+
+
+<a ng-class="{&#39;tab-item-active&#39;: isTabActive(), &#39;has-badge&#39;:badge, &#39;tab-hidden&#39;:isHidden()}" class="tab-item tab-item-active" icon="icon ion-home" title="ראשי"><!-- ngIf: badge --><!-- ngIf: getIconOn() && isTabActive() --><i class="icon icon ion-home" ng-if="getIconOn() &amp;&amp; isTabActive()"></i><!-- end ngIf: getIconOn() && isTabActive() --><!-- ngIf: getIconOff() && !isTabActive() --><span class="tab-title ng-binding" ng-bind-html="title">ראשי</span></a><a ng-class="{&#39;tab-item-active&#39;: isTabActive(), &#39;has-badge&#39;:badge, &#39;tab-hidden&#39;:isHidden()}" class="tab-item" icon="icon ion-person-stalker" title="לקוחות"><!-- ngIf: badge --><!-- ngIf: getIconOn() && isTabActive() --><!-- ngIf: getIconOff() && !isTabActive() --><i class="icon icon ion-person-stalker" ng-if="getIconOff() &amp;&amp; !isTabActive()"></i><!-- end ngIf: getIconOff() && !isTabActive() --><span class="tab-title ng-binding" ng-bind-html="title">לקוחות</span></a><a ng-class="{&#39;tab-item-active&#39;: isTabActive(), &#39;has-badge&#39;:badge, &#39;tab-hidden&#39;:isHidden()}" class="tab-item" icon="icon ion-ios7-paper-outline" title="דוחות"><!-- ngIf: badge --><!-- ngIf: getIconOn() && isTabActive() --><!-- ngIf: getIconOff() && !isTabActive() --><i class="icon icon ion-ios7-paper-outline" ng-if="getIconOff() &amp;&amp; !isTabActive()"></i><!-- end ngIf: getIconOff() && !isTabActive() --><span class="tab-title ng-binding" ng-bind-html="title">דוחות</span></a><a ng-class="{&#39;tab-item-active&#39;: isTabActive(), &#39;has-badge&#39;:badge, &#39;tab-hidden&#39;:isHidden()}" class="tab-item" icon="icon ion-gear-b" title="חשבון"><!-- ngIf: badge --><!-- ngIf: getIconOn() && isTabActive() --><!-- ngIf: getIconOff() && !isTabActive() --><i class="icon icon ion-gear-b" ng-if="getIconOff() &amp;&amp; !isTabActive()"></i><!-- end ngIf: getIconOff() && !isTabActive() --><span class="tab-title ng-binding" ng-bind-html="title">חשבון</span></a></div></ion-tabs>
+</ion-nav-view>
+
+
+<script type="text/javascript">//<![CDATA[
+document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')
+//]]></script><script src="./10.0.0.3_files/livereload.js" type="text/javascript"></script>
+
+
+<div class="backdrop"></div><div class="loading-container"><div class="loading"><i class="ion-loading-d"></i></div></div></body></html>

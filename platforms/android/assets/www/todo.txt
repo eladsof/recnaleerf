@@ -11,21 +11,29 @@ Add Reports
 Add css to reports
 Check what's up with tha back button on reports.
 Add user email validation
+Support multilanguage  - https://github.com/angular-translate/angular-translate
+Fix report form + validations
+Add report types (date range, customer)
+Edit customer
+return email verification condition
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Support multilanguage  - https://github.com/angular-translate/angular-translate
-Support RTL \ LTR switch based on device and user.
-Fix report form + validations
-Add report types
-Delete work item. (Mark as deleted - do not remove from DB)
-Edit customer
-Secure data and API keys
-return email verification condition
+General QA \ CSS fixes.
 ===========================================================
 ========================= MVP  ============================
 ===========================================================
+Secure data and API keys - Add before save and other stuff to prevent from users to read\write objects that belong to someone else.
+Add icon \ image to customer
+Delete work item. (Mark as deleted - do not remove from DB)
+Support RTL \ LTR switch based on device and user.
+Add second language (English)
+Either rewrite app or add test coverage
+Differenciate Mobile and web views.
+Fix animations.
+Improve UI look and feel.
 Add to customer attributes: isActive, Currency.
+Add Taxes option
 Add to user account type (Free, paid)
 Add teams
 check out ngMessage

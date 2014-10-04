@@ -5,6 +5,11 @@
   The Friends service returns an array of friend data
 -->
 <ion-view title="{{customer.name}}">
+    <ion-nav-buttons side="right">
+        <button class="button" ng-click="editCustomer()">
+            {{'EDIT' | translate}}
+        </button>
+    </ion-nav-buttons>
     <ion-content has-header="true" padding="true">
         <div class="list card">
 
@@ -39,25 +44,26 @@
         <div class="card padding zoomInUp animated" ng-show="newWorkitem" >
             <h2>{{'REPORT_WORK_ITEM_FOR' | translate}} : {{customer.name}}</h2>
             <form>
-                <label class="item item-input ">
+                <div class="item">
                     <span class="input-label">{{'START_TIME' | translate}}:</span>
                     <input type="datetime-local"  ng-model="newWorkitem.start">
-                </label>
+                </div>
 
-                <label class="item item-input ">
+                <div class="item">
                     <span class="input-label">{{'FINISH_TIME' | translate}}</span>
                     <input type="datetime-local"  ng-model="newWorkitem.finish">
-                </label>
+                </div>
 
-                <label class="item item-input ">
-                    <span class="input-label">{{'HOURLY_RATE' | translate}}</span>
+                <div class="item">
+                    <label><span class="input-label">{{'HOURLY_RATE' | translate}}</span>
                     <input type="text"             ng-model="newWorkitem.rate">
-                </label>
+                </div>
 
-                <label class="item item-input ">
+                <div class="item">
                     <span class="input-label">{{'COMMENT' | translate}}:</span>
                     <input type="text"           ng-model="newWorkitem.comment"><br/>
-                </label>
+                </div>
+                <div style="clear: both"></div>
 
                 <button class="button button-block button-dark" ng-click="createWorkItem(newWorkitem)">{{'CREATE_WORK_ITEM' | translate}}</button>
             </form>

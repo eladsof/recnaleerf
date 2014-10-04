@@ -1,38 +1,46 @@
-<ion-view title="{{'DASHBOARD' | translate}}">
+<ion-view title="{{'DASHBOARD' | translate}} ( {{'LOGGED_IN_AS' | translate}} : {{currentUser.get('username')}} )">
     <ion-content class="has-header padding">
 
-        <div class="list card">
-            <div class="item item-divider">
-                {{'LOGGED_IN_AS' | translate}} : {{currentUser.get('username')}}
+        <div  ng-show="currentWorkItem">
+            <div class="list card">
+                <div class="item">
+                    <h2>{{'CURRENTLY_WORKING_FOR' | translate}} : {{currentWorkItem.customer.name}}</h2>
+
+                </div>
+
+                <div class="item item-body">
+                    <h2><i class="icon ion-loading-c"></i> {{'ELAPSED_WORK_TIME_IS' | translate}} : {{currentWorkItem.formattedElapsedTime(true)}}</h2>
+                    <h2>{{currentWorkItem}}</h2>
+                </div>
+            </div>
+            <div style="width: 80%">
+                <a ng-disabled="selectedCustomer == null" ng-click="finishCurrentWorkItem()">
+                    <img style="width: 100%;height: auto"  src="img\{{'END_WORK_BTN_IMG' | translate}}"/>
+                </a>
             </div>
         </div>
 
-        <div class="list card" ng-show="currentWorkItem">
-            <div class="item">
-                <h2>{{'CURRENTLY_WORKING_FOR' | translate}} : {{currentWorkItem.customer.name}}</h2>
+        <div ng-hide="currentWorkItem">
 
-            </div>
-
-            <div class="item item-body">
-
-                <h2><i class="icon ion-loading-c"></i> {{'ELAPSED_WORK_TIME_IS' | translate}} : {{currentWorkItem.formattedElapsedTime()}}</h2>
-                <a class="button icon-right ion-chevron-right button-calm" ng-click="finishCurrentWorkItem()">{{'FINISH_WORK_BTN' | translate}}</a>
-            </div>
-        </div>
-
-        <div class="list card" ng-hide="currentWorkItem">
-            <div class="item item-divider">
-                <h2>{{'NO_WORK_IN_PROGRESS' | translate}}</h2>
-            </div>
-
-            <div class="item item-select padding">
-                <a ng-disabled="selectedCustomer == null" class="button icon-right  button-calm" ng-click="startNewWorkItem(selectedCustomer)">{{'START_WORK_BTN' | translate}}</a>
-                <select ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="float:right;font-size: 28px;  ">
+                <select ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="
+                                    width: 100%;padding: 10px;font-size: 6.5vw;line-height: 1;border: 0;
+                                    border-radius: 1;-webkit-appearance: none;background-color: #1389A7;color: #FFF;">
                     <option value="">{{'SELECT_CUSTOMER_TO_START' | translate}}</option>
                 </select>
-            </div>
-
+           <!--  </div> -->
         </div>
+
+        <center>
+        <div style="width: 80%" ng-hide="currentWorkItem">
+            <a ng-hide="selectedCustomer == null" ng-click="startNewWorkItem(selectedCustomer)">
+                <img style="width: 100%;height: auto"  src="img\{{'START_WORK_BTN_IMG' | translate}}"/>
+            </a>
+            <a ng-show="selectedCustomer == null" ng-click="startNewWorkItem(selectedCustomer)">
+                <img style="width: 100%;height: auto"  src="img\{{'START_WORK__DIS_BTN_IMG' | translate}}"/>
+            </a>
+        </div>
+        </center>
+
 
 
     </ion-content>

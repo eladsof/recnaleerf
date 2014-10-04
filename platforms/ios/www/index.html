@@ -20,15 +20,12 @@
             left: 16px;
             right: initial;
         }
-        .tabs{
-            background-color: #F7F1CD;
+        .bar .title + .button:last-child, .bar > .button + .button:last-child, .bar > .button.pull-right, .bar .buttons.pull-right, .bar .title + .buttons {
+            right: initial;
+            left: 5px;
         }
-        .bar.bar-stable {
-            background-color: #F7F1CD;
-        }
-
-        .bar.bar-stable .title {
-            background-color: #F7F1CD;
+        .ion-ios7-arrow-back:before {
+            content: "\f152";
         }
     </style>
 
@@ -92,7 +89,7 @@
 -->
 <ion-nav-bar class="bar-stable nav-title-slide-ios7" ngCloak>
     <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
-        Back
+        {{'BACK' | translate}}
     </ion-nav-back-button>
 </ion-nav-bar>
 

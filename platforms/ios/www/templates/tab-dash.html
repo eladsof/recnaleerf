@@ -9,7 +9,8 @@
                 </div>
 
                 <div class="item item-body">
-                    <h2><i class="icon ion-loading-c"></i> {{'ELAPSED_WORK_TIME_IS' | translate}} : {{currentWorkItem.formattedElapsedTime()}}</h2>
+                    <h2><i class="icon ion-loading-c"></i> {{'ELAPSED_WORK_TIME_IS' | translate}} : {{currentWorkItem.formattedElapsedTime(true)}}</h2>
+                    <h2>{{currentWorkItem}}</h2>
                 </div>
             </div>
             <div style="width: 80%">
@@ -19,21 +20,15 @@
             </div>
         </div>
 
-        <!-- <div class="list card" ng-hide="currentWorkItem"> -->
-            <!-- <div class="item padding"> -->
+        <div ng-hide="currentWorkItem">
+
                 <select ng-model="selectedCustomer" data-ng-options="item.name for item in customers" style="
-   width: 100%;
-   padding: 10px;
-   font-size: 6.5vw;
-   line-height: 1;
-   border: 0;
-   border-radius: 1;
-   -webkit-appearance: none;
-   background-color: #1389A7;color: #FFF;">
+                                    width: 100%;padding: 10px;font-size: 6.5vw;line-height: 1;border: 0;
+                                    border-radius: 1;-webkit-appearance: none;background-color: #1389A7;color: #FFF;">
                     <option value="">{{'SELECT_CUSTOMER_TO_START' | translate}}</option>
                 </select>
            <!--  </div> -->
-        <!-- </div> -->
+        </div>
 
         <center>
         <div style="width: 80%" ng-hide="currentWorkItem">
