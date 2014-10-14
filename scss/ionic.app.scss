@@ -15,9 +15,28 @@ $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
 
+//$light:                           #F7F7F7 !default;
+$light:                           #F7F7F7 !default;
+$stable:                          #1A5063 !default;
+$button-stable-text:              #F7F7F7 !default;
+$base-background-color:           #98B1B3 !default;
+$calm: #cfe5f2 !default;
+
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+
+html {direction: rtl;}
+
+.element{
+  direction: rtl;
+}
+
+.col {
+  border: 1px solid #000000;
+  background-color: $calm;
+}
 
