@@ -42,6 +42,11 @@
 		41D6FF0AA40B4E0C95CC5ED6 /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A54ECC797CF344D6B9E84DC8 /* UIWebViewExtension.m */; };
 		FCF37F47DEFA42B181994742 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF710548F7466FA1712D07 /* CDVLogger.m */; };
 		46DBFB85C7D4443EB6F981C8 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0A11A7365A4F4395715D93 /* CDVDevice.m */; };
+		43AAC001E8594157AA1BD52D /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F433150A145A289B7261A /* CDVFile.m */; };
+		A6C9D9CB47044798AA72D7DC /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B1982A5D849E2B4233893 /* CDVLocalFilesystem.m */; };
+		55847AF76FC542AA9A28EBDF /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 823811E8F54048049FB2A60C /* CDVAssetLibraryFilesystem.m */; };
+		4C7CCCFA6A87420BA4698D78 /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 271E595278A841E3976DAF2B /* APPEmailComposer.m */; };
+		618CB35846294C1C8732B4EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201EF384B3C94778A98AE1F6 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +119,15 @@
 		627AE03C09114A2593689DA3 /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		5C0A11A7365A4F4395715D93 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		9D78A7EC3E0B437FB83DD0FD /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		9C0F433150A145A289B7261A /* CDVFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVFile.m"; path = "org.apache.cordova.file/CDVFile.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		791B1982A5D849E2B4233893 /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocalFilesystem.m"; path = "org.apache.cordova.file/CDVLocalFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		823811E8F54048049FB2A60C /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVAssetLibraryFilesystem.m"; path = "org.apache.cordova.file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8116EF6E4AD34C5AA287C5E2 /* CDVFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVFile.h"; path = "org.apache.cordova.file/CDVFile.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4708B20ADD6D44E3B7D3025E /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocalFilesystem.h"; path = "org.apache.cordova.file/CDVLocalFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A7240106005D4542A4A46E0F /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVAssetLibraryFilesystem.h"; path = "org.apache.cordova.file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		271E595278A841E3976DAF2B /* APPEmailComposer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "APPEmailComposer.m"; path = "de.appplant.cordova.plugin.email-composer/APPEmailComposer.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		FBD05F9934164525B0969F3A /* APPEmailComposer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "APPEmailComposer.h"; path = "de.appplant.cordova.plugin.email-composer/APPEmailComposer.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		201EF384B3C94778A98AE1F6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +140,7 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
+				618CB35846294C1C8732B4EF /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +234,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				201EF384B3C94778A98AE1F6 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -242,6 +258,14 @@
 				627AE03C09114A2593689DA3 /* CDVLogger.h */,
 				5C0A11A7365A4F4395715D93 /* CDVDevice.m */,
 				9D78A7EC3E0B437FB83DD0FD /* CDVDevice.h */,
+				9C0F433150A145A289B7261A /* CDVFile.m */,
+				791B1982A5D849E2B4233893 /* CDVLocalFilesystem.m */,
+				823811E8F54048049FB2A60C /* CDVAssetLibraryFilesystem.m */,
+				8116EF6E4AD34C5AA287C5E2 /* CDVFile.h */,
+				4708B20ADD6D44E3B7D3025E /* CDVLocalFilesystem.h */,
+				A7240106005D4542A4A46E0F /* CDVAssetLibraryFilesystem.h */,
+				271E595278A841E3976DAF2B /* APPEmailComposer.m */,
+				FBD05F9934164525B0969F3A /* APPEmailComposer.h */,
 			);
 			name = Plugins;
 			path = "tstionic/Plugins";
@@ -440,6 +464,10 @@
 				41D6FF0AA40B4E0C95CC5ED6 /* UIWebViewExtension.m in Sources */,
 				FCF37F47DEFA42B181994742 /* CDVLogger.m in Sources */,
 				46DBFB85C7D4443EB6F981C8 /* CDVDevice.m in Sources */,
+				43AAC001E8594157AA1BD52D /* CDVFile.m in Sources */,
+				A6C9D9CB47044798AA72D7DC /* CDVLocalFilesystem.m in Sources */,
+				55847AF76FC542AA9A28EBDF /* CDVAssetLibraryFilesystem.m in Sources */,
+				4C7CCCFA6A87420BA4698D78 /* APPEmailComposer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

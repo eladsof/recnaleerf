@@ -81,6 +81,7 @@ var translationsHE = {
     FINISH_HOUR:'שעת סיום',
     TOTAL_TIME:'סה"כ זמן',
     TOTAL: 'סה"כ',
+    EXPORT_REPORT: 'יצא דו"ח',
 
     //CUSTOMERs
     CREATE_CUSTOMER_TITLE: 'יצירת לקוח חדש',
