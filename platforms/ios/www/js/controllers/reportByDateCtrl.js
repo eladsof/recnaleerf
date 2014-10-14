@@ -63,33 +63,39 @@ angular.module('recnaleerfClientApp')
             doc.text(20, 50, 'YES, Inside of PhoneGap!');
 
             var pdfOutput = doc.output();
-            console.log( pdfOutput );
 
-            //NEXT SAVE IT TO THE DEVICE'S LOCAL FILE SYSTEM
-            console.log("file system...");
             window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
-
-                    console.log(fileSystem.name);
-                    console.log(fileSystem.root.name);
-                    console.log(fileSystem.root.fullPath);
 
                     fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
                         var fileEntry = entry;
-                        console.log(entry);
 
                         entry.createWriter(function(writer) {
                             writer.onwrite = function(evt) {
                                 console.log("write success");
                             };
 
-                            console.log("writing to file");
                             writer.write( pdfOutput );
+                            var path =  fileEntry.toURL();
+                            //path = path.replace('file\:\/\/', 'relative://');
+                            window.alert(path);
+
+                            try{
+                            window.plugin.email.open({
+                                to:      ['info@appplant.de'],
+                                subject: 'Congratulations',
+                                body:    '<h1>Happy Birthday!!!</h1>',
+                                attachments: [path]
+                            });
+                            } catch(e) {
+                                window.alert(e);
+                            }
+                            window.alert('done');
                         }, function(error) {
-                            console.log(error);
+                            window.alert(error);
                         });
 
                     }, function(error){
-                        console.log(error);
+                        window.alert(error);
                     });
                 },
                 function(event){

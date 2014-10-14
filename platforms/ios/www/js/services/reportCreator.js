@@ -7,6 +7,7 @@ angular.module('reportCreator',[])
             this.generateReportFile = function (title, workitems) {
                 var doc = new jsPDF('p', 'pt', 'letter');
                 doc.fromHTML(getHTML(title, workitems), 80, 80);
+                sendAsAttachement(doc.output());
                 doc.save();
             };
 
@@ -56,6 +57,9 @@ angular.module('reportCreator',[])
                 return '<tr><td>111</td><td>222</td></tr>';
             };
 
+            var sendAsAttachement = function (pdfDoc) {
+
+            };
             return this;
         }
     ]);

@@ -9,7 +9,7 @@
  */
 
 angular.module('recnaleerfClientApp')
-    .controller('reportByDateCtrl', ['$scope','$stateParams','$window','WorkItem', 'Customer','$ionicLoading', function ($scope,$stateParams,$window,WorkItem,Customer,$ionicLoading) {
+    .controller('reportByDateCtrl', ['$scope','$stateParams','$window','WorkItem', 'Customer','$ionicLoading','reportCreator', function ($scope,$stateParams,$window,WorkItem,Customer,$ionicLoading,reportCreator) {
 
         $scope.customer = null;
         $scope.firstItemDate = new Date($stateParams.start);
@@ -51,57 +51,23 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.exportReport = function () {
-            //FIRST GENERATE THE PDF DOCUMENT
-            console.log("generating pdf...");
-            var doc = new jsPDF();
 
-            doc.text(20, 20, 'HELLO!');
-
-            doc.setFont("courier");
-            doc.setFontType("normal");
-            doc.text(20, 30, 'This is a PDF document generated using JSPDF.');
-            doc.text(20, 50, 'YES, Inside of PhoneGap!');
-
-            var pdfOutput = doc.output();
-
-            window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
-
-                    fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
-                        var fileEntry = entry;
-
-                        entry.createWriter(function(writer) {
-                            writer.onwrite = function(evt) {
-                                console.log("write success");
-                            };
-
-                            writer.write( pdfOutput );
-                            var path =  fileEntry.toURL();
-                            //path = path.replace('file\:\/\/', 'relative://');
-                            window.alert(path);
-
-                            try{
-                            window.plugin.email.open({
-                                to:      ['info@appplant.de'],
-                                subject: 'Congratulations',
-                                body:    '<h1>Happy Birthday!!!</h1>',
-                                attachments: [path]
-                            });
-                            } catch(e) {
-                                window.alert(e);
-                            }
-                            window.alert('done');
-                        }, function(error) {
-                            window.alert(error);
-                        });
-
-                    }, function(error){
-                        window.alert(error);
-                    });
-                },
-                function(event){
-                    console.log( evt.target.error.code );
-                });
+            reportCreator.generateReportMail(createReportTitle(),$scope.workItems);
         };
+
+        var createReportTitle = function () {
+            var title = 'Work report from freelancer for ';
+
+            if($scope.customer)
+                title += $scope.customer.name;
+            else
+                title += 'all customers';
+
+            title += ' from ' + $scope.firstItemDate.shortDate;
+            title += ' to ' + $scope.lastItemDate.shortDate;
+            return title;
+
+        }
 
 
         createReport();

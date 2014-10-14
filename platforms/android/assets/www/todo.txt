@@ -16,10 +16,13 @@ Fix report form + validations
 Add report types (date range, customer)
 Edit customer
 return email verification condition
+Export reports
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Export reports
+Format report
+Check on ios
+check on android
 General QA \ CSS fixes.
 ===========================================================
 ========================= MVP  ============================
