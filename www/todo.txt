@@ -17,9 +17,13 @@ Add report types (date range, customer)
 Edit customer
 return email verification condition
 Export reports
+Fix location service on mobile (Switch to plugin)
+Close work item when leaving customer
 ===========================================================
 ========================= DONE ============================
 ===========================================================
+Change alert to plugin - http://plugins.cordova.io/#/package/org.apache.cordova.dialogs
+Fix insert new work item
 Format report
 Check on ios
 check on android

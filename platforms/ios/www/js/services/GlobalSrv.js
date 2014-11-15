@@ -22,11 +22,14 @@ angular.module('recnaleerfClientApp')
 
             for(var i=0;i<$rootScope.customers.length;i++){
                 if(new Date() >= $rootScope.customers[i].ignoreUntil) {
-                    if($rootScope.customers[i].address)
-                        if(Geolocation.isCloseToCustomer($rootScope.currentLocation,$rootScope.customers[i].address.geometry.location))
+                    if($rootScope.customers[i].address) {
+                        var customerLocation = new google.maps.LatLng($rootScope.customers[i].address.geometry.location.B, $rootScope.customers[i].address.geometry.location.k);
+
+                        if (Geolocation.isCloseToCustomer($rootScope.currentLocation,customerLocation))
                             arrivingAtCustomer($rootScope.customers[i]);
                         else
-                            console.log('not close enough to : ' + $rootScope.customers[i].name);
+                            console.log('not close enough to <> : ' + $rootScope.customers[i].name + ' object is ' + $rootScope.customers[i].address.geometry.location.k + '+' + $rootScope.customers[i].address.geometry.location.B);
+                    }
                 }
                 else
                 {
@@ -36,37 +39,60 @@ angular.module('recnaleerfClientApp')
         };
         var arrivingAtCustomer = function(customer) {
             stopTimer();
-            var startWorkItem = confirm('Do you want to start a new work item for ' + customer.name + ' ?');
-            if (startWorkItem) {
+            var msg = 'Do you want to start a new work item for ' + customer.name + ' ?';
+            navigator.notification.confirm( msg,
+                                            function(buttonIndex){
+                                                arrivingAtCustomerConfirmed(buttonIndex, customer);
+                                            },
+                                            'Customer located',
+                                            ['Yes','Snooze','Ignore for 1 hour']);
+        };
+
+        var arrivingAtCustomerConfirmed = function(buttonIndex,customer) {
+            if (buttonIndex == 1) {
                 $rootScope.startNewWorkItem(customer);
             } else {
-                var ignoreCustomerForHour = confirm('Ignore ' + customer.name + ' for one hour?');
-                if (ignoreCustomerForHour) {
+
+                if (buttonIndex == 3) {
                     customer.ignoreUntil = new Date();
                     customer.ignoreUntil.setHours(customer.ignoreUntil.getHours()+1);
                 }
                 updateTimer(30);
             }
         };
+
         var checkIfLeavingCustomer = function() {
-            if(Geolocation.isFarFromCustomer($rootScope.currentLocation,$rootScope.currentWorkItem.customer.address.geometry.location)) {
-                //Close current work Item.
-                return;
+            var customerLocation = new google.maps.LatLng(  $rootScope.currentWorkItem.customer.address.geometry.location.B,
+                $rootScope.currentWorkItem.customer.address.geometry.location.k);
+
+            if(Geolocation.isFarFromCustomer($rootScope.currentLocation,customerLocation)) {
+                var startWorkItem = confirm('Do you want to close work item for ' + $rootScope.currentWorkItem.customer.name + ' ?');
+                if (startWorkItem) {
+                    $rootScope.finishCurrentWorkItem();
+
+                }
+
             }
         };
         var periodicUpdate = function() {
-            console.log('periodicUpdate...')
             if($rootScope.currentUser) {
-                console.log('periodicUpdate - yes...')
                 Geolocation.getLocation().then(function (coords) {
-                    console.log('checking...')
-                    $rootScope.currentLocation = new google.maps.LatLng(coords.latitude, coords.longitude);
-                    if ($rootScope.currentWorkItem) {
-                        updateCurrentWorkItem();
-                    } else {
-                        checkForNewWorkItem();
-                    }
-                });
+                        console.log('checking...')
+                        $rootScope.currentLocation = new google.maps.LatLng(coords.latitude, coords.longitude);
+                        if ($rootScope.currentWorkItem) {
+                            updateCurrentWorkItem();
+                        } else {
+                            checkForNewWorkItem();
+                        }
+                    },
+                    function(error) {
+                        console.log('checking... '+error);
+                        if ($rootScope.currentWorkItem) {
+                            updateCurrentWorkItem();
+                        } else {
+                            checkForNewWorkItem();
+                        }
+                    });
             }
         };
         var checkForNewWorkItem = function () {
@@ -74,10 +100,13 @@ angular.module('recnaleerfClientApp')
         };
         var updateCurrentWorkItem = function () {
             $rootScope.currentWorkItem.finish = new Date();
+            console.log(' Time so far :' + $rootScope.currentWorkItem.formattedElapsedTime(true));
             checkIfLeavingCustomer();
         };
         var stopTimer = function () {
+
             if (angular.isDefined(stop)) {
+                //alert('stopping timer');
                 $interval.cancel(stop);
                 stop = undefined;
             }
@@ -85,6 +114,7 @@ angular.module('recnaleerfClientApp')
         var updateTimer = function (secs) {
             stopTimer();
             stop = $interval(periodicUpdate, secs * 1000);
+            //alert('timer updated ' + secs);
         };
         $rootScope.startNewWorkItem = function(customer){
             if(customer == null)
@@ -97,24 +127,24 @@ angular.module('recnaleerfClientApp')
             $rootScope.currentWorkItem.isComplete = false;
             $rootScope.currentWorkItem.owner = $rootScope.currentUser;
             $rootScope.currentWorkItem.rate = customer.ratePerHour;
-            //$rootScope.currentWorkItem.save();
+            $rootScope.currentWorkItem.save();
         };
 
         $rootScope.finishCurrentWorkItem = function () {
             updateTimer(idleTimerInterval);
             $rootScope.currentWorkItem.end = new Date();
             $rootScope.currentWorkItem.isComplete = true;
-                $rootScope.currentWorkItem.save(null, {
-                 success: function(item) {
-                 // Execute any logic that should take place after the object is saved.
-                 alert('New item created objectId: ' + item.id);
-                 },
-                 error: function(customer, error) {
-                 // Execute any logic that should take place if the save fails.
-                 // error is a Parse.Error with an error code and description.
-                 alert('Failed to create new object, with error code: ' + error.message);
-                 }
-                 });
+            $rootScope.currentWorkItem.save(null, {
+                success: function(item) {
+                    // Execute any logic that should take place after the object is saved.
+                    alert('New item created objectId: ' + item.id);
+                },
+                error: function(customer, error) {
+                    // Execute any logic that should take place if the save fails.
+                    // error is a Parse.Error with an error code and description.
+                    alert('Failed to create new object, with error code: ' + error.message);
+                }
+            });
             $rootScope.currentWorkItem = null;
         };
 

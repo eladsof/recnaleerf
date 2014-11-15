@@ -9,7 +9,7 @@
  */
 
 angular.module('recnaleerfClientApp')
-    .controller('customerDetailCtrl', function($scope, $stateParams, Customer, WorkItem, WorkItemSrv,$state) {
+    .controller('customerDetailCtrl', function($scope, $stateParams, Customer, WorkItem, WorkItemSrv,$state,$ionicLoading) {
 
         Customer.getById($stateParams.customerid).then(function(customer) {
             $scope.customer = customer;
@@ -78,11 +78,11 @@ angular.module('recnaleerfClientApp')
                 function(newItem) {
                     $scope.newWorkitem = null;
                     updateTotalWorkHours();
-                    alert('Work item logged');
+                    navigator.notification.alert('Work item added',null,'Notice');
                     $ionicLoading.hide();
             },
                 function(value) {
-                    alert('Failed to add work item');
+                    navigator.notification.alert('Failed to add work item',null,'Notice');
                     console.log(value.Error);
                     $ionicLoading.hide();
             });

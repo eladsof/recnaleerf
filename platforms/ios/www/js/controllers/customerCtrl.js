@@ -54,11 +54,15 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.deleteCustomer = function(customer) {
-
-            var ret = confirm(' Are you sure you want to delete '+customer.name+' \r\n This action is irriversible');
-            if(ret)
-                customerSrv.delete(customer);
-        }
+            var msg = 'You want to delete '+customer.name+' \r\n This action is irriversible';
+            navigator.notification.confirm( msg,
+                function(buttonIndex){
+                    if(buttonIndex == 1)
+                        customerSrv.delete(customer);
+                },
+                'Are you sure?',
+                ['Yes','No']);
+        };
 
         $scope.calc = function(){
              Geolocation.calcuateDistance($scope.customer.address).then(function (distance) { $scope.dist = distance});

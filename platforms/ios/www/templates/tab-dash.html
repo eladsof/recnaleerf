@@ -10,14 +10,15 @@
 
                 <div class="item item-body">
                     <h2><i class="icon ion-loading-c"></i> {{'ELAPSED_WORK_TIME_IS' | translate}} : {{currentWorkItem.formattedElapsedTime(true)}}</h2>
-                    <h2>{{currentWorkItem}}</h2>
                 </div>
             </div>
+            <center>
             <div style="width: 80%">
                 <a ng-disabled="selectedCustomer == null" ng-click="finishCurrentWorkItem()">
                     <img style="width: 100%;height: auto"  src="img\{{'END_WORK_BTN_IMG' | translate}}"/>
                 </a>
             </div>
+            </center>
         </div>
 
         <div ng-hide="currentWorkItem">
@@ -27,7 +28,6 @@
                                     border-radius: 1;-webkit-appearance: none;background-color: #1389A7;color: #FFF;">
                     <option value="">{{'SELECT_CUSTOMER_TO_START' | translate}}</option>
                 </select>
-           <!--  </div> -->
         </div>
 
         <center>

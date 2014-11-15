@@ -18,10 +18,10 @@ $dark:                            #444 !default;
 //$light:                           #F7F7F7 !default;
 
 $light:                           #F7F7F7 !default;
-$stable:                          #1A5063 !default;
-$button-stable-text:              #FF0000 !default;
+$stable:                          #2844B8 !default;
+$button-stable-text:              #F7F7F7 !default;
 $base-background-color:           #98B1B3 !default;
-$calm: #cfe5f2 !default;
+$calm:                            #cfe5f2 !default;
 
 
 // The path for our ionicons font files, relative to the built CSS in www/css
@@ -39,5 +39,9 @@ html {direction: rtl;}
 .col {
   border: 1px solid #000000;
   background-color: $calm;
+}
+
+.tabs-striped .tabs {
+  background-color: $stable;
 }
 
