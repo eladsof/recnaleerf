@@ -12,7 +12,6 @@ angular.module('reportCreator',[])
                 var doc = new jsPDF('p', 'pt', 'letter');
                 doc.fromHTML(getHTML(title, workitems), 80, 80);
                 this.title = title;
-                window.alert(this.title);
                 sendAsAttachement(title,doc.output());
             };
 
@@ -79,11 +78,11 @@ angular.module('reportCreator',[])
 
                                 sendMailWithAttachement(title,path);
                             }, function(error) {
-                                window.alert(error);
+                                navigator.notification.alert(error, null, "Error in report");
                             });
 
                         }, function(error){
-                            window.alert(error);
+                            navigator.notification.alert(error, null, "Error in report");
                         });
                     },
                     function(event){
@@ -92,7 +91,7 @@ angular.module('reportCreator',[])
             };
 
             var sendMailWithAttachement = function (title,attachementPath) {
-                window.alert(title + "    " + attachementPath);
+                navigator.notification.alert(title + "    " + attachementPath, null, "DEBUG");
                 window.plugin.email.open({
                     subject: title,
                     body:    'Attached you can find:  <br>' + this.title,

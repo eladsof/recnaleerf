@@ -13,7 +13,15 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"de.appplant.cordova.emailcomposer.EmailComposer\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
                             "count": 1
                         },
                         {
@@ -21,7 +29,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"de.appplant.cordova.emailcomposer.EmailComposer\" /></feature>",
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -42,8 +50,7 @@
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
                             "count": 1
                         }
-                    ],
-                    "application": []
+                    ]
                 }
             }
         }
@@ -52,19 +59,25 @@
         "com.ionic.keyboard": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.ionicframework.tstionic942731"
+        },
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
         "org.apache.cordova.device": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.ionicframework.tstionic942731"
+        },
         "org.apache.cordova.file": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
-        "de.appplant.cordova.plugin.email-composer": {
+        "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
-        "org.apache.cordova.geolocation": {
+        "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         }
     },
