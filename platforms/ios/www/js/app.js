@@ -9,7 +9,7 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
-        navigator.notification.alert('Customer '+customer.name+' created succesfully',null,'Notice');
+
         Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
         $rootScope.currentUser = MyUser.current();
         GlobalSrv.initialize();
@@ -30,7 +30,7 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if(window.cordova && window.cordova.plugins.Keyboard) {
-                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
             }
             if(window.StatusBar) {
                 // org.apache.cordova.statusbar required

@@ -1,5 +1,6 @@
 angular.module('recnaleerfClientApp')
-    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','$interval','WorkItem','$ionicLoading' ,function ($rootScope,Geolocation,Customer,$interval,WorkItem,$ionicLoading) {
+    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','$interval','WorkItem','$ionicLoading','$translate' ,
+    function ($rootScope,Geolocation,Customer,$interval,WorkItem,$ionicLoading,$translate) {
 
         var stop = undefined;
         var idleTimerInterval = 5;
@@ -39,13 +40,15 @@ angular.module('recnaleerfClientApp')
         };
         var arrivingAtCustomer = function(customer) {
             stopTimer();
-            var msg = 'Do you want to start a new work item for ' + customer.name + ' ?';
+            var msg = $translate.instant('Q_START_WORK_FOR') + ':\r\n' + customer.name ;
+            console.log(msg);
+            
             navigator.notification.confirm( msg,
                                             function(buttonIndex){
                                                 arrivingAtCustomerConfirmed(buttonIndex, customer);
                                             },
-                                            'Customer located',
-                                            ['Yes','Snooze','Ignore for 1 hour']);
+                                            $translate.instant('CUSTOMER_LOCATED'),
+                                            [$translate.instant('YES'),$translate.instant('SNOOZE'),$translate.instant('IGNORE_FOR_1_HOUR')]);
         };
 
         var arrivingAtCustomerConfirmed = function(buttonIndex,customer) {
@@ -66,7 +69,8 @@ angular.module('recnaleerfClientApp')
                 $rootScope.currentWorkItem.customer.address.geometry.location.k);
 
             if(Geolocation.isFarFromCustomer($rootScope.currentLocation,customerLocation)) {
-                var startWorkItem = confirm('Do you want to close work item for ' + $rootScope.currentWorkItem.customer.name + ' ?');
+            		var msg = $translate.instant('Q_CLOSE_WORK_FOR') + ':\r\n' + $rootScope.currentWorkItem.customer.name;
+                var startWorkItem = confirm(msg);
                 if (startWorkItem) {
                     $rootScope.finishCurrentWorkItem();
 

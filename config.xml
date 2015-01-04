@@ -13,6 +13,10 @@
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
+  <!-- <preference name="StatusBarBackgroundColor" value="#888888" /> -->
+  <!-- <preference name="StatusBarStyle" value="darkcontent" /> --> 
+  <preference name="StatusBarOverlaysWebView" value="false" />
+
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>

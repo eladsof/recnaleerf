@@ -26,11 +26,12 @@ Change alert to plugin - http://plugins.cordova.io/#/package/org.apache.cordova.
 Fix insert new work item
 Format report
 Check on ios
-check on android
+Clean dependency shit
 General QA \ CSS fixes.
 ===========================================================
 ========================= MVP  ============================
 ===========================================================
+check on android
 Secure data and API keys - Add before save and other stuff to prevent from users to read\write objects that belong to someone else.
 Add icon \ image to customer
 Delete work item. (Mark as deleted - do not remove from DB)

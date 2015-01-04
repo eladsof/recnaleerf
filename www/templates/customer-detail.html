@@ -42,24 +42,27 @@
         </div>
 
         <div class="card padding zoomInUp animated" ng-show="newWorkitem" >
-            <h2>{{'REPORT_WORK_ITEM_FOR' | translate}} : {{customer.name}}</h2>
+            <div class="item item-stable">
+                {{'REPORT_WORK_ITEM_FOR' | translate}} <br>
+                <b>{{customer.name}}</b>
+            </div>
             <form>
-                <div class="item">
+                <div class="item item-input ">
                     <span class="input-label">{{'START_TIME' | translate}}:</span>
                     <input type="datetime-local"  ng-model="newWorkitem.start">
                 </div>
 
-                <div class="item">
+                <div class="item item-input ">
                     <span class="input-label">{{'FINISH_TIME' | translate}}</span>
                     <input type="datetime-local"  ng-model="newWorkitem.finish">
                 </div>
 
-                <div class="item">
-                    <label><span class="input-label">{{'HOURLY_RATE' | translate}}</span>
+                <div class="item item-input ">
+                    <span class="input-label">{{'HOURLY_RATE' | translate}}</span>
                     <input type="text"             ng-model="newWorkitem.rate">
                 </div>
 
-                <div class="item">
+                <div class="item item-input ">
                     <span class="input-label">{{'COMMENT' | translate}}:</span>
                     <input type="text"           ng-model="newWorkitem.comment"><br/>
                 </div>

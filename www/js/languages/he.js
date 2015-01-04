@@ -12,6 +12,7 @@ var translationsHE = {
     CANCEL:'ביטול',
     EDIT: 'עריכה',
     BACK: 'הקודם',
+    YES: 'כן',
 
     // ERRORS:
     SHOULD_HAVE_MIN: 'צריך להכיל לפחות',
@@ -71,7 +72,6 @@ var translationsHE = {
     SELECT_YEAR: 'בחר שנה',
     SELECT_MONTH: 'בחר חודש',
 
-
     // REPORT
     WORK_REPORT_FOR: 'דו"ח עבודה עבור',
     FROM: 'מ-',
@@ -102,5 +102,13 @@ var translationsHE = {
     DASHBOARD: 'ראשי',
     CUSTOMERS: 'לקוחות',
     REPORTS: 'דוחות',
-    ACCOUNT: 'חשבון'
+    ACCOUNT: 'חשבון',
+    
+    //NOTIFICATION
+    CUSTOMER_LOCATED: 'מיקום לקוח אותר',
+    Q_START_WORK_FOR: 'האם להתחיל עבודה עבור הלקוח',
+    Q_CLOSE_WORK_FOR: 'האם לסיים עבודה עבור לקוח',
+    SNOOZE: 'נודניק',
+    IGNORE_FOR_1_HOUR: 'התעלם למשך שעה אחת'
+    
 };

@@ -3,14 +3,17 @@
 
         <div class="list card">
 
-            <div class="item item-select padding">
-                <label>{{'SELECT_REPORT_TYPE' | translate}}</label>
-                <select ng-model="formData.reportType" ng-init="formData.reportType = 'none'">
-                    <option ng-selected="true" value="none">{{'SELECT_REPORT_TYPE' | translate}}</option>
-                    <option value="monthly">{{'MONTHLY_REPORT' | translate}}</option>
-                    <option value="dateRange">{{'DATE_RANGE_REPORT' | translate}}</option>
-                    <!-- <option value="allTime">{{'ALL_TIME_REPORT' | translate}}</option> -->
-                </select>
+            <div class="item item-select">
+                <label>&nbsp</label>
+
+                <!-- <label>{{'SELECT_REPORT_TYPE' | translate}}</label> -->
+                    <select ng-model="formData.reportType" ng-init="formData.reportType = 'none'">
+                        <option ng-selected="true" value="none">{{'SELECT_REPORT_TYPE' | translate}}</option>
+                        <option value="monthly">{{'MONTHLY_REPORT' | translate}}</option>
+                        <option value="dateRange">{{'DATE_RANGE_REPORT' | translate}}</option>
+                        <!-- <option value="allTime">{{'ALL_TIME_REPORT' | translate}}</option> -->
+                    </select>
+
             </div>
 
             <div ng-show="formData.reportType == 'dateRange'">
