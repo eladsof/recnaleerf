@@ -20,7 +20,7 @@ angular.module('recnaleerfClientApp')
             }
         };
         var checkForCustomerProximity = function() {
-
+						
             for(var i=0;i<$rootScope.customers.length;i++){
                 if(new Date() >= $rootScope.customers[i].ignoreUntil) {
                     if($rootScope.customers[i].address) {

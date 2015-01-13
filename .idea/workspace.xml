@@ -2,345 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60defe00-4d70-4d85-af96-bf5275c68018" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager$PluginManagerService$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager$PluginManagerService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/tstionic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/jcjee/plugins/EmailAttachmentProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/jcjee/plugins/EmailComposer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxxhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/tstionic-debug-unaligned.apk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/tstionic-debug-unaligned.apk.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/tstionic-debug.apk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/tstionic.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/ant-build/tstionic.ap_.d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/lib/ionic/scss/old_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/clean.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-xxhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-xxxhdpi/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/src/com/ionicframework/tstionic942731/tstionic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVShared.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/lib/ionic/scss/old_variables.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/AbstractHttpInputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/AbstractHttpInputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/AbstractOutputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/AbstractOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Address.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Address.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$3.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$4.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$5.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/AuthenticationToken.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/AuthenticationToken.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Base64.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Base64.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/BuildConfig.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/BuildConfig.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CallbackContext.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CallbackContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Config.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Config.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ConfigXmlParser.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ConfigXmlParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Connection.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Connection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ConnectionPool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/ContentFilesystem.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/ContentFilesystem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$3.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$4$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$4.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$5$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$5$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$5.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaActivity.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/services.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Classes/AppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Classes/AppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Classes/MainViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Classes/MainViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Classes/MainViewController.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/com.ionic.keyboard/IonicKeyboard.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/com.ionic.keyboard/IonicKeyboard.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/com.ionic.keyboard/UIWebViewExtension.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/com.ionic.keyboard/UIWebViewExtension.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/de.appplant.cordova.plugin.email-composer/APPEmailComposer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/de.appplant.cordova.plugin.email-composer/APPEmailComposer.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.console/CDVLogger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.console/CDVLogger.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.device/CDVDevice.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.device/CDVDevice.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.dialogs/CDVNotification.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.dialogs/CDVNotification.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.file/CDVAssetLibraryFilesystem.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.file/CDVAssetLibraryFilesystem.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.file/CDVFile.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.file/CDVFile.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.file/CDVLocalFilesystem.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.file/CDVLocalFilesystem.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.geolocation/CDVLocation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.geolocation/CDVLocation.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.inappbrowser/CDVInAppBrowser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.inappbrowser/CDVInAppBrowser.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.statusbar/CDVStatusBar.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Plugins/org.apache.cordova.statusbar/CDVStatusBar.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/CDVNotification.bundle/beep.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/de.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/en.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/es.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-40@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-50@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-60@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-72@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-76.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-76@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon-small@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/icons/icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/se.lproj/Localizable.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/splash/Default-568h@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/splash/Default-Landscape@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/splash/Default-Landscape~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/splash/Default-Portrait@2x~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/splash/Default-Portrait~ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/splash/Default@2x~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/Resources/splash/Default~iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/main.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/tstionic-Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/tstionic-Prefix.pch" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp-debug-unaligned.apk" afterPath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp-debug.apk" afterPath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp.ap_" afterPath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/CordovaApp.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/CordovaApp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaArgs.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaArgs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaBridge.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaBridge.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$3.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$4.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$5.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$6.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$7.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$8.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$9.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaChromeClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaInterface.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaPlugin.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaPlugin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaPreferences.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaPreferences.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaResourceApi$OpenForReadResult.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaResourceApi$OpenForReadResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaResourceApi.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaResourceApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaUriHelper.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaUriHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$3.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$4.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$ActivityResult.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$ActivityResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$Level16Apis.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView$Level16Apis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient$1$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/CordovaWebViewClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/DirectoryManager.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/DirectoryManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/DirectoryManager.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/DirectoryManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Editor$FaultHidingOutputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Editor$FaultHidingOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Editor.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Entry.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Snapshot.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache$Snapshot.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/DiskLruCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Dispatcher$RealResponseBody.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Dispatcher$RealResponseBody.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Dispatcher.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Dispatcher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/tls/DistinguishedNameParser.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/tls/DistinguishedNameParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Dns$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Dns$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Dns.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Dns.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/DroidGap.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/DroidGap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/de/appplant/cordova/emailcomposer/EmailComposer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/EncodingException.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/EncodingException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/ErrorCode.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/ErrorCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ExifHelper.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ExifHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ExposedJsApi.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ExposedJsApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure$Builder.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Failure.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/FaultRecoveringOutputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/FaultRecoveringOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileExistsException.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileExistsException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/FileHelper.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/FileHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileHelper.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$10.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$11.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$12.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$13.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$14.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$15.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$16.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$17.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$18.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$19.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$20.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$21.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$22.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$23.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$24.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$24.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$25.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$25.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$3.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$4.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$5.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$6.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$7.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$8.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$9.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$FileOp.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$FileOp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$LimitedInputStream.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$LimitedInputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$ReadFileCallback.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem$ReadFileCallback.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/Filesystem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameReader$Handler.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameReader$Handler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameReader.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameWriter.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/FrameWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HeaderParser$CacheControlHandler.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HeaderParser$CacheControlHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HeaderParser.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HeaderParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/HeadersMode.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/HeadersMode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$HeaderEntry.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$HeaderEntry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$Reader.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$Reader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$Writer.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack$Writer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Hpack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06$Reader.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06$Reader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06$Writer.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06$Writer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Http20Draft06.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpAuthenticator$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpAuthenticator$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpAuthenticator.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpAuthenticator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpDate$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpDate$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpDate.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpDate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpEngine$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpEngine$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpEngine.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpEngine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$3.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$CacheRequestImpl$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$CacheRequestImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$CacheRequestImpl.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$CacheRequestImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$Entry.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$EntryCacheResponse.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$EntryCacheResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$EntrySecureCacheResponse.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache$EntrySecureCacheResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/HttpResponseCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$ChunkedInputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$ChunkedInputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$ChunkedOutputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$ChunkedOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$FixedLengthInputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$FixedLengthInputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$FixedLengthOutputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport$FixedLengthOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpTransport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpURLConnectionImpl$Retry.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpURLConnectionImpl$Retry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpURLConnectionImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsEngine.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsEngine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl$HttpUrlConnectionDelegate.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl$HttpUrlConnectionDelegate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/HttpsURLConnectionImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/IceCreamCordovaWebViewClient.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/IceCreamCordovaWebViewClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$3.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$4$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$4.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$3.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$4.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$InAppBrowserClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowserDialog.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowserDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppChromeClient.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppChromeClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/IncomingStreamHandler$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/IncomingStreamHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/IncomingStreamHandler.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/IncomingStreamHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/InvalidModificationException.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/InvalidModificationException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionic/keyboard/IonicKeyboard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/JSONUtils.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/JSONUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Job.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Job.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/LOG.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/LOG.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/LinearLayoutSoftKeyboardDetect.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/LinearLayoutSoftKeyboardDetect.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystem.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystemURL.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystemURL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/MediaType.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/MediaType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$FillableInflaterInputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader$FillableInflaterInputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/NameValueBlockReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/NamedRunnable.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/NamedRunnable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$BridgeMode.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$BridgeMode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$JsMessage.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$JsMessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$PollingBridgeMode.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$PollingBridgeMode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$PrivateApiBridgeMode.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue$PrivateApiBridgeMode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/NativeToJsMessageQueue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/NoModificationAllowedException.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/NoModificationAllowedException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$2$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$2$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$2$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$3.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$4.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$2.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$3.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$4.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$5$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$5$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$5.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$6$1.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$6$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$6.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator$Challenge.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator$Challenge.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator$Credential.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator$Credential.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkAuthenticator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/tls/OkHostnameVerifier.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/tls/OkHostnameVerifier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkHttpClient$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkHttpClient$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkHttpClient.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkHttpClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkResponseCache.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/OkResponseCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/OkResponseCacheAdapter.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/OkResponseCacheAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Ping.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Ping.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$Android23.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$Android23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$Android41.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$Android41.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$JdkWithJettyNpnPlatform.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$JdkWithJettyNpnPlatform.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$JettyNpnProvider.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform$JettyNpnProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Platform.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginEntry.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginEntry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginResult$Status.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginResult$Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginResult.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/PluginResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/Policy.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/Policy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$attr.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$drawable.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$string.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$xml.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/com/ionicframework/tstionic942731/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RawHeaders$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RawHeaders$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RawHeaders.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RawHeaders.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Body.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Builder.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Request.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RequestHeaders$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RequestHeaders$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RequestHeaders.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RequestHeaders.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Body.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Body.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Builder.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Receiver.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response$Receiver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Response.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/ResponseHeaders$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/ResponseHeaders$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/ResponseHeaders.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/ResponseHeaders.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ResponseSource.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/ResponseSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RetryableOutputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RetryableOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Route.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/Route.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/RouteDatabase.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/RouteDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RouteSelector.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/RouteSelector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ScrollEvent.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/ScrollEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Settings.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Settings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3$Reader.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3$Reader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3$Writer.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3$Writer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Spdy3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$2.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$3.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Builder.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Reader$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Reader$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Reader.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection$Reader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$SpdyDataInputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$SpdyDataInputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$SpdyDataOutputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream$SpdyDataOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/SpdyStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/SpdyTransport.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/SpdyTransport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/StrictLineReader$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/StrictLineReader$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/StrictLineReader.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/StrictLineReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/Transport.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/Transport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/TunnelRequest.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/TunnelRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/TypeMismatchException.class" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes/org/apache/cordova/file/TypeMismatchException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/UnknownLengthHttpInputStream.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/http/UnknownLengthHttpInputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Util$1.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Util$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Util.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/Util.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Variant.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/com/squareup/okhttp/internal/spdy/Variant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Whitelist$URLPattern.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Whitelist$URLPattern.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Whitelist.class" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes/org/apache/cordova/Whitelist.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/dexedLibs/classes-e965e1221f885bac3caf949c695beb8e.jar" afterPath="$PROJECT_DIR$/platforms/android/ant-build/dexedLibs/classes-e965e1221f885bac3caf949c695beb8e.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes.dex" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes.jar" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/ic_action_next_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/ic_action_next_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-mdpi/ic_action_next_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-mdpi/ic_action_next_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xhdpi/ic_action_next_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xhdpi/ic_action_next_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_next_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_next_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/ic_action_previous_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/ic_action_previous_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-mdpi/ic_action_previous_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-mdpi/ic_action_previous_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xhdpi/ic_action_previous_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xhdpi/ic_action_previous_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_previous_item.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_previous_item.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/ic_action_remove.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/ic_action_remove.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-mdpi/ic_action_remove.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-mdpi/ic_action_remove.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xhdpi/ic_action_remove.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xhdpi/ic_action_remove.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_remove.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_remove.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable/icon.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable/icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-hdpi/icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-ldpi/icon.png" afterPath="$PROJECT_DIR$/platforms/android/ant-build/res/drawable-ldpi/icon.png" />
@@ -367,170 +95,100 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-ldpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-ldpi/screen.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-mdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-mdpi/screen.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/drawable-port-xhdpi/screen.png" afterPath="$PROJECT_DIR$/platforms/android/res/drawable-port-xhdpi/screen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gitignore" afterPath="$PROJECT_DIR$/platforms/android/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.project" afterPath="$PROJECT_DIR$/platforms/android/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/.project" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/AndroidManifest.cordova.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/AndroidManifest.cordova.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/AndroidManifest.cordova.xml" afterPath="$PROJECT_DIR$/platforms/android/ant-build/AndroidManifest.cordova.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/AndroidManifest.xml.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/AndroidManifest.xml.d" afterPath="$PROJECT_DIR$/platforms/android/ant-build/AndroidManifest.xml.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-gen/org/apache/cordova/BuildConfig.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-gen/org/apache/cordova/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-gen/com/ionicframework/tstionic942731/BuildConfig.java" afterPath="$PROJECT_DIR$/platforms/android/ant-gen/com/ionicframework/tstionic942731/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Coordinates.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Coordinates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp-debug-unaligned.apk.d" afterPath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp-debug-unaligned.apk.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/.gitignore" afterPath="$PROJECT_DIR$/platforms/ios/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDV.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDV.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVAvailability.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVAvailability.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVConfigParser.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVConfigParser.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVConfigParser.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVConfigParser.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVDebug.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVDebug.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVJSON.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVJSON.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVJSON.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVJSON.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPlugin.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPlugin.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPlugin.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPlugin.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPluginResult.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPluginResult.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPluginResult.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVPluginResult.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVShared.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVShared.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVTimer.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVTimer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVTimer.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVTimer.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVViewController.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVViewController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVViewController.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWhitelist.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWhitelist.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWhitelist.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/CDVWhitelist.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp.ap_.d" afterPath="$PROJECT_DIR$/platforms/android/ant-build/CordovaApp.ap_.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/src/com/ionicframework/tstionic942731/CordovaApp.java" afterPath="$PROJECT_DIR$/platforms/android/src/com/ionicframework/tstionic942731/CordovaApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaUriHelper.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaUriHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/DirectoryManager.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/DirectoryManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryReader.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryReader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryReader.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryReader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/DroidGap.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/DroidGap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Entry.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Entry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/Entry.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/Entry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExifHelper.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExifHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/File.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/File.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/File.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/File.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileEntry.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileEntry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileEntry.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileEntry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileError.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileError.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/FileHelper.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/FileHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileReader.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileReader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileReader.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileReader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileSystem.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileSystem.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/ios/FileSystem.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/ios/FileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadResult.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadResult.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileWriter.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileWriter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileWriter.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/FileWriter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Flags.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Flags.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/Flags.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/Flags.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/IceCreamCordovaWebViewClient.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/IceCreamCordovaWebViewClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/JSONUtils.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/JSONUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Metadata.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Metadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/Metadata.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/Metadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Position.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Position.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/PositionError.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/PositionError.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/ProgressEvent.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/ProgressEvent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/ProgressEvent.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/ProgressEvent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-gen/R.java.d" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-gen/R.java.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib_Prefix.pch" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib_Prefix.pch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/services/GlobalSrv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/services/GlobalSrv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSData+Base64.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSData+Base64.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSData+Base64.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSData+Base64.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-gen/R.java.d" afterPath="$PROJECT_DIR$/platforms/android/ant-gen/R.java.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-gen/com/ionicframework/tstionic942731/R.java" afterPath="$PROJECT_DIR$/platforms/android/ant-gen/com/ionicframework/tstionic942731/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/R.txt" afterPath="$PROJECT_DIR$/platforms/android/ant-build/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ScrollEvent.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ScrollEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/_where-is-www.txt" afterPath="$PROJECT_DIR$/platforms/android/assets/_where-is-www.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/VERSION" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/VERSION" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/appinfo.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/appinfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/build.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/build.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/build.gradle" afterPath="$PROJECT_DIR$/platforms/android/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build.gradle" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/build.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/build.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/build.prop" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/build.prop" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/build.prop" afterPath="$PROJECT_DIR$/platforms/android/ant-build/build.prop" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/build.xml" afterPath="$PROJECT_DIR$/platforms/android/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build.xml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/check_reqs.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/check_reqs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/build.xcconfig" afterPath="$PROJECT_DIR$/platforms/ios/cordova/build.xcconfig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/classes.dex.d" afterPath="$PROJECT_DIR$/platforms/android/ant-build/classes.dex.d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/clean.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/clean.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/tstionic/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/tstionic/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.console/www/console-via-logger.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.console/www/console-via-logger.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/console.log" afterPath="$PROJECT_DIR$/platforms/ios/cordova/console.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/platform_www/cordova.js" afterPath="$PROJECT_DIR$/platforms/android/platform_www/cordova.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/custom_rules.xml" afterPath="$PROJECT_DIR$/platforms/android/custom_rules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/templates/customer-detail.html" afterPath="$PROJECT_DIR$/platforms/ios/www/templates/customer-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/customer-detail.html" afterPath="$PROJECT_DIR$/www/templates/customer-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/cordova.js" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/platform_www/cordova.js" afterPath="$PROJECT_DIR$/platforms/ios/platform_www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/cordova.js" afterPath="$PROJECT_DIR$/platforms/ios/www/cordova.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/customer-detail.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/customer-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/customer-new.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/customer-new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/templates/customer-new.html" afterPath="$PROJECT_DIR$/platforms/ios/www/templates/customer-new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/customer-new.html" afterPath="$PROJECT_DIR$/www/templates/customer-new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/defaults.xml" afterPath="$PROJECT_DIR$/platforms/android/cordova/defaults.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/device.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/device.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.device/www/device.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.device/www/device.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emulate.sh" afterPath="$PROJECT_DIR$/emulate.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/emulate_andr.sh" afterPath="$PROJECT_DIR$/emulate_andr.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/exec.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/exec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/geolocation.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/geolocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/defaults.xml" afterPath="$PROJECT_DIR$/platforms/ios/cordova/defaults.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/languages/he.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/languages/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/index.html" afterPath="$PROJECT_DIR$/platforms/ios/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-device.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/ionic.app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/platforms/ios/www/css/ionic.app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/ionic.app.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/platforms/ios/www/css/ionic.app.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/ionic.app.min.css" afterPath="$PROJECT_DIR$/www/css/ionic.app.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/scss/ionic.app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ios.json" afterPath="$PROJECT_DIR$/plugins/ios.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/com.ionic.keyboard/www/keyboard.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/com.ionic.keyboard/www/keyboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-devices.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/local.properties" afterPath="$PROJECT_DIR$/platforms/android/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/local.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/log.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/log.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/log.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/log.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.console/www/logger.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.console/www/logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/login.html" afterPath="$PROJECT_DIR$/www/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.dialogs/www/notification.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.dialogs/www/notification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/proguard.txt" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/ant-build/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/ant-build/proguard.txt" afterPath="$PROJECT_DIR$/platforms/android/ant-build/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/tstionic.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/tstionic.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/project.properties" afterPath="$PROJECT_DIR$/platforms/android/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/project.properties" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/requestFileSystem.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/requestFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/requestFileSystem.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/requestFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js" afterPath="$PROJECT_DIR$/platforms/ios/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/run.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/run.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/run.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/run.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/settings.gradle" afterPath="$PROJECT_DIR$/platforms/android/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/spawn.js" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/spawn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/login.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/services/reportCreator.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/services/reportCreator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/services/reportCreator.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/services/reportCreator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/reportCreator.js" afterPath="$PROJECT_DIR$/www/js/services/reportCreator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/values/strings.xml" afterPath="$PROJECT_DIR$/platforms/android/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/templates/tab-customers.html" afterPath="$PROJECT_DIR$/platforms/ios/www/templates/tab-customers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-customers.html" afterPath="$PROJECT_DIR$/www/templates/tab-customers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/tab-customers.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/tab-customers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/tab-dash.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/tab-dash.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/templates/tab-dash.html" afterPath="$PROJECT_DIR$/platforms/ios/www/templates/tab-dash.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-dash.html" afterPath="$PROJECT_DIR$/www/templates/tab-dash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-reports.html" afterPath="$PROJECT_DIR$/www/templates/tab-reports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/cordova/version.bat" afterPath="$PROJECT_DIR$/platforms/android/cordova/version.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/templates/tab-reports.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/templates/tab-reports.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/todo.txt" afterPath="$PROJECT_DIR$/platforms/android/assets/www/todo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/todo.txt" afterPath="$PROJECT_DIR$/www/todo.txt" />
     </list>
     <ignored path="tstionic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -555,24 +213,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GlobalSrv.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
+      <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1588" max-vertical-offset="2445">
-              <caret line="120" column="23" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="23" />
+            <state vertical-scroll-proportion="-12.102041" vertical-offset="307" max-vertical-offset="990">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <file leaf-file-name="todo.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9518459" vertical-offset="292" max-vertical-offset="975">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <marker date="1420364122000" expanded="true" signature="1183:1195" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.34684685" vertical-offset="174" max-vertical-offset="885">
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -580,7 +236,7 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/scss/ionic/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.14" vertical-offset="348" max-vertical-offset="10740">
+            <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="10740">
               <caret line="37" column="35" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="35" />
               <folding />
             </state>
@@ -590,7 +246,7 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.269231" vertical-offset="145" max-vertical-offset="1650">
+            <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="1650">
               <caret line="24" column="88" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="88" />
               <folding />
             </state>
@@ -600,9 +256,17 @@
       <file leaf-file-name="ionic.app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/ionic.app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.269231" vertical-offset="84220" max-vertical-offset="117630">
-              <caret line="5629" column="15" selection-start-line="5629" selection-start-column="11" selection-end-line="5629" selection-end-column="15" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="84175" max-vertical-offset="117660">
+              <caret line="5626" column="15" selection-start-line="5626" selection-start-column="15" selection-end-line="5626" selection-end-column="15" />
+              <folding>
+                <marker date="1421163894000" expanded="true" signature="549:597" placeholder="{...}" />
+                <marker date="1421163894000" expanded="true" signature="234679:234690" placeholder="{...}" />
+                <marker date="1421163894000" expanded="true" signature="234860:234887" placeholder="{...}" />
+                <marker date="1421163894000" expanded="true" signature="234910:234925" placeholder="{...}" />
+                <marker date="1421163894000" expanded="true" signature="234935:234947" placeholder="{...}" />
+                <marker date="1421163894000" expanded="true" signature="234974:235022" placeholder="{...}" />
+                <marker date="1421163894000" expanded="true" signature="235044:235076" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -610,10 +274,11 @@
       <file leaf-file-name="tab-dash.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/tab-dash.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="795">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="855">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#center#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#center#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#center#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -679,7 +344,6 @@
         <option value="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/customerDetailCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/services/reportCreator.js" />
-        <option value="$PROJECT_DIR$/www/todo.txt" />
         <option value="$PROJECT_DIR$/emulate.sh" />
         <option value="$PROJECT_DIR$/emulate_andr.sh" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
@@ -691,6 +355,7 @@
         <option value="$PROJECT_DIR$/www/templates/tab-dash.html" />
         <option value="$PROJECT_DIR$/www/templates/tab-reports.html" />
         <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
+        <option value="$PROJECT_DIR$/www/todo.txt" />
       </list>
     </option>
   </component>
@@ -705,7 +370,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="790" />
+    <option name="height" value="786" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -815,14 +480,10 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -830,6 +491,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -867,8 +532,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="790" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="786" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -882,13 +547,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32258064" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32258064" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
@@ -1111,13 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="840">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/WorkItemSrv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="975">
@@ -1129,9 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="1470">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="e#2285#3377#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1179,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1588" max-vertical-offset="2445">
-          <caret line="120" column="23" selection-start-line="120" selection-start-column="23" selection-end-line="120" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1648" max-vertical-offset="2505">
+          <caret line="124" column="23" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1189,13 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24401914" vertical-offset="1068" max-vertical-offset="2415">
           <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/ios/tstionic/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4524887" vertical-offset="0" max-vertical-offset="990">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1231,10 +879,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tab-dash.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="795">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="855">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#center#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#center#0;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#center#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#center#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -1261,7 +910,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.269231" vertical-offset="145" max-vertical-offset="1650">
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="1650">
           <caret line="24" column="88" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="88" />
           <folding />
         </state>
@@ -1269,15 +918,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/ionic.app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.269231" vertical-offset="84220" max-vertical-offset="117630">
-          <caret line="5629" column="15" selection-start-line="5629" selection-start-column="11" selection-end-line="5629" selection-end-column="15" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="84175" max-vertical-offset="117660">
+          <caret line="5626" column="15" selection-start-line="5626" selection-start-column="15" selection-end-line="5626" selection-end-column="15" />
+          <folding>
+            <marker date="1421163894000" expanded="true" signature="549:597" placeholder="{...}" />
+            <marker date="1421163894000" expanded="true" signature="234679:234690" placeholder="{...}" />
+            <marker date="1421163894000" expanded="true" signature="234860:234887" placeholder="{...}" />
+            <marker date="1421163894000" expanded="true" signature="234910:234925" placeholder="{...}" />
+            <marker date="1421163894000" expanded="true" signature="234935:234947" placeholder="{...}" />
+            <marker date="1421163894000" expanded="true" signature="234974:235022" placeholder="{...}" />
+            <marker date="1421163894000" expanded="true" signature="235044:235076" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/scss/ionic/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.14" vertical-offset="348" max-vertical-offset="10740">
+        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="10740">
           <caret line="37" column="35" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="35" />
           <folding />
         </state>
@@ -1285,11 +942,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9518459" vertical-offset="292" max-vertical-offset="975">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <marker date="1420364122000" expanded="true" signature="1183:1195" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="-12.102041" vertical-offset="307" max-vertical-offset="990">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34684685" vertical-offset="174" max-vertical-offset="885">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

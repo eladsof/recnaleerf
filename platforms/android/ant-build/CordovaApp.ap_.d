@@ -8,6 +8,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-land-ldpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-land-mdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-land-xhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-land-xxhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-land-xxxhdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-ldpi/icon.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-mdpi/ic_action_next_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-mdpi/ic_action_previous_item.png \
@@ -17,6 +19,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-port-ldpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-port-mdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-port-xhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-port-xxhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-port-xxxhdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-xhdpi/ic_action_next_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-xhdpi/ic_action_previous_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-xhdpi/ic_action_remove.png \
@@ -24,6 +28,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-xxhdpi/ic_action_next_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-xxhdpi/ic_action_previous_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/drawable-xxhdpi/ic_action_remove.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-xxhdpi/icon.png \
+/Users/eladsof/projects/tstionic/platforms/android/res/drawable-xxxhdpi/icon.png \
 /Users/eladsof/projects/tstionic/platforms/android/res/values/strings.xml \
 /Users/eladsof/projects/tstionic/platforms/android/res/xml/config.xml \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable/icon.png \
@@ -35,6 +41,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-land-xhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-land-xxhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-land-xxxhdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-ldpi/icon.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-mdpi/ic_action_next_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-mdpi/ic_action_previous_item.png \
@@ -44,6 +52,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-port-xhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-port-xxhdpi/screen.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-port-xxxhdpi/screen.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xhdpi/ic_action_next_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xhdpi/ic_action_previous_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xhdpi/ic_action_remove.png \
@@ -51,6 +61,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_next_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_previous_item.png \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xxhdpi/ic_action_remove.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xxhdpi/icon.png \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/res/drawable-xxxhdpi/icon.png \
 /Users/eladsof/projects/tstionic/platforms/android/assets/_where-is-www.txt \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/cordova.js \
@@ -82,7 +94,6 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/languages \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/models \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services \
-/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/services.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/AccountCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/customerCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/customerDetailCtrl.js \
@@ -113,6 +124,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3_files \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/jspdf.min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/lodash.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/underscore-min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3_files/AccountCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3_files/angular-animate.min.js \
@@ -229,6 +241,7 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.file \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.statusbar \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/com.ionic.keyboard/www \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.email-composer/www \
@@ -264,6 +277,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser/www \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.statusbar/www \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/plugins/org.apache.cordova.statusbar/www/statusbar.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/scss/ionic \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/scss/ionic/_variables.scss \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/templates/customer-detail.html \

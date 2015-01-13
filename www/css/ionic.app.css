@@ -7818,12 +7818,14 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 html {
   direction: rtl; }
 
+h2 {
+  color: #DDD; }
+
 body {
   color: #FFF; }
 
 .col {
-  border: 1px solid #000000;
-  background-color: #cfe5f2; }
+  border: 1px solid #000000; }
 
 .tabs-striped .tabs {
   background-color: #1B2123; }

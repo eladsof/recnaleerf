@@ -87,4 +87,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser.class \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowserDialog.class \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppChromeClient.class \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$1.class \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$2.class \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$3.class \
+/Users/eladsof/projects/tstionic/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar.class \
 /Users/eladsof/projects/tstionic/platforms/android/ant-build/dexedLibs/classes-e965e1221f885bac3caf949c695beb8e.jar \

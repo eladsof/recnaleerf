@@ -10,16 +10,18 @@ angular.module('reportCreator',[])
 
             this.generateReportMail = function (title, workitems) {
                 var doc = new jsPDF('p', 'pt', 'letter');
-                doc.fromHTML(getHTML(title, workitems), 80, 80);
+                //doc.fromHTML(getHTML(title, workitems));
+								//doc.fromHTML("<h1>Elad</h1>");
                 this.title = title;
-                sendAsAttachement(title,doc.output());
+                sendMailWitouthAttachement(title,getHTML(title, workitems));
+                //sendAsAttachement(title/*,doc.output()*/);
             };
 
             var getHTML = function (title, workitems) {
                 var html = getTitle(title);
-                html += getReportHeader();
-                html += getReportBody();
-                html += getReportFooter();
+                //html += getReportHeader();
+                //html += getReportBody();
+                //html += getReportFooter();
                 return html;
             };
 
@@ -60,8 +62,8 @@ angular.module('reportCreator',[])
                 return '<tr><td>111</td><td>222</td></tr>';
             };
 
-            var sendAsAttachement = function (title,pdfDoc) {
-                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
+            var sendAsAttachement = function (title,pdfDoc) {            	
+                /*window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
 
                         fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
                             var fileEntry = entry;
@@ -87,15 +89,23 @@ angular.module('reportCreator',[])
                     },
                     function(event){
                         console.log( evt.target.error.code );
-                    });
+                    });*/
             };
 
             var sendMailWithAttachement = function (title,attachementPath) {
+            		alert('hhheeeelllloooooo');
                 navigator.notification.alert(title + "    " + attachementPath, null, "DEBUG");
                 window.plugin.email.open({
                     subject: title,
                     body:    'Attached you can find:  <br>' + this.title,
                     attachments: [attachementPath]
+                });
+            };
+            
+            var sendMailWitouthAttachement = function (title,text) {
+                window.plugin.email.open({
+                    subject: title,
+                    body:    'Attached you can find:  <br>' + this.title + '<br>'+text                    
                 });
             };
             return this;

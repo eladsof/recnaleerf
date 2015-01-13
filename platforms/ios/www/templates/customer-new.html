@@ -1,40 +1,38 @@
-<ion-view title="{{getPageTitle() | translate}}">
+<ion-view title="{{getPageTitle() | translate}}" disable-tap>
     <ion-nav-buttons side="left">
         <button class="button" ng-click="cancelCreateAction()">
             {{'CANCEL' | translate}}
         </button>
     </ion-nav-buttons>
     <ion-content has-header="true" padding="true">
+    
         <form name="custoemr_details_form" novalidate>
-            <div class="list list-inset">
-                <div class="item item-select padding">
-                <!-- <label class="item item-input"> -->
+        
+        
+                <div class="item item-input">
+
                     <input type="text" placeholder="{{'CUSTOMER_NAME' | translate}}" name="name" ng-model="editedCustomer.name" autocapitalize="off" autocorrect="off" required="" />
-                <!-- </label> -->
+
                     <div  class="error" ng-show="custoemr_details_form.name.$dirty && custoemr_details_form.name.$invalid">
                         <small class="error" ng-show="custoemr_details_form.name.$error.required">{{'CUSTOMER_NAME' | translate}} {{'IS_REQUIRED' |  translate}}</small>
                     </div>
                     </div>
 
 
-                <div class="item item-select padding">
-                <!-- <label class="item item-input"> -->
-                    <input placeholder="{{'START_TYPING_ADDRESS'| translate}}" type="text" name="address" ng-model="address" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required />
-                <!-- </label> -->
-                <div  class="error" ng-show="custoemr_details_form.address.$dirty && !editedCustomer.address">
-                    <small class="error" ng-show="custoemr_details_form.address.$error.required">{{'CUSTOMER_ADDRESS' | translate}} {{'IS_REQUIRED' |  translate}}</small>
-                    <small class="error" ng-show="!editedCustomer.address">{{'CUSTOMER_NAME' | translate}} {{'NEEDS_TO_BE_SELECTED_NOT_TYPED' | translate}}</small>
-                </div>
-                    </div>
 
-                <div class="item item-select padding">
-                <!-- <label class="item item-input"> -->
-                    <input type="text" positive-float placeholder="{{'DEFAULT_HOURLY_RATE' | translate}}" name="rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" required/>
-                <!-- </label> -->
-                <div  class="error" ng-show="custoemr_details_form.rate.$dirty && custoemr_details_form.rate.$invalid">
-                    <small class="error" ng-show="custoemr_details_form.rate.$error.float">{{'DEFAULT_HOURLY_RATE_NEEDS_TO_BE_NUM_BIGGER_THAN_ZERO' | translate}}</small>
-                </div>
-                    </div>
+                <div class="item item-input">
+                    <input placeholder="{{'START_TYPING_ADDRESS'| translate}}" type="text" name="address" ng-model="address" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required class="needsclick"/>
+	                <div  class="error" ng-show="custoemr_details_form.address.$dirty && !editedCustomer.address">
+  	                  <small class="error" ng-show="custoemr_details_form.address.$error.required">{{'CUSTOMER_ADDRESS' | translate}} {{'IS_REQUIRED' |  translate}}</small>
+    	                <small class="error" ng-show="!editedCustomer.address">{{'CUSTOMER_NAME' | translate}} {{'NEEDS_TO_BE_SELECTED_NOT_TYPED' | translate}}</small>
+      	          </div>
+                    </div>        
+                <div class="item item-input">
+                    <input type="number" positive-float placeholder="{{'DEFAULT_HOURLY_RATE' | translate}}" name="rate" ng-model="editedCustomer.ratePerHour" autocapitalize="off" autocorrect="off" required/>
+        	        <div  class="error" ng-show="custoemr_details_form.rate.$dirty && custoemr_details_form.rate.$invalid">
+          	          <small class="error" ng-show="custoemr_details_form.rate.$error.float">{{'DEFAULT_HOURLY_RATE_NEEDS_TO_BE_NUM_BIGGER_THAN_ZERO' | translate}}</small>
+            	    </div>
+                    </div>              
             </div>
 
 

@@ -13,7 +13,8 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
         Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
         $rootScope.currentUser = MyUser.current();
         GlobalSrv.initialize();
-
+        $rootScope.locloc = 0;
+	
         // register listener to watch route changes
         $rootScope.$on('$stateChangeStart',
             function(event, toState, toParams, fromState, fromParams){
@@ -158,4 +159,22 @@ app.filter('range', function() {
             input.push(i);
         return input;
     };
+});
+
+app.directive('disableTap', function($timeout) {
+  return {
+    link: function() {
+      $timeout(function() {
+        // Find google places div
+        _.findIndex(angular.element(document.querySelectorAll('.pac-container')), function(container) {
+          // disable ionic data tab
+          container.setAttribute('data-tap-disabled', 'true');
+          // leave input field if google-address-entry is selected
+          container.onclick = function() {
+            document.getElementById('autocomplete').blur();
+          };
+        });
+      },500);
+    }
+  };
 });

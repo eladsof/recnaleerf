@@ -37,13 +37,15 @@ html {direction: rtl;}
 //  direction: rtl;
 }
 
+h2 {color : $input-color}
+
 body {
 color: #FFF
 }
 
 .col {
   border: 1px solid #000000;
-  background-color: $calm;
+  //background-color: $calm;
 }
 
 .tabs-striped .tabs {
@@ -54,6 +56,5 @@ color: #FFF
   left: 5px;
   position: absolute;
 }
-
 
 .item-select select { color: #ddd;}

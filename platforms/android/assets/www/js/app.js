@@ -30,7 +30,7 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if(window.cordova && window.cordova.plugins.Keyboard) {
-                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
             }
             if(window.StatusBar) {
                 // org.apache.cordova.statusbar required
@@ -158,4 +158,22 @@ app.filter('range', function() {
             input.push(i);
         return input;
     };
+});
+
+app.directive('disableTap', function($timeout) {
+  return {
+    link: function() {
+      $timeout(function() {
+        // Find google places div
+        _.findIndex(angular.element(document.querySelectorAll('.pac-container')), function(container) {
+          // disable ionic data tab
+          container.setAttribute('data-tap-disabled', 'true');
+          // leave input field if google-address-entry is selected
+          container.onclick = function() {
+            document.getElementById('autocomplete').blur();
+          };
+        });
+      },500);
+    }
+  };
 });

@@ -10,8 +10,13 @@ angular.module('reportCreator',[])
 
             this.generateReportMail = function (title, workitems) {
                 var doc = new jsPDF('p', 'pt', 'letter');
-                doc.fromHTML(getHTML(title, workitems), 80, 80);
-                this.title = title;
+                doc.text(20, 20, 'Hello world!');
+						    doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.');
+						    doc.addPage();
+						    doc.text(20, 20, 'From within Cordova.');
+						    
+                //doc.fromHTML(getHTML(title, workitems));					
+                this.title = title;                
                 sendAsAttachement(title,doc.output());
             };
 
@@ -60,7 +65,7 @@ angular.module('reportCreator',[])
                 return '<tr><td>111</td><td>222</td></tr>';
             };
 
-            var sendAsAttachement = function (title,pdfDoc) {
+            var sendAsAttachement = function (title,pdfDoc) {            	
                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
 
                         fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
@@ -91,6 +96,7 @@ angular.module('reportCreator',[])
             };
 
             var sendMailWithAttachement = function (title,attachementPath) {
+            		alert('hhheeeelllloooooo');
                 navigator.notification.alert(title + "    " + attachementPath, null, "DEBUG");
                 window.plugin.email.open({
                     subject: title,
@@ -98,6 +104,8 @@ angular.module('reportCreator',[])
                     attachments: [attachementPath]
                 });
             };
+            
+           
             return this;
         }
     ]);
