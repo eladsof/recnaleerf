@@ -20,11 +20,23 @@ angular.module('recnaleerfClientApp')
             }
         };
         var checkForCustomerProximity = function() {
+            $rootScope.distanceFromCustomer1 = 1000000000;
 						
             for(var i=0;i<$rootScope.customers.length;i++){
                 if(new Date() >= $rootScope.customers[i].ignoreUntil) {
                     if($rootScope.customers[i].address) {
-                        var customerLocation = new google.maps.LatLng($rootScope.customers[i].address.geometry.location.B, $rootScope.customers[i].address.geometry.location.k);
+
+                        var customerLocation = new google.maps.LatLng($rootScope.customers[i].address.geometry.location.k, $rootScope.customers[i].address.geometry.location.B);
+
+                        // All of this is temporary for debugging purposes.
+                        var dist = Geolocation.distanceFromCustomer($rootScope.currentLocation,customerLocation);
+                        console.log(" ===== Dist between " + $rootScope.currentLocation + " and "  + customerLocation + "is : "+dist+" ==========");
+
+                        if(dist < $rootScope.distanceFromCustomer1){
+                            $rootScope.distanceFromCustomer1 = dist;
+                            $rootScope.nearestCustomer1 = $rootScope.customers[i].name;
+                        }
+                        // ================== END OF DEBUGGING ====================
 
                         if (Geolocation.isCloseToCustomer($rootScope.currentLocation,customerLocation))
                             arrivingAtCustomer($rootScope.customers[i]);
@@ -53,7 +65,7 @@ angular.module('recnaleerfClientApp')
 
         var arrivingAtCustomerConfirmed = function(buttonIndex,customer) {
             if (buttonIndex == 1) {
-                $rootScope.startNewWorkItem(customer);
+                $rootScope.startNewWorkItem(customer,true);
             } else {
 
                 if (buttonIndex == 3) {
@@ -65,8 +77,8 @@ angular.module('recnaleerfClientApp')
         };
 
         var checkIfLeavingCustomer = function() {
-            var customerLocation = new google.maps.LatLng(  $rootScope.currentWorkItem.customer.address.geometry.location.B,
-                $rootScope.currentWorkItem.customer.address.geometry.location.k);
+            var customerLocation = new google.maps.LatLng($rootScope.currentWorkItem.customer.address.geometry.location.k,
+                $rootScope.currentWorkItem.customer.address.geometry.location.B);
 
             if(Geolocation.isFarFromCustomer($rootScope.currentLocation,customerLocation)) {
             		var msg = $translate.instant('Q_CLOSE_WORK_FOR') + ':\r\n' + $rootScope.currentWorkItem.customer.name;
@@ -105,7 +117,8 @@ angular.module('recnaleerfClientApp')
         var updateCurrentWorkItem = function () {
             $rootScope.currentWorkItem.finish = new Date();
             console.log(' Time so far :' + $rootScope.currentWorkItem.formattedElapsedTime(true));
-            checkIfLeavingCustomer();
+            if($rootScope.currentWorkItem.startedByLocation)
+                checkIfLeavingCustomer();
         };
         var stopTimer = function () {
 
@@ -120,7 +133,7 @@ angular.module('recnaleerfClientApp')
             stop = $interval(periodicUpdate, secs * 1000);
             //alert('timer updated ' + secs);
         };
-        $rootScope.startNewWorkItem = function(customer){
+        $rootScope.startNewWorkItem = function(customer,startedByLocation){
             if(customer == null)
                 return;
 
@@ -131,6 +144,7 @@ angular.module('recnaleerfClientApp')
             $rootScope.currentWorkItem.isComplete = false;
             $rootScope.currentWorkItem.owner = $rootScope.currentUser;
             $rootScope.currentWorkItem.rate = customer.ratePerHour;
+            $rootScope.currentWorkItem.startedByLocation = startedByLocation;
             $rootScope.currentWorkItem.save();
         };
 

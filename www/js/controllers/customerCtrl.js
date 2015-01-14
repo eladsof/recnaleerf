@@ -27,9 +27,9 @@ angular.module('recnaleerfClientApp')
 
         $scope.editedCustomer;
 
-        var refreshCustomers  = function() {
-            $scope.loadCustomerList();
-        };
+        //var refreshCustomers  = function() {
+        //    $scope.loadCustomerList();
+        //};
 
         $scope.CreateCustomer = function () {
             $scope.editedCustomer = new Customer();
@@ -77,9 +77,9 @@ angular.module('recnaleerfClientApp')
 
         $scope.getCustomers =function(){
             return $rootScope.customers;
-        }
+        };
 
-        refreshCustomers();
+        //refreshCustomers();
 
 
     }]);

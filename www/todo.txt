@@ -20,13 +20,16 @@ Export reports
 Fix location service on mobile (Switch to plugin)
 Close work item when leaving customer
 Change alert to plugin - http://plugins.cordova.io/#/package/org.apache.cordova.dialogs
+Add current location on dashboard
+Check bug with location happening on real device.
 ===========================================================
 ========================= DONE ============================
 ===========================================================
 Fix insert new work item
-Add current location on dashboard
-Check bug with location happening on real device.
+Change autocomplete to this one : https://github.com/kuhnza/angular-google-places-autocomplete
+Add background gps refresh using : https://github.com/christocracy/cordova-plugin-background-geolocation
 Format report properly
+=====> Here i should send for testing to Ilan \ Asaf \ Perhaps others?
 Check on ios
 Clean dependency shit
 General QA \ CSS fixes.

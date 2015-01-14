@@ -22,9 +22,9 @@ angular.module('reportCreator',[])
 
             var getHTML = function (title, workitems) {
                 var html = getTitle(title);
-                //html += getReportHeader();
-                //html += getReportBody();
-                //html += getReportFooter();
+                html += getReportHeader();
+                html += getReportBody();
+                html += getReportFooter();
                 return html;
             };
 
