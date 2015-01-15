@@ -21,7 +21,7 @@
 
 
                 <div class="item item-input">
-                    <input placeholder="{{'START_TYPING_ADDRESS'| translate}}" type="text" name="address" ng-model="address" ng-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required class="needsclick"/>
+                    <input placeholder="{{'START_TYPING_ADDRESS'| translate}}" type="text" name="address" ng-model="address" g-places-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required class="needsclick"/>
 	                <div  class="error" ng-show="custoemr_details_form.address.$dirty && !editedCustomer.address">
   	                  <small class="error" ng-show="custoemr_details_form.address.$error.required">{{'CUSTOMER_ADDRESS' | translate}} {{'IS_REQUIRED' |  translate}}</small>
     	                <small class="error" ng-show="!editedCustomer.address">{{'CUSTOMER_NAME' | translate}} {{'NEEDS_TO_BE_SELECTED_NOT_TYPED' | translate}}</small>

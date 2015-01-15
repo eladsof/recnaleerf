@@ -159,7 +159,7 @@ angular.module('recnaleerfClientApp')
                 error: function(customer, error) {
                     // Execute any logic that should take place if the save fails.
                     // error is a Parse.Error with an error code and description.
-                    var msg = $translate.instant('WORK_ITEM NOT_CREATED \r\n ERROR : ') + customer.name ;
+                    var msg = $translate.instant('WORK_ITEM NOT_CREATED') +  '\r\n' +$translate.instant('ERROR') + ':' + customer.name ;
                     navigator.notification.alert(msg,null,$translate.instant('ERROR'));
                 }
             });

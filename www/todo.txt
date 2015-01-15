@@ -27,6 +27,7 @@ Fix insert new work item + (Or actually the message)
 ========================= DONE ============================
 ===========================================================
 Change autocomplete to this one : https://github.com/kuhnza/angular-google-places-autocomplete
+
 Add background gps refresh using : https://github.com/christocracy/cordova-plugin-background-geolocation
 Format report properly - https://github.com/cunneen/Cordova-PDF-Example-using-jsPDF/blob/master/www/js/jutoPDFCreator.js
 =====> Here i should send for testing to Ilan \ Asaf \ Perhaps others?

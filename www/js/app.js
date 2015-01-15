@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat','pascalprecht.translate','reportCreator'])
+app = angular.module('recnaleerfClientApp', ['ionic','google.places','geoLocationModule','inputMatch','ngAnimate','positiveFloat','pascalprecht.translate','reportCreator'])
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
