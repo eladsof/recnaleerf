@@ -53,8 +53,6 @@ angular.module('recnaleerfClientApp')
         var arrivingAtCustomer = function(customer) {
             stopTimer();
             var msg = $translate.instant('Q_START_WORK_FOR') + ':\r\n' + customer.name ;
-            console.log(msg);
-            
             navigator.notification.confirm( msg,
                                             function(buttonIndex){
                                                 arrivingAtCustomerConfirmed(buttonIndex, customer);
@@ -155,12 +153,14 @@ angular.module('recnaleerfClientApp')
             $rootScope.currentWorkItem.save(null, {
                 success: function(item) {
                     // Execute any logic that should take place after the object is saved.
-                    alert('New item created objectId: ' + item.id);
+                    var msg = $translate.instant('WORK_ITEM') + ' ' + $translate.instant('SAVED_SUCCESSFULLY') + '\r\n' + $translate.instant('CUSTOMER') + ' :'+ item.customer.name ;
+                    navigator.notification.alert(msg,null,$translate.instant('SAVED_SUCCESSFULLY'));
                 },
                 error: function(customer, error) {
                     // Execute any logic that should take place if the save fails.
                     // error is a Parse.Error with an error code and description.
-                    alert('Failed to create new object, with error code: ' + error.message);
+                    var msg = $translate.instant('WORK_ITEM NOT_CREATED') +  '\r\n' +$translate.instant('ERROR') + ':' + customer.name ;
+                    navigator.notification.alert(msg,null,$translate.instant('ERROR'));
                 }
             });
             $rootScope.currentWorkItem = null;
