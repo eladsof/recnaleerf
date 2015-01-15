@@ -23,13 +23,14 @@ Change alert to plugin - http://plugins.cordova.io/#/package/org.apache.cordova.
 Add current location on dashboard
 Check bug with location happening on real device.
 Fix insert new work item + (Or actually the message)
+Change autocomplete to this one : https://github.com/kuhnza/angular-google-places-autocomplete
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Change autocomplete to this one : https://github.com/kuhnza/angular-google-places-autocomplete
-
+Format report properly - jspdf table plugin - https://github.com/someatoms/jsPDF-AutoTable
 Add background gps refresh using : https://github.com/christocracy/cordova-plugin-background-geolocation
-Format report properly - https://github.com/cunneen/Cordova-PDF-Example-using-jsPDF/blob/master/www/js/jutoPDFCreator.js
+
+
 =====> Here i should send for testing to Ilan \ Asaf \ Perhaps others?
 Check on ios
 Clean dependency shit
@@ -55,4 +56,4 @@ check out ngMessage
 decouple geo location api from app
 Check moment.js
 Consider replacing date pickers with - http://angular-ui.github.io/bootstrap/ (look for date in page)
-Check out cool http://underscorejs.org/# lib for grouping
+Check out cool http://underscorejs.org/# lib for grouping (lodash seems more popular)

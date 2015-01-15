@@ -2,71 +2,90 @@
  * Created by eladsof on 10/5/14.
  */
 angular.module('reportCreator',[])
-    .service("reportCreator", [
+    .service("reportCreator", ['$filter',
 
 
-        function() {
+        function($filter) {
             this.title = "";
+            var doc;
 
             this.generateReportMail = function (title, workitems) {
-                var doc = new jsPDF('p', 'pt', 'letter');
-                doc.text(20, 20, 'Hello world!');
-						    doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.');
-						    doc.addPage();
-						    doc.text(20, 20, 'From within Cordova.');
-						    
-                //doc.fromHTML(getHTML(title, workitems));					
-                this.title = title;                
+                doc = new jsPDF('p', 'pt', 'letter');
+                this.title = title;
+                createContent(title,workitems);
                 sendAsAttachement(title,doc.output());
             };
 
-            var getHTML = function (title, workitems) {
-                var html = getTitle(title);
-                html += getReportHeader();
-                html += getReportBody();
-                html += getReportFooter();
-                return html;
+            var createContent = function (title, workitems) {
+                addTitle(title);
+                addReportHeader();
+                addReportBody(workitems);
+                addReportFooter();
             };
 
-            var getTitle = function (title) {
-                return '<h1>' + title + '</h1>';
+            var addTitle = function (title) {
+                //doc.text(20, 20, title);
             };
 
-            var getReportHeader = function () {
-                return '<hr>';
+            var addReportHeader = function () {
+                // Add header of some sort if needed
             };
 
-            var getReportBody = function () {
-                var html = '';
-                html += '<table>';
-                html += getTableHeader();
-                html += getTableContent();
-                html += '</table>';
+            var addReportBody = function (workitems) {
+
+                var groupedByCustomer = _.groupBy(workitems,function(item) {return item.customer.id});
+                _.forEach(groupedByCustomer,addCustomerTable);
+                //console.log(groupedByCustomer);
+
+                //doc.autoTable(columns, workitems, {});
             };
 
-            var getReportFooter = function () {
-                return '<hr>';
+            var createTableTitle = function (items, customerId) {
+                doc.text(20,20,'This is the table title - How `bout that ;)');
             };
 
-            var getTableHeader = function () {
-                return '<tr style="background:grey"><td>Name</td><td>Value</td></tr>';
+            function getTableHeader() {
+                return [
+                    {title: "Date", key: "date"},
+                    {title: "Start", key: "start"},
+                    {title: "Total time", key: "totalTime"},
+                    {title: "Price per hour", key: "rate"},
+                    {title: "Total", key: "totalSum"}
+                ];
+            }
+
+            function convertDataToTableModel(items) {
+                return _.map(items,function(item) {
+                        return {date: $filter('date')(item.start,'shortDate'),
+                                start: $filter('date')(item.start,'shortTime'),
+                                totalTime:item.formattedElapsedTime(),
+                                rate:item.rate,
+                                totalSum:$filter('number')(item.totalCharge(),1)
+                        }
+                    }
+                );
+            }
+
+            function createTable(items) {
+                var header = getTableHeader();
+                var data = convertDataToTableModel(items);
+                doc.autoTable(header, data, {});
+            }
+
+            var addCustomerTable = function(items,customerId) {
+                createTableTitle(items,customerId);
+                createTable(items);
+                doc.addPage();
             };
 
-            var getTableContent = function () {
-                var html = '';
-                html += '<tbody>';
-                for ( i = 0; i < 10; i++) {
-                    html += getRow();
-                }
-                return html;
+            var addReportFooter = function () {
+                // Add footer of some sort if needed
             };
 
-            var getRow = function () {
-                return '<tr><td>111</td><td>222</td></tr>';
-            };
 
-            var sendAsAttachement = function (title,pdfDoc) {            	
-                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
+            var sendAsAttachement = function (title,pdfDoc) {
+                doc.save();
+                /*window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
 
                         fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
                             var fileEntry = entry;
@@ -92,7 +111,7 @@ angular.module('reportCreator',[])
                     },
                     function(event){
                         console.log( evt.target.error.code );
-                    });
+                    });*/
             };
 
             var sendMailWithAttachement = function (title,attachementPath) {
