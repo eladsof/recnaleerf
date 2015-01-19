@@ -39,14 +39,16 @@ angular.module('recnaleerfClientApp')
                 function (aItems) {
                     $scope.workItems = aItems;
                     $scope.totalItemsSum = 0;
-                    calculateSum();
                     $ionicLoading.hide();
+                }).then( function () {
+                    calculateSum();
                 });
         };
 
         var calculateSum = function () {
             $scope.workItems.forEach(function(item) {
                 $scope.totalItemsSum += item.totalCharge();
+                console.log(item.customer.name);
             });
         };
 
@@ -56,15 +58,14 @@ angular.module('recnaleerfClientApp')
         };
 
         var createReportTitle = function () {
-            var title = 'Work report from freelancer for ';
-
+            var title = 'Work report for ' + $scope.currentUser.get('username') + '\r\n';
+/*
             if($scope.customer)
                 title += $scope.customer.name;
             else
                 title += 'all customers';
-
-            title += ' from ' + $scope.firstItemDate.shortDate;
-            title += ' to ' + $scope.lastItemDate.shortDate;
+*/
+            title +=  $scope.firstItemDate.toDateString() + ' - ' + $scope.lastItemDate.toDateString();
             return title;
 
         }

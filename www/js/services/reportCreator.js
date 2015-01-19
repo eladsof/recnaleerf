@@ -2,46 +2,69 @@
  * Created by eladsof on 10/5/14.
  */
 angular.module('reportCreator',[])
-    .service("reportCreator", ['$filter',
+    .service("reportCreator", ['$filter','Customer',
 
 
-        function($filter) {
-            this.title = "";
+        function($filter,Customer) {
+            var title = "";
             var doc;
+            var pageYindex = 70;
+            var firstPage;
 
-            this.generateReportMail = function (title, workitems) {
+            this.generateReportMail = function (atitle, workitems) {
                 doc = new jsPDF('p', 'pt', 'letter');
-                this.title = title;
+                firstPage = true;
+                title = atitle;
                 createContent(title,workitems);
                 sendAsAttachement(title,doc.output());
             };
 
             var createContent = function (title, workitems) {
-                addTitle(title);
+
                 addReportHeader();
+                addTitle(title);
                 addReportBody(workitems);
                 addReportFooter();
             };
 
-            var addTitle = function (title) {
-                //doc.text(20, 20, title);
+            var addReportHeader = function () {
+
             };
 
-            var addReportHeader = function () {
-                // Add header of some sort if needed
+            var addTitle = function (atitle) {
+                doc.setFont('Helvetica','Bold');
+                doc.setFontSize(30);
+                var updatedTitle = doc.splitTextToSize(atitle,600);
+                doc.text(20,pageYindex,updatedTitle);
+                pageYindex += 70;
             };
 
             var addReportBody = function (workitems) {
 
                 var groupedByCustomer = _.groupBy(workitems,function(item) {return item.customer.id});
                 _.forEach(groupedByCustomer,addCustomerTable);
-                //console.log(groupedByCustomer);
-
-                //doc.autoTable(columns, workitems, {});
             };
 
-            var createTableTitle = function (items, customerId) {
-                doc.text(20,20,'This is the table title - How `bout that ;)');
+            function needToAddPage() {
+                var temp = firstPage;
+                firstPage = false;
+                return temp;;
+            }
+
+            var addCustomerTable = function(items,customerId) {
+                if(needToAddPage())
+                    doc.addPage();
+                createTableTitle(items[0].customer.name);
+                createTable(items);
+                pageYindex = 20;
+            };
+
+            var createTableTitle = function (customerName) {
+                var tableTitle = 'Summary for '+ customerName;
+                console.log(tableTitle);
+                doc.setFontSize(16);
+                doc.text(20,pageYindex,tableTitle);
+                pageYindex+=30;
             };
 
             function getTableHeader() {
@@ -67,16 +90,18 @@ angular.module('reportCreator',[])
             }
 
             function createTable(items) {
+                var options = {
+                    padding: 3, // Vertical cell padding
+                    fontSize: 12,
+                    lineHeight: 18,
+                    margins: { horizontal: 40, top: pageYindex, bottom: 10 },// How much space around the table
+                    extendWidth: true // If true, the table will span 100% of page width minus horizontal margins.
+                };
+
                 var header = getTableHeader();
                 var data = convertDataToTableModel(items);
-                doc.autoTable(header, data, {});
+                doc.autoTable(header, data, options);
             }
-
-            var addCustomerTable = function(items,customerId) {
-                createTableTitle(items,customerId);
-                createTable(items);
-                doc.addPage();
-            };
 
             var addReportFooter = function () {
                 // Add footer of some sort if needed
