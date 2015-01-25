@@ -116,24 +116,26 @@ angular.module('reportCreator',[])
             }
 
             var sendAsAttachement = function () {
+                //pdfMake.createPdf(doc).open();
+                //return;
+
                 var pdf = pdfMake.createPdf(doc);
-                //pdf.open();
                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
 
                         fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
                             var fileEntry = entry;
 
-                            window.alert(title);
                             entry.createWriter(function(writer) {
                                 writer.onwrite = function(evt) {
                                     console.log("write success");
                                 };
 
-                                writer.write( pdf );
-                                var path =  fileEntry.toURL();
-                                //path = path.replace('file\:\/\/', 'relative://');
+                                pdf.getBuffer(function(result){
+                                    writer.write( new Blob([result], {type: 'application/pdf'}) );
+                                    var path =  fileEntry.toURL();
+                                    sendMailWithAttachement(title,path);
+                                })
 
-                                sendMailWithAttachement(title,path);
                             }, function(error) {
                                 navigator.notification.alert(error, null, "Error in report");
                             });
@@ -148,8 +150,6 @@ angular.module('reportCreator',[])
             };
 
             var sendMailWithAttachement = function (title,attachementPath) {
-            		alert('hhheeeelllloooooo');
-                navigator.notification.alert(title + "    " + attachementPath, null, "DEBUG");
                 window.plugin.email.open({
                     subject: title,
                     body:    'Attached you can find:  <br>' + this.title,

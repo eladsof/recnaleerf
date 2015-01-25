@@ -125,6 +125,7 @@ angular.module('recnaleerfClientApp').
                     var defer = $q.defer();
                     var query = new Parse.Query(this);
                     query.equalTo("owner", aUser);
+                    query.include("customer");
 
                     if(aCustomer)
                         query.equalTo("customer", aCustomer);

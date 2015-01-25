@@ -13,8 +13,13 @@ var translationsHE = {
     EDIT: 'עריכה',
     BACK: 'הקודם',
     YES: 'כן',
+    WORK_ITEM: 'פריט עבודה',
+    SAVED_SUCCESSFULLY: 'נשמר בהצלחה',
+    NOT_CREATED: 'לא נוצר',
+    CUSTOMER: 'לקוח',
 
     // ERRORS:
+    ERROR: 'שגיאה',
     SHOULD_HAVE_MIN: 'צריך להכיל לפחות',
     SHOULD_HAVE_MAX: 'יכול להכיל עד',
     IS_REQUIRED: 'הוא שדה חובה',

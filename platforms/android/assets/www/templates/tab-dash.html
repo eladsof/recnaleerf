@@ -32,16 +32,17 @@
 
         <center>
         <div style="width: 80%" ng-hide="currentWorkItem">
-            <a ng-hide="selectedCustomer == null" ng-click="startNewWorkItem(selectedCustomer)">
+            <a ng-hide="selectedCustomer == null" ng-click="startNewWorkItem(selectedCustomer,false)">
                 <img style="width: 100%;height: auto"  src="img\{{'START_WORK_BTN_IMG' | translate}}"/>
             </a>
-            <a ng-show="selectedCustomer == null" ng-click="startNewWorkItem(selectedCustomer)">
+            <a ng-show="selectedCustomer == null">
                 <img style="width: 100%;height: auto"  src="img\{{'START_WORK__DIS_BTN_IMG' | translate}}"/>
             </a>
         </div>
         </center>
 
-
-
+        <br/><br/><br/>
+        <div ng-show="distanceFromCustomer1" style="direction: ltr;"> Nearest customer is {{nearestCustomer1}}<br/>Distance from customer is: {{distanceFromCustomer1/1000 | number:1}}km</div>
+        <div ng-hide="distanceFromCustomer1" style="direction: ltr;"> Waiting for location...</div>
     </ion-content>
 </ion-view>

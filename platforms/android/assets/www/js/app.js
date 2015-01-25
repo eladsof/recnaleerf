@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocationModule','inputMatch','ngAnimate','positiveFloat','pascalprecht.translate','reportCreator'])
+app = angular.module('recnaleerfClientApp', ['ionic','google.places','geoLocationModule','inputMatch','ngAnimate','positiveFloat','pascalprecht.translate','reportCreator'])
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
@@ -13,7 +13,8 @@ app = angular.module('recnaleerfClientApp', ['ionic','ngAutocomplete','geoLocati
         Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
         $rootScope.currentUser = MyUser.current();
         GlobalSrv.initialize();
-
+        $rootScope.locloc = 0;
+	
         // register listener to watch route changes
         $rootScope.$on('$stateChangeStart',
             function(event, toState, toParams, fromState, fromParams){

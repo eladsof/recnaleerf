@@ -103,6 +103,8 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/reportByDateCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/reportParamsCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/controllers/workItemsCtrl.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/autocomplete.css \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/autocomplete.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/imports.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/inputmatch.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/js/directives/ngAutocomplete.js \
@@ -123,9 +125,14 @@
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3.html \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3_files \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/ionic \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/jspdf.debug.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/jspdf.min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/jspdf.plugin.autotable.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/jspdf.plugin.table.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/lodash.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/pdfmake.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/underscore-min.js \
+/Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/vfs_fonts.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3_files/AccountCtrl.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3_files/angular-animate.min.js \
 /Users/eladsof/projects/tstionic/platforms/android/assets/www/lib/10.0.0.3_files/angular-route.min.js \

@@ -2,86 +2,140 @@
  * Created by eladsof on 10/5/14.
  */
 angular.module('reportCreator',[])
-    .service("reportCreator", [
+    .service("reportCreator", ['$filter','Customer',
 
 
-        function() {
-            this.title = "";
+        function($filter,Customer) {
+            var title = "";
+            var doc;
+            var pageYindex = 80;
 
-            this.generateReportMail = function (title, workitems) {
-                var doc = new jsPDF('p', 'pt', 'letter');
-                doc.text(20, 20, 'Hello world!');
-						    doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.');
-						    doc.addPage();
-						    doc.text(20, 20, 'From within Cordova.');
-						    
-                //doc.fromHTML(getHTML(title, workitems));					
-                this.title = title;                
-                sendAsAttachement(title,doc.output());
+            function getDoc() {
+                var dd = {
+                    header : function(pageNum,totalPages) {return {style: 'header', text: 'Report from recnaleerf - Page ' + pageNum + 'out of '+totalPages}},
+
+                    content: [],
+
+                    styles: {
+
+                        header: {
+                            fontSize: 18,
+                            bold: true,
+                            color: 'grey',
+                            margin: [40, 10, 10, 60]
+                        },
+
+                        subheader: {
+                            fontSize: 16,
+                            bold: true,
+                            margin: [0, 0, 0, 10]
+                        },
+
+                        tableExample: {
+                            margin: [0, 0, 0, 0]
+                        },
+
+                        tableHeader: {
+                            bold: true,
+                            fontSize: 13,
+                            color: 'black'
+                        }
+                    },
+                    defaultStyle: {
+                        // alignment: 'justify'
+                    }
+                };
+                return dd;
+            }
+
+            this.generateReportMail = function (atitle, workitems) {
+                doc = getDoc();
+                createContent(atitle,workitems);
+                sendAsAttachement();
             };
 
-            var getHTML = function (title, workitems) {
-                var html = getTitle(title);
-                html += getReportHeader();
-                html += getReportBody();
-                html += getReportFooter();
-                return html;
+            var createContent = function (title, workitems) {
+                addTitle(title);
+                addReportBody(workitems);
             };
 
-            var getTitle = function (title) {
-                return '<h1>' + title + '</h1>';
+            var addTitle = function (atitle) {
+                doc.content.push({style: 'subheader', text: atitle});
             };
 
-            var getReportHeader = function () {
-                return '<hr>';
+            var addReportBody = function (workitems) {
+                var groupedByCustomer = _.groupBy(workitems,function(item) {return item.customer.id});
+                _.forEach(groupedByCustomer,addCustomerTable);
             };
 
-            var getReportBody = function () {
-                var html = '';
-                html += '<table>';
-                html += getTableHeader();
-                html += getTableContent();
-                html += '</table>';
+            var addCustomerTable = function(items,customerId) {
+                createTableTitle(items[0].customer.name);
+                createTable(items);
             };
 
-            var getReportFooter = function () {
-                return '<hr>';
+            var createTableTitle = function (customerName) {
+                var tableTitle = 'Summary for '+ customerName;
+                doc.content.push('\n\n');
+                doc.content.push({style: 'subheader', text: tableTitle});
             };
 
-            var getTableHeader = function () {
-                return '<tr style="background:grey"><td>Name</td><td>Value</td></tr>';
-            };
-
-            var getTableContent = function () {
-                var html = '';
-                html += '<tbody>';
-                for ( i = 0; i < 10; i++) {
-                    html += getRow();
+            function createTable(items) {
+                var totalSum = 0;
+                var tableObj = getTableHeader();
+                for(var index in items){
+                    tableObj.table.body.push(convertDataToTableModel(items[index]));
+                    totalSum += items[index].totalCharge();
                 }
-                return html;
+                doc.content.push(tableObj);
+                addTableFooter(totalSum);
+            }
+
+            var addTableFooter = function (sum) {
+                doc.content.push('\n');
+                var tableTitle = 'Total to charge is : '+ sum;
+                doc.content.push({style: 'subheader', text: tableTitle});
             };
 
-            var getRow = function () {
-                return '<tr><td>111</td><td>222</td></tr>';
-            };
+            function getTableHeader() {
+                return {table: {
+                    body: [[{style: 'tableHeader', text: 'Date'},
+                            {style: 'tableHeader', text: 'Start'},
+                            {style: 'tableHeader', text: 'Total time'},
+                            {style: 'tableHeader', text: 'Price per hour'},
+                            {style: 'tableHeader', text: 'Total'}]]}};
+            }
 
-            var sendAsAttachement = function (title,pdfDoc) {            	
+            function convertDataToTableModel(item) {
+                console.log(item.rate);
+                return [ $filter('date')(item.start,'shortDate'),
+                        $filter('date')(item.start,'shortTime'),
+                        item.formattedElapsedTime(),
+                        String(item.rate),
+                        $filter('number')(item.totalCharge(),1)
+                        ];
+            }
+
+            var sendAsAttachement = function () {
+                //pdfMake.createPdf(doc).open();
+                //return;
+
+                var pdf = pdfMake.createPdf(doc);
                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
 
                         fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
                             var fileEntry = entry;
 
-                            window.alert(title);
                             entry.createWriter(function(writer) {
                                 writer.onwrite = function(evt) {
                                     console.log("write success");
                                 };
 
-                                writer.write( pdfDoc );
-                                var path =  fileEntry.toURL();
-                                //path = path.replace('file\:\/\/', 'relative://');
+                                pdf.getBuffer(function(result){
+                                    writer.write( new Blob([result], {type: 'application/pdf'}) );
+                                    var path =  fileEntry.toURL();
+                                    sendMailWithAttachement(title,path);
+                                })
 
-                                sendMailWithAttachement(title,path);
                             }, function(error) {
                                 navigator.notification.alert(error, null, "Error in report");
                             });
@@ -96,8 +150,6 @@ angular.module('reportCreator',[])
             };
 
             var sendMailWithAttachement = function (title,attachementPath) {
-            		alert('hhheeeelllloooooo');
-                navigator.notification.alert(title + "    " + attachementPath, null, "DEBUG");
                 window.plugin.email.open({
                     subject: title,
                     body:    'Attached you can find:  <br>' + this.title,
