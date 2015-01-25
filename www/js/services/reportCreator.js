@@ -8,109 +8,117 @@ angular.module('reportCreator',[])
         function($filter,Customer) {
             var title = "";
             var doc;
-            var pageYindex = 70;
-            var firstPage;
+            var pageYindex = 80;
+
+            function getDoc() {
+                var dd = {
+                    header : function(pageNum,totalPages) {return {style: 'header', text: 'Report from recnaleerf - Page ' + pageNum + 'out of '+totalPages}},
+
+                    content: [],
+
+                    styles: {
+
+                        header: {
+                            fontSize: 18,
+                            bold: true,
+                            color: 'grey',
+                            margin: [40, 10, 10, 60]
+                        },
+
+                        subheader: {
+                            fontSize: 16,
+                            bold: true,
+                            margin: [0, 0, 0, 10]
+                        },
+
+                        tableExample: {
+                            margin: [0, 0, 0, 0]
+                        },
+
+                        tableHeader: {
+                            bold: true,
+                            fontSize: 13,
+                            color: 'black'
+                        }
+                    },
+                    defaultStyle: {
+                        // alignment: 'justify'
+                    }
+                };
+                return dd;
+            }
 
             this.generateReportMail = function (atitle, workitems) {
-                doc = new jsPDF('p', 'pt', 'letter');
-                firstPage = true;
-                title = atitle;
-                createContent(title,workitems);
-                sendAsAttachement(title,doc.output());
+                doc = getDoc();
+                createContent(atitle,workitems);
+                sendAsAttachement();
             };
 
             var createContent = function (title, workitems) {
-
-                addReportHeader();
                 addTitle(title);
                 addReportBody(workitems);
-                addReportFooter();
-            };
-
-            var addReportHeader = function () {
-
             };
 
             var addTitle = function (atitle) {
-                doc.setFont('Helvetica','Bold');
-                doc.setFontSize(30);
-                var updatedTitle = doc.splitTextToSize(atitle,600);
-                doc.text(20,pageYindex,updatedTitle);
-                pageYindex += 70;
+                doc.content.push({style: 'subheader', text: atitle});
             };
 
             var addReportBody = function (workitems) {
-
                 var groupedByCustomer = _.groupBy(workitems,function(item) {return item.customer.id});
                 _.forEach(groupedByCustomer,addCustomerTable);
             };
 
-            function needToAddPage() {
-                var temp = firstPage;
-                firstPage = false;
-                return temp;;
-            }
-
             var addCustomerTable = function(items,customerId) {
-                if(needToAddPage())
-                    doc.addPage();
                 createTableTitle(items[0].customer.name);
                 createTable(items);
-                pageYindex = 20;
             };
 
             var createTableTitle = function (customerName) {
                 var tableTitle = 'Summary for '+ customerName;
-                console.log(tableTitle);
-                doc.setFontSize(16);
-                doc.text(20,pageYindex,tableTitle);
-                pageYindex+=30;
+                doc.content.push('\n\n');
+                doc.content.push({style: 'subheader', text: tableTitle});
+            };
+
+            function createTable(items) {
+                var totalSum = 0;
+                var tableObj = getTableHeader();
+                for(var index in items){
+                    tableObj.table.body.push(convertDataToTableModel(items[index]));
+                    totalSum += items[index].totalCharge();
+                }
+                doc.content.push(tableObj);
+                addTableFooter(totalSum);
+            }
+
+            var addTableFooter = function (sum) {
+                doc.content.push('\n');
+                var tableTitle = 'Total to charge is : '+ sum;
+                doc.content.push({style: 'subheader', text: tableTitle});
             };
 
             function getTableHeader() {
-                return [
-                    {title: "Date", key: "date"},
-                    {title: "Start", key: "start"},
-                    {title: "Total time", key: "totalTime"},
-                    {title: "Price per hour", key: "rate"},
-                    {title: "Total", key: "totalSum"}
-                ];
+                return {table: {
+                    body: [[{style: 'tableHeader', text: 'Date'},
+                            {style: 'tableHeader', text: 'Start'},
+                            {style: 'tableHeader', text: 'Total time'},
+                            {style: 'tableHeader', text: 'Price per hour'},
+                            {style: 'tableHeader', text: 'Total'}]]}};
             }
 
-            function convertDataToTableModel(items) {
-                return _.map(items,function(item) {
-                        return {date: $filter('date')(item.start,'shortDate'),
-                                start: $filter('date')(item.start,'shortTime'),
-                                totalTime:item.formattedElapsedTime(),
-                                rate:item.rate,
-                                totalSum:$filter('number')(item.totalCharge(),1)
-                        }
-                    }
-                );
+            function convertDataToTableModel(item) {
+                console.log(item.rate);
+                return [ $filter('date')(item.start,'shortDate'),
+                        $filter('date')(item.start,'shortTime'),
+                        item.formattedElapsedTime(),
+                        String(item.rate),
+                        $filter('number')(item.totalCharge(),1)
+                        ];
             }
 
-            function createTable(items) {
-                var options = {
-                    padding: 3, // Vertical cell padding
-                    fontSize: 12,
-                    lineHeight: 18,
-                    margins: { horizontal: 40, top: pageYindex, bottom: 10 },// How much space around the table
-                    extendWidth: true // If true, the table will span 100% of page width minus horizontal margins.
-                };
-
-                var header = getTableHeader();
-                var data = convertDataToTableModel(items);
-                doc.autoTable(header, data, options);
-            }
-
-            var addReportFooter = function () {
-                // Add footer of some sort if needed
-            };
-
-
-            var sendAsAttachement = function (title,pdfDoc) {
-                doc.save();
-                /*window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
+            var sendAsAttachement = function () {
+                var pdf = pdfMake.createPdf(doc);
+                //pdf.open();
+                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fileSystem) {
 
                         fileSystem.root.getFile("test.pdf", {create: true}, function(entry) {
                             var fileEntry = entry;
@@ -121,7 +129,7 @@ angular.module('reportCreator',[])
                                     console.log("write success");
                                 };
 
-                                writer.write( pdfDoc );
+                                writer.write( pdf );
                                 var path =  fileEntry.toURL();
                                 //path = path.replace('file\:\/\/', 'relative://');
 
@@ -136,7 +144,7 @@ angular.module('reportCreator',[])
                     },
                     function(event){
                         console.log( evt.target.error.code );
-                    });*/
+                    });
             };
 
             var sendMailWithAttachement = function (title,attachementPath) {

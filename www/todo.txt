@@ -27,7 +27,7 @@ Change autocomplete to this one : https://github.com/kuhnza/angular-google-place
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Format report properly - jspdf table plugin - https://github.com/someatoms/jsPDF-AutoTable
+Replace pdf maker to : https://github.com/bpampuch/pdfmake which support utf and Hebrew.
 Add background gps refresh using : https://github.com/christocracy/cordova-plugin-background-geolocation
 
 

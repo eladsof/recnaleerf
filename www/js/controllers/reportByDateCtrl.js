@@ -58,7 +58,7 @@ angular.module('recnaleerfClientApp')
         };
 
         var createReportTitle = function () {
-            var title = 'Work report for ' + $scope.currentUser.get('username') + '\r\n';
+            var title = 'Work report for ' + $scope.currentUser.get('username') +' ';
 /*
             if($scope.customer)
                 title += $scope.customer.name;
