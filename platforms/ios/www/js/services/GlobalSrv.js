@@ -4,11 +4,12 @@ angular.module('recnaleerfClientApp')
 
         var stop = undefined;
         var idleTimerInterval = 5;
+        var bgGeo = {};
 
         $rootScope.loadCustomerList = function () {
             if($rootScope.currentUser){
                 $ionicLoading.show();
-                console.log('Loading new custoemr list');
+                //console.log('Loading new custoemr list');
                 $rootScope.customers = Customer.listByUser($rootScope.currentUser).then(function(aCustomers) {
                     $rootScope.customers = aCustomers;
                     for(var i=0;i<$rootScope.customers.length;i++)
@@ -30,7 +31,7 @@ angular.module('recnaleerfClientApp')
 
                         // All of this is temporary for debugging purposes.
                         var dist = Geolocation.distanceFromCustomer($rootScope.currentLocation,customerLocation);
-                        console.log(" ===== Dist between " + $rootScope.currentLocation + " and "  + customerLocation + "is : "+dist+" ==========");
+                        //console.log(" ===== Dist between " + $rootScope.currentLocation + " and "  + customerLocation + "is : "+dist+" ==========");
 
                         if(dist < $rootScope.distanceFromCustomer1){
                             $rootScope.distanceFromCustomer1 = dist;
@@ -40,8 +41,8 @@ angular.module('recnaleerfClientApp')
 
                         if (Geolocation.isCloseToCustomer($rootScope.currentLocation,customerLocation))
                             arrivingAtCustomer($rootScope.customers[i]);
-                        else
-                            console.log('not close enough to <> : ' + $rootScope.customers[i].name + ' object is ' + $rootScope.customers[i].address.geometry.location.k + '+' + $rootScope.customers[i].address.geometry.location.B);
+                        //else
+                        //    console.log('not close enough to <> : ' + $rootScope.customers[i].name + ' object is ' + $rootScope.customers[i].address.geometry.location.k + '+' + $rootScope.customers[i].address.geometry.location.B);
                     }
                 }
                 else
@@ -91,7 +92,6 @@ angular.module('recnaleerfClientApp')
         var periodicUpdate = function() {
             if($rootScope.currentUser) {
                 Geolocation.getLocation().then(function (coords) {
-                        console.log('checking...')
                         $rootScope.currentLocation = new google.maps.LatLng(coords.latitude, coords.longitude);
                         if ($rootScope.currentWorkItem) {
                             updateCurrentWorkItem();
@@ -100,7 +100,6 @@ angular.module('recnaleerfClientApp')
                         }
                     },
                     function(error) {
-                        console.log('checking... '+error);
                         if ($rootScope.currentWorkItem) {
                             updateCurrentWorkItem();
                         } else {
@@ -114,7 +113,7 @@ angular.module('recnaleerfClientApp')
         };
         var updateCurrentWorkItem = function () {
             $rootScope.currentWorkItem.finish = new Date();
-            console.log(' Time so far :' + $rootScope.currentWorkItem.formattedElapsedTime(true));
+            //console.log(' Time so far :' + $rootScope.currentWorkItem.formattedElapsedTime(true));
             if($rootScope.currentWorkItem.startedByLocation)
                 checkIfLeavingCustomer();
         };
@@ -129,8 +128,8 @@ angular.module('recnaleerfClientApp')
         var updateTimer = function (secs) {
             stopTimer();
             stop = $interval(periodicUpdate, secs * 1000);
-            //alert('timer updated ' + secs);
         };
+
         $rootScope.startNewWorkItem = function(customer,startedByLocation){
             if(customer == null)
                 return;
@@ -145,7 +144,6 @@ angular.module('recnaleerfClientApp')
             $rootScope.currentWorkItem.startedByLocation = startedByLocation;
             $rootScope.currentWorkItem.save();
         };
-
         $rootScope.finishCurrentWorkItem = function () {
             updateTimer(idleTimerInterval);
             $rootScope.currentWorkItem.end = new Date();
@@ -172,5 +170,27 @@ angular.module('recnaleerfClientApp')
             });
             updateTimer(idleTimerInterval);
         };
+
+        var locationChanged = function(location) {
+            console.log('[js] BackgroundGeoLocation callback:  ' + location.latitude + ',' + location.longitude);
+            bgGeo.finish();
+        };
+
+        var locationFailed = function(error) {
+            console.log('BackgroundGeoLocation error' + error);
+        };
+
+        this.initBgGeo = function() {
+            bgGeo = window.plugins.backgroundGeoLocation;
+            var options = {
+                desiredAccuracy: 10,
+                stationaryRadius: 20,
+                distanceFilter: 30,
+                activityType: 'Fitness',
+                stopOnTerminate: true
+            };
+            bgGeo.configure(locationChanged, locationFailed,options);
+            bgGeo.start();
+        }
 
     }]);

@@ -12,7 +12,6 @@ app = angular.module('recnaleerfClientApp', ['ionic','google.places','geoLocatio
 
         Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
         $rootScope.currentUser = MyUser.current();
-        GlobalSrv.initialize();
         $rootScope.locloc = 0;
 	
         // register listener to watch route changes
@@ -37,6 +36,13 @@ app = angular.module('recnaleerfClientApp', ['ionic','google.places','geoLocatio
                 // org.apache.cordova.statusbar required
                 StatusBar.styleDefault();
             }
+
+            window.navigator.geolocation.getCurrentPosition(function(location) {
+                console.log('Location from Phonegap');
+            });
+
+            GlobalSrv.initBgGeo();
+            GlobalSrv.initialize();
         });
 
     })

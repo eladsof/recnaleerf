@@ -4,6 +4,7 @@ angular.module('recnaleerfClientApp')
         var stop = undefined;
         var idleTimerInterval = 5;
 
+
         $rootScope.loadCustomerList = function () {
             if($rootScope.currentUser){
                 $ionicLoading.show();
@@ -113,6 +114,7 @@ angular.module('recnaleerfClientApp')
         };
 
         this.initialize = function () {
+
             $rootScope.$watch('currentUser', function(newValue, oldValue) {
                 $rootScope.loadCustomerList();
             });

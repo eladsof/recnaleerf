@@ -57,4 +57,7 @@
     <preference name="BackupWebStorage" value="none" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <feature name="BackgroundGeoLocation">
+        <param name="android-package" value="com.tenforwardconsulting.cordova.bgloc.BackgroundGpsPlugin" />
+    </feature>
 </widget>
