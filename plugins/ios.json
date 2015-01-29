@@ -17,11 +17,15 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "xml": "<feature name=\"LocalNotification\"><param name=\"ios-package\" onload=\"true\" value=\"APPLocalNotification\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
                             "count": 1
                         },
                         {
@@ -136,10 +140,10 @@
         "de.appplant.cordova.plugin.email-composer": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
-        "org.apache.cordova.console": {
+        "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
-        "org.apache.cordova.device": {
+        "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         },
         "org.apache.cordova.dialogs": {
@@ -161,5 +165,9 @@
             "PACKAGE_NAME": "com.ionicframework.tstionic942731"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.ionicframework.tstionic942731"
+        }
+    }
 }

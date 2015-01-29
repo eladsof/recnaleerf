@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60defe00-4d70-4d85-af96-bf5275c68018" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/eladsof.xcuserdatad/xcschemes/CordovaLib.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/eladsof.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/recnaleerf.xcodeproj/xcuserdata/eladsof.xcuserdatad/xcschemes/recnaleerf.xcscheme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/recnaleerf.xcodeproj/xcuserdata/eladsof.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/services/GlobalSrv.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/recnaleerf/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/recnaleerf/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/console.log" afterPath="$PROJECT_DIR$/platforms/ios/cordova/console.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/platforms/ios/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ios.json" afterPath="$PROJECT_DIR$/plugins/ios.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/recnaleerf.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/platforms/ios/recnaleerf.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/todo.txt" afterPath="$PROJECT_DIR$/platforms/ios/www/todo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/todo.txt" afterPath="$PROJECT_DIR$/www/todo.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tstionic.iws" />
@@ -38,34 +40,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todo.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="todo.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="990">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.24444444" vertical-offset="315" max-vertical-offset="1005">
+              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GlobalSrv.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GlobalSrv.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6798179" vertical-offset="2" max-vertical-offset="1170">
-              <caret line="147" column="55" selection-start-line="147" selection-start-column="55" selection-end-line="147" selection-end-column="55" />
+            <state vertical-scroll-proportion="-26.115385" vertical-offset="2186" max-vertical-offset="3285">
+              <caret line="193" column="21" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
               <folding>
-                <element signature="e#551#1283#0" expanded="false" />
-                <element signature="e#1337#3377#0" expanded="false" />
-                <element signature="e#3431#4021#0" expanded="false" />
-                <element signature="e#4096#4438#0" expanded="false" />
-                <element signature="e#4488#5092#0" expanded="false" />
-                <element signature="e#5142#5694#0" expanded="false" />
-                <element signature="e#5742#5794#0" expanded="false" />
-                <element signature="e#5845#5916#0" expanded="false" />
-                <element signature="e#5955#6097#0" expanded="false" />
-                <element signature="e#6147#6224#0" expanded="false" />
-                <element signature="e#6301#6936#0" expanded="false" />
-                <element signature="e#6993#8153#0" expanded="false" />
+                <element signature="e#5710#5762#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,7 +65,7 @@
       <file leaf-file-name="tab-dash.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/tab-dash.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="780">
+            <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="780">
               <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -123,11 +114,11 @@
         <option value="$PROJECT_DIR$/www/js/controllers/reportByDateCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/services/reportCreator.js" />
         <option value="$PROJECT_DIR$/www/lib/10.0.0.3_files/GlobalSrv.js" />
-        <option value="$PROJECT_DIR$/www/todo.txt" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/lib/10.0.0.3_files/geoLocation.js" />
         <option value="$PROJECT_DIR$/www/templates/tab-dash.html" />
         <option value="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
+        <option value="$PROJECT_DIR$/www/todo.txt" />
       </list>
     </option>
   </component>
@@ -142,7 +133,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="790" />
+    <option name="height" value="793" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -170,6 +161,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,7 +242,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,8 +336,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="790" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="793" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -355,6 +346,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18604651" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -362,9 +355,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3157143" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
@@ -701,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="990">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/customerSrv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5535714" vertical-offset="273" max-vertical-offset="945">
@@ -720,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8194234" vertical-offset="0" max-vertical-offset="2805">
           <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -741,7 +723,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/tab-dash.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="780">
+        <state vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="780">
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -751,22 +733,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6798179" vertical-offset="2" max-vertical-offset="1170">
-          <caret line="147" column="55" selection-start-line="147" selection-start-column="55" selection-end-line="147" selection-end-column="55" />
+        <state vertical-scroll-proportion="-26.115385" vertical-offset="2186" max-vertical-offset="3285">
+          <caret line="193" column="21" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
           <folding>
-            <element signature="e#551#1283#0" expanded="false" />
-            <element signature="e#1337#3377#0" expanded="false" />
-            <element signature="e#3431#4021#0" expanded="false" />
-            <element signature="e#4096#4438#0" expanded="false" />
-            <element signature="e#4488#5092#0" expanded="false" />
-            <element signature="e#5142#5694#0" expanded="false" />
-            <element signature="e#5742#5794#0" expanded="false" />
-            <element signature="e#5845#5916#0" expanded="false" />
-            <element signature="e#5955#6097#0" expanded="false" />
-            <element signature="e#6147#6224#0" expanded="false" />
-            <element signature="e#6301#6936#0" expanded="false" />
-            <element signature="e#6993#8153#0" expanded="false" />
+            <element signature="e#5710#5762#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24444444" vertical-offset="315" max-vertical-offset="1005">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

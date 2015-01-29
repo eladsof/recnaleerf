@@ -16,7 +16,6 @@ angular.module('recnaleerfClientApp')
             if($rootScope.currentUser){
                 var ThisClass = this;
                 $ionicLoading.show();
-                //console.log('Loading new custoemr list');
                 Customer.listByUser($rootScope.currentUser).then(function(aCustomers) {
                     $rootScope.customers = aCustomers;
                     for(var i=0;i<$rootScope.customers.length;i++)
@@ -30,25 +29,19 @@ angular.module('recnaleerfClientApp')
         };
 
         var checkForCustomerProximity = function() {
-            console.log("checkForCustomerProximity is called ************** number of customers is "+$rootScope.customers.length);
-
             for(var i=0;i<$rootScope.customers.length;i++){
                 if(new Date() >= $rootScope.customers[i].ignoreUntil) {
                     if($rootScope.customers[i].address) {
-                        console.log("checkForCustomerProximity for loop ************** i is "+i);
-
                         var customerLocation = new google.maps.LatLng($rootScope.customers[i].address.geometry.location.k, $rootScope.customers[i].address.geometry.location.B);
 
                         // All of this is temporary for debugging purposes.
                         var dist = Geolocation.distanceFromCustomer($rootScope.currentLocation,customerLocation);
 
-                        console.log(" ===== Dist between " + $rootScope.currentLocation + " and "  + customerLocation + "is : "+dist+" ========== " + $rootScope.customers[i].name);
-
                         if( (i == 0) || ( dist < $rootScope.distanceFromCustomer1 ) ) {
                             $rootScope.distanceFromCustomer1 = dist;
                             $rootScope.nearestCustomer1 = $rootScope.customers[i].name;
-                            $rootScope.$apply();
-                            console.log("Found near custoemr  ************** "+$rootScope.customers[i].name + " distance is " + dist);
+                            //$rootScope.$apply();
+                            console.log("Found nearest custoemr  ************** "+$rootScope.customers[i].name + " distance is " + dist);
                         }
                         // ================== END OF DEBUGGING ====================
 
@@ -65,7 +58,12 @@ angular.module('recnaleerfClientApp')
             }
         };
         var arrivingAtCustomer = function(customer) {
+            stopTimer();
+
             var msg = $translate.instant('Q_START_WORK_FOR') + ':\r\n' + customer.name ;
+
+            window.plugin.notification.local.add({ message: 'Customer found. start work?!' });
+
             navigator.notification.confirm( msg,
                                             function(buttonIndex){
                                                 arrivingAtCustomerConfirmed(buttonIndex, customer);
@@ -74,10 +72,12 @@ angular.module('recnaleerfClientApp')
                                             [$translate.instant('YES'),$translate.instant('SNOOZE'),$translate.instant('IGNORE_FOR_1_HOUR')]);
         };
         var arrivingAtCustomerConfirmed = function(buttonIndex,customer) {
+
             if (buttonIndex == 1) {
+                startUpdateTimer(1);
                 $rootScope.startNewWorkItem(customer,true);
             } else {
-
+                startUpdateTimer(5);
                 if (buttonIndex == 3) {
                     customer.ignoreUntil = new Date();
                     customer.ignoreUntil.setHours(customer.ignoreUntil.getHours()+1);
@@ -89,20 +89,27 @@ angular.module('recnaleerfClientApp')
                 $rootScope.currentWorkItem.customer.address.geometry.location.B);
 
             if(Geolocation.isFarFromCustomer($rootScope.currentLocation,customerLocation)) {
-            		var msg = $translate.instant('Q_CLOSE_WORK_FOR') + ':\r\n' + $rootScope.currentWorkItem.customer.name;
-                var startWorkItem = confirm(msg);
-                if (startWorkItem) {
+                window.plugin.notification.local.add({ message: 'Leaving customer? Close work item?!' });
+            	var msg = $translate.instant('Q_CLOSE_WORK_FOR') + ':\r\n' + $rootScope.currentWorkItem.customer.name;
+                stopTimer();
+                var finishWorkItem = confirm(msg);
+                if (finishWorkItem) {
                     $rootScope.finishCurrentWorkItem();
-
+                    startUpdateTimer(5);
+                } else {
+                    startUpdateTimer(1);
                 }
+
+
 
             }
         };
-        var periodicUpdate = function(location) {
-            console.log("Periodic update is called ************** user is " + $rootScope.currentUser);
+        var periodicUpdate = function() {
+            console.log("************** Periodic update is called ************** user is " + $rootScope.currentUser);
             if($rootScope.currentUser) {
-                $rootScope.currentLocation = new google.maps.LatLng(location.latitude, location.longitude);
+                if($rootScope.currentLocation)
                     if ($rootScope.currentWorkItem) {
+                        updateCurrentWorkItem();
                         if($rootScope.currentWorkItem.startedByLocation)
                             checkIfLeavingCustomer();
                     }
@@ -115,6 +122,7 @@ angular.module('recnaleerfClientApp')
         };
 
         var updateCurrentWorkItem = function () {
+            console.log("************** updateCurrentWorkItem is called ************** ");
             $rootScope.currentWorkItem.finish = new Date();
         };
 
@@ -126,14 +134,13 @@ angular.module('recnaleerfClientApp')
         };
 
         var startUpdateTimer = function (secs) {
-            stop = $interval(updateCurrentWorkItem, secs * 1000);
+            stop = $interval(periodicUpdate, secs * 1000);
         };
 
         $rootScope.startNewWorkItem = function(customer,startedByLocation){
             if(customer == null)
                 return;
 
-            startUpdateTimer(1);
             $rootScope.currentWorkItem = new WorkItem();
             $rootScope.currentWorkItem.customer = customer;
             $rootScope.currentWorkItem.start = new Date();
@@ -162,24 +169,25 @@ angular.module('recnaleerfClientApp')
                 }
             });
             $rootScope.currentWorkItem = null;
-            stopTimer();
         };
 
-        var locationChanged = function(location,fromApp) {
+        var locationChanged = function(location) {
             console.log('============ Location changed to :  ' + location.latitude + ',' + location.longitude+ ' =============');
-            periodicUpdate(location);
-            if(!fromApp)
-                bgGeo.finish();
+            $rootScope.currentLocation = new google.maps.LatLng(location.latitude, location.longitude);
+            //periodicUpdate(location);
+            bgGeo.finish();
         };
 
         var locationFailed = function(error) {
-            console.log('BackgroundGeoLocation error' + error);
+            console.log('------------- BackgroundGeoLocation error ---------------' + error);
         };
 
         this.initialize = function () {
             $rootScope.$watch('currentUser', function(newValue, oldValue) {
                 $rootScope.loadCustomerList();
             });
+            window.plugin.notification.local.cancelAll();
+            startUpdateTimer(5);
         };
 
         var initBgGeo = function() {

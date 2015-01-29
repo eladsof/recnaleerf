@@ -16,6 +16,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js",
+        "id": "de.appplant.cordova.plugin.local-notification.LocalNotification",
+        "clobbers": [
+            "cordova.plugins.notification.local",
+            "plugin.notification.local"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.console/www/console-via-logger.js",
         "id": "org.apache.cordova.console.console",
         "clobbers": [
@@ -27,13 +35,6 @@ module.exports = [
         "id": "org.apache.cordova.console.logger",
         "clobbers": [
             "cordova.logger"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.device/www/device.js",
-        "id": "org.apache.cordova.device.device",
-        "clobbers": [
-            "device"
         ]
     },
     {
@@ -237,6 +238,13 @@ module.exports = [
         "clobbers": [
             "plugins.backgroundGeoLocation"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -244,14 +252,15 @@ module.exports.metadata =
 {
     "com.ionic.keyboard": "1.0.2",
     "de.appplant.cordova.plugin.email-composer": "0.8.2dev",
+    "de.appplant.cordova.plugin.local-notification": "0.8.0dev",
     "org.apache.cordova.console": "0.2.10",
-    "org.apache.cordova.device": "0.2.11",
     "org.apache.cordova.dialogs": "0.2.10",
     "org.apache.cordova.file": "1.3.1",
     "org.apache.cordova.geolocation": "0.3.10",
     "org.apache.cordova.inappbrowser": "0.5.3",
     "org.apache.cordova.statusbar": "0.1.9",
-    "org.transistorsoft.cordova.background-geolocation": "0.3.6"
+    "org.transistorsoft.cordova.background-geolocation": "0.3.6",
+    "org.apache.cordova.device": "0.2.11"
 }
 // BOTTOM OF METADATA
 });
