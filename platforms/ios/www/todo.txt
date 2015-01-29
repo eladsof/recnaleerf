@@ -29,6 +29,7 @@ Replace pdf maker to : https://github.com/bpampuch/pdfmake which support utf and
 ========================= DONE ============================
 ===========================================================
 Add background gps refresh using : https://github.com/christocracy/cordova-plugin-background-geolocation
+Send notification to user when location changes
 =====> Here i should send for testing to Ilan \ Asaf \ Perhaps others?
 Check on ios
 Clean dependency shit
