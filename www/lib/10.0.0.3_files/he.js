@@ -85,6 +85,8 @@ var translationsHE = {
     DEFAULT_HOURLY_RATE_NEEDS_TO_BE_NUM_BIGGER_THAN_ZERO: 'שכר שעתי צריך להיות מספר גדול מ-0',
     CREATE_CUSTOMER: 'צור לקוח',
 
+    //Work Item
+
     // Languages
     LANG_EN: 'אנגלית',
     LANG_HE: 'עברית',

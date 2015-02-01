@@ -10,8 +10,6 @@ angular.module('recnaleerfClientApp')
         $rootScope.distanceFromCustomer1 = null;
         $rootScope.nearestCustomer1 = null;
 
-        var x = "Moshe";
-
         $rootScope.loadCustomerList = function () {
             if($rootScope.currentUser){
                 var ThisClass = this;
@@ -62,7 +60,7 @@ angular.module('recnaleerfClientApp')
 
             var msg = $translate.instant('Q_START_WORK_FOR') + ':\r\n' + customer.name ;
 
-            window.plugin.notification.local.add({ message: 'Customer found. start work?!' });
+            window.plugin.notification.local.add({ message: $translate.instant('CUSTOMER_LOCATED') });
 
             navigator.notification.confirm( msg,
                                             function(buttonIndex){
@@ -84,41 +82,48 @@ angular.module('recnaleerfClientApp')
                 }
             }
         };
-        var checkIfLeavingCustomer = function() {
+        var checkIfLeavingCustomer = function(){
+            if(!$rootScope.currentLocation)
+                return;
+
             var customerLocation = new google.maps.LatLng($rootScope.currentWorkItem.customer.address.geometry.location.k,
                 $rootScope.currentWorkItem.customer.address.geometry.location.B);
 
             if(Geolocation.isFarFromCustomer($rootScope.currentLocation,customerLocation)) {
-                window.plugin.notification.local.add({ message: 'Leaving customer? Close work item?!' });
-            	var msg = $translate.instant('Q_CLOSE_WORK_FOR') + ':\r\n' + $rootScope.currentWorkItem.customer.name;
+                var title = $translate.instant('LOCATION_CHANGED');
+                var msg = $translate.instant('Q_CLOSE_WORK_FOR') + ':\r\n' + $rootScope.currentWorkItem.customer.name;
+                window.plugin.notification.local.add({ message: msg });
                 stopTimer();
-                var finishWorkItem = confirm(msg);
-                if (finishWorkItem) {
-                    $rootScope.finishCurrentWorkItem();
-                    startUpdateTimer(5);
-                } else {
-                    startUpdateTimer(1);
-                }
-
-
-
+                navigator.notification.confirm( msg,
+                    function(buttonIndex) {
+                        if (buttonIndex == 1) {
+                            $rootScope.finishCurrentWorkItem();
+                            startUpdateTimer(5);
+                        } else {
+                            startUpdateTimer(1);
+                        }
+                    },
+                    title,
+                    ['Yes','No']);
             }
         };
         var periodicUpdate = function() {
-            console.log("************** Periodic update is called ************** user is " + $rootScope.currentUser);
             if($rootScope.currentUser) {
-                if($rootScope.currentLocation)
-                    if ($rootScope.currentWorkItem) {
-                        updateCurrentWorkItem();
-                        if($rootScope.currentWorkItem.startedByLocation)
-                            checkIfLeavingCustomer();
+                if ($rootScope.currentWorkItem) {
+                    updateCurrentWorkItem();
+                    if($rootScope.currentWorkItem.startedByLocation) {
+                        checkIfLeavingCustomer();
                     }
-                    else
-                        checkForNewWorkItem();
+                } else {
+                    checkForNewWorkItem();
+                }
             }
         };
         var checkForNewWorkItem = function () {
-            checkForCustomerProximity();
+            if($rootScope.currentLocation) {
+                checkForCustomerProximity();
+            }
+
         };
 
         var updateCurrentWorkItem = function () {
@@ -164,7 +169,7 @@ angular.module('recnaleerfClientApp')
                 error: function(customer, error) {
                     // Execute any logic that should take place if the save fails.
                     // error is a Parse.Error with an error code and description.
-                    var msg = $translate.instant('WORK_ITEM NOT_CREATED') +  '\r\n' +$translate.instant('ERROR') + ':' + customer.name ;
+                    var msg = $translate.instant('WORK_ITEM NOT_CREATED') +  '\r\n' + error + ':' + customer.name ;
                     navigator.notification.alert(msg,null,$translate.instant('ERROR'));
                 }
             });
@@ -186,7 +191,7 @@ angular.module('recnaleerfClientApp')
             $rootScope.$watch('currentUser', function(newValue, oldValue) {
                 $rootScope.loadCustomerList();
             });
-            window.plugin.notification.local.cancelAll(function() { console.log("Should clear all motherfuckers")});
+            window.plugin.notification.local.cancelAll();
             startUpdateTimer(5);
         };
 

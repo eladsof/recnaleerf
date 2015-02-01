@@ -26,17 +26,26 @@ Fix insert new work item + (Or actually the message)
 Change autocomplete to this one : https://github.com/kuhnza/angular-google-places-autocomplete
 Replace pdf maker to : https://github.com/bpampuch/pdfmake which support utf and Hebrew.
 Add background gps refresh using : https://github.com/christocracy/cordova-plugin-background-geolocation
+Send notification to user when location changes when app is in background mode - https://github.com/katzer/cordova-plugin-local-notifications/
+Change work item end and save messages. - As far as i can tell, only one left - var finishWorkItem = confirm(msg);
+Add hebrew font support to report
 ===========================================================
 ========================= DONE ============================
 ===========================================================
-Send notification to user when location changes when app is in background mode - https://github.com/katzer/cordova-plugin-local-notifications/
+
 =====> Here i should send for testing to Ilan \ Asaf \ Perhaps others?
 Check on ios
 Clean dependency shit
 General QA \ CSS fixes.
+Change beta platfrom to - https://itunesconnect.apple.com/
 ===========================================================
 ========================= MVP  ============================
 ===========================================================
+Fix need to logout after registration.
+Fix everything after user registeres \ logs in \ out
+Fix address to show in the correct language.
+Add feedback on login (on failure)
+Add an smart "snooze for finishing and starting work item.
 check on android
 Make report pretty
 Secure data and API keys - Add before save and other stuff to prevent from users to read\write objects that belong to someone else.

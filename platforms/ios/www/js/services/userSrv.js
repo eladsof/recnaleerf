@@ -20,7 +20,6 @@ angular.module('recnaleerfClientApp')
         MyUser.logIn(user.username,user.password , {
             success: function(user)
             {
-                user.set('emailVerified',true);// TO REMOVE THIS LINE IN REAL LIFE
                 user.save();
                 if(user.emailVerified) {
                     $scope.currentUser = user;

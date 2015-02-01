@@ -41,8 +41,9 @@ angular.module('reportCreator',[])
                             color: 'black'
                         }
                     },
+
                     defaultStyle: {
-                        // alignment: 'justify'
+                        font: 'hebrewFont'
                     }
                 };
                 return dd;
@@ -74,7 +75,13 @@ angular.module('reportCreator',[])
             };
 
             var createTableTitle = function (customerName) {
-                var tableTitle = 'Summary for '+ customerName;
+                var tableTitle = 'Summary for ';
+                if (customerName.match(/[\u0590-\u05FF]+/g))
+                    tableTitle += customerName.split("").reverse().join("");
+                else
+                    tableTitle += customerName;
+
+
                 doc.content.push('\n\n');
                 doc.content.push({style: 'subheader', text: tableTitle});
             };
@@ -116,6 +123,14 @@ angular.module('reportCreator',[])
             }
 
             var sendAsAttachement = function () {
+                pdfMake.fonts = {
+                    hebrewFont: {
+                        normal: 'DejaVuSans-Oblique.ttf',
+                        bold: 'DejaVuSans-Oblique.ttf',
+                        italics: 'DejaVuSans-Oblique.ttf',
+                        bolditalics: 'DejaVuSans-Oblique.ttf'
+                    }};
+
                 //pdfMake.createPdf(doc).open();
                 //return;
 

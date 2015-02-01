@@ -21,7 +21,7 @@
 
 
                 <div class="item item-input">
-                    <input placeholder="{{'START_TYPING_ADDRESS'| translate}}" type="text" name="address" ng-model="address" g-places-autocomplete details="editedCustomer.address" autocapitalize="off" autocorrect="off" required class="needsclick"/>
+                    <input placeholder="{{'START_TYPING_ADDRESS'| translate}}" type="text" name="address" ng-model="editedCustomer.address" g-places-autocomplete details="kookoo" autocapitalize="off" autocorrect="off" required class="needsclick"/>
 	                <div  class="error" ng-show="custoemr_details_form.address.$dirty && !editedCustomer.address">
   	                  <small class="error" ng-show="custoemr_details_form.address.$error.required">{{'CUSTOMER_ADDRESS' | translate}} {{'IS_REQUIRED' |  translate}}</small>
     	                <small class="error" ng-show="!editedCustomer.address">{{'CUSTOMER_NAME' | translate}} {{'NEEDS_TO_BE_SELECTED_NOT_TYPED' | translate}}</small>
@@ -34,8 +34,6 @@
             	    </div>
                     </div>              
             </div>
-
-
             <button type="button" ng-disabled="custoemr_details_form.$invalid" class="button button-block button-dark" ng-click="saveCustomer(editedCustomer)">{{getButtonTxt() | translate}}</button>
         </form>
     </ion-content>

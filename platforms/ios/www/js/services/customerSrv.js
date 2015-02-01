@@ -15,7 +15,7 @@ angular.module('recnaleerfClientApp')
         this.createNew = function (aCustomer){
             var newCustomer = new Customer();
             newCustomer.name = aCustomer.name;
-            newCustomer.ratePerHour = aCustomer.ratePerHour;
+            newCustomer.ratePerHour = Number(aCustomer.ratePerHour);
             newCustomer.owner = $rootScope.currentUser;
             newCustomer.address = aCustomer.address;
             newCustomer.deleted = false;
@@ -23,16 +23,16 @@ angular.module('recnaleerfClientApp')
             newCustomer.save(null, {
                 success: function(customer) {
                     // Execute any logic that should take place after the object is saved.
+                    console.log('Customer '+customer.name+' created succesfully');
                     navigator.notification.alert('Customer '+customer.name+' created succesfully',null,'Notice');
                     $rootScope.loadCustomerList();
                     $state.go('tab.customers');
-
-
                 },
                 error: function(customer, error) {
                     // Execute any logic that should take place if the save fails.
                     // error is a Parse.Error with an error code and description.
-                    navigator.notification.alert('Failed to create '+customer.name+' - ' + + error.message,null,'Notice');
+                    console.log('Failed to create '+customer.name+' - ' + + error.message);
+                    navigator.notification.alert('Failed to create '+customer.name+' - ' + error.message,null,'Notice');
                 }
             });
         };

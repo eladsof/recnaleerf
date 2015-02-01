@@ -111,6 +111,7 @@ var translationsHE = {
     
     //NOTIFICATION
     CUSTOMER_LOCATED: 'מיקום לקוח אותר',
+    LOCATION_CHANGED: 'זוהה שינוי מיקום',
     Q_START_WORK_FOR: 'האם להתחיל עבודה עבור הלקוח',
     Q_CLOSE_WORK_FOR: 'האם לסיים עבודה עבור לקוח',
     SNOOZE: 'נודניק',
