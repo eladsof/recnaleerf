@@ -47,6 +47,7 @@ Add feedback on login (on failure)
 Add an 5 minute "snooze for finishing and starting work item.
 Extract to a serve all of the notification \ alert stuff.
 Decorate non-blocking stuff with loader.
+Security - blocking data access to user that did not create the object (And allow allowing that for specific users) - https://parse.com/docs/data#security-objects
 check on android
 Make report pretty
 Secure data and API keys - Add before save and other stuff to prevent from users to read\write objects that belong to someone else.
