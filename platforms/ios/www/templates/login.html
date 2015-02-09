@@ -15,6 +15,9 @@
 
             <button ng-click="signin(signinuser)" class="button button-block button-dark">{{'SIGN_IN' | translate}}</button>
         </form>
+        <div ng-show="logInErrorMessage" style="padding: 7px;border: 1px solid #ffffff">
+            {{logInErrorMessage}}
+        </div>
         <div style="text-align: center">
             {{'DONT_HAVE_ACCOUNT' | translate}}<br>
             <a href="#signup">{{'REGISTER_NOW' | translate}}</a>

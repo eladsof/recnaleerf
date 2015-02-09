@@ -16443,3 +16443,644 @@ l@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-40
 2015-02-01 15:58:34.156 recnaleerf[28980:1385182] Found nearest custoemr  ************** kikik distance is 16196.933405740816
 2015-02-01 15:58:39.157 recnaleerf[28980:1385182] Found nearest custoemr  ************** kikik distance is 16196.933405740816
 2015-02-01 15:58:44.158 recnaleerf[28980:1385182] Found nearest custoemr  ************** kikik distance is 16196.933405740816
+2015-02-03 21:42:23.985 recnaleerf[34800:1509682] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-03 21:42:23.987 recnaleerf[34800:1509682] Multi-tasking -> Device: YES, App: YES
+2015-02-03 21:42:24.020 recnaleerf[34800:1509682] Unlimited access to network resources
+2015-02-03 21:42:24.504 recnaleerf[34800:1509682] [CDVTimer][keyboard] 0.081003ms
+2015-02-03 21:42:24.504 recnaleerf[34800:1509682] [CDVTimer][localnotification] 0.072002ms
+2015-02-03 21:42:24.504 recnaleerf[34800:1509682] [CDVTimer][localnotification] 0.012040ms
+2015-02-03 21:42:24.508 recnaleerf[34800:1509682] [CDVTimer][file] 3.838003ms
+2015-02-03 21:42:24.611 recnaleerf[34800:1509682] [CDVTimer][statusbar] 102.473021ms
+2015-02-03 21:42:24.611 recnaleerf[34800:1509682] [CDVTimer][TotalPluginStartup] 107.564032ms
+2015-02-03 21:42:24.707 recnaleerf[34800:1509682] Resetting plugins due to page load.
+2015-02-03 21:42:26.813 recnaleerf[34800:1509682] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/42BB2A8F-ECD2-4B8F-9379-FF4A1577523F/data/Containers/Bundle/Application/5CD23F53-57F8-42D4-B45F-77E9A0A84BF7/recnaleerf.app/www/index.html#/tab/dash
+2015-02-03 21:42:26.985 recnaleerf[34800:1509682] init customerCtrl
+2015-02-03 21:42:26.985 recnaleerf[34800:1509682] init customerCtrl
+2015-02-03 21:42:26.986 recnaleerf[34800:1509682] init customerCtrl
+2015-02-03 21:42:26.991 recnaleerf[34800:1509771] Attempting to badge the application icon but haven't received permission from the user to badge the application
+2015-02-03 21:42:28.496 recnaleerf[34800:1509682] ============= Customer list updated =============== 
+2015-02-03 21:42:28.497 recnaleerf[34800:1509682]  ========== Init bg geolocation starting 
+2015-02-03 21:42:28.506 recnaleerf[34800:1509682] CDVBackgroundGeoLocation configure
+2015-02-03 21:42:28.507 recnaleerf[34800:1509682]   - token: (null)
+2015-02-03 21:42:28.507 recnaleerf[34800:1509682]   - url: (null)
+2015-02-03 21:42:28.507 recnaleerf[34800:1509682]   - distanceFilter: 30
+2015-02-03 21:42:28.507 recnaleerf[34800:1509682]   - stationaryRadius: 20
+2015-02-03 21:42:28.507 recnaleerf[34800:1509682]   - locationTimeout: 60
+2015-02-03 21:42:28.507 recnaleerf[34800:1509682]   - desiredAccuracy: 10
+2015-02-03 21:42:28.508 recnaleerf[34800:1509682]   - activityType: 0
+2015-02-03 21:42:28.508 recnaleerf[34800:1509682]   - debug: 0
+2015-02-03 21:42:28.508 recnaleerf[34800:1509682]   - stopOnTerminate: 1
+2015-02-03 21:42:28.508 recnaleerf[34800:1509682] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-03 21:42:28.521 recnaleerf[34800:1509682] THREAD WARNING: ['BackgroundGeoLocation'] took '12.114990' ms. Plugin should use a background thread.
+2015-02-03 21:42:28.521 recnaleerf[34800:1509682] locationManager::didFailWithError (null)
+2015-02-03 21:42:28.525 recnaleerf[34800:1509682]  ========== Init bg geolocation finished 
+2015-02-03 21:42:28.526 recnaleerf[34800:1509682] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 4
+2015-02-03 21:43:07.545 recnaleerf[34800:1509988] Terminating since there is no system app.
+2015-02-03 21:43:26.422 recnaleerf[35171:1511250] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/CA010A0E-3E86-4433-ACA7-B2109218B492/Library/Cookies/Cookies.binarycookies
+2015-02-03 21:43:26.650 recnaleerf[35171:1511250] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-03 21:43:26.651 recnaleerf[35171:1511250] Multi-tasking -> Device: YES, App: YES
+2015-02-03 21:43:26.660 recnaleerf[35171:1511250] Unlimited access to network resources
+2015-02-03 21:43:26.891 recnaleerf[35171:1511250] [CDVTimer][keyboard] 0.068009ms
+2015-02-03 21:43:26.891 recnaleerf[35171:1511250] [CDVTimer][localnotification] 0.061989ms
+2015-02-03 21:43:26.891 recnaleerf[35171:1511250] [CDVTimer][localnotification] 0.010014ms
+2015-02-03 21:43:26.896 recnaleerf[35171:1511250] [CDVTimer][file] 4.458010ms
+2015-02-03 21:43:26.914 recnaleerf[35171:1511250] [CDVTimer][statusbar] 17.500997ms
+2015-02-03 21:43:26.914 recnaleerf[35171:1511250] [CDVTimer][TotalPluginStartup] 23.042023ms
+2015-02-03 21:43:27.005 recnaleerf[35171:1511250] Resetting plugins due to page load.
+2015-02-03 21:43:27.820 recnaleerf[35171:1511250] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/4140DA51-FF11-4135-943A-011737E2A73D/recnaleerf.app/www/index.html#/tab/dash
+2015-02-03 21:43:27.958 recnaleerf[35171:1511250] init customerCtrl
+2015-02-03 21:43:27.958 recnaleerf[35171:1511250] init customerCtrl
+2015-02-03 21:43:27.958 recnaleerf[35171:1511250] init customerCtrl
+2015-02-03 21:43:29.730 recnaleerf[35171:1511250] ============= Customer list updated =============== 
+2015-02-03 21:43:29.730 recnaleerf[35171:1511250]  ========== Init bg geolocation starting 
+2015-02-03 21:43:29.739 recnaleerf[35171:1511250] CDVBackgroundGeoLocation configure
+2015-02-03 21:43:29.739 recnaleerf[35171:1511250]   - token: (null)
+2015-02-03 21:43:29.739 recnaleerf[35171:1511250]   - url: (null)
+2015-02-03 21:43:29.740 recnaleerf[35171:1511250]   - distanceFilter: 30
+2015-02-03 21:43:29.740 recnaleerf[35171:1511250]   - stationaryRadius: 20
+2015-02-03 21:43:29.740 recnaleerf[35171:1511250]   - locationTimeout: 60
+2015-02-03 21:43:29.740 recnaleerf[35171:1511250]   - desiredAccuracy: 10
+2015-02-03 21:43:29.740 recnaleerf[35171:1511250]   - activityType: 0
+2015-02-03 21:43:29.741 recnaleerf[35171:1511250]   - debug: 0
+2015-02-03 21:43:29.741 recnaleerf[35171:1511250]   - stopOnTerminate: 1
+2015-02-03 21:43:29.741 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-03 21:43:29.751 recnaleerf[35171:1511250]  ========== Init bg geolocation finished 
+2015-02-03 21:43:29.752 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-03 21:43:35.908 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-03 21:43:35.908 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-03 21:43:35.911 recnaleerf[35171:1511250] - Acquiring stationary location, accuracy: 10.000000
+2015-02-03 21:43:35.913 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-03 21:43:35.914 recnaleerf[35171:1511250] - Acquiring stationary location, accuracy: 10.000000
+2015-02-03 21:43:35.914 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-03 21:43:35.914 recnaleerf[35171:1511250] - Acquiring stationary location, accuracy: 10.000000
+2015-02-03 21:43:36.912 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-03 21:43:36.913 recnaleerf[35171:1511250] - Acquiring stationary location, accuracy: 10.000000
+2015-02-03 21:43:36.913 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation queue stationary
+2015-02-03 21:43:36.913 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation createStationaryRegion (37.331504,-122.030716)
+2015-02-03 21:43:36.913 recnaleerf[35171:1511276] - CDVBackgroundGeoLocation#sync
+2015-02-03 21:43:36.914 recnaleerf[35171:1511276]   type: stationary, position: 37.33150351,-122.03071596 speed: 3.75
+2015-02-03 21:43:36.914 recnaleerf[35171:1511276] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-03 21:43:36.915 recnaleerf[35171:1511276] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-03 21:43:36.916 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation queue current
+2015-02-03 21:43:36.916 recnaleerf[35171:1511276] - CDVBackgroundGeoLocation#sync
+2015-02-03 21:43:36.916 recnaleerf[35171:1511276]   type: current, position: 37.3314643,-122.03072069 speed: 3.77
+2015-02-03 21:43:36.917 recnaleerf[35171:1511250]  ======= got location ========= [object Object]
+2015-02-03 21:43:36.918 recnaleerf[35171:1511250] ============ Location changed to :  37.3314643,-122.03072069 =============
+2015-02-03 21:43:36.918 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation finish
+2015-02-03 21:43:36.918 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-03 21:44:27.717 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation exit region
+2015-02-03 21:44:27.717 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation setPace 1, stationaryRegion? 1
+2015-02-03 21:44:27.724 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:44:27.725 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:44:28.716 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:44:28.718 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation queue current
+2015-02-03 21:44:28.718 recnaleerf[35171:1511676] - CDVBackgroundGeoLocation#sync
+2015-02-03 21:44:28.719 recnaleerf[35171:1511676]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-03 21:44:28.720 recnaleerf[35171:1511250] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-03 21:44:28.720 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation finish
+2015-02-03 21:44:28.720 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-03 21:44:29.717 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:44:29.718 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation queue current
+2015-02-03 21:44:29.718 recnaleerf[35171:1511660] - CDVBackgroundGeoLocation#sync
+2015-02-03 21:44:29.718 recnaleerf[35171:1511660]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-03 21:44:29.720 recnaleerf[35171:1511250] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-03 21:44:29.720 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation finish
+2015-02-03 21:44:29.721 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-03 21:44:35.458 recnaleerf[35171:1511250] init customerSrv
+2015-02-03 21:44:52.272 recnaleerf[35171:1511250] User eladaof succesfully signed in
+2015-02-03 21:44:54.317 recnaleerf[35171:1511250] ============= Customer list updated =============== 
+2015-02-03 21:44:57.936 recnaleerf[35171:1511250] Found nearest custoemr  ************** רדבנד distance is 3092.6877793143926
+2015-02-03 21:45:02.934 recnaleerf[35171:1511250] Found nearest custoemr  ************** רדבנד distance is 3092.6877793143926
+2015-02-03 21:45:04.762 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation suspend (enabled? 1)
+2015-02-03 21:45:04.763 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation setPace 1, stationaryRegion? 0
+2015-02-03 21:45:05.783 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:45:05.786 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:45:05.807 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:45:05.810 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation queue current
+2015-02-03 21:45:05.810 recnaleerf[35171:1511781] - CDVBackgroundGeoLocation#sync
+2015-02-03 21:45:05.811 recnaleerf[35171:1511781]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-03 21:45:05.812 recnaleerf[35171:1511250] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-03 21:45:05.812 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation finish
+2015-02-03 21:45:05.812 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-03 21:45:06.806 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-03 21:45:06.807 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation queue current
+2015-02-03 21:45:06.807 recnaleerf[35171:1512095] - CDVBackgroundGeoLocation#sync
+2015-02-03 21:45:06.807 recnaleerf[35171:1512095]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-03 21:45:06.808 recnaleerf[35171:1511250] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-03 21:45:06.808 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation finish
+2015-02-03 21:45:06.809 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-03 21:45:07.935 recnaleerf[35171:1511250] Found nearest custoemr  ************** רדבנד distance is 3092.6877793143926
+2015-02-03 21:45:12.935 recnaleerf[35171:1511250] Found nearest custoemr  ************** רדבנד distance is 3092.6877793143926
+2015-02-03 21:45:17.936 recnaleerf[35171:1511250] Found nearest custoemr  ************** רדבנד distance is 3092.6877793143926
+2015-02-03 21:45:22.937 recnaleerf[35171:1511250] Found nearest custoemr  ************** רדבנד distance is 3092.6877793143926
+2015-02-03 21:45:26.037 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation appTerminate
+2015-02-03 21:45:26.038 recnaleerf[35171:1511250] - CDVBackgroundGeoLocation stoping on terminate
+2015-02-08 09:48:19.510 recnaleerf[3461:16700] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/83FEC2F1-5E5A-4B3F-8AD0-4D8D40BDEBED/Library/Cookies/Cookies.binarycookies
+2015-02-08 09:48:19.604 recnaleerf[3461:16700] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 09:48:19.605 recnaleerf[3461:16700] Multi-tasking -> Device: YES, App: YES
+2015-02-08 09:48:19.626 recnaleerf[3461:16700] Unlimited access to network resources
+2015-02-08 09:48:20.040 recnaleerf[3461:16700] [CDVTimer][keyboard] 0.075996ms
+2015-02-08 09:48:20.040 recnaleerf[3461:16700] [CDVTimer][localnotification] 0.057995ms
+2015-02-08 09:48:20.040 recnaleerf[3461:16700] [CDVTimer][localnotification] 0.006020ms
+2015-02-08 09:48:20.044 recnaleerf[3461:16700] [CDVTimer][file] 3.119946ms
+2015-02-08 09:48:20.125 recnaleerf[3461:16700] [CDVTimer][statusbar] 80.931008ms
+2015-02-08 09:48:20.125 recnaleerf[3461:16700] [CDVTimer][TotalPluginStartup] 85.129023ms
+2015-02-08 09:48:20.229 recnaleerf[3461:16700] Resetting plugins due to page load.
+2015-02-08 09:48:20.969 recnaleerf[3461:16700] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/6751505F-7936-4920-9F96-8ECB295915EB/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 09:48:21.009 recnaleerf[3461:16700] init customerCtrl
+2015-02-08 09:48:21.009 recnaleerf[3461:16700] init customerCtrl
+2015-02-08 09:48:21.009 recnaleerf[3461:16700] init customerCtrl
+2015-02-08 09:48:25.765 recnaleerf[3461:16700] ============= Customer list updated =============== 
+2015-02-08 09:48:25.765 recnaleerf[3461:16700]  ========== Init bg geolocation starting 
+2015-02-08 09:48:25.776 recnaleerf[3461:16700] CDVBackgroundGeoLocation configure
+2015-02-08 09:48:25.777 recnaleerf[3461:16700]   - token: (null)
+2015-02-08 09:48:25.777 recnaleerf[3461:16700]   - url: (null)
+2015-02-08 09:48:25.777 recnaleerf[3461:16700]   - distanceFilter: 30
+2015-02-08 09:48:25.777 recnaleerf[3461:16700]   - stationaryRadius: 20
+2015-02-08 09:48:25.777 recnaleerf[3461:16700]   - locationTimeout: 60
+2015-02-08 09:48:25.778 recnaleerf[3461:16700]   - desiredAccuracy: 10
+2015-02-08 09:48:25.778 recnaleerf[3461:16700]   - activityType: 0
+2015-02-08 09:48:25.778 recnaleerf[3461:16700]   - debug: 0
+2015-02-08 09:48:25.778 recnaleerf[3461:16700]   - stopOnTerminate: 1
+2015-02-08 09:48:25.778 recnaleerf[3461:16700] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-08 09:48:25.779 recnaleerf[3461:16700]  ========== Init bg geolocation finished 
+2015-02-08 09:48:25.781 recnaleerf[3461:16700] locationManager::didFailWithError (null)
+2015-02-08 09:48:25.784 recnaleerf[3461:16700] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-08 09:49:50.551 recnaleerf[3791:17776] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/DDDC3A2F-8C7F-4362-BBAF-2B2ADA919389/Library/Cookies/Cookies.binarycookies
+2015-02-08 09:49:50.724 recnaleerf[3791:17776] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 09:49:50.725 recnaleerf[3791:17776] Multi-tasking -> Device: YES, App: YES
+2015-02-08 09:49:50.733 recnaleerf[3791:17776] Unlimited access to network resources
+2015-02-08 09:49:50.987 recnaleerf[3791:17776] [CDVTimer][keyboard] 0.092983ms
+2015-02-08 09:49:50.987 recnaleerf[3791:17776] [CDVTimer][localnotification] 0.070989ms
+2015-02-08 09:49:50.987 recnaleerf[3791:17776] [CDVTimer][localnotification] 0.011027ms
+2015-02-08 09:49:50.991 recnaleerf[3791:17776] [CDVTimer][file] 3.771007ms
+2015-02-08 09:49:51.011 recnaleerf[3791:17776] [CDVTimer][statusbar] 19.239008ms
+2015-02-08 09:49:51.011 recnaleerf[3791:17776] [CDVTimer][TotalPluginStartup] 24.210989ms
+2015-02-08 09:49:51.079 recnaleerf[3791:17776] Resetting plugins due to page load.
+2015-02-08 09:49:51.484 recnaleerf[3791:17776] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 09:49:51.557 recnaleerf[3791:17776] init customerCtrl
+2015-02-08 09:49:51.557 recnaleerf[3791:17776] init customerCtrl
+2015-02-08 09:49:51.557 recnaleerf[3791:17776] init customerCtrl
+2015-02-08 09:49:53.581 recnaleerf[3791:17776] ERROR: Error: Can't find variable: logInErrorMessage
+signin@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/js/controllers/menuCtrl.js:44:32
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:181:291
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic-angular.min.js:17:2161
+$eval@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:138
+$apply@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:421
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic-angular.min.js:17:2148
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:31:329
+q@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:7:300
+c@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:31:308
+2015-02-08 09:49:55.059 recnaleerf[3791:17776] ERROR: Error: Can't find variable: logInErrorMessage
+signin@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/js/controllers/menuCtrl.js:44:32
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:181:291
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic-angular.min.js:17:2161
+$eval@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:138
+$apply@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:421
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic-angular.min.js:17:2148
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:31:329
+q@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:7:300
+c@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:31:308
+dispatchEvent@[native code]
+n@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic.min.js:15:408
+t@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic.min.js:15:228
+l@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic.min.js:15:1459
+2015-02-08 09:49:57.138 recnaleerf[3791:17776] ERROR: Error: Can't find variable: logInErrorMessage
+signin@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/js/controllers/menuCtrl.js:44:32
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:181:291
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic-angular.min.js:17:2161
+$eval@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:138
+$apply@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:421
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic-angular.min.js:17:2148
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:31:329
+q@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:7:300
+c@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:31:308
+dispatchEvent@[native code]
+n@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic.min.js:15:408
+t@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic.min.js:15:228
+l@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/65D1D696-6E7F-42F2-A8E6-9084D3EA3266/recnaleerf.app/www/lib/ionic/js/ionic.min.js:15:1459
+2015-02-08 09:51:08.609 recnaleerf[4118:18569] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/B11BBC39-DB86-4A9A-BB04-E1143F2B2DED/Library/Cookies/Cookies.binarycookies
+2015-02-08 09:51:08.782 recnaleerf[4118:18569] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 09:51:08.783 recnaleerf[4118:18569] Multi-tasking -> Device: YES, App: YES
+2015-02-08 09:51:08.792 recnaleerf[4118:18569] Unlimited access to network resources
+2015-02-08 09:51:09.053 recnaleerf[4118:18569] [CDVTimer][keyboard] 0.065982ms
+2015-02-08 09:51:09.053 recnaleerf[4118:18569] [CDVTimer][localnotification] 0.047028ms
+2015-02-08 09:51:09.053 recnaleerf[4118:18569] [CDVTimer][localnotification] 0.009000ms
+2015-02-08 09:51:09.056 recnaleerf[4118:18569] [CDVTimer][file] 2.636969ms
+2015-02-08 09:51:09.075 recnaleerf[4118:18569] [CDVTimer][statusbar] 18.713057ms
+2015-02-08 09:51:09.075 recnaleerf[4118:18569] [CDVTimer][TotalPluginStartup] 22.371948ms
+2015-02-08 09:51:09.146 recnaleerf[4118:18569] Resetting plugins due to page load.
+2015-02-08 09:51:09.563 recnaleerf[4118:18569] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 09:51:09.639 recnaleerf[4118:18569] init customerCtrl
+2015-02-08 09:51:09.639 recnaleerf[4118:18569] init customerCtrl
+2015-02-08 09:51:09.639 recnaleerf[4118:18569] init customerCtrl
+2015-02-08 09:52:09.552 recnaleerf[4118:18569] ERROR: Error: Can't find variable: signUpMessage
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/js/controllers/menuCtrl.js:62:63
+k@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:101:154
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:103:95
+$eval@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:138
+$digest@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:112:205
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:115:256
+e@file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:38:367
+file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/E8FE5022-9824-4F56-9E36-423B7268C3E1/recnaleerf.app/www/lib/ionic/js/angular_13/angular.min.js:42:131
+2015-02-08 10:55:41.423 recnaleerf[4863:32575] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/D58A78B3-011E-409D-BA50-C8E3F6B526EA/Library/Cookies/Cookies.binarycookies
+2015-02-08 10:55:41.548 recnaleerf[4863:32575] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 10:55:41.548 recnaleerf[4863:32575] Multi-tasking -> Device: YES, App: YES
+2015-02-08 10:55:41.558 recnaleerf[4863:32575] Unlimited access to network resources
+2015-02-08 10:55:41.988 recnaleerf[4863:32575] [CDVTimer][keyboard] 0.104010ms
+2015-02-08 10:55:41.988 recnaleerf[4863:32575] [CDVTimer][localnotification] 0.075996ms
+2015-02-08 10:55:41.988 recnaleerf[4863:32575] [CDVTimer][localnotification] 0.009000ms
+2015-02-08 10:55:41.992 recnaleerf[4863:32575] [CDVTimer][file] 3.755033ms
+2015-02-08 10:55:42.011 recnaleerf[4863:32575] [CDVTimer][statusbar] 18.374979ms
+2015-02-08 10:55:42.011 recnaleerf[4863:32575] [CDVTimer][TotalPluginStartup] 23.365021ms
+2015-02-08 10:55:42.085 recnaleerf[4863:32575] Resetting plugins due to page load.
+2015-02-08 10:55:42.789 recnaleerf[4863:32575] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/6CD6DB64-4371-4E3C-8B32-ADADE042A101/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 10:55:42.949 recnaleerf[4863:32575] init customerCtrl
+2015-02-08 10:55:42.949 recnaleerf[4863:32575] init customerCtrl
+2015-02-08 10:55:42.949 recnaleerf[4863:32575] init customerCtrl
+2015-02-08 10:55:44.713 recnaleerf[4863:32623] Terminating since there is no system app.
+2015-02-08 10:55:57.471 recnaleerf[5224:33664] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/EED89A0A-9A84-4E97-8928-CF261B6A4D58/Library/Cookies/Cookies.binarycookies
+2015-02-08 10:55:57.576 recnaleerf[5224:33664] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 10:55:57.577 recnaleerf[5224:33664] Multi-tasking -> Device: YES, App: YES
+2015-02-08 10:55:57.584 recnaleerf[5224:33664] Unlimited access to network resources
+2015-02-08 10:55:57.836 recnaleerf[5224:33664] [CDVTimer][keyboard] 0.066996ms
+2015-02-08 10:55:57.837 recnaleerf[5224:33664] [CDVTimer][localnotification] 0.051022ms
+2015-02-08 10:55:57.837 recnaleerf[5224:33664] [CDVTimer][localnotification] 0.009000ms
+2015-02-08 10:55:57.840 recnaleerf[5224:33664] [CDVTimer][file] 2.602041ms
+2015-02-08 10:55:57.857 recnaleerf[5224:33664] [CDVTimer][statusbar] 17.176032ms
+2015-02-08 10:55:57.857 recnaleerf[5224:33664] [CDVTimer][TotalPluginStartup] 20.816028ms
+2015-02-08 10:55:57.942 recnaleerf[5224:33664] Resetting plugins due to page load.
+2015-02-08 10:55:58.384 recnaleerf[5224:33664] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/5024AB19-326E-4E80-BF58-B65C87DF5F07/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 10:55:58.496 recnaleerf[5224:33664] init customerCtrl
+2015-02-08 10:55:58.496 recnaleerf[5224:33664] init customerCtrl
+2015-02-08 10:55:58.496 recnaleerf[5224:33664] init customerCtrl
+2015-02-08 10:56:00.193 recnaleerf[5224:33664] ============= Customer list updated =============== 
+2015-02-08 10:56:00.193 recnaleerf[5224:33664]  ========== Init bg geolocation starting 
+2015-02-08 10:56:00.203 recnaleerf[5224:33664] CDVBackgroundGeoLocation configure
+2015-02-08 10:56:00.203 recnaleerf[5224:33664]   - token: (null)
+2015-02-08 10:56:00.203 recnaleerf[5224:33664]   - url: (null)
+2015-02-08 10:56:00.204 recnaleerf[5224:33664]   - distanceFilter: 30
+2015-02-08 10:56:00.204 recnaleerf[5224:33664]   - stationaryRadius: 20
+2015-02-08 10:56:00.204 recnaleerf[5224:33664]   - locationTimeout: 60
+2015-02-08 10:56:00.204 recnaleerf[5224:33664]   - desiredAccuracy: 10
+2015-02-08 10:56:00.204 recnaleerf[5224:33664]   - activityType: 0
+2015-02-08 10:56:00.204 recnaleerf[5224:33664]   - debug: 0
+2015-02-08 10:56:00.205 recnaleerf[5224:33664]   - stopOnTerminate: 1
+2015-02-08 10:56:00.205 recnaleerf[5224:33664] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-08 10:56:00.214 recnaleerf[5224:33664]  ========== Init bg geolocation finished 
+2015-02-08 10:56:00.215 recnaleerf[5224:33664] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-08 10:56:00.217 recnaleerf[5224:33664] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 10:56:00.217 recnaleerf[5224:33664] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-08 10:56:00.220 recnaleerf[5224:33664] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 10:56:00.223 recnaleerf[5224:33664] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 10:56:00.223 recnaleerf[5224:33664] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 10:56:00.991 recnaleerf[5224:33664] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 10:56:00.991 recnaleerf[5224:33664] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 10:56:01.994 recnaleerf[5224:33664] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 10:56:01.995 recnaleerf[5224:33664] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 10:56:01.995 recnaleerf[5224:33664] - CDVBackgroundGeoLocation queue stationary
+2015-02-08 10:56:01.995 recnaleerf[5224:33664] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-08 10:56:01.995 recnaleerf[5224:33839] - CDVBackgroundGeoLocation#sync
+2015-02-08 10:56:01.996 recnaleerf[5224:33839]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 10:56:01.996 recnaleerf[5224:33839] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-08 10:56:01.997 recnaleerf[5224:33839] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 10:56:01.997 recnaleerf[5224:33664] - CDVBackgroundGeoLocation queue current
+2015-02-08 10:56:01.997 recnaleerf[5224:33845] - CDVBackgroundGeoLocation#sync
+2015-02-08 10:56:01.998 recnaleerf[5224:33845]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 10:56:01.999 recnaleerf[5224:33664]  ======= got location ========= [object Object]
+2015-02-08 10:56:01.999 recnaleerf[5224:33664] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-08 10:56:01.999 recnaleerf[5224:33664] - CDVBackgroundGeoLocation finish
+2015-02-08 10:56:02.000 recnaleerf[5224:33664] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 10:56:13.675 recnaleerf[5224:33664] THREAD WARNING: ['Notification'] took '30.967041' ms. Plugin should use a background thread.
+2015-02-08 10:57:02.107 recnaleerf[5556:34887] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/1C04626F-D235-4C1C-A9BD-28701BEBD149/Library/Cookies/Cookies.binarycookies
+2015-02-08 10:57:02.270 recnaleerf[5556:34887] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 10:57:02.270 recnaleerf[5556:34887] Multi-tasking -> Device: YES, App: YES
+2015-02-08 10:57:02.278 recnaleerf[5556:34887] Unlimited access to network resources
+2015-02-08 10:57:02.544 recnaleerf[5556:34887] [CDVTimer][keyboard] 0.077009ms
+2015-02-08 10:57:02.545 recnaleerf[5556:34887] [CDVTimer][localnotification] 0.049949ms
+2015-02-08 10:57:02.545 recnaleerf[5556:34887] [CDVTimer][localnotification] 0.009000ms
+2015-02-08 10:57:02.547 recnaleerf[5556:34887] [CDVTimer][file] 2.582967ms
+2015-02-08 10:57:02.567 recnaleerf[5556:34887] [CDVTimer][statusbar] 19.374013ms
+2015-02-08 10:57:02.567 recnaleerf[5556:34887] [CDVTimer][TotalPluginStartup] 22.922039ms
+2015-02-08 10:57:02.638 recnaleerf[5556:34887] Resetting plugins due to page load.
+2015-02-08 10:57:03.288 recnaleerf[5556:34887] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/8D2A4EB0-3604-46FC-8A42-A029AA4CD673/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 10:57:03.362 recnaleerf[5556:34887] init customerCtrl
+2015-02-08 10:57:03.363 recnaleerf[5556:34887] init customerCtrl
+2015-02-08 10:57:03.363 recnaleerf[5556:34887] init customerCtrl
+2015-02-08 10:57:43.844 recnaleerf[5556:34887] THREAD WARNING: ['Notification'] took '45.684082' ms. Plugin should use a background thread.
+2015-02-08 10:57:43.959 recnaleerf[5556:34887] THREAD WARNING: ['Notification'] took '60.982178' ms. Plugin should use a background thread.
+2015-02-08 11:00:05.039 recnaleerf[5904:36299] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/75C8F527-E24A-448C-8EAF-A18D50F3DBE3/Library/Cookies/Cookies.binarycookies
+2015-02-08 11:00:05.209 recnaleerf[5904:36299] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 11:00:05.209 recnaleerf[5904:36299] Multi-tasking -> Device: YES, App: YES
+2015-02-08 11:00:05.215 recnaleerf[5904:36299] Unlimited access to network resources
+2015-02-08 11:00:05.469 recnaleerf[5904:36299] [CDVTimer][keyboard] 0.064015ms
+2015-02-08 11:00:05.469 recnaleerf[5904:36299] [CDVTimer][localnotification] 0.047982ms
+2015-02-08 11:00:05.470 recnaleerf[5904:36299] [CDVTimer][localnotification] 0.007987ms
+2015-02-08 11:00:05.473 recnaleerf[5904:36299] [CDVTimer][file] 3.042042ms
+2015-02-08 11:00:05.493 recnaleerf[5904:36299] [CDVTimer][statusbar] 20.096004ms
+2015-02-08 11:00:05.493 recnaleerf[5904:36299] [CDVTimer][TotalPluginStartup] 24.124980ms
+2015-02-08 11:00:05.562 recnaleerf[5904:36299] Resetting plugins due to page load.
+2015-02-08 11:00:06.049 recnaleerf[5904:36299] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/3E960BFC-71BB-4FDB-B35C-18B72F5697F9/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 11:00:06.170 recnaleerf[5904:36299] init customerCtrl
+2015-02-08 11:00:06.171 recnaleerf[5904:36299] init customerCtrl
+2015-02-08 11:00:06.171 recnaleerf[5904:36299] init customerCtrl
+2015-02-08 11:00:08.422 recnaleerf[5904:36299] ============= Customer list updated =============== 
+2015-02-08 11:00:08.423 recnaleerf[5904:36299]  ========== Init bg geolocation starting 
+2015-02-08 11:00:08.434 recnaleerf[5904:36299] CDVBackgroundGeoLocation configure
+2015-02-08 11:00:08.434 recnaleerf[5904:36299]   - token: (null)
+2015-02-08 11:00:08.434 recnaleerf[5904:36299]   - url: (null)
+2015-02-08 11:00:08.434 recnaleerf[5904:36299]   - distanceFilter: 30
+2015-02-08 11:00:08.434 recnaleerf[5904:36299]   - stationaryRadius: 20
+2015-02-08 11:00:08.435 recnaleerf[5904:36299]   - locationTimeout: 60
+2015-02-08 11:00:08.435 recnaleerf[5904:36299]   - desiredAccuracy: 10
+2015-02-08 11:00:08.435 recnaleerf[5904:36299]   - activityType: 0
+2015-02-08 11:00:08.435 recnaleerf[5904:36299]   - debug: 0
+2015-02-08 11:00:08.435 recnaleerf[5904:36299]   - stopOnTerminate: 1
+2015-02-08 11:00:08.436 recnaleerf[5904:36299] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-08 11:00:08.444 recnaleerf[5904:36299]  ========== Init bg geolocation finished 
+2015-02-08 11:00:08.446 recnaleerf[5904:36299] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-08 11:00:08.447 recnaleerf[5904:36299] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:00:08.448 recnaleerf[5904:36299] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-08 11:00:08.453 recnaleerf[5904:36299] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:00:08.453 recnaleerf[5904:36299] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:00:08.740 recnaleerf[5904:36299] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:00:08.740 recnaleerf[5904:36299] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:00:09.740 recnaleerf[5904:36299] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:00:09.741 recnaleerf[5904:36299] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:00:10.127 recnaleerf[5904:36299]  ======= got location ========= [object Object]
+2015-02-08 11:00:10.741 recnaleerf[5904:36299] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:00:10.741 recnaleerf[5904:36299] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:00:10.742 recnaleerf[5904:36299] - CDVBackgroundGeoLocation queue stationary
+2015-02-08 11:00:10.742 recnaleerf[5904:36299] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-08 11:00:10.742 recnaleerf[5904:36324] - CDVBackgroundGeoLocation#sync
+2015-02-08 11:00:10.743 recnaleerf[5904:36324]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 11:00:10.743 recnaleerf[5904:36324] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-08 11:00:10.743 recnaleerf[5904:36299] - CDVBackgroundGeoLocation queue current
+2015-02-08 11:00:10.744 recnaleerf[5904:36324] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 11:00:10.744 recnaleerf[5904:36324] - CDVBackgroundGeoLocation#sync
+2015-02-08 11:00:10.745 recnaleerf[5904:36324]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 11:00:10.746 recnaleerf[5904:36299] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-08 11:00:10.746 recnaleerf[5904:36299] - CDVBackgroundGeoLocation finish
+2015-02-08 11:00:10.747 recnaleerf[5904:36299] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 11:01:24.310 recnaleerf[6226:37202] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/9E96623B-3FF6-4686-BAFD-2BFD60FAC67A/Library/Cookies/Cookies.binarycookies
+2015-02-08 11:01:24.487 recnaleerf[6226:37202] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 11:01:24.488 recnaleerf[6226:37202] Multi-tasking -> Device: YES, App: YES
+2015-02-08 11:01:24.498 recnaleerf[6226:37202] Unlimited access to network resources
+2015-02-08 11:01:24.744 recnaleerf[6226:37202] [CDVTimer][keyboard] 0.079989ms
+2015-02-08 11:01:24.744 recnaleerf[6226:37202] [CDVTimer][localnotification] 0.060022ms
+2015-02-08 11:01:24.744 recnaleerf[6226:37202] [CDVTimer][localnotification] 0.010967ms
+2015-02-08 11:01:24.747 recnaleerf[6226:37202] [CDVTimer][file] 2.712011ms
+2015-02-08 11:01:24.768 recnaleerf[6226:37202] [CDVTimer][statusbar] 20.312011ms
+2015-02-08 11:01:24.768 recnaleerf[6226:37202] [CDVTimer][TotalPluginStartup] 24.061024ms
+2015-02-08 11:01:24.837 recnaleerf[6226:37202] Resetting plugins due to page load.
+2015-02-08 11:01:25.493 recnaleerf[6226:37202] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/1D3732EE-DFD1-4576-A8AC-C09375FB2453/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 11:01:25.621 recnaleerf[6226:37202] init customerCtrl
+2015-02-08 11:01:25.621 recnaleerf[6226:37202] init customerCtrl
+2015-02-08 11:01:25.621 recnaleerf[6226:37202] init customerCtrl
+2015-02-08 11:01:26.558 recnaleerf[6226:37202] ============= Customer list updated =============== 
+2015-02-08 11:01:26.558 recnaleerf[6226:37202]  ========== Init bg geolocation starting 
+2015-02-08 11:01:26.569 recnaleerf[6226:37202] CDVBackgroundGeoLocation configure
+2015-02-08 11:01:26.569 recnaleerf[6226:37202]   - token: (null)
+2015-02-08 11:01:26.569 recnaleerf[6226:37202]   - url: (null)
+2015-02-08 11:01:26.569 recnaleerf[6226:37202]   - distanceFilter: 30
+2015-02-08 11:01:26.569 recnaleerf[6226:37202]   - stationaryRadius: 20
+2015-02-08 11:01:26.570 recnaleerf[6226:37202]   - locationTimeout: 60
+2015-02-08 11:01:26.570 recnaleerf[6226:37202]   - desiredAccuracy: 10
+2015-02-08 11:01:26.570 recnaleerf[6226:37202]   - activityType: 0
+2015-02-08 11:01:26.570 recnaleerf[6226:37202]   - debug: 0
+2015-02-08 11:01:26.570 recnaleerf[6226:37202]   - stopOnTerminate: 1
+2015-02-08 11:01:26.571 recnaleerf[6226:37202] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-08 11:01:26.579 recnaleerf[6226:37202]  ========== Init bg geolocation finished 
+2015-02-08 11:01:26.580 recnaleerf[6226:37202] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-08 11:01:26.582 recnaleerf[6226:37202] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:01:26.582 recnaleerf[6226:37202] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-08 11:01:26.588 recnaleerf[6226:37202] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:01:26.588 recnaleerf[6226:37202] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:01:26.944 recnaleerf[6226:37202] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:01:26.945 recnaleerf[6226:37202] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:01:27.948 recnaleerf[6226:37202] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:01:27.948 recnaleerf[6226:37202] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:01:28.951 recnaleerf[6226:37202] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:01:28.951 recnaleerf[6226:37202] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:01:28.951 recnaleerf[6226:37202] - CDVBackgroundGeoLocation queue stationary
+2015-02-08 11:01:28.952 recnaleerf[6226:37202] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-08 11:01:28.952 recnaleerf[6226:37219] - CDVBackgroundGeoLocation#sync
+2015-02-08 11:01:28.952 recnaleerf[6226:37202] - CDVBackgroundGeoLocation queue current
+2015-02-08 11:01:28.953 recnaleerf[6226:37219]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 11:01:28.953 recnaleerf[6226:37219] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-08 11:01:28.953 recnaleerf[6226:37219] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 11:01:28.954 recnaleerf[6226:37219] - CDVBackgroundGeoLocation#sync
+2015-02-08 11:01:28.954 recnaleerf[6226:37219]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 11:01:28.955 recnaleerf[6226:37202]  ======= got location ========= [object Object]
+2015-02-08 11:01:28.956 recnaleerf[6226:37202] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-08 11:01:28.956 recnaleerf[6226:37202] - CDVBackgroundGeoLocation finish
+2015-02-08 11:01:28.957 recnaleerf[6226:37202] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 11:01:50.833 recnaleerf[6542:37849] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/338362E3-0D7E-4A76-92B6-06D250C62841/Library/Cookies/Cookies.binarycookies
+2015-02-08 11:01:50.990 recnaleerf[6542:37849] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 11:01:50.990 recnaleerf[6542:37849] Multi-tasking -> Device: YES, App: YES
+2015-02-08 11:01:50.999 recnaleerf[6542:37849] Unlimited access to network resources
+2015-02-08 11:01:51.239 recnaleerf[6542:37849] [CDVTimer][keyboard] 0.119984ms
+2015-02-08 11:01:51.239 recnaleerf[6542:37849] [CDVTimer][localnotification] 0.050962ms
+2015-02-08 11:01:51.240 recnaleerf[6542:37849] [CDVTimer][localnotification] 0.007987ms
+2015-02-08 11:01:51.242 recnaleerf[6542:37849] [CDVTimer][file] 2.647996ms
+2015-02-08 11:01:51.260 recnaleerf[6542:37849] [CDVTimer][statusbar] 17.030954ms
+2015-02-08 11:01:51.260 recnaleerf[6542:37849] [CDVTimer][TotalPluginStartup] 20.753980ms
+2015-02-08 11:01:51.328 recnaleerf[6542:37849] Resetting plugins due to page load.
+2015-02-08 11:01:51.824 recnaleerf[6542:37849] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/235DF48E-6166-4938-BF75-8DB5CC71340C/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 11:01:51.893 recnaleerf[6542:37849] init customerCtrl
+2015-02-08 11:01:51.893 recnaleerf[6542:37849] init customerCtrl
+2015-02-08 11:01:51.893 recnaleerf[6542:37849] init customerCtrl
+2015-02-08 11:03:13.244 recnaleerf[6542:37849] EndEnd11111
+2015-02-08 11:04:14.613 recnaleerf[6883:38993] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/5A2E74A5-D420-4B23-9A6E-4E7BA00456D0/Library/Cookies/Cookies.binarycookies
+2015-02-08 11:04:14.776 recnaleerf[6883:38993] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-08 11:04:14.776 recnaleerf[6883:38993] Multi-tasking -> Device: YES, App: YES
+2015-02-08 11:04:14.785 recnaleerf[6883:38993] Unlimited access to network resources
+2015-02-08 11:04:15.043 recnaleerf[6883:38993] [CDVTimer][keyboard] 0.131965ms
+2015-02-08 11:04:15.044 recnaleerf[6883:38993] [CDVTimer][localnotification] 0.070989ms
+2015-02-08 11:04:15.044 recnaleerf[6883:38993] [CDVTimer][localnotification] 0.010014ms
+2015-02-08 11:04:15.048 recnaleerf[6883:38993] [CDVTimer][file] 3.664970ms
+2015-02-08 11:04:15.067 recnaleerf[6883:38993] [CDVTimer][statusbar] 19.556999ms
+2015-02-08 11:04:15.068 recnaleerf[6883:38993] [CDVTimer][TotalPluginStartup] 24.488986ms
+2015-02-08 11:04:15.140 recnaleerf[6883:38993] Resetting plugins due to page load.
+2015-02-08 11:04:15.747 recnaleerf[6883:38993] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/5E2D7DAF-BD0F-4934-AF57-F9BA6ADC6782/recnaleerf.app/www/index.html#/tab/dash
+2015-02-08 11:04:15.870 recnaleerf[6883:38993] init customerCtrl
+2015-02-08 11:04:15.870 recnaleerf[6883:38993] init customerCtrl
+2015-02-08 11:04:15.870 recnaleerf[6883:38993] init customerCtrl
+2015-02-08 11:04:35.212 recnaleerf[6883:38993] ============= Customer list updated =============== 
+2015-02-08 11:04:35.213 recnaleerf[6883:38993]  ========== Init bg geolocation starting 
+2015-02-08 11:04:35.310 recnaleerf[6883:38993] THREAD WARNING: ['Geolocation'] took '96.467041' ms. Plugin should use a background thread.
+2015-02-08 11:04:35.312 recnaleerf[6883:38993] CDVBackgroundGeoLocation configure
+2015-02-08 11:04:35.313 recnaleerf[6883:38993]   - token: (null)
+2015-02-08 11:04:35.313 recnaleerf[6883:38993]   - url: (null)
+2015-02-08 11:04:35.313 recnaleerf[6883:38993]   - distanceFilter: 30
+2015-02-08 11:04:35.313 recnaleerf[6883:38993]   - stationaryRadius: 20
+2015-02-08 11:04:35.313 recnaleerf[6883:38993]   - locationTimeout: 60
+2015-02-08 11:04:35.313 recnaleerf[6883:38993]   - desiredAccuracy: 10
+2015-02-08 11:04:35.314 recnaleerf[6883:38993]   - activityType: 0
+2015-02-08 11:04:35.314 recnaleerf[6883:38993]   - debug: 0
+2015-02-08 11:04:35.314 recnaleerf[6883:38993]   - stopOnTerminate: 1
+2015-02-08 11:04:35.315 recnaleerf[6883:38993] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-08 11:04:35.328 recnaleerf[6883:38993] THREAD WARNING: ['BackgroundGeoLocation'] took '13.350098' ms. Plugin should use a background thread.
+2015-02-08 11:04:35.329 recnaleerf[6883:38993]  ========== Init bg geolocation finished 
+2015-02-08 11:04:35.331 recnaleerf[6883:38993] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-08 11:04:35.336 recnaleerf[6883:38993] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:04:35.336 recnaleerf[6883:38993] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-08 11:04:35.341 recnaleerf[6883:38993] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:04:35.341 recnaleerf[6883:38993] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:04:35.491 recnaleerf[6883:38993] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:04:35.492 recnaleerf[6883:38993] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:04:36.494 recnaleerf[6883:38993] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:04:36.494 recnaleerf[6883:38993] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:04:37.496 recnaleerf[6883:38993] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-08 11:04:37.496 recnaleerf[6883:38993] - Acquiring stationary location, accuracy: 5.000000
+2015-02-08 11:04:37.497 recnaleerf[6883:38993] - CDVBackgroundGeoLocation queue stationary
+2015-02-08 11:04:37.497 recnaleerf[6883:39009] - CDVBackgroundGeoLocation#sync
+2015-02-08 11:04:37.497 recnaleerf[6883:38993] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-08 11:04:37.498 recnaleerf[6883:39009]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 11:04:37.498 recnaleerf[6883:39009] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-08 11:04:37.499 recnaleerf[6883:38993] - CDVBackgroundGeoLocation queue current
+2015-02-08 11:04:37.499 recnaleerf[6883:39009] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 11:04:37.500 recnaleerf[6883:39009] - CDVBackgroundGeoLocation#sync
+2015-02-08 11:04:37.500 recnaleerf[6883:39009]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-08 11:04:37.501 recnaleerf[6883:38993]  ======= got location ========= [object Object]
+2015-02-08 11:04:37.501 recnaleerf[6883:38993] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-08 11:04:37.502 recnaleerf[6883:38993] - CDVBackgroundGeoLocation finish
+2015-02-08 11:04:37.502 recnaleerf[6883:38993] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-08 11:04:51.983 recnaleerf[6883:38993] EndEnd11111
+2015-02-08 11:04:51.983 recnaleerf[6883:38993] EndEnd333
+2015-02-08 11:04:51.984 recnaleerf[6883:38993] EndEnd2222
+2015-02-09 17:32:32.619 recnaleerf[7731:58096] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/24046BE0-EE2F-44EB-A664-4420E180B961/Library/Cookies/Cookies.binarycookies
+2015-02-09 17:32:32.797 recnaleerf[7731:58096] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-09 17:32:32.798 recnaleerf[7731:58096] Multi-tasking -> Device: YES, App: YES
+2015-02-09 17:32:32.814 recnaleerf[7731:58096] Unlimited access to network resources
+2015-02-09 17:32:33.165 recnaleerf[7731:58096] [CDVTimer][keyboard] 0.100970ms
+2015-02-09 17:32:33.166 recnaleerf[7731:58096] [CDVTimer][localnotification] 0.082016ms
+2015-02-09 17:32:33.166 recnaleerf[7731:58096] [CDVTimer][localnotification] 0.009000ms
+2015-02-09 17:32:33.169 recnaleerf[7731:58096] [CDVTimer][file] 3.458977ms
+2015-02-09 17:32:33.238 recnaleerf[7731:58096] [CDVTimer][statusbar] 68.776011ms
+2015-02-09 17:32:33.239 recnaleerf[7731:58096] [CDVTimer][TotalPluginStartup] 73.523045ms
+2015-02-09 17:32:33.311 recnaleerf[7731:58096] Resetting plugins due to page load.
+2015-02-09 17:32:33.656 recnaleerf[7731:58096] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/D385C122-AC73-492E-8378-853EDC968B21/recnaleerf.app/www/index.html
+2015-02-09 17:33:33.219 recnaleerf[8100:59346] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/1098C348-41DD-4E85-8F09-68BC3A422330/Library/Cookies/Cookies.binarycookies
+2015-02-09 17:33:33.372 recnaleerf[8100:59346] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-09 17:33:33.373 recnaleerf[8100:59346] Multi-tasking -> Device: YES, App: YES
+2015-02-09 17:33:33.379 recnaleerf[8100:59346] Unlimited access to network resources
+2015-02-09 17:33:33.603 recnaleerf[8100:59346] [CDVTimer][keyboard] 0.061989ms
+2015-02-09 17:33:33.604 recnaleerf[8100:59346] [CDVTimer][localnotification] 0.066996ms
+2015-02-09 17:33:33.604 recnaleerf[8100:59346] [CDVTimer][localnotification] 0.007987ms
+2015-02-09 17:33:33.607 recnaleerf[8100:59346] [CDVTimer][file] 2.575994ms
+2015-02-09 17:33:33.623 recnaleerf[8100:59346] [CDVTimer][statusbar] 16.417980ms
+2015-02-09 17:33:33.623 recnaleerf[8100:59346] [CDVTimer][TotalPluginStartup] 20.006001ms
+2015-02-09 17:33:33.690 recnaleerf[8100:59346] Resetting plugins due to page load.
+2015-02-09 17:33:33.982 recnaleerf[8100:59346] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/BC5DC48A-6AC3-4ED7-9192-CDDF3124044C/recnaleerf.app/www/index.html
+2015-02-09 17:34:56.472 recnaleerf[8472:61370] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/8D5B7F7C-F115-4672-BBF9-39CBFE3B1CE4/Library/Cookies/Cookies.binarycookies
+2015-02-09 17:34:56.639 recnaleerf[8472:61370] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-09 17:34:56.640 recnaleerf[8472:61370] Multi-tasking -> Device: YES, App: YES
+2015-02-09 17:34:56.647 recnaleerf[8472:61370] Unlimited access to network resources
+2015-02-09 17:34:56.918 recnaleerf[8472:61370] [CDVTimer][keyboard] 0.064015ms
+2015-02-09 17:34:56.918 recnaleerf[8472:61370] [CDVTimer][localnotification] 0.047028ms
+2015-02-09 17:34:56.918 recnaleerf[8472:61370] [CDVTimer][localnotification] 0.009000ms
+2015-02-09 17:34:56.922 recnaleerf[8472:61370] [CDVTimer][file] 2.915025ms
+2015-02-09 17:34:56.941 recnaleerf[8472:61370] [CDVTimer][statusbar] 18.930972ms
+2015-02-09 17:34:56.941 recnaleerf[8472:61370] [CDVTimer][TotalPluginStartup] 22.805035ms
+2015-02-09 17:34:57.011 recnaleerf[8472:61370] Resetting plugins due to page load.
+2015-02-09 17:34:58.091 recnaleerf[8472:61370] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/CAFAFCFB-FAF6-453F-9008-3EEE98A75F70/recnaleerf.app/www/index.html#/tab/dash
+2015-02-09 17:34:58.302 recnaleerf[8472:61370] init customerCtrl
+2015-02-09 17:34:58.303 recnaleerf[8472:61370] init customerCtrl
+2015-02-09 17:34:58.303 recnaleerf[8472:61370] init customerCtrl
+2015-02-09 17:34:59.535 recnaleerf[8472:61370] ============= Customer list updated =============== 
+2015-02-09 17:34:59.535 recnaleerf[8472:61370]  ========== Init bg geolocation starting 
+2015-02-09 17:34:59.546 recnaleerf[8472:61370] CDVBackgroundGeoLocation configure
+2015-02-09 17:34:59.546 recnaleerf[8472:61370]   - token: (null)
+2015-02-09 17:34:59.546 recnaleerf[8472:61370]   - url: (null)
+2015-02-09 17:34:59.546 recnaleerf[8472:61370]   - distanceFilter: 30
+2015-02-09 17:34:59.546 recnaleerf[8472:61370]   - stationaryRadius: 20
+2015-02-09 17:34:59.547 recnaleerf[8472:61370]   - locationTimeout: 60
+2015-02-09 17:34:59.547 recnaleerf[8472:61370]   - desiredAccuracy: 10
+2015-02-09 17:34:59.547 recnaleerf[8472:61370]   - activityType: 0
+2015-02-09 17:34:59.547 recnaleerf[8472:61370]   - debug: 0
+2015-02-09 17:34:59.547 recnaleerf[8472:61370]   - stopOnTerminate: 1
+2015-02-09 17:34:59.548 recnaleerf[8472:61370] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-09 17:34:59.557 recnaleerf[8472:61370]  ========== Init bg geolocation finished 
+2015-02-09 17:34:59.558 recnaleerf[8472:61370] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-09 17:34:59.561 recnaleerf[8472:61370] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:34:59.561 recnaleerf[8472:61370] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-09 17:34:59.564 recnaleerf[8472:61370] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:34:59.566 recnaleerf[8472:61370] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:34:59.567 recnaleerf[8472:61370] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:35:00.375 recnaleerf[8472:61370] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:35:00.375 recnaleerf[8472:61370] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:35:01.376 recnaleerf[8472:61370] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:35:01.376 recnaleerf[8472:61370] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:35:01.376 recnaleerf[8472:61370] - CDVBackgroundGeoLocation queue stationary
+2015-02-09 17:35:01.377 recnaleerf[8472:61370] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-09 17:35:01.377 recnaleerf[8472:61393] - CDVBackgroundGeoLocation#sync
+2015-02-09 17:35:01.377 recnaleerf[8472:61393]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 17:35:01.377 recnaleerf[8472:61393] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-09 17:35:01.377 recnaleerf[8472:61370] - CDVBackgroundGeoLocation queue current
+2015-02-09 17:35:01.378 recnaleerf[8472:61393] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 17:35:01.379 recnaleerf[8472:61393] - CDVBackgroundGeoLocation#sync
+2015-02-09 17:35:01.379 recnaleerf[8472:61393]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 17:35:01.380 recnaleerf[8472:61370]  ======= got location ========= [object Object]
+2015-02-09 17:35:01.381 recnaleerf[8472:61370] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-09 17:35:01.381 recnaleerf[8472:61370] - CDVBackgroundGeoLocation finish
+2015-02-09 17:35:01.382 recnaleerf[8472:61370] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 17:36:23.477 recnaleerf[8472:61370] - CDVBackgroundGeoLocation suspend (enabled? 1)
+2015-02-09 17:36:23.477 recnaleerf[8472:61370] - CDVBackgroundGeoLocation queue stationary
+2015-02-09 17:36:23.478 recnaleerf[8472:62093] - CDVBackgroundGeoLocation#sync
+2015-02-09 17:36:23.478 recnaleerf[8472:62093]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 17:36:23.478 recnaleerf[8472:62093] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-09 17:36:23.489 recnaleerf[8472:62093] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179.994516)
+2015-02-09 17:43:56.435 recnaleerf[8868:64602] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/EB22E03C-21C6-4953-BB03-351D2B0AB80E/Library/Cookies/Cookies.binarycookies
+2015-02-09 17:43:56.617 recnaleerf[8868:64602] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-09 17:43:56.618 recnaleerf[8868:64602] Multi-tasking -> Device: YES, App: YES
+2015-02-09 17:43:56.626 recnaleerf[8868:64602] Unlimited access to network resources
+2015-02-09 17:43:56.867 recnaleerf[8868:64602] [CDVTimer][keyboard] 0.069976ms
+2015-02-09 17:43:56.867 recnaleerf[8868:64602] [CDVTimer][localnotification] 0.066996ms
+2015-02-09 17:43:56.867 recnaleerf[8868:64602] [CDVTimer][localnotification] 0.009954ms
+2015-02-09 17:43:56.870 recnaleerf[8868:64602] [CDVTimer][file] 2.623022ms
+2015-02-09 17:43:56.891 recnaleerf[8868:64602] [CDVTimer][statusbar] 20.915985ms
+2015-02-09 17:43:56.891 recnaleerf[8868:64602] [CDVTimer][TotalPluginStartup] 24.549007ms
+2015-02-09 17:43:56.959 recnaleerf[8868:64602] Resetting plugins due to page load.
+2015-02-09 17:43:59.131 recnaleerf[8868:64602] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/C96A40BC-339D-4FE9-A0EC-F98271D2C99C/recnaleerf.app/www/index.html#/tab/dash
+2015-02-09 17:43:59.161 recnaleerf[8868:64602] init customerCtrl
+2015-02-09 17:43:59.161 recnaleerf[8868:64602] init customerCtrl
+2015-02-09 17:43:59.161 recnaleerf[8868:64602] init customerCtrl
+2015-02-09 17:44:01.226 recnaleerf[8868:64602] ============= Customer list updated =============== 
+2015-02-09 17:44:01.226 recnaleerf[8868:64602]  ========== Init bg geolocation starting 
+2015-02-09 17:44:01.234 recnaleerf[8868:64602] CDVBackgroundGeoLocation configure
+2015-02-09 17:44:01.234 recnaleerf[8868:64602]   - token: (null)
+2015-02-09 17:44:01.235 recnaleerf[8868:64602]   - url: (null)
+2015-02-09 17:44:01.235 recnaleerf[8868:64602]   - distanceFilter: 30
+2015-02-09 17:44:01.235 recnaleerf[8868:64602]   - stationaryRadius: 20
+2015-02-09 17:44:01.235 recnaleerf[8868:64602]   - locationTimeout: 60
+2015-02-09 17:44:01.235 recnaleerf[8868:64602]   - desiredAccuracy: 10
+2015-02-09 17:44:01.235 recnaleerf[8868:64602]   - activityType: 0
+2015-02-09 17:44:01.236 recnaleerf[8868:64602]   - debug: 0
+2015-02-09 17:44:01.236 recnaleerf[8868:64602]   - stopOnTerminate: 1
+2015-02-09 17:44:01.237 recnaleerf[8868:64602] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-09 17:44:01.244 recnaleerf[8868:64602]  ========== Init bg geolocation finished 
+2015-02-09 17:44:01.245 recnaleerf[8868:64602] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-09 17:44:01.246 recnaleerf[8868:64602] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:44:01.247 recnaleerf[8868:64602] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-09 17:44:01.252 recnaleerf[8868:64602] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:44:01.253 recnaleerf[8868:64602] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:44:02.084 recnaleerf[8868:64602] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:44:02.084 recnaleerf[8868:64602] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:44:03.085 recnaleerf[8868:64602] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:44:03.085 recnaleerf[8868:64602] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:44:04.087 recnaleerf[8868:64602] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:44:04.088 recnaleerf[8868:64602] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:44:04.088 recnaleerf[8868:64602] - CDVBackgroundGeoLocation queue stationary
+2015-02-09 17:44:04.089 recnaleerf[8868:64602] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-09 17:44:04.089 recnaleerf[8868:64615] - CDVBackgroundGeoLocation#sync
+2015-02-09 17:44:04.089 recnaleerf[8868:64615]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 17:44:04.090 recnaleerf[8868:64615] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-09 17:44:04.090 recnaleerf[8868:64602] - CDVBackgroundGeoLocation queue current
+2015-02-09 17:44:04.091 recnaleerf[8868:64615] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 17:44:04.091 recnaleerf[8868:64615] - CDVBackgroundGeoLocation#sync
+2015-02-09 17:44:04.092 recnaleerf[8868:64615]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 17:44:04.093 recnaleerf[8868:64602]  ======= got location ========= [object Object]
+2015-02-09 17:44:04.093 recnaleerf[8868:64602] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-09 17:44:04.094 recnaleerf[8868:64602] - CDVBackgroundGeoLocation finish
+2015-02-09 17:44:04.094 recnaleerf[8868:64602] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)

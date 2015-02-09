@@ -27,7 +27,7 @@
                 </label>
                 <div class="error" ng-show="user_details_form.password.$dirty && user_details_form.password.$invalid">
                     <small class="error" ng-show="user_details_form.password.$error.required">{{'PASSWORD' | translate}} {{'IS_REQUIRED' | translate}}</small>
-                    <small class="error" ng-show="user_details_form.password.$error.minlength">{{'PASSWORD' | translate}} {{'SHOULD_HAVE_MIN' | translate}} 4 {{'CHARACTERS' | translate}}</small>
+                    <small class="error" ng-show="user_details_form.password.$error.minlength">{{'PASSWORD' | translate}} {{'SHOULD_HAVE_MIN' | translate}} 8 {{'CHARACTERS' | translate}}</small>
                 </div>
 
                 <!-- VERIFY PASSWORD -->
@@ -49,7 +49,6 @@
         <div class="error" ng-show="signUpMessage">
             <div style="color: green" ng-show="signUpSuccess">{{SIGN_IN_SUCCESS | translate}}</div>
             <div ng-hide="signUpSuccess">{{SIGN_IN_FAILED | translate}} {{signUpMessage}}</div>
-
         </div>
 
     </ion-content>

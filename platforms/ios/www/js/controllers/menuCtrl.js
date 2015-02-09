@@ -8,19 +8,46 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-    .controller('menuCtrl', ['$scope','$location', 'UserSrv', '$ionicLoading','$state',function ($scope,$location,UserSrv,$ionicLoading,$state) {
+    .controller('menuCtrl', ['$scope','$location', 'UserSrv', '$ionicLoading','$state','$translate',function ($scope,$location,UserSrv,$ionicLoading,$state,$translate) {
 
         var userService = UserSrv;
+        $scope.logInErrorMessage = "";
 
         $scope.isLoggedIn = function() {
             return userService.isLoggedIn();
         };
 
+        var signInSuccess = function(user)
+        {
+
+            if(user.emailVerified) {
+                user.save();
+                $scope.currentUser = user;
+                $location.path('/#');
+                $scope.$apply();
+            }
+            else {
+                $scope.logInErrorMessage = $translate.instant('EMAIL_NOT_VERIFIED');
+                user.logOut();
+                $scope.currentUser = null;
+            }
+            $ionicLoading.hide();
+        };
+
+        var signInError = function(user,error)
+        {
+            $scope.logInErrorMessage = $translate.instant('LOGIN_ERROR')+': '+error.message;
+            $ionicLoading.hide();
+        };
+
         $scope.signin = function (user){
-            return userService.signin(user);
+            $scope.logInErrorMessage = "";
+            return userService.signin(user,signInSuccess,signInError);
+
         };
 
         $scope.logout = function () {
+            $scope.logInErrorMessage = "";
             return userService.logout();
         };
 
@@ -31,14 +58,14 @@ angular.module('recnaleerfClientApp')
             .then(
                 function(newUser) {
                     $scope.signUpSuccess = true;
-                    $scope.signUpMessage = 'User '+newUser.get('username')+' succesfully signed up';
-                    console.log($scope.signUpMessage);
+                    $scope.signUpMessage = $translate.instant('VERIFICATION_EMAIL_SENT');
+                    navigator.notification.alert($scope.signUpMessage,null,$translate.instant('REGISTRATION_ALMOST_COMPLETE'));
                     $ionicLoading.hide();
                     $state.go('login');
                 },
                 function(value) {
                     $scope.signUpSuccess = false;
-                    $scope.signUpMessage = 'User failed to  signed up: '+value.error.code+':'+value.error.message;;
+                    $scope.signUpMessage = $translate.instant('LOGIN_ERROR')+': '+value.error.message;
                     console.log($scope.signUpMessage);
                     $ionicLoading.hide();
                 }

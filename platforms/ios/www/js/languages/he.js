@@ -25,6 +25,8 @@ var translationsHE = {
     IS_REQUIRED: 'הוא שדה חובה',
     IS_NOT_VALID_F: 'אינה חוקית',
     PASSWORDS_DO_NOT_MATCH: 'הסיסמאות אינן תואמות',
+    EMAIL_NOT_VERIFIED: 'עלייך לאמת את כתובת האימייל במייל שנשלח אליך',
+    LOGIN_ERROR: 'שגיאת התחברות:',
 
     // LOGIN
     LOGIN_TITLE: 'מסך התחברות למערכת',
@@ -41,6 +43,8 @@ var translationsHE = {
     REG_USER_HEADLINE: 'רישום משתמש חדש',
     SIGN_IN_SUCCESS: 'התחברות הצליחה',
     SIGN_IN_FAILED: 'ההתחברות נכשלה',
+    VERIFICATION_EMAIL_SENT: 'על מנת להתחיל להשתמש באפליקציה עלייך לאשר את כתובת המייל שלך באימייל שנשלח אלייך',
+    REGISTRATION_ALMOST_COMPLETE: 'עוד משהו קטן...',
 
     //DASHBOARD
     LOGGED_IN_AS: 'כרגע מחובר בתור',

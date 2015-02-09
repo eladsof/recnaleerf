@@ -15,31 +15,10 @@ angular.module('recnaleerfClientApp')
         return $scope.currentUser != null;
     }
 
-    this.signin = function (user){
+    this.signin = function (user,successFn,failureFn){
         $ionicLoading.show();
         MyUser.logIn(user.username,user.password , {
-            success: function(user)
-            {
-                user.save();
-                if(user.emailVerified) {
-                    $scope.currentUser = user;
-                    console.log('User '+$scope.currentUser.get('username')+' succesfully signed in');
-                    $location.path('/#');
-                    $scope.$apply();
-                }
-                else {
-                    console.log('Email is not verified - user not signed in');
-                    MyUser.logOut();
-                    $scope.currentUser = null;
-                }
-
-                $ionicLoading.hide();
-            } ,
-            error:   function(user,error)
-            {
-                $ionicLoading.hide();
-                console.log('User failed to  signed in: '+error.code+':'+error.message);
-            }
+            success: successFn, error: failureFn
         });
     };
 

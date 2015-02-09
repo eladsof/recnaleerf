@@ -45,6 +45,7 @@ Fix everything after user registeres \ logs in \ out .
 Fix address to show in the correct language.
 Add feedback on login (on failure)
 Add an 5 minute "snooze for finishing and starting work item.
+Check option of using geofencing instead of location polling.
 Extract to a serve all of the notification \ alert stuff.
 Decorate non-blocking stuff with loader.
 Security - blocking data access to user that did not create the object (And allow allowing that for specific users) - https://parse.com/docs/data#security-objects
