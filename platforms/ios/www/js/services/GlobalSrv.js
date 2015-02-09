@@ -158,7 +158,7 @@ angular.module('recnaleerfClientApp')
 
         };
         $rootScope.finishCurrentWorkItem = function () {
-            $rootScope.currentWorkItem.end = new Date();
+            $rootScope.currentWorkItem.finish = new Date();
             $rootScope.currentWorkItem.isComplete = true;
             $rootScope.currentWorkItem.save(null, {
                 success: function(item) {

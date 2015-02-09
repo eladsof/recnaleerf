@@ -17084,3 +17084,239 @@ file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019
 2015-02-09 17:44:04.093 recnaleerf[8868:64602] ============ Location changed to :  32.1599934,34.9047423 =============
 2015-02-09 17:44:04.094 recnaleerf[8868:64602] - CDVBackgroundGeoLocation finish
 2015-02-09 17:44:04.094 recnaleerf[8868:64602] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 17:54:41.945 recnaleerf[9367:70441] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/7D0AD563-4A74-413D-A424-CFEBB6EA4FB2/Library/Cookies/Cookies.binarycookies
+2015-02-09 17:54:42.094 recnaleerf[9367:70441] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-09 17:54:42.094 recnaleerf[9367:70441] Multi-tasking -> Device: YES, App: YES
+2015-02-09 17:54:42.101 recnaleerf[9367:70441] Unlimited access to network resources
+2015-02-09 17:54:42.330 recnaleerf[9367:70441] [CDVTimer][keyboard] 0.070989ms
+2015-02-09 17:54:42.330 recnaleerf[9367:70441] [CDVTimer][localnotification] 0.070989ms
+2015-02-09 17:54:42.330 recnaleerf[9367:70441] [CDVTimer][localnotification] 0.010014ms
+2015-02-09 17:54:42.333 recnaleerf[9367:70441] [CDVTimer][file] 2.621949ms
+2015-02-09 17:54:42.352 recnaleerf[9367:70441] [CDVTimer][statusbar] 18.750012ms
+2015-02-09 17:54:42.352 recnaleerf[9367:70441] [CDVTimer][TotalPluginStartup] 22.397995ms
+2015-02-09 17:54:42.437 recnaleerf[9367:70441] Resetting plugins due to page load.
+2015-02-09 17:54:43.834 recnaleerf[9367:70441] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/B40BCF8B-BB5C-4236-9674-6F2A9FDCD130/recnaleerf.app/www/index.html#/tab/dash
+2015-02-09 17:54:43.987 recnaleerf[9367:70441] init customerCtrl
+2015-02-09 17:54:43.987 recnaleerf[9367:70441] init customerCtrl
+2015-02-09 17:54:43.988 recnaleerf[9367:70441] init customerCtrl
+2015-02-09 17:54:45.110 recnaleerf[9367:70441] ============= Customer list updated =============== 
+2015-02-09 17:54:45.110 recnaleerf[9367:70441]  ========== Init bg geolocation starting 
+2015-02-09 17:54:45.118 recnaleerf[9367:70441] CDVBackgroundGeoLocation configure
+2015-02-09 17:54:45.119 recnaleerf[9367:70441]   - token: (null)
+2015-02-09 17:54:45.119 recnaleerf[9367:70441]   - url: (null)
+2015-02-09 17:54:45.119 recnaleerf[9367:70441]   - distanceFilter: 30
+2015-02-09 17:54:45.119 recnaleerf[9367:70441]   - stationaryRadius: 20
+2015-02-09 17:54:45.119 recnaleerf[9367:70441]   - locationTimeout: 60
+2015-02-09 17:54:45.120 recnaleerf[9367:70441]   - desiredAccuracy: 10
+2015-02-09 17:54:45.120 recnaleerf[9367:70441]   - activityType: 0
+2015-02-09 17:54:45.120 recnaleerf[9367:70441]   - debug: 0
+2015-02-09 17:54:45.120 recnaleerf[9367:70441]   - stopOnTerminate: 1
+2015-02-09 17:54:45.121 recnaleerf[9367:70441] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-09 17:54:45.128 recnaleerf[9367:70441]  ========== Init bg geolocation finished 
+2015-02-09 17:54:45.129 recnaleerf[9367:70441] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-09 17:54:45.131 recnaleerf[9367:70441] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:54:45.131 recnaleerf[9367:70441] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-09 17:54:45.134 recnaleerf[9367:70441] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:54:45.138 recnaleerf[9367:70441] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:54:45.138 recnaleerf[9367:70441] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:54:45.616 recnaleerf[9367:70441] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:54:45.616 recnaleerf[9367:70441] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:54:46.618 recnaleerf[9367:70441] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 17:54:46.618 recnaleerf[9367:70441] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 17:54:46.619 recnaleerf[9367:70441] - CDVBackgroundGeoLocation queue stationary
+2015-02-09 17:54:46.619 recnaleerf[9367:70441] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-09 17:54:46.619 recnaleerf[9367:70464] - CDVBackgroundGeoLocation#sync
+2015-02-09 17:54:46.620 recnaleerf[9367:70464]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 17:54:46.620 recnaleerf[9367:70464] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-09 17:54:46.620 recnaleerf[9367:70441] - CDVBackgroundGeoLocation queue current
+2015-02-09 17:54:46.621 recnaleerf[9367:70464] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 17:54:46.622 recnaleerf[9367:70464] - CDVBackgroundGeoLocation#sync
+2015-02-09 17:54:46.622 recnaleerf[9367:70464]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 17:54:46.623 recnaleerf[9367:70441]  ======= got location ========= [object Object]
+2015-02-09 17:54:46.623 recnaleerf[9367:70441] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-09 17:54:46.624 recnaleerf[9367:70441] - CDVBackgroundGeoLocation finish
+2015-02-09 17:54:46.624 recnaleerf[9367:70441] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 17:54:58.421 recnaleerf[9367:70441] ============= Customer list updated =============== 
+2015-02-09 18:04:28.559 recnaleerf[9817:73883] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Data/Application/F9D42774-07B0-4254-8335-932CF3795351/Library/Cookies/Cookies.binarycookies
+2015-02-09 18:04:28.716 recnaleerf[9817:73883] Apache Cordova native platform version 3.6.3 is starting.
+2015-02-09 18:04:28.716 recnaleerf[9817:73883] Multi-tasking -> Device: YES, App: YES
+2015-02-09 18:04:28.724 recnaleerf[9817:73883] Unlimited access to network resources
+2015-02-09 18:04:28.952 recnaleerf[9817:73883] [CDVTimer][keyboard] 0.068009ms
+2015-02-09 18:04:28.952 recnaleerf[9817:73883] [CDVTimer][localnotification] 0.065982ms
+2015-02-09 18:04:28.953 recnaleerf[9817:73883] [CDVTimer][localnotification] 0.010014ms
+2015-02-09 18:04:28.957 recnaleerf[9817:73883] [CDVTimer][file] 4.020989ms
+2015-02-09 18:04:28.979 recnaleerf[9817:73883] [CDVTimer][statusbar] 22.283018ms
+2015-02-09 18:04:28.980 recnaleerf[9817:73883] [CDVTimer][TotalPluginStartup] 27.522981ms
+2015-02-09 18:04:29.066 recnaleerf[9817:73883] Resetting plugins due to page load.
+2015-02-09 18:04:30.998 recnaleerf[9817:73883] Finished load of: file:///Users/eladsof/Library/Developer/CoreSimulator/Devices/F0DA57CA-8F7A-4019-BB26-33F7E3F098A3/data/Containers/Bundle/Application/329B2F69-46B9-478C-869E-3BBB25BA59B5/recnaleerf.app/www/index.html#/tab/dash
+2015-02-09 18:04:31.138 recnaleerf[9817:73883] init customerCtrl
+2015-02-09 18:04:31.138 recnaleerf[9817:73883] init customerCtrl
+2015-02-09 18:04:31.138 recnaleerf[9817:73883] init customerCtrl
+2015-02-09 18:04:32.066 recnaleerf[9817:73883] ============= Customer list updated =============== 
+2015-02-09 18:04:32.066 recnaleerf[9817:73883]  ========== Init bg geolocation starting 
+2015-02-09 18:04:32.076 recnaleerf[9817:73883] CDVBackgroundGeoLocation configure
+2015-02-09 18:04:32.076 recnaleerf[9817:73883]   - token: (null)
+2015-02-09 18:04:32.076 recnaleerf[9817:73883]   - url: (null)
+2015-02-09 18:04:32.077 recnaleerf[9817:73883]   - distanceFilter: 30
+2015-02-09 18:04:32.077 recnaleerf[9817:73883]   - stationaryRadius: 20
+2015-02-09 18:04:32.077 recnaleerf[9817:73883]   - locationTimeout: 60
+2015-02-09 18:04:32.077 recnaleerf[9817:73883]   - desiredAccuracy: 10
+2015-02-09 18:04:32.077 recnaleerf[9817:73883]   - activityType: 0
+2015-02-09 18:04:32.078 recnaleerf[9817:73883]   - debug: 0
+2015-02-09 18:04:32.078 recnaleerf[9817:73883]   - stopOnTerminate: 1
+2015-02-09 18:04:32.078 recnaleerf[9817:73883] - CDVBackgroundGeoLocation start (background? 0)
+2015-02-09 18:04:32.086 recnaleerf[9817:73883]  ========== Init bg geolocation finished 
+2015-02-09 18:04:32.087 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didChangeAuthorizationStatus 3
+2015-02-09 18:04:32.089 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 18:04:32.089 recnaleerf[9817:73883] - CDVBackgroundGeoLocation setPace 0, stationaryRegion? 0
+2015-02-09 18:04:32.091 recnaleerf[9817:73883] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 18:04:32.095 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 18:04:32.095 recnaleerf[9817:73883] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 18:04:32.429 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 18:04:32.429 recnaleerf[9817:73883] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 18:04:33.430 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 0)
+2015-02-09 18:04:33.430 recnaleerf[9817:73883] - Acquiring stationary location, accuracy: 5.000000
+2015-02-09 18:04:33.430 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue stationary
+2015-02-09 18:04:33.430 recnaleerf[9817:73883] - CDVBackgroundGeoLocation createStationaryRegion (32.159993,34.904742)
+2015-02-09 18:04:33.431 recnaleerf[9817:73904] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:04:33.431 recnaleerf[9817:73904]   type: stationary, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 18:04:33.431 recnaleerf[9817:73904] - CDVBackgroundGeoLocation#fireStationaryRegionListener
+2015-02-09 18:04:33.431 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:04:33.432 recnaleerf[9817:73904] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:04:33.432 recnaleerf[9817:73904] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:04:33.433 recnaleerf[9817:73904]   type: current, position: 32.1599934,34.9047423 speed: -1
+2015-02-09 18:04:33.434 recnaleerf[9817:73883]  ======= got location ========= [object Object]
+2015-02-09 18:04:33.434 recnaleerf[9817:73883] ============ Location changed to :  32.1599934,34.9047423 =============
+2015-02-09 18:04:33.434 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:04:33.435 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:04:34.553 recnaleerf[9817:73883] init customerSrv
+2015-02-09 18:05:17.117 recnaleerf[9817:73883] Customer Home created succesfully
+2015-02-09 18:05:17.138 recnaleerf[9817:73883] THREAD WARNING: ['Notification'] took '20.454834' ms. Plugin should use a background thread.
+2015-02-09 18:05:17.580 recnaleerf[9817:73883] ============= Customer list updated =============== 
+2015-02-09 18:05:21.108 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 1.7437299847250904
+2015-02-09 18:05:21.159 recnaleerf[9817:73883] THREAD WARNING: ['Notification'] took '51.354004' ms. Plugin should use a background thread.
+2015-02-09 18:05:26.484 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:26.485 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:27.508 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:27.508 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:28.495 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:28.495 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:29.495 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:29.495 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:30.497 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:30.497 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:31.497 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:31.498 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:32.497 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:32.498 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:33.498 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:33.498 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:34.499 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:34.499 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:35.059 recnaleerf[9817:73883] - CDVBackgroundGeoLocation exit region
+2015-02-09 18:05:35.060 recnaleerf[9817:73883] - CDVBackgroundGeoLocation setPace 1, stationaryRegion? 1
+2015-02-09 18:05:35.065 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:05:35.065 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:05:35.501 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:35.501 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:36.066 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:05:36.068 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:05:36.069 recnaleerf[9817:74400] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:05:36.069 recnaleerf[9817:74400]   type: current, position: 37.33181965,-122.03043332 speed: 3.59
+2015-02-09 18:05:36.071 recnaleerf[9817:73883] ============ Location changed to :  37.33181965,-122.03043332 =============
+2015-02-09 18:05:36.071 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:05:36.071 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:05:36.504 recnaleerf[9817:73883] ************** updateCurrentWorkItem is called ************** 
+2015-02-09 18:05:36.504 recnaleerf[9817:73883] isFarFromCustomer
+2015-02-09 18:05:36.523 recnaleerf[9817:73883] THREAD WARNING: ['Notification'] took '18.083252' ms. Plugin should use a background thread.
+2015-02-09 18:05:37.073 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:05:37.073 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:05:37.073 recnaleerf[9817:74393] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:05:37.074 recnaleerf[9817:74393]   type: current, position: 37.33181512,-122.03048154 speed: 3.74
+2015-02-09 18:05:37.074 recnaleerf[9817:73883] ============ Location changed to :  37.33181512,-122.03048154 =============
+2015-02-09 18:05:37.075 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:05:37.075 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:05:52.121 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:05:52.122 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:05:52.122 recnaleerf[9817:74492] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:05:52.123 recnaleerf[9817:74492]   type: current, position: 37.33135095,-122.03073463 speed: 3.68
+2015-02-09 18:05:52.124 recnaleerf[9817:73883] ============ Location changed to :  37.33135095,-122.03073463 =============
+2015-02-09 18:05:52.124 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:05:52.125 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:06:07.088 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:06:07.088 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:06:07.089 recnaleerf[9817:74553] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:06:07.089 recnaleerf[9817:74553]   type: current, position: 37.33084313,-122.03058427 speed: 3.94
+2015-02-09 18:06:07.090 recnaleerf[9817:73883] ============ Location changed to :  37.33084313,-122.03058427 =============
+2015-02-09 18:06:07.090 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:06:07.091 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:06:25.108 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:06:25.109 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:06:25.109 recnaleerf[9817:74601] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:06:25.109 recnaleerf[9817:74601]   type: current, position: 37.33067784,-122.02998825 speed: 3.32
+2015-02-09 18:06:25.110 recnaleerf[9817:73883] ============ Location changed to :  37.33067784,-122.02998825 =============
+2015-02-09 18:06:25.110 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:06:25.111 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:06:39.106 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:06:39.106 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:06:39.107 recnaleerf[9817:74640] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:06:39.107 recnaleerf[9817:74640]   type: current, position: 37.33069543,-122.02933632 speed: 4.01
+2015-02-09 18:06:39.108 recnaleerf[9817:73883] ============ Location changed to :  37.33069543,-122.02933632 =============
+2015-02-09 18:06:39.109 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:06:39.109 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:06:55.058 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:06:55.058 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:06:55.059 recnaleerf[9817:74692] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:06:55.059 recnaleerf[9817:74692]   type: current, position: 37.33049888,-122.02873696 speed: 3.68
+2015-02-09 18:06:55.060 recnaleerf[9817:73883] ============ Location changed to :  37.33049888,-122.02873696 =============
+2015-02-09 18:06:55.060 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:06:55.060 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:07:11.091 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:07:11.091 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:07:11.091 recnaleerf[9817:74772] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:07:11.092 recnaleerf[9817:74772]   type: current, position: 37.33029063,-122.02815119 speed: 3.52
+2015-02-09 18:07:11.093 recnaleerf[9817:73883] ============ Location changed to :  37.33029063,-122.02815119 =============
+2015-02-09 18:07:11.093 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:07:11.093 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:07:14.886 recnaleerf[9817:73883] THREAD WARNING: ['Notification'] took '14.523926' ms. Plugin should use a background thread.
+2015-02-09 18:07:18.712 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11939041.452896843
+2015-02-09 18:07:22.660 recnaleerf[9817:73883] Home
+2015-02-09 18:07:23.685 recnaleerf[9817:73883] Home
+2015-02-09 18:07:23.714 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11939041.452896843
+2015-02-09 18:07:24.101 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:07:24.101 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:07:24.102 recnaleerf[9817:74773] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:07:24.102 recnaleerf[9817:74773]   type: current, position: 37.33025158,-122.02748438 speed: 4.11
+2015-02-09 18:07:24.103 recnaleerf[9817:73883] ============ Location changed to :  37.33025158,-122.02748438 =============
+2015-02-09 18:07:24.104 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:07:24.104 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:07:28.713 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11939025.029370975
+2015-02-09 18:07:33.717 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11939025.029370975
+2015-02-09 18:07:37.096 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:07:37.096 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:07:37.097 recnaleerf[9817:74862] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:07:37.097 recnaleerf[9817:74862]   type: current, position: 37.33022841,-122.02685943 speed: 4.22
+2015-02-09 18:07:37.099 recnaleerf[9817:73883] ============ Location changed to :  37.33022841,-122.02685943 =============
+2015-02-09 18:07:37.099 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:07:37.099 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:07:38.716 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11939008.23454425
+2015-02-09 18:07:43.718 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11939008.23454425
+2015-02-09 18:07:48.718 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11939008.23454425
+2015-02-09 18:07:51.099 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:07:51.099 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:07:51.100 recnaleerf[9817:75021] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:07:51.100 recnaleerf[9817:75021]   type: current, position: 37.3301996,-122.02621029 speed: 3.95
+2015-02-09 18:07:51.101 recnaleerf[9817:73883] ============ Location changed to :  37.3301996,-122.02621029 =============
+2015-02-09 18:07:51.102 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:07:51.102 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:07:53.719 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11938991.284250703
+2015-02-09 18:07:58.719 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11938991.284250703
+2015-02-09 18:08:03.721 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11938991.284250703
+2015-02-09 18:08:05.084 recnaleerf[9817:73883] - CDVBackgroundGeoLocation didUpdateLocations (isMoving: 1)
+2015-02-09 18:08:05.085 recnaleerf[9817:73883] - CDVBackgroundGeoLocation queue current
+2015-02-09 18:08:05.085 recnaleerf[9817:75094] - CDVBackgroundGeoLocation#sync
+2015-02-09 18:08:05.086 recnaleerf[9817:75094]   type: current, position: 37.33019019,-122.02557003 speed: 4.1
+2015-02-09 18:08:05.087 recnaleerf[9817:73883] ============ Location changed to :  37.33019019,-122.02557003 =============
+2015-02-09 18:08:05.087 recnaleerf[9817:73883] - CDVBackgroundGeoLocation finish
+2015-02-09 18:08:05.088 recnaleerf[9817:73883] - CDVBackgroundGeoLocation stopBackgroundTask (remaining t: 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000)
+2015-02-09 18:08:08.722 recnaleerf[9817:73883] Found nearest custoemr  ************** Home distance is 11938972.581317615

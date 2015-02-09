@@ -8,7 +8,7 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-    .controller('menuCtrl', ['$scope','$location', 'UserSrv', '$ionicLoading','$state','$translate',function ($scope,$location,UserSrv,$ionicLoading,$state,$translate) {
+    .controller('menuCtrl', ['$scope','$rootScope','$location', 'UserSrv', '$ionicLoading','$state','$translate',function ($scope,$rootScope,$location,UserSrv,$ionicLoading,$state,$translate) {
 
         var userService = UserSrv;
         $scope.logInErrorMessage = "";
@@ -21,15 +21,14 @@ angular.module('recnaleerfClientApp')
         {
 
             if(user.emailVerified) {
-                user.save();
-                $scope.currentUser = user;
+                $rootScope.currentUser = user;
                 $location.path('/#');
                 $scope.$apply();
             }
             else {
                 $scope.logInErrorMessage = $translate.instant('EMAIL_NOT_VERIFIED');
                 user.logOut();
-                $scope.currentUser = null;
+                $rootScope.currentUser = null;
             }
             $ionicLoading.hide();
         };

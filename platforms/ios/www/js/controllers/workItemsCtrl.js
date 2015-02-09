@@ -22,7 +22,6 @@ angular.module('recnaleerfClientApp')
             console.log('customer has changed and is now no other than : ' + $scope.currentCustomer.name);
             $scope.customerSelected = true;
             refreshWorkItems();
-
         };
 
         $scope.createNew = function(newItem) {
