@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <button class="button button-block button-dark" ng-click="prepareAndShowReport()">{{'PREPARE_REPORT_BTN' | translate}}</button>
+        <button ng-disabled="formData.reportType == 'none'"  class="button button-block button-dark" ng-click="prepareAndShowReport()">{{'PREPARE_REPORT_BTN' | translate}}</button>
 
         <h1>
             {{formData.customerId}}

@@ -34,8 +34,8 @@
                 <label class="item item-input">
                     <input placeholder="{{'RETYPE_PASSWORD' | translate}}" name="passwordCopy" type="password" ng-model="newUser.passwordCopy" required match="newUser.password"/>
                 </label>
-                <div class="error" ng-show="user_details_form.passwordCopy.$dirty && user_details_form.passwordCopy.$invalid">
-                    <small class="error"ng-show="user_details_form.passwordCopy.$error.match" >{{PASSWORDS_DO_NOT_MATCH | translate}}</small>
+                <div class="error" ng-show="user_details_form.passwordCopy.$dirty && user_details_form.passwordCopy.$error.match">
+                    <small class="error" ng-show="user_details_form.passwordCopy.$error.match" >{{'PASSWORDS_DO_NOT_MATCH' | translate}}</small>
                 </div>
 
                 <label class="item item-input">
@@ -51,5 +51,7 @@
             <div ng-hide="signUpSuccess">{{SIGN_IN_FAILED | translate}} {{signUpMessage}}</div>
         </div>
 
+        {{user_details_form.passwordCopy.$dirty}}<BR>
+        {{user_details_form.passwordCopy.$error}}
     </ion-content>
 </ion-view>

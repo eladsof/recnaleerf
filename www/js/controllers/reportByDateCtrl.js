@@ -58,13 +58,12 @@ angular.module('recnaleerfClientApp')
         };
 
         var createReportTitle = function () {
-            var title = 'Work report for ' + $scope.currentUser.get('username') +' ';
-/*
-            if($scope.customer)
-                title += $scope.customer.name;
-            else
-                title += 'all customers';
-*/
+            var userName = $scope.currentUser.get('username');
+            if (userName.match(/[\u0590-\u05FF]+/g))
+                userName = userName.split("").reverse().join("");
+
+            var title = 'Work report for ' + userName + ' ';
+
             title +=  $scope.firstItemDate.toDateString() + ' - ' + $scope.lastItemDate.toDateString();
             return title;
 
