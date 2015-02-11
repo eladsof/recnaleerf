@@ -44,7 +44,15 @@ angular.module('recnaleerfClientApp')
         };
 
         this.update = function (customer) {
-            customer.save();
+            var deferred;
+            deferred = $q.defer();
+
+            customer.save(null, {
+                success: function(customer) { return deferred.resolve(customer); },
+                error:   function(customer,error) {return deferred.reject({customer: customer,error: error});}
+            });
+
+            return deferred.promise;
         };
 
     }]);

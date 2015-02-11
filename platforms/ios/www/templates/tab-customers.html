@@ -8,7 +8,7 @@
 
   <ion-content class="has-header padding">
     <ion-list show-delete="data.shouldShowDelete">
-      <ion-item ng-repeat="customer in customers" type="item-text-wrap" href="#/tab/customer/{{customer.id}}">
+      <ion-item ng-repeat="customer in customers | orderBy:'name' " type="item-text-wrap" href="#/tab/customer/{{customer.id}}">
         {{customer.name}}
         <ion-option-button class="button button-assertive" ng-click="deleteCustomer(customer)">{{'DELETE' | translate}}</ion-option-button>
       </ion-item>

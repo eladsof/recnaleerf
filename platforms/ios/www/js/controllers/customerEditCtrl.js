@@ -11,7 +11,7 @@
 console.log("init customerCtrl");
 
 angular.module('recnaleerfClientApp')
-        .controller('customerEditCtrl', ['$scope', 'CustomerSrv', 'Customer','$stateParams', function ($scope,customerSrv,Customer,$stateParams) {
+        .controller('customerEditCtrl', ['$scope','$rootScope', 'CustomerSrv', 'Customer','$stateParams','$ionicLoading','$translate', function ($scope,$rootScope,customerSrv,Customer,$stateParams,$ionicLoading,$translate) {
 
         console.log("Editing "+$stateParams.customerid);
         Customer.getById($stateParams.customerid).then(function(customer) {
@@ -35,8 +35,22 @@ angular.module('recnaleerfClientApp')
         });
 
         $scope.saveCustomer = function(customer) {
-            var ret =  customerSrv.update(customer);
-            return ret;
+            $ionicLoading.show();
+            customerSrv.update(customer).then(
+                function(customer) {
+                    var msg = customer.name + ' ' + $translate.instant('SAVED_SUCCESSFULLY');
+                    console.log('Customer '+customer.name+' updated succesfully');
+                    navigator.notification.alert(msg,null,$translate.instant('SAVED_SUCCESSFULLY'));
+                    $rootScope.loadCustomerList();
+                    $ionicLoading.hide();
+                },
+                function(customer,error) {
+                    var msg = $translate.instant('CUSTOMER') + ' ' + $translate.instant('CUSTOMER') + ' : ' + error.message;
+                    console.log('Failed to update '+customer.name+' - ' + + error.message);
+                    navigator.notification.alert(msg,null,$translate.instant('ERROR'));
+                    $ionicLoading.hide();
+                }
+            );
         };
 
         $scope.getPageTitle = function () {

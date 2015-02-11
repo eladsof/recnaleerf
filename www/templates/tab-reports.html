@@ -1,6 +1,5 @@
 <ion-view title="{{'REPORTS' | translate}}">
     <ion-content class="has-header padding">
-
         <div class="list card">
 
             <div class="item item-select">
@@ -47,15 +46,6 @@
                 </select>
             </div>
         </div>
-
         <button ng-disabled="formData.reportType == 'none'"  class="button button-block button-dark" ng-click="prepareAndShowReport()">{{'PREPARE_REPORT_BTN' | translate}}</button>
-
-        <h1>
-            {{formData.customerId}}
-        </h1>
-
-
-        </div>
-
     </ion-content>
 </ion-view>
