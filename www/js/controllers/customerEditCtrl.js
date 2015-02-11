@@ -35,7 +35,6 @@ angular.module('recnaleerfClientApp')
         });
 
         $scope.saveCustomer = function(customer) {
-            console.log('Saving customer');
             var ret =  customerSrv.update(customer);
             return ret;
         };

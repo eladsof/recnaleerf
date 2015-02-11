@@ -8,11 +8,14 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-    .service('CustomerSrv', ['$rootScope', '$location', 'Customer','$state',function ($rootScope,$location,Customer,$state) {
+    .service('CustomerSrv', ['$rootScope', '$location', 'Customer','$q',function ($rootScope,$location,Customer,$q) {
 
         console.log('init customerSrv');
 
-        this.createNew = function (aCustomer){
+        this.createNew = function (aCustomer) {
+            var deferred;
+            deferred = $q.defer();
+
             var newCustomer = new Customer();
             newCustomer.name = aCustomer.name;
             newCustomer.ratePerHour = Number(aCustomer.ratePerHour);
@@ -21,20 +24,11 @@ angular.module('recnaleerfClientApp')
             newCustomer.deleted = false;
 
             newCustomer.save(null, {
-                success: function(customer) {
-                    // Execute any logic that should take place after the object is saved.
-                    console.log('Customer '+customer.name+' created succesfully');
-                    navigator.notification.alert('Customer '+customer.name+' created succesfully',null,'Notice');
-                    $rootScope.loadCustomerList();
-                    $state.go('tab.customers');
-                },
-                error: function(customer, error) {
-                    // Execute any logic that should take place if the save fails.
-                    // error is a Parse.Error with an error code and description.
-                    console.log('Failed to create '+customer.name+' - ' + + error.message);
-                    navigator.notification.alert('Failed to create '+customer.name+' - ' + error.message,null,'Notice');
-                }
+                success: function(customer) { return deferred.resolve(customer); },
+                error:   function(customer,error) {return deferred.reject({customer: customer,error: error});}
             });
+
+            return deferred.promise;
         };
 
         this.delete = function (customer) {

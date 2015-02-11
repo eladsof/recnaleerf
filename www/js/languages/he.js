@@ -17,6 +17,9 @@ var translationsHE = {
     SAVED_SUCCESSFULLY: 'נשמר בהצלחה',
     NOT_CREATED: 'לא נוצר',
     CUSTOMER: 'לקוח',
+    ABOUT_TO_DELETE: 'אתה עומד למחוק',
+    PROCEED: 'האם להמשיך',
+    THIS_ACTION_IS_IRREVERSIBLE: 'פעולה זו היא בלתי הפיכה',
 
     // ERRORS:
     ERROR: 'שגיאה',
@@ -67,6 +70,8 @@ var translationsHE = {
     FINISH_TIME: 'זמן סיום',
     CREATE_WORK_ITEM: 'צור פריט עבודה זה',
 
+
+
     //REPORTS_FORM
     SELECT_CUSTOMER: 'בחר לקוח',
     ALL_CUSTOMERS: 'כל הלקוחות',
@@ -102,6 +107,7 @@ var translationsHE = {
     CREATE_CUSTOMER_BTN: 'צור לקוח',
     EDIT_CUSTOMER_BTN: 'עדכן פרטי לקוח',
     EDIT_CUSTOMER_TITLE: 'עריכת פרטים של לקוח',
+
 
     // Languages
     LANG_EN: 'אנגלית',

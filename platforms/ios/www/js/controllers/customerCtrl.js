@@ -11,7 +11,7 @@
 console.log("init customerCtrl");
 
 angular.module('recnaleerfClientApp')
-    .controller('customerCtrl', ['$scope','$location', 'CustomerSrv', 'Customer', 'Geolocation','$state', function ($scope,$location,customerSrv,Customer,Geolocation,$state) {
+    .controller('customerCtrl', ['$scope','$rootScope','$location', 'CustomerSrv', 'Customer', 'Geolocation','$state','$ionicLoading', '$translate', function ($scope,$rootScope,$location,customerSrv,Customer,Geolocation,$state,$ionicLoading,$translate) {
 
         // This methods overcomes a UI problem with google and autocomplete
         angular.element(window.document).bind('DOMNodeInserted', function(e) {
@@ -41,8 +41,23 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.saveCustomer = function(customer) {
-            var ret =  customerSrv.createNew(customer);
-            return ret;
+            $ionicLoading.show();
+            customerSrv.createNew(customer).then(
+                function(customer) {
+                    var msg = customer.name + ' ' + $translate.instant('SAVED_SUCCESSFULLY');
+                    console.log('Customer '+customer.name+' created succesfully');
+                    navigator.notification.alert(msg,null,$translate.instant('SAVED_SUCCESSFULLY'));
+                    $rootScope.loadCustomerList();
+                    $state.go('tab.customers');
+                    $ionicLoading.hide();
+                },
+                function(customer,error) {
+                    var msg = $translate.instant('CUSTOMER') + ' ' + $translate.instant('CUSTOMER') + ' : ' + error.message;
+                    console.log('Failed to create '+customer.name+' - ' + + error.message);
+                    navigator.notification.alert(msg,null,$translate.instant('ERROR'));
+                    $ionicLoading.hide();
+                }
+            );
         };
 
         $scope.getPageTitle = function () {
@@ -54,13 +69,13 @@ angular.module('recnaleerfClientApp')
         };
 
         $scope.deleteCustomer = function(customer) {
-            var msg = 'You want to delete '+customer.name+' \r\n This action is irriversible';
+            var msg = $translate.instant('ABOUT_TO_DELETE') + ' ' + customer.name + ' \r\n' + $translate.instant('THIS_ACTION_IS_IRREVERSIBLE');
             navigator.notification.confirm( msg,
                 function(buttonIndex){
                     if(buttonIndex == 1)
                         customerSrv.delete(customer);
                 },
-                'Are you sure?',
+                $translate.instant('PROCEED'),
                 ['Yes','No']);
         };
 

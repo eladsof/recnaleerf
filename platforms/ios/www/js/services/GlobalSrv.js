@@ -129,6 +129,7 @@ angular.module('recnaleerfClientApp')
         var updateCurrentWorkItem = function () {
             console.log("************** updateCurrentWorkItem is called ************** ");
             $rootScope.currentWorkItem.finish = new Date();
+            $rootScope.currentWorkItem.save();
         };
 
         var stopTimer = function () {
