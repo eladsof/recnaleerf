@@ -71,7 +71,6 @@ var translationsHE = {
     CREATE_WORK_ITEM: 'צור פריט עבודה זה',
 
 
-
     //REPORTS_FORM
     SELECT_CUSTOMER: 'בחר לקוח',
     ALL_CUSTOMERS: 'כל הלקוחות',
@@ -121,6 +120,7 @@ var translationsHE = {
     
     //NOTIFICATION
     CUSTOMER_LOCATED: 'מיקום לקוח אותר',
+    MULTIPLE_CUSTOMERS_FOUND: 'זוהו מספר לקוחות, בחר לקוח או דחה\\התעלם',
     LOCATION_CHANGED: 'זוהה שינוי מיקום',
     Q_START_WORK_FOR: 'האם להתחיל עבודה עבור הלקוח',
     Q_CLOSE_WORK_FOR: 'האם לסיים עבודה עבור לקוח',

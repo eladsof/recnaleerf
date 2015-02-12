@@ -27,6 +27,8 @@ angular.module('recnaleerfClientApp')
         };
 
         var checkForCustomerProximity = function() {
+            var nearCustomers = new Array();
+
             for(var i=0;i<$rootScope.customers.length;i++){
                 if(new Date() >= $rootScope.customers[i].ignoreUntil) {
                     if($rootScope.customers[i].address) {
@@ -44,8 +46,9 @@ angular.module('recnaleerfClientApp')
                         // ================== END OF DEBUGGING ====================
 
                         if (Geolocation.isCloseToCustomer($rootScope.currentLocation,customerLocation)) {
-                            arrivingAtCustomer($rootScope.customers[i]);
-                            return;
+                            nearCustomers.push($rootScope.customers[i]);
+                            //arrivingAtCustomer($rootScope.customers[i]);
+                            //return;
                         }
                     }
                 }
@@ -54,6 +57,15 @@ angular.module('recnaleerfClientApp')
                     console.log('Ignoring customer '+$rootScope.customers[i].name+ ' because '+$rootScope.customers[i].ignoreUntil+' is smaller than '+new  Date());
                 }
             }
+            handleNearCustomers(nearCustomers);
+        };
+        var handleNearCustomers = function(customerArray){
+            console.log('handleNearCustomers ' + customerArray.length);
+          if(customerArray.length == 1){
+              arrivingAtCustomer(customerArray[0]);
+          } else if (customerArray.length > 1){
+              arrivingAtMultipleCustomers(customerArray);
+          }
         };
         var arrivingAtCustomer = function(customer) {
             stopTimer();
@@ -69,17 +81,53 @@ angular.module('recnaleerfClientApp')
                                             $translate.instant('CUSTOMER_LOCATED'),
                                             [$translate.instant('YES'),$translate.instant('SNOOZE'),$translate.instant('IGNORE_FOR_1_HOUR')]);
         };
+        var arrivingAtMultipleCustomers = function(customerArray){
+            stopTimer();
+            var msg = $translate.instant('MULTIPLE_CUSTOMERS_FOUND');
+            var btnArray = new Array();
+            for(var i=0;i<customerArray.length;i++) {
+                btnArray.push(customerArray[i].name);
+            }
+            btnArray.push($translate.instant('SNOOZE'));
+            btnArray.push($translate.instant('IGNORE_FOR_1_HOUR'));
+
+            navigator.notification.confirm( msg,
+                function(buttonIndex){
+                    if(buttonIndex <= customerArray.length) {
+                        arrivingAtCustomerConfirmed(1, customerArray[buttonIndex-1]);
+                    } else {
+                        console.log('buttonindex = '+buttonIndex + ' Array len '+ customerArray.length);
+                        buttonIndex -= customerArray.length;
+                        var snoozeTime =  (buttonIndex == 1) ? 1 : 60;
+                        for(var i=0;i<customerArray.length;i++) {
+                            snoozeCustomer(customerArray[i],snoozeTime);
+                        }
+                        startUpdateTimer(5);
+                    }
+
+                },
+                $translate.instant('CUSTOMER_LOCATED'),
+                btnArray);
+
+        };
+
+        function snoozeCustomer(customer,minutes) {
+            customer.ignoreUntil = new Date();
+            customer.ignoreUntil.setMinutes(customer.ignoreUntil.getMinutes() + minutes);
+        }
+
         var arrivingAtCustomerConfirmed = function(buttonIndex,customer) {
 
             if (buttonIndex == 1) {
-                startUpdateTimer(1);
                 $rootScope.startNewWorkItem(customer,true);
+                startUpdateTimer(1);
             } else {
-                startUpdateTimer(5);
                 if (buttonIndex == 3) {
-                    customer.ignoreUntil = new Date();
-                    customer.ignoreUntil.setHours(customer.ignoreUntil.getHours()+1);
+                    snoozeCustomer(customer,60);
+                } else if (buttonIndex == 2){
+                    snoozeCustomer(customer,1);
                 }
+                startUpdateTimer(5);
             }
         };
         var checkIfLeavingCustomer = function(){
@@ -164,8 +212,10 @@ angular.module('recnaleerfClientApp')
             $rootScope.currentWorkItem.save(null, {
                 success: function(item) {
                     // Execute any logic that should take place after the object is saved.
+                    snoozeCustomer($rootScope.currentWorkItem.customer,3);
                     var msg = $translate.instant('WORK_ITEM') + ' ' + $translate.instant('SAVED_SUCCESSFULLY') + '\r\n' + $translate.instant('CUSTOMER') + ' :'+ item.customer.name ;
                     navigator.notification.alert(msg,null,$translate.instant('SAVED_SUCCESSFULLY'));
+                    $rootScope.currentWorkItem = null;
                 },
                 error: function(customer, error) {
                     // Execute any logic that should take place if the save fails.
@@ -174,7 +224,7 @@ angular.module('recnaleerfClientApp')
                     navigator.notification.alert(msg,null,$translate.instant('ERROR'));
                 }
             });
-            $rootScope.currentWorkItem = null;
+
         };
 
         var locationChanged = function(location) {
