@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60defe00-4d70-4d85-af96-bf5275c68018" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/recnaleerf.xcodeproj/project.xcworkspace/xcuserdata/eladsof.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/recnaleerf.xcodeproj/project.xcworkspace/xcuserdata/eladsof.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/controllers/AccountCtrl.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/controllers/AccountCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/AccountCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/AccountCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/services/GlobalSrv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/lib/10.0.0.3_files/GlobalSrv.js" afterPath="$PROJECT_DIR$/platforms/ios/www/lib/10.0.0.3_files/GlobalSrv.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" afterPath="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/10.0.0.3_files/GlobalSrv.js" afterPath="$PROJECT_DIR$/www/lib/10.0.0.3_files/GlobalSrv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/models/WorkItem.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/models/WorkItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/models/WorkItem.js" afterPath="$PROJECT_DIR$/www/js/models/WorkItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/cordova/console.log" afterPath="$PROJECT_DIR$/platforms/ios/cordova/console.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/todo.txt" afterPath="$PROJECT_DIR$/platforms/ios/www/todo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/todo.txt" afterPath="$PROJECT_DIR$/www/todo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/services/userSrv.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/services/userSrv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services/userSrv.js" afterPath="$PROJECT_DIR$/www/js/services/userSrv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/controllers/workItemsCtrl.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/controllers/workItemsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/workItemsCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/workItemsCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tstionic.iws" />
@@ -45,20 +30,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GlobalSrv.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GlobalSrv.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3117" max-vertical-offset="4365">
-              <caret line="218" column="12" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.6137072" vertical-offset="1166" max-vertical-offset="4395">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47155687" vertical-offset="0" max-vertical-offset="2820">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2820">
               <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding />
             </state>
@@ -104,11 +89,11 @@
         <option value="$PROJECT_DIR$/www/js/models/WorkItem.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/AccountCtrl.js" />
         <option value="$PROJECT_DIR$/www/lib/10.0.0.3_files/GlobalSrv.js" />
-        <option value="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
         <option value="$PROJECT_DIR$/www/js/services/userSrv.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/menuCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/workItemsCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
+        <option value="$PROJECT_DIR$/www/js/services/GlobalSrv.js" />
       </list>
     </option>
   </component>
@@ -751,14 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3117" max-vertical-offset="4365">
-          <caret line="218" column="12" selection-start-line="218" selection-start-column="12" selection-end-line="218" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/userSrv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.94311374" vertical-offset="0" max-vertical-offset="900">
@@ -769,8 +746,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47155687" vertical-offset="0" max-vertical-offset="2820">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2820">
           <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services/GlobalSrv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6137072" vertical-offset="1166" max-vertical-offset="4395">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>

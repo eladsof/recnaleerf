@@ -101,6 +101,8 @@ angular.module('recnaleerfClientApp')
             btnArray.push($translate.instant('SNOOZE'));
             btnArray.push($translate.instant('IGNORE_FOR_1_HOUR'));
 
+            window.plugin.notification.local.add({ message: $translate.instant('CUSTOMER_LOCATED') });
+
             navigator.notification.confirm( msg,
                 function(buttonIndex){
                     if(buttonIndex <= customerArray.length) {
