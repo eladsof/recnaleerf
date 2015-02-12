@@ -15,7 +15,7 @@ angular.module('recnaleerfClientApp')
 
         $scope.logout = function () {
             MyUser.logOut();
-            $rootScope.currentUser = MyUser.current();
+            $rootScope.currentUser = null;//MyUser.current();
             $state.go('login');
         }
 

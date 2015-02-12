@@ -9,10 +9,8 @@ app = angular.module('recnaleerfClientApp', ['ionic','google.places','geoLocatio
 
     .run(function($state,$ionicPlatform,$rootScope,MyUser,GlobalSrv) {
 
-
         Parse.initialize("p7l1qBjc70dWmM55NIwJoidWx2oP2tCPCJjhYaab", "5vz9eE7fFkWA8ul9SZmqGW1ijiNZ2corgbyBTDmV");
         $rootScope.currentUser = MyUser.current();
-        $rootScope.locloc = 0;
 
         // register listener to watch route changes
         $rootScope.$on('$stateChangeStart',
@@ -27,6 +25,7 @@ app = angular.module('recnaleerfClientApp', ['ionic','google.places','geoLocatio
 
 
         $ionicPlatform.ready(function() {
+
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
             if(window.cordova && window.cordova.plugins.Keyboard) {
@@ -38,6 +37,8 @@ app = angular.module('recnaleerfClientApp', ['ionic','google.places','geoLocatio
             }
 
             GlobalSrv.initialize();
+
+
         });
 
     })

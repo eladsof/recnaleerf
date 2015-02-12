@@ -1,5 +1,5 @@
 angular.module('recnaleerfClientApp')
-    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','$interval','WorkItem','$ionicLoading' ,function ($rootScope,Geolocation,Customer,$interval,WorkItem,$ionicLoading) {
+    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','MyUser','$interval','WorkItem','$ionicLoading' ,function ($rootScope,Geolocation,Customer,MyUser,$interval,WorkItem,$ionicLoading) {
 
         var stop = undefined;
         var idleTimerInterval = 5;
@@ -118,6 +118,7 @@ angular.module('recnaleerfClientApp')
             $rootScope.$watch('currentUser', function(newValue, oldValue) {
                 $rootScope.loadCustomerList();
             });
+
             updateTimer(idleTimerInterval);
         };
 

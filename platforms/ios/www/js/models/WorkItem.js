@@ -147,6 +147,25 @@ angular.module('recnaleerfClientApp').
                     });
 
                     return defer.promise;
+                },
+                getLastItem : function(aUser) {
+                    var defer = $q.defer();
+
+                    var query = new Parse.Query(this);
+                    query.equalTo("owner", aUser);
+                    query.descending('start');
+                    query.include('owner');
+                    query.include('customer');
+                    query.first({
+                        success : function(aWorkItems) {
+                            defer.resolve(aWorkItems);
+                        },
+                        error : function(aError) {
+                            defer.reject(aError);
+                        }
+                    });
+
+                    return defer.promise;
                 }
             }
         );
@@ -198,6 +217,14 @@ angular.module('recnaleerfClientApp').
             },
             set: function(aValue) {
                 this.set("rate", aValue);
+            }
+        });
+        Object.defineProperty(WorkItem.prototype, "startedByLocation", {
+            get: function() {
+                return this.get("startedByLocation");
+            },
+            set: function(aValue) {
+                this.set("startedByLocation", aValue);
             }
         });
         Object.defineProperty(WorkItem.prototype, "comment", {

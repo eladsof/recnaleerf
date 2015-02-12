@@ -11,11 +11,11 @@ angular.module('recnaleerfClientApp')
    .service('UserSrv', ['$rootScope', '$location', 'MyUser' ,'$q','$ionicLoading',function ($scope,$location,MyUser,$q,$ionicLoading) {
 
     this.isLoggedIn = function() {
-        console.log('is logged in called : '+ ($scope.currentUser != null));
         return $scope.currentUser != null;
-    }
+    };
 
     this.signin = function (user,successFn,failureFn){
+        console.log('this.signin = function (user,successFn,failureFn){');
         $ionicLoading.show();
         MyUser.logIn(user.username,user.password , {
             success: successFn, error: failureFn
@@ -29,6 +29,7 @@ angular.module('recnaleerfClientApp')
     };
 
     this.signup = function (usr,message) {
+        console.log('this.signin = function (user,successFn,failureFn){');
         $ionicLoading.show();
         var deferred;
         deferred = $q.defer();

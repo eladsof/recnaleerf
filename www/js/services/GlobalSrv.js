@@ -1,31 +1,41 @@
 angular.module('recnaleerfClientApp')
-    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','$interval','WorkItem','$ionicLoading','$translate' ,
-    function ($rootScope,Geolocation,Customer,$interval,WorkItem,$ionicLoading,$translate) {
+    .service('GlobalSrv', ['$rootScope', 'Geolocation', 'Customer','MyUser','$interval','WorkItem','$ionicLoading','$translate' ,
+    function ($rootScope,Geolocation,Customer,MyUser,$interval,WorkItem,$ionicLoading,$translate) {
 
         var stop = undefined;
-        var idleTimerInterval = 5;
         var bgGeo;
 
         $rootScope.currentLocation = null;
+        // Debug parameters.
         $rootScope.distanceFromCustomer1 = null;
         $rootScope.nearestCustomer1 = null;
 
         $rootScope.loadCustomerList = function () {
             if($rootScope.currentUser){
-                var ThisClass = this;
                 $ionicLoading.show();
                 Customer.listByUser($rootScope.currentUser).then(function(aCustomers) {
                     $rootScope.customers = aCustomers;
                     for(var i=0;i<$rootScope.customers.length;i++)
                         $rootScope.customers[i].ignoreUntil = new Date();
-                    $ionicLoading.hide();
                     console.log("============= Customer list updated =============== ");
                 }, function(aError) {
                     console.log(aError);
-                }).then(initBgGeo) ;
+                    $ionicLoading.hide();
+                }).then(WorkItem.getLastItem($rootScope.currentUser).then(function(aItem) {
+                   if(!aItem.isComplete){
+                       $rootScope.currentWorkItem = aItem;
+                       $rootScope.$apply();
+                   }
+                    $ionicLoading.hide();
+                })).then(initBgGeo);
             }
         };
 
+        var checkForOpenWorkItem = function(){
+          if(!$rootScope.currentWorkItem){
+
+          }
+        };
         var checkForCustomerProximity = function() {
             var nearCustomers = new Array();
 
@@ -204,9 +214,9 @@ angular.module('recnaleerfClientApp')
             $rootScope.currentWorkItem.startedByLocation = startedByLocation;
             $rootScope.currentWorkItem.save();
             $rootScope.$apply();
-
         };
         $rootScope.finishCurrentWorkItem = function () {
+            $ionicLoading.show();
             $rootScope.currentWorkItem.finish = new Date();
             $rootScope.currentWorkItem.isComplete = true;
             $rootScope.currentWorkItem.save(null, {
@@ -216,12 +226,14 @@ angular.module('recnaleerfClientApp')
                     var msg = $translate.instant('WORK_ITEM') + ' ' + $translate.instant('SAVED_SUCCESSFULLY') + '\r\n' + $translate.instant('CUSTOMER') + ' :'+ item.customer.name ;
                     navigator.notification.alert(msg,null,$translate.instant('SAVED_SUCCESSFULLY'));
                     $rootScope.currentWorkItem = null;
+                    $ionicLoading.hide();
                 },
                 error: function(customer, error) {
                     // Execute any logic that should take place if the save fails.
                     // error is a Parse.Error with an error code and description.
                     var msg = $translate.instant('WORK_ITEM NOT_CREATED') +  '\r\n' + error + ':' + customer.name ;
                     navigator.notification.alert(msg,null,$translate.instant('ERROR'));
+                    $ionicLoading.hide();
                 }
             });
 
@@ -239,9 +251,11 @@ angular.module('recnaleerfClientApp')
         };
 
         this.initialize = function () {
+
             $rootScope.$watch('currentUser', function(newValue, oldValue) {
                 $rootScope.loadCustomerList();
             });
+
             window.plugin.notification.local.cancelAll();
             startUpdateTimer(5);
         };
@@ -262,7 +276,7 @@ angular.module('recnaleerfClientApp')
                 stationaryRadius: 20,
                 distanceFilter: 30,
                 activityType: 'Fitness',
-                stopOnTerminate: true
+                stopOnTerminate: false
             };
             bgGeo.configure(locationChanged, locationFailed,options);
             bgGeo.start();

@@ -46,7 +46,6 @@ angular.module('recnaleerfClientApp')
 
         var refreshWorkItems = function(){
             $ionicLoading.show();
-            console.log('trying to list all work items for '+ $scope.currentCustomer);
             WorkItem.listByCustomer($scope.currentUser,$scope.currentCustomer).then(function(aworkItems) {
                 $scope.workItems = aworkItems;
                 $ionicLoading.hide();
