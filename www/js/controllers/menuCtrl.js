@@ -19,7 +19,6 @@ angular.module('recnaleerfClientApp')
 
         var signInSuccess = function(user)
         {
-
             if(user.emailVerified) {
                 $rootScope.currentUser = user;
                 $location.path('/#');
@@ -28,7 +27,6 @@ angular.module('recnaleerfClientApp')
             else {
                 $scope.logInErrorMessage = $translate.instant('EMAIL_NOT_VERIFIED');
                 user.logOut();
-                $rootScope.currentUser = null;
             }
             $ionicLoading.hide();
         };

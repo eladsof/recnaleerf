@@ -14,14 +14,9 @@ angular.module('recnaleerfClientApp')
     .controller('AccountCtrl', ['$scope','$rootScope','MyUser','$state', function ($scope, $rootScope, MyUser, $state) {
 
         $scope.logout = function () {
-            MyUser.logOut();
-            $rootScope.currentUser = null;//MyUser.current();
-            $state.go('login');
+            if(MyUser.logOut()) {
+                $rootScope.currentUser = null;
+                $state.go('login');
+            }
         }
-
-
-
-
-
-
     }]);

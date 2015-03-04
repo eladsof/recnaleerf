@@ -10,7 +10,7 @@ var translationsENUS= {
 
     // Languages
     LANG_EN: 'אנגלית',
-    LANG_HE: 'עברית'
+    LANG_HE: 'עברית',
 
     // TAB titles
     DASHBOARD: '',

@@ -56,7 +56,6 @@ angular.module('recnaleerfClientApp')
                     console.log('hours '+hours+' minutes '+minutes);
                     $scope.monthlyWorkHours = hours + ':' + minutes;
 
-
                 }, function(aError) {
                     console.log(aError);
                 }
