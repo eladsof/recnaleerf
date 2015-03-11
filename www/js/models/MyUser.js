@@ -8,6 +8,8 @@ angular.module('recnaleerfClientApp').
             // Class methods
         });
 
+        var createNew = function() {return new MyUser();};
+
         // Properties
         Object.defineProperty(User.prototype, "username", {
             get: function() {
@@ -56,10 +58,6 @@ angular.module('recnaleerfClientApp').
             set: function(aValue) {
             }
         });
-
-
-
-
 
         return User;
     });

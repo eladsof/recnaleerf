@@ -8,14 +8,13 @@
  * Controller of the recnaleerfClientApp
  */
 angular.module('recnaleerfClientApp')
-   .service('UserSrv', ['$rootScope', '$location', 'MyUser' ,'$q','$ionicLoading',function ($scope,$location,MyUser,$q,$ionicLoading) {
+   .service('UserSrv', ['$rootScope', 'MyUser' ,'$q','$ionicLoading',function ($scope,MyUser,$q,$ionicLoading) {
 
     this.isLoggedIn = function() {
         return $scope.currentUser != null;
     };
 
     this.signin = function (user,successFn,failureFn){
-        console.log('this.signin = function (user,successFn,failureFn){');
         $ionicLoading.show();
         MyUser.logIn(user.username,user.password , {
             success: successFn, error: failureFn
@@ -28,13 +27,12 @@ angular.module('recnaleerfClientApp')
         console.log('logged out');
     };
 
-    this.signup = function (usr,message) {
-        console.log('this.signin = function (user,successFn,failureFn){');
+    this.signup = function (usr) {
         $ionicLoading.show();
         var deferred;
         deferred = $q.defer();
 
-        var newUser = new MyUser();
+        var newUser = MyUser.createNew();
         newUser.username = usr.username;
         newUser.password = usr.password;
         newUser.email = usr.email;
