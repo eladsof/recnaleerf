@@ -8,8 +8,6 @@
  * Controller of the recnaleerfClientApp
  */
 
-console.log("init customerCtrl");
-
 angular.module('recnaleerfClientApp')
     .controller('customerCtrl', ['$scope','$rootScope','$location', 'CustomerSrv', 'Customer', 'Geolocation','$state','$ionicLoading', '$translate', function ($scope,$rootScope,$location,customerSrv,Customer,Geolocation,$state,$ionicLoading,$translate) {
 

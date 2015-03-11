@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        "http://www.parsecdn.com/js/parse-1.2.19.min.js",
+        //"http://www.parsecdn.com/js/parse-1.2.19.min.js",
         "lib/ionic/js/ionic.min.js",
         "lib/ionic/js/angular_13/angular.min.js",
         "lib/ionic/js/angular_13/angular-animate.min.js",

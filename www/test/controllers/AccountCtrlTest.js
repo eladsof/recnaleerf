@@ -4,18 +4,34 @@
 describe('Account Ctrl Unit Tests', function() {
 
     var scope, ctrl;
-    var userMock;
+    var userMock,customerMock,workItemMock;
 
     beforeEach(function () {
-        userMock = jasmine.createSpyObj('MyUser', ['logOut']);
+        module('recnaleerfClientApp');
+        Parse = {
+            Object :
+            {
+                extend : {}
+            },
+            initialize : function() {}
+        };
 
         module('recnaleerfClientApp');
+        userMock = jasmine.createSpyObj('MyUser', ['logOut','current']);
+        customerMock = jasmine.createSpyObj('Customer', ['1']);
+        workItemMock = jasmine.createSpyObj('WorkItem', ['1']);
 
+        module(function ($provide) {
+            $provide.value('MyUser', userMock);
+            $provide.value('Customer', customerMock);
+            $provide.value('WorkItem', workItemMock);
 
-        inject(function ($rootScope, $controller,_$state_,MyUser) {
+        });
+
+        inject(function ($rootScope, $controller,_$state_) {
 
             scope = $rootScope.$new();
-            scope.currentUser = new MyUser();
+            scope.currentUser = 'usrObj';
 
             ctrl = $controller('AccountCtrl', {
                 $scope: scope,
@@ -36,6 +52,12 @@ describe('Account Ctrl Unit Tests', function() {
         userMock.logOut.and.returnValue(true);
         scope.logout();
         expect(scope.currentUser).toBeNull();
+    });
+
+    it('should keep current user when logout fails', function() {
+        userMock.logOut.and.returnValue(false);
+        scope.logout();
+        expect(scope.currentUser).toEqual( 'usrObj' );
     });
 
 });
